@@ -2266,22 +2266,67 @@ uiux page css style
 
 /* gautam styles */
 
+.whoweare_container {
+    align-items: flex-start;
+    margin: 190px auto 100px auto;
+}
+
+.whoweare_container .service-image-bg {
+    width: 544px;
+    height: 566px;
+    border-radius: 10px;
+    background-color: #D9D9D9;
+    margin: 0;
+    position: relative;
+}
+
+.whoweare_container .service-image {
+    width: 494px;
+    height: 430px;
+    border-radius: 10px;
+    background-color: white;
+    margin: 0;
+    position: absolute;
+    top: 68px;
+    right: 158px;
+    box-shadow: 0px 4px 20px 0px #00000040;
+}
+
+.whoweare_container h2 {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 48px;
+    text-align: left;
+    color: #000;
+}
+
+.whoweare_container p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 40px;
+    text-align: left;
+    color: #000;
+}
+
+.whoweare_container .service-content {
+    margin-right: 145px;
+}
+
 #container3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
 }
 
 /* Updated IDs to card1, card2, and card3 */
 #card1,
 #card2,
 #card3 {
-    width: 380px;
+    width: 428px;
     height: 443px;
     background-color: #000;
     color: #fff;
-    padding: 20px;
+    padding: 40px;
     margin: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
@@ -2292,7 +2337,7 @@ uiux page css style
 .quote {
     font-size: 20px;
     line-height: 40px;
-    margin-bottom: 160px;
+    margin-bottom: 115px;
 }
 
 #container3 h2 {
@@ -2328,7 +2373,7 @@ uiux page css style
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 85vh;
+    /* height: 85vh; */
     margin: 0 0 60px 0;
 }
 
@@ -2350,8 +2395,17 @@ uiux page css style
     text-align: center;
     line-height: 150px;
     border-radius: 50%;
-    margin: 60px;
+    margin: 65px 65px 25px 65px;
     box-shadow: 0 4px 8px rgb(255 255 255 / 99%);
+}
+
+.whoweare_teams p {
+    color: white;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 48px;
+    text-align: center;
+    margin-bottom: 47px;
 }
 
 /* Media query for smaller screens */
@@ -2367,14 +2421,21 @@ uiux page css style
     width: 100px;
     height: 100px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     color: black;
     font-weight: bold;
     font-size: 50px;
     float: left;
-    margin: 30px;
+    margin: 0 0 20px 0;
     text-shadow: 1px 1px black;
+}
+
+.main-count h5 {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 58px;
+    text-align: left;
+    color: #000;
 }
 
 .main-count {
@@ -2383,38 +2444,66 @@ uiux page css style
     align-items: center;
     background: white;
     justify-content: space-evenly;
-    box-shadow: 0 14px 4px #54538945;
+    box-shadow: 0px 4px 4px 0px #00000040;
     border-radius: 20px;
-}
-
-.service-journey2 {
-    background-color: #D9D9D9;
-    width: 372px;
-    height: 200px;
-    border-radius: 10px;
 }
 
 .service-journey {
     background-color: #D9D9D9;
-    width: 302px;
-    height: 326px;
-    border-radius: 10px;
+    width: 480px;
+    height: 300px;
+    border-radius: 16px;
+    box-shadow: 4px 4px 30px 10px #5B7C9933;
+}
+
+.service-journey2 {
+    background-color: #D9D9D9;
+    width: 480px;
+    height: 300px;
+    border-radius: 16px;
+    box-shadow: 4px 4px 30px 10px #5B7C9933;
+}
+
+.service-journey3 {
+    background-color: #D9D9D9;
+    width: 476px;
+    height: 371px;
+    border-radius: 16px;
+    box-shadow: 4px 4px 30px 10px #5B7C9933;
+}
+
+.service-journey4 {
+    background-color: #D9D9D9;
+    width: 481px;
+    height: 320px;
+    border-radius: 16px;
+    box-shadow: 4px 4px 30px 10px #5B7C9933;
 }
 
 .content-journey {
     flex: 1;
-    padding: 0 0 0 604px;
+    padding: 0 0 0 377px;
 }
 
 .content-journey2 {
     flex: 1;
-    padding: 0 604px 0 0px;
+    padding: 0 284px 0 77px;
+}
+
+.content-journey3 {
+    flex: 1;
+    padding: 0 281px 0 181px;
+}
+
+.content-journey4 {
+    flex: 1;
+    padding: 0 0 0 345px;
 }
 
 .journey-service {
     display: flex;
     align-items: center;
-    margin-bottom: 140px;
+    margin-bottom: 120px;
 }
 
 .journey_title h2 {
@@ -2437,39 +2526,50 @@ uiux page css style
 .journey-service3 {
     display: flex;
     align-items: center;
-    margin-bottom: 140px;
-    margin-top: 140px;
+    margin-bottom: 74px;
 }
 
 .disc-journey {
-    font-size: 23px;
-    line-height: 32px;
-    color: black;
+    width: 303px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    color: #000;
 }
 
 .content-journey h1 {
-    color: black;
-    font-weight: 600;
-    font-size: 5.5rem;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 96px;
+    text-align: left;   
+    color: #5B7C99; 
 }
 
 .content-journey2 h1 {
-    color: black;
-    font-weight: 600;
-    font-size: 5.5rem;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 96px;
+    text-align: left;   
+    color: #5B7C99; 
 }
 
-.content-journey h4 {
-    color: black;
-    font-weight: bold;
-    font-size: 2.5rem;
+.content-journey3 h1 {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 96px;
+    text-align: left;   
+    color: #5B7C99; 
 }
 
-.content-journey2 h4 {
-    color: black;
-    font-weight: bold;
-    font-size: 2.5rem;
+.content-journey4 h1 {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 96px;
+    text-align: left;   
+    color: #5B7C99; 
 }
+
 
 .our_jorneys {
     background-color: white;
@@ -2480,10 +2580,11 @@ uiux page css style
 /* contacts css */
 
 
-.contact_banner{
+.contact_banner {
     width: 902px;
     padding: 178px 0 40px 0;
 }
+
 .consec {
     display: flex;
     justify-content: center;
@@ -2522,13 +2623,15 @@ uiux page css style
     font-weight: 600;
     font-size: 20px;
 }
-.contact-form label span{
+
+.contact-form label span {
     color: #FF0000;
     font-size: 15px;
     font-weight: 500;
     line-height: 27px;
     text-align: left;
 }
+
 .contact-form input {
     width: 100%;
     max-width: 100%;
@@ -2740,4 +2843,36 @@ uiux page css style
 
 .accordion.active .panel {
     max-height: 100px;
+}
+
+  /* work path stroke css */
+
+.whoweare_stroke{
+    position: relative;
+}
+
+.whoweare_stroke .stroke{
+    position: absolute;
+}
+
+.whoweare_stroke .stroke1{
+    top: 79px;
+    left: 283px;
+}
+
+.whoweare_stroke .stroke2{
+    top: 530px;
+    left: 354px;
+}
+
+.whoweare_stroke .stroke3{
+    top: 1010px;
+    left: 356px;
+}
+
+.whoweare_stroke .service-item{
+    margin-bottom: 156px;
+}
+.whoweare_container_journey{
+    max-width: 1320px;
 }
