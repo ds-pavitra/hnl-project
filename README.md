@@ -9,3 +9,4 @@ https://ds-pavitra.github.io/hnl-project/aiml.html
 https://ds-pavitra.github.io/hnl-project/smartcity-solutions.html
 https://ds-pavitra.github.io/hnl-project/networking-solutions.html
 https://ds-pavitra.github.io/hnl-project/fintech-solutions.html
+https://ds-pavitra.github.io/hnl-project/ourwork.html

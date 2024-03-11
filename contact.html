@@ -15,7 +15,7 @@
     <!-- swiper css -->
     <link rel="stylesheet" href="css/plugins/swiper.min.css">
     <!-- itsulu css -->
-    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Harry & Liu</title>
     <!-- fontawesome icons  -->
     <script src="https://kit.fontawesome.com/f01ac4bad9.js" crossorigin="anonymous"></script>
@@ -33,7 +33,7 @@
         <div id="navigation">
             <nav class="navbar navbar-expand-lg bg-body-white">
                 <div class="container">
-                    <a class="navbar-brand" href="/index.html">
+                    <a class="navbar-brand" href="#">
                         <img class="header_logo" src="./img/HL-1.png">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -44,7 +44,7 @@
                     <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2" style="margin-right: 60px !important;">
                             <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="/whoweare.html"
+                                <a class="nav-link active" aria-current="page" href="/harryandliu/whoweare.html"
                                     style="font-size: 16px;">Who we
                                     are</a>
                             </li>
@@ -55,49 +55,48 @@
                                 </a>
                                 <ul class="dropdown-menu dropdown-menu-end cust-dropdown-menu">
                                     <li class="dropdown-submenu active dropend">
-                                        <a class="dropdown-item dropdown-toggle test submenu-active focus" tabindex="-1"
+                                        <a class="dropdown-item dropdown-toggle test" tabindex="-1"
                                             href="#">Services</a>
-                                        <ul class="dropdown-menu dropdown-menu-services cust-dropdown-menu-services">
-                                            <li><a class="dropdown-item dropdown-item-custom" tabindex="-1"
-                                                    href="/uiux.html">UI/UX</a></li>
-                                            <li><a class="dropdown-item dropdown-item-custom" tabindex="-1"
-                                                    href="/software-development.html">Software
+                                        <ul class="dropdown-menu dropdown-menu-services cust-dropdown-menu-services ">
+                                            <li><a class="dropdown-item" tabindex="-1" href="#">UI/UX</a></li>
+                                            <li><a class="dropdown-item" tabindex="-1" href="#">Software
                                                     Development</a></li>
-                                            <li><a class="dropdown-item dropdown-item-custom" tabindex="-1"
-                                                    href="/mobile-development.html">Mobile
+                                            <li><a class="dropdown-item" tabindex="-1" href="#">Mobile
                                                     Development</a></li>
-                                            <li><a class="dropdown-item dropdown-item-custom" tabindex="-1"
-                                                    href="/digital-marketing.html">Digital
+                                            <li><a class="dropdown-item" tabindex="-1" href="#">Digital
                                                     Marketing</a></li>
                                         </ul>
                                     </li>
                                     <li class="dropdown-submenu dropend">
-                                        <a class="dropdown-item dropdown-toggle test submenu-active"
-                                            href="#">Solutions</a>
-                                        <ul class="dropdown-menu dropdown-menu-solutions cust-dropdown-menu-solutions">
-                                            <li><a class="dropdown-item dropdown-item-custom" href="/aiml.html">AI/ML
-                                                    Solution</a></li>
-                                            <li><a class="dropdown-item dropdown-item-custom"
-                                                    href="/smartcity-solutions.html">Smart City
-                                                    Solution</a></li>
-                                            <li><a class="dropdown-item dropdown-item-custom"
-                                                    href="/fintech-solutions.html">Fintech
-                                                    Solution</a></li>
-                                            <li><a class="dropdown-item dropdown-item-custom"
-                                                    href="/networking-solutions.html">Networking
-                                                    Solution</a></li>
+                                        <a class="dropdown-item dropdown-toggle test" href="#">Products</a>
+                                        <ul class="dropdown-menu dropdown-menu-products" style="top: -42px;">
+                                            <li><a class="dropdown-item" href="#">Harmony Nest
+                                                    (Society)</a></li>
+                                            <li><a class="dropdown-item" href="#">Gravity
+                                                    HR</a></li>
+                                            <li><a class="dropdown-item" href="#">Face
+                                                    Me</a></li>
                                         </ul>
                                     </li>
-                                    <li class="dropdown-submenu">
-                                        <a class="dropdown-item dropdown-toggle test submenu-active"
-                                            href="/ourwork.html">Our
-                                            Work</a>
+                                    <li class="dropdown-submenu dropend">
+                                        <a class="dropdown-item dropdown-toggle test" href="#">Solutions</a>
+                                        <ul class="dropdown-menu dropdown-menu-solutions" style="top: -75px;">
+                                            <li><a class="dropdown-item" href="#">AI/ML
+                                                    Solution</a></li>
+                                            <li><a class="dropdown-item" href="#">Smart City
+                                                    Solution</a></li>
+                                            <li><a class="dropdown-item" href="#">Fintech
+                                                    Solution</a></li>
+                                            <li><a class="dropdown-item" href="#">Networking
+                                                    Solution</a></li>
+                                            <!-- Add more solutions as needed -->
+                                        </ul>
                                     </li>
                                 </ul>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" href="/whoweserve.html" style="font-size: 16px;">Who we
+                                <a class="nav-link" href="#" style="font-size: 16px;">What we
                                     serve</a>
                             </li>
                         </ul>
@@ -108,6 +107,347 @@
                     </div>
                 </div>
             </nav>
+
+            <section>
+                <div class="container banner_top_container">
+                    <div class="cust_positioning_banner contact_banner">
+                        <h3 class="h_banner_text">
+                            We provide you with the building blocks to bring your business vision to life with immersive
+                            experiences — fast and without issues.
+                        </h3>
+                    </div>
+                </div>
+            </section>
+
+            <section class="consec">
+                <div class="contain">
+                    <div class="contact-form">
+                        <form>
+                            <label for="fullName1">Full Name <span style="color: #FF0000;">*</span></label>
+                            <input type="text" id="fullName1" placeholder="FullName" name="fullName1" required>
+
+                            <label for="email1">Email <span style="color: #FF0000;">*</span></label>
+                            <input type="email" id="email1" placeholder="Email" name="email1" required>
+
+                            <label for="contactNo1">Contact Number <span style="color: #FF0000;">*</span></label>
+                            <input type="tel" id="contactNo1" placeholder="Contact no" name="contactNo1" required>
+
+                            <label for="company1">Company <span style="color: #FF0000;">*</span></label>
+                            <input type="text" id="company1" placeholder="Company Name" name="company1" style="margin-bottom: 40px;" required>
+
+                            <button type="submit">Submit</button>
+                        </form>
+                    </div>
+
+                    <div class="custom-card">
+                        <div class="d-flex justify-content-evenly" style="margin-bottom: 55px;">
+                            <div class="map1">
+                                <h4>Head Office</h4>
+                                <a href="your_link_url2"><img src="your_image_url1.jpg" alt=""></a>
+                            </div>
+
+                            <div class="map2">
+                                <h4>Mainland China Office</h4>
+                                <a href="your_link_url2"><img src="your_image_url1.jpg" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-center" style="color: white;">
+                            <div>
+                                <img src="./img/phone-white.png" alt="Image-HasTech">
+                            </div>
+                            <div style="margin-left: 20px;">
+                                +86 15618878897
+                            </div>
+                            <div style="margin-left: 28px;">
+                                <img src="./img/mail-white.png" alt="Image-HasTech">
+                            </div>
+                            <div style="margin-left: 20px;">
+                                info@harryandliu.com
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="accordsec">
+                <div class="accodcon">
+                    <div class="image-container">
+                        <img src="/img/shape2.png" alt="Your Image">
+                        <div class="overlay-text">
+                            <p>FAQ'S</p>
+                            <h1>What would you like to know</h1>
+                        </div>
+                    </div>
+
+                    <div class="custom-accord flex-column">
+                        <div class="accordion" onclick="toggleAccordion(this)">
+                            <p> Lorem Ipsum Dolor Sit Amet? </p>
+                            <div class="panel">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="accordion" onclick="toggleAccordion(this)">
+                            <p> Lorem ipsum dolor sit amet, consectetur.Lorem ipsum dolor sit amet, consectetur ? </p>
+                            <div class="panel">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="accordion" onclick="toggleAccordion(this)">
+                            <p> Lorem ipsum dolor sit amet, consectetur.Lorem ipsum dolor sit amet, consectetur ? </p>
+                            <div class="panel">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="accordion" onclick="toggleAccordion(this)">
+                            <p> Lorem ipsum dolor sit amet, consectetur.Lorem ipsum dolor sit amet, consectetur ? </p>
+                            <div class="panel">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="accordion" onclick="toggleAccordion(this)">
+                            <p> Lorem ipsum dolor sit amet, consectetur.Lorem ipsum dolor sit amet, consectetur ? </p>
+                            <div class="panel">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua.
+                                </p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+
+            <!-- partners section -->
+            <div class="section section-margin-bottom cust_partner_sec"
+                style="height:366px;background-color: white;position: relative;">
+                <h2 class="partner_title">STRATEGIC PARTNER'S</h2>
+                <div class="cust-partner-cont"
+                    style="background-color: white;position: absolute;top:166px; width: 100%;">
+                    <div class="row">
+                        <div class="col-lg-12" data-aos="fade-up" data-aos-duration="1100">
+                            <div class="container swiper-container partner-slider">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide partner-slide">
+                                        <a class="brand-item" href="#/">
+                                            <img src="img/image-1.png" alt="Brand Image">
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide partner-slide">
+                                        <a class="brand-item" href="#/">
+                                            <img src="img/image-2.png" alt="Brand Image">
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide partner-slide">
+                                        <a class="brand-item" href="#/">
+                                            <img src="img/image-3.png" alt="Brand Image">
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide partner-slide">
+                                        <a class="brand-item" href="#/">
+                                            <img src="img/image-4.png" alt="Brand Image">
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide partner-slide">
+                                        <a class="brand-item" href="#/">
+                                            <img src="img/image-5.png" alt="Brand Image">
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide partner-slide">
+                                        <a class="brand-item" href="#/">
+                                            <img src="img/image-6.png" alt="Brand Image">
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide partner-slide">
+                                        <a class="brand-item" href="#/">
+                                            <img src="img/image-7.png" alt="Brand Image">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer>
+                <div class="cust-footer-card" style="width: 100%;height: 390px;background-color: white;">
+                    <div class="container get_in_touch col-lg-10">
+                        <div class="git_image_container">
+                            <img src="/img" alt>
+                        </div>
+                        <h3>Your Partner in Progress, Fueling Business
+                            Solutions.</h3>
+                        <div class="cust-txt-align">
+                            <a href="#" class="btn header_contactus_btn git_btn_cust">Get in
+                                touch</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_navigation"
+                    style="width: 100%;height: 580px;background-color: black; position: relative;">
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <!--== Start Footer Widget Area ==-->
+                                <div class="footer-widget-area">
+                                    <div class="row m-b-n40">
+                                        <div class="col-sm-6 col-md-6 col-lg-3 m-b-40" data-aos="fade-up"
+                                            data-aos-duration="1100">
+                                            <div class="widget-item pb-sm-20">
+                                                <h4 class="widget-title">Harry &
+                                                    Liu Co. Ltd</h4>
+                                                <div class="about-widget">
+                                                    <p>Tien Chu Commercial
+                                                        Building, 173 - 174
+                                                        Gloucester Road, Wanchai
+                                                        <br> <br>
+                                                        Hong Kong
+                                                    </p>
+                                                    <div class="social-icons">
+                                                        <a href="#/"><img src="./img/meta.png" alt="meta"></a>
+                                                        <a href="#/"><img src="./img/twitter.png" alt="twitter"></a>
+                                                        <a href="#/"><img src="./img/youtube.png" alt="youtube"></a>
+                                                        <a href="#/"><img src="./img/linkedin.png" alt="linkedin"></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-md-6 col-lg-3 d-flex justify-content-start justify-content-lg-center m-b-40"
+                                            data-aos="fade-up" data-aos-duration="1500">
+                                            <div class="widget-item widget-item-1">
+                                                <h4 class="widget-title">NAVIGATION</h4>
+                                                <ul class="widget-list" style="padding-left: 0;">
+                                                    <li><a href="#">What we
+                                                            do</a></li>
+                                                    <li><a href="#">Who we
+                                                            serve</a></li>
+                                                    <li><a href="#">What we
+                                                            are</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-md-6 col-lg-3 m-b-40" data-aos="fade-up"
+                                            data-aos-duration="2000">
+                                            <div class="widget-item">
+                                                <h4 class="widget-title">QUICK
+                                                    LINKS</h4>
+                                                <ul class="widget-post" style="padding-left: 0;">
+                                                    <li><a href="#">Services</a></li>
+                                                    <li><a href="#">Solutions</a></li>
+                                                    <li><a href="#">Application</a></li>
+                                                    <li><a href="#">Product</a></li>
+                                                    <li><a href="#">Contact</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-md-6 col-lg-3 m-b-40" data-aos="fade-up"
+                                            data-aos-duration="2500">
+                                            <div class="widget-item">
+                                                <h4 class="widget-title widget-item-2">CONTACT
+                                                    US</h4>
+
+                                                <ul class="widget-post" style="padding-left: 0;">
+                                                    <li><a href="#" class="d-flex">
+                                                            <div>
+                                                                <img src="./img/phone.png" alt="Image-HasTech">
+                                                            </div>
+                                                            <div style="margin-left: 20px;">
+                                                                +86 15618878897
+                                                            </div>
+                                                        </a></li>
+                                                    <li><a href="#" class="d-flex">
+                                                            <div>
+                                                                <img src="./img/mail.png" alt="Image-HasTech">
+                                                            </div>
+                                                            <div style="margin-left: 20px;">
+                                                                info@harryandliu.com
+                                                            </div>
+                                                        </a></li>
+                                                    <li><a href="#" class="d-flex">
+                                                            <div>
+                                                                <img src="./img/location.png" alt="Image-HasTech">
+                                                            </div>
+                                                            <div style="margin-left: 20px;width: 238px;">
+                                                                <span style="font-size: 16px;font-weight: 500;">Head
+                                                                    Office</span><br>
+                                                                <span style="font-size: 12px;font-weight: 400;">
+                                                                    Chu
+                                                                    Commercial
+                                                                    Building,
+                                                                    173 - 174
+                                                                    Gloucester
+                                                                    Road,
+                                                                    Wanchai,
+                                                                    Hong Kong.
+                                                                </span>
+                                                            </div>
+                                                        </a></li>
+
+                                                    <li><a href="#" class="d-flex">
+                                                            <div>
+                                                                <img src="./img/location.png" alt="Image-HasTech">
+                                                            </div>
+                                                            <div style="margin-left: 20px;width: 238px;">
+                                                                <span style="font-size: 16px;font-weight: 500;">Mainland
+                                                                    China
+                                                                    Office</span><br>
+                                                                <span style="font-size: 12px;font-weight: 400;">913,
+                                                                    Jinqi Wisdom
+                                                                    Valley 1,
+                                                                    Tangling
+                                                                    Road,
+                                                                    Liuxian
+                                                                    Blvd,
+                                                                    Nanshan,
+                                                                    Shenzhen.
+                                                                </span>
+                                                            </div>
+                                                        </a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--== End Footer Widget Area ==-->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footer-bottom">
+                        <div class="container d-flex justify-content-between cust-margin-0"
+                            style="margin: 10px auto;color: white;">
+                            <div class="rights-reserved">
+                                <p style="font-size: 15px;font-weight: 700;">2024
+                                    All RIGHTS RESERVED - H&L</p>
+                            </div>
+                            <div class="d-flex justify-content-around footer-policy"
+                                style="width: 380px;font-size: 15px;font-weight: 600;">
+                                <p>PRIVACY POLICY</p>
+                                <p>TERMS & CONDITION</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
         </div>
 
         <!-- jQuery js -->
@@ -180,6 +520,9 @@
 
             });
 
+            function toggleAccordion(accordion) {
+                accordion.classList.toggle("active");
+            }
         </script>
 </body>
 
