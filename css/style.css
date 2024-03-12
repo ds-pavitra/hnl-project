@@ -2400,17 +2400,28 @@ uiux page css style
         text-transform: uppercase;
     }
 
-    .stroke{
+    .stroke {
         display: none !important;
     }
 
-    .service-journey {
+    .service-journey,
+    .service-journey2,
+    .service-journey3,
+    .service-journey4 {
         width: 131px !important;
         height: 81px !important;
+        border-radius: 5px !important;
     }
+
     .whoweare_stroke {
         position: relative;
         width: 354px !important;
+    }
+
+    .journey-service,
+    .whoweare_stroke .service-item,
+    .journey-service3 {
+        margin-bottom: 30px !important;
     }
 
     .disc-journey {
@@ -2422,13 +2433,57 @@ uiux page css style
         color: #000;
     }
 
-    .content-journey2 h1 {
+
+    .content-journey h1,
+    .content-journey2 h1,
+    .content-journey3 h1,
+    .content-journey4 h1 {
         font-size: 20px !important;
         line-height: 30px !important;
     }
 
-    .content-journey2 {
+    .content-journey,
+    .content-journey4 {
+        padding: 0 0 0 10px !important;
+    }
+
+    .content-journey2,
+    .content-journey3 {
         padding: 0 10px 0 0px !important;
+    }
+
+    .team20 h1 {
+        color: white;
+        text-align: center;
+        padding: 25px 0 15px 0;
+        margin-top: 40px;
+        font-size: 18px;
+        line-height: 27px;
+        text-transform: uppercase;
+    }
+
+    .team-card {
+        width: 61px !important;
+        height: 61px !important;
+        background-color: white !important;
+        text-align: center !important;
+        border-radius: 50% !important;
+        margin: 6px auto !important;
+        box-shadow: none !important;
+    }
+
+    .whoweare_teams p {
+        font-size: 10px !important;
+        line-height: 15px !important;
+        margin-bottom: 47px !important;
+    }
+
+    #teams-container {
+        display: flex;
+        align-items: center;
+        /* height: 85vh; */
+        margin: 0 0 60px 0;
+        justify-content: space-evenly !important;
     }
 }
 
