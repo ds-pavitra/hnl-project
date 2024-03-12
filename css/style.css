@@ -2416,6 +2416,7 @@ uiux page css style
     .whoweare_stroke {
         position: relative;
         width: 354px !important;
+        margin: 0 auto;
     }
 
     .journey-service,
