@@ -77,16 +77,20 @@
                                         <ul class="dropdown-menu dropdown-menu-solutions cust-dropdown-menu-solutions">
                                             <li><a class="dropdown-item dropdown-item-custom" href="/aiml.html">AI/ML
                                                     Solution</a></li>
-                                            <li><a class="dropdown-item dropdown-item-custom" href="/smartcity-solutions.html">Smart City
+                                            <li><a class="dropdown-item dropdown-item-custom"
+                                                    href="/smartcity-solutions.html">Smart City
                                                     Solution</a></li>
-                                            <li><a class="dropdown-item dropdown-item-custom" href="/fintech-solutions.html">Fintech
+                                            <li><a class="dropdown-item dropdown-item-custom"
+                                                    href="/fintech-solutions.html">Fintech
                                                     Solution</a></li>
-                                            <li><a class="dropdown-item dropdown-item-custom" href="/networking-solutions.html">Networking
+                                            <li><a class="dropdown-item dropdown-item-custom"
+                                                    href="/networking-solutions.html">Networking
                                                     Solution</a></li>
                                         </ul>
                                     </li>
                                     <li class="dropdown-submenu">
-                                        <a class="dropdown-item dropdown-toggle test submenu-active" href="/ourwork.html">Our
+                                        <a class="dropdown-item dropdown-toggle test submenu-active"
+                                            href="/ourwork.html">Our
                                             Work</a>
                                     </li>
                                 </ul>
@@ -153,7 +157,7 @@
         </section>
 
         <!-- our services section starts  -->
-        <section class="container-fluid our_services aiml_container">
+        <section class="container-fluid our_services our_solutions aiml_container">
             <div>
                 <div class="service_title">
                     <h2> OUR SOLUTIONS</h2>
@@ -249,13 +253,13 @@
                 </div>
             </div>
         </div>
-        <div class="section section-margin-bottom cust_partner_sec"
+        <div class="section section-margin-bottom cust_partner_sec clients_mob"
             style="height:366px;background-color: #D9D9D9;position: relative;margin-bottom: 80px;">
             <h2 class="partner_title">OUR CLIENTS</h2>
             <div class="cust-partner-cont" style="background-color: white;position: absolute;top:166px; width: 100%;">
                 <div class="row">
                     <div class="col-lg-12" data-aos="fade-up" data-aos-duration="1100">
-                        <div class="container swiper-container partner-slider">
+                        <div class="container swiper-container client-slider">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide partner-slide">
                                     <a class="brand-item" href="#/">
@@ -557,6 +561,33 @@
                 },
                 pagination: false,
             });
+
+            var clients = new Swiper('.client-slider', {
+                slidesPerView: 6,
+                spaceBetween: 0,
+                loop: true,
+                autoplay: {
+                    delay: 3000,
+                    disableOnInteraction: false,
+                },
+                pagination: false,
+            });
+
+
+            const mediaQuery = window.matchMedia('(max-width: 768px)');
+
+            function updateSwiperConfig() {
+                if (mediaQuery.matches) {
+                    partners.params.slidesPerView = 4;
+                    clients.params.slidesPerView = 4;
+                } else {
+                    partners.params.slidesPerView = 6;
+                    clients.params.slidesPerView = 6;
+                }
+                partners.update();
+            }
+            updateSwiperConfig();
+            mediaQuery.addListener(updateSwiperConfig);
 
             var technology = new Swiper('.technology-slider', {
                 slidesPerView: 4,
