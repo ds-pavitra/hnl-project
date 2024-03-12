@@ -65,6 +65,10 @@ body {
     padding: 100px 0 40px 0;
 }
 
+.home_banner .cust_positioning_banner {
+    padding: 30px 0;
+}
+
 .section.section-demos {
     background: #ffffff;
     padding: 5rem;
@@ -84,7 +88,8 @@ body {
     overflow: hidden;
     transition: all ease 0.3s;
     max-height: 24rem;
-    box-shadow: 0 14px 4px #54538945;
+    box-shadow: 8px 11px 6px 1px #5B7C99;
+    position: relative;
 }
 
 .section.section-demos .demo-item .item-img:hover {
@@ -98,7 +103,11 @@ body {
 }
 
 .section.section-demos .demo-item img {
-    width: 100%;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 31%;
+    left: 30%;
 }
 
 .section.section-demos .demo-item:hover .item-title {
@@ -325,14 +334,23 @@ body {
 }
 
 .service-image {
-    background-color: white;
+    background-color: transparent;
     width: 553px;
     height: 363px;
     border-radius: 10px;
 }
 
 .service-image img {
-    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.cust-service-card img,
+.card_img_div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover
 }
 
 .service_disc {
@@ -455,9 +473,9 @@ body {
 }
 
 .card_img_div {
-    width: 94px;
-    height: 90px;
-    background-color: lightgrey;
+    width: 64px;
+    height: 64px;
+    background-color: white;
     border-radius: 15px;
 }
 
@@ -611,8 +629,15 @@ body {
     position: absolute;
     bottom: 6vh;
     right: 5vw;
-    background-color: white;
+    background-color: transparent;
     box-shadow: 0 -4px 22px rgba(0, 0, 0, 0.1)
+}
+
+.git_image_container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
 
