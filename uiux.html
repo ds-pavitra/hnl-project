@@ -1,144 +1,145 @@
 <!DOCTYPE html>
 <html lang="zxx">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="shortcut icon" href="img/favicon.ico" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="img/favicon.ico" />
 
-        <!-- bootstrap grid css -->
-        <link rel="stylesheet" href="css/plugins/bootstrap-grid.css">
-        <!-- font awesome css -->
-        <link rel="stylesheet" href="css/plugins/font-awesome.min.css">
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-            rel="stylesheet">
-        <!-- swiper css -->
-        <link rel="stylesheet" href="css/plugins/swiper.min.css">
-        <!-- itsulu css -->
-        <link rel="stylesheet" href="css/style.css">
-        <title>Harry & Liu</title>
-        <!-- fontawesome icons  -->
-        <script src="https://kit.fontawesome.com/f01ac4bad9.js"
-            crossorigin="anonymous"></script>
-        <!-- Include GSAP library -->
-        <script
-            src="https://cdn.jsdelivr.net/npm/gsap@3.9.1/dist/gsap.min.js"></script>
+    <!-- bootstrap grid css -->
+    <link rel="stylesheet" href="css/plugins/bootstrap-grid.css">
+    <!-- font awesome css -->
+    <link rel="stylesheet" href="css/plugins/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- swiper css -->
+    <link rel="stylesheet" href="css/plugins/swiper.min.css">
+    <!-- itsulu css -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Harry & Liu</title>
+    <!-- fontawesome icons  -->
+    <script src="https://kit.fontawesome.com/f01ac4bad9.js" crossorigin="anonymous"></script>
+    <!-- Include GSAP library -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.9.1/dist/gsap.min.js"></script>
 
-        <!-- Include ScrollTrigger plugin -->
-        <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/ScrollTrigger.min.js"></script>
+    <!-- Include ScrollTrigger plugin -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/ScrollTrigger.min.js"></script>
 
-    </head>
+</head>
 
-    <body>
-        <div id="wrapper">
-            <!-- navigation starts -->
-            <div id="navigation">
-                <nav class="navbar navbar-expand-lg bg-body-white">
-                    <div class="container">
-                        <a class="navbar-brand" href="/index.html">
-                            <img class="header_logo" src="./img/HL-1.png">
-                        </a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                            <ul class="navbar-nav me-auto mb-2" style="margin-right: 60px !important;">
-                                <li class="nav-item">
-                                    <a class="nav-link" aria-current="page" href="/whoweare.html"
-                                        style="font-size: 16px;">Who we
-                                        are</a>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false" style="font-size: 16px;">
-                                        What We Do
-                                    </a>
-                                    <ul class="dropdown-menu dropdown-menu-end cust-dropdown-menu">
-                                        <li class="dropdown-submenu active dropend">
-                                            <a class="dropdown-item dropdown-toggle test submenu-active focus" tabindex="-1"
-                                                href="#">Services</a>
-                                            <ul class="dropdown-menu dropdown-menu-services cust-dropdown-menu-services">
-                                                <li><a class="dropdown-item dropdown-item-custom" tabindex="-1"
-                                                        href="/uiux.html">UI/UX</a></li>
-                                                <li><a class="dropdown-item dropdown-item-custom" tabindex="-1"
-                                                        href="/software-development.html">Software
-                                                        Development</a></li>
-                                                <li><a class="dropdown-item dropdown-item-custom" tabindex="-1"
-                                                        href="/mobile-development.html">Mobile
-                                                        Development</a></li>
-                                                <li><a class="dropdown-item dropdown-item-custom" tabindex="-1"
-                                                        href="/digital-marketing.html">Digital
-                                                        Marketing</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="dropdown-submenu dropend">
-                                            <a class="dropdown-item dropdown-toggle test submenu-active"
-                                                href="#">Solutions</a>
-                                            <ul class="dropdown-menu dropdown-menu-solutions cust-dropdown-menu-solutions">
-                                                <li><a class="dropdown-item dropdown-item-custom" href="/aiml.html">AI/ML
-                                                        Solution</a></li>
-                                                <li><a class="dropdown-item dropdown-item-custom" href="/smartcity-solutions.html">Smart City
-                                                        Solution</a></li>
-                                                <li><a class="dropdown-item dropdown-item-custom" href="/fintech-solutions.html">Fintech
-                                                        Solution</a></li>
-                                                <li><a class="dropdown-item dropdown-item-custom" href="/networking-solutions.html">Networking
-                                                        Solution</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="dropdown-submenu">
-                                            <a class="dropdown-item dropdown-toggle test submenu-active" href="/ourwork.html">Our
-                                                Work</a>
-                                        </li>
-                                    </ul>
-                                </li>
-    
-                                <li class="nav-item">
-                                    <a class="nav-link" href="/whoweserve.html" style="font-size: 16px;">Who we
-                                        serve</a>
-                                </li>
-                            </ul>
-                            <!-- <form class="d-flex" role="contactus">
+<body>
+    <div id="wrapper">
+        <!-- navigation starts -->
+        <div id="navigation">
+            <nav class="navbar navbar-expand-lg bg-body-white">
+                <div class="container">
+                    <a class="navbar-brand" href="/index.html">
+                        <img class="header_logo" src="./img/HL-1.png">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2" style="margin-right: 60px !important;">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="/index.html"
+                                    style="font-size: 16px;">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="/whoweare.html"
+                                    style="font-size: 16px;">Who we
+                                    are</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false" style="font-size: 16px;">
+                                    What We Do
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end cust-dropdown-menu">
+                                    <li class="dropdown-submenu active dropend">
+                                        <a class="dropdown-item dropdown-toggle test submenu-active focus" tabindex="-1"
+                                            href="#">Services</a>
+                                        <ul class="dropdown-menu dropdown-menu-services cust-dropdown-menu-services">
+                                            <li><a class="dropdown-item dropdown-item-custom" tabindex="-1"
+                                                    href="/uiux.html">UI/UX</a></li>
+                                            <li><a class="dropdown-item dropdown-item-custom" tabindex="-1"
+                                                    href="/software-development.html">Software
+                                                    Development</a></li>
+                                            <li><a class="dropdown-item dropdown-item-custom" tabindex="-1"
+                                                    href="/mobile-development.html">Mobile
+                                                    Development</a></li>
+                                            <li><a class="dropdown-item dropdown-item-custom" tabindex="-1"
+                                                    href="/digital-marketing.html">Digital
+                                                    Marketing</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu dropend">
+                                        <a class="dropdown-item dropdown-toggle test submenu-active"
+                                            href="#">Solutions</a>
+                                        <ul class="dropdown-menu dropdown-menu-solutions cust-dropdown-menu-solutions">
+                                            <li><a class="dropdown-item dropdown-item-custom" href="/aiml.html">AI/ML
+                                                    Solution</a></li>
+                                            <li><a class="dropdown-item dropdown-item-custom"
+                                                    href="/smartcity-solutions.html">Smart City
+                                                    Solution</a></li>
+                                            <li><a class="dropdown-item dropdown-item-custom"
+                                                    href="/fintech-solutions.html">Fintech
+                                                    Solution</a></li>
+                                            <li><a class="dropdown-item dropdown-item-custom"
+                                                    href="/networking-solutions.html">Networking
+                                                    Solution</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item dropdown-toggle test submenu-active"
+                                            href="/ourwork.html">Our
+                                            Work</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="/whoweserve.html" style="font-size: 16px;">Who we
+                                    serve</a>
+                            </li>
+                        </ul>
+                        <!-- <form class="d-flex" role="contactus">
                           <input class="form-control me-2" type="contactus" placeholder="contactus" aria-label="contactus">
                         </form> -->
-                            <button class="btn header_contactus_btn" type="button"> Contact Us</button>
-                        </div>
+                        <button class="btn header_contactus_btn" type="button"> Contact Us</button>
                     </div>
-                </nav>
-            </div>
-            <!-- navigation ends -->
-
-            <!-- banner section starts -->
-            <section>
-                <div
-                    class="banner_top_container uiux_top_banner_container d-flex">
-                    <div
-                        class="container d-flex justify-content-center align-items-center">
-                        <div class="cust_positioning_banner">
-                            <h3 class="h_banner_text">
-                                Crafting Intuitive Experiences for Seamless
-                                Engagement: Elevate Your Brand with Expert UI/UX
-                                Design
-                            </h3>
-                        </div>
-                        <div class="uiux_image_bnr">
-                            <img src alt>
-                        </div>
-                    </div>
-
                 </div>
-            </section>
+            </nav>
+        </div>
+        <!-- navigation ends -->
 
-            <!-- banner section ends  -->
+        <!-- banner section starts -->
+        <section>
+            <div class="banner_top_container uiux_top_banner_container d-flex">
+                <div class="container d-flex justify-content-center align-items-center">
+                    <div class="cust_positioning_banner">
+                        <h3 class="h_banner_text">
+                            Crafting Intuitive Experiences for Seamless
+                            Engagement: Elevate Your Brand with Expert UI/UX
+                            Design
+                        </h3>
+                    </div>
+                    <div class="uiux_image_bnr">
+                        <img src="./img/uiux-banner.png" alt>
+                    </div>
+                </div>
 
-            <!-- key benefits  section starts  -->
+            </div>
+        </section>
 
-            <section
-                class="container cards-services-section d-flex flex-column key_benefit_container">
+        <!-- banner section ends  -->
+
+        <!-- key benefits  section starts  -->
+
+        <div style="background-color:#5B7C991A;padding: 1px 0;">
+            <section class="container cards-services-section d-flex flex-column key_benefit_container">
                 <div class="section-heading">
                     <div class="service_title">
                         <h2> KEY BENEFITS</h2>
@@ -152,478 +153,383 @@
                             <div class="swiper-slide">
                                 <div class="service-card">
                                     <div class="cust-service-card"
-                                        style="width: 334px;height: 233px;background-color: lightgrey;border-radius: 10px;margin: 10px auto;">
-                                        <img src="image1.jpg"
-                                            style="width: 100%;"
-                                            alt="Service Image 1">
+                                        style="width: 334px;height: 233px;background-color: lightgrey;border-radius: 10px;margin: 30px auto;">
+                                        <img src="./img/image 48.png" style="width: 100%;" alt="Service Image 1">
                                     </div>
-                                    <p>Lorem ipsum dolor sit amet, consectetur
-                                        adipiscing elit </p>
+                                    <p>Conversion-Boosting Interfaces</p>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="service-card">
                                     <div class="cust-service-card"
-                                        style="width: 334px;height: 233px;background-color: lightgrey;border-radius: 10px;margin: 10px auto;">
-                                        <img src="image1.jpg"
-                                            style="width: 100%;"
-                                            alt="Service Image 1">
+                                        style="width: 334px;height: 233px;background-color: lightgrey;border-radius: 10px;margin: 30px auto;">
+                                        <img src="./img/image 49.png" style="width: 100%;" alt="Service Image 1">
                                     </div>
-                                    <p>Lorem ipsum dolor sit amet, consectetur
-                                        adipiscing elit </p>
+                                    <p>Efficiency Through Design</p>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="service-card">
                                     <div class="cust-service-card"
-                                        style="width: 334px;height: 233px;background-color: lightgrey;border-radius: 10px;margin: 10px auto;">
-                                        <img src="image1.jpg"
-                                            style="width: 100%;"
-                                            alt="Service Image 1">
+                                        style="width: 334px;height: 233px;background-color: lightgrey;border-radius: 10px;margin: 30px auto;">
+                                        <img src="./img/image 53.png" style="width: 100%;" alt="Service Image 1">
                                     </div>
-                                    <p>Lorem ipsum dolor sit amet, consectetur
-                                        adipiscing elit </p>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="service-card">
-                                    <div class="cust-service-card"
-                                        style="width: 334px;height: 233px;background-color: lightgrey;border-radius: 10px;margin: 10px auto;">
-                                        <img src="image1.jpg"
-                                            style="width: 100%;"
-                                            alt="Service Image 1">
-                                    </div>
-                                    <p>Lorem ipsum dolor sit amet, consectetur
-                                        adipiscing elit </p>
+                                    <p>Optimized User Satisfaction</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
+        </div>
 
-            <section
-                class="container cards-services-section d-flex flex-column key_benefit_container_mobile">
-                <div class="section-heading">
-                    <div class="service_title">
-                        <h2> KEY BENEFITS</h2>
-                    </div>
+        <section class="container cards-services-section d-flex flex-column key_benefit_container_mobile">
+            <div class="section-heading">
+                <div class="service_title">
+                    <h2> KEY BENEFITS</h2>
                 </div>
-                <div class="container">
-                    <div class="d-flex sec1">
-                        <img src="" alt="">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit </p>
-                    </div>
-                    <div class="d-flex sec1 flex-row-reverse">
-                        <img src="" alt="">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit </p>
-                    </div>
-                    <div class="d-flex sec1">
-                        <img src="" alt="">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit </p>
-                    </div>
+            </div>
+            <div class="container">
+                <div class="d-flex sec1">
+                    <img src="" alt="">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit </p>
                 </div>
-            </section>
+                <div class="d-flex sec1 flex-row-reverse">
+                    <img src="" alt="">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit </p>
+                </div>
+                <div class="d-flex sec1">
+                    <img src="" alt="">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit </p>
+                </div>
+            </div>
+        </section>
 
-            <!-- testimonials section starts  -->
+        <!-- testimonials section starts  -->
 
-            <section class="testimonial-section">
-                <div class="container">
-                    <h4>TESTIMONIALS</h4>
+        <section class="testimonial-section">
+            <div class="container">
+                <h4>TESTIMONIALS</h4>
 
-                    <h2>What our clients have to say !</h2>
-                    <div class="swiper-container testimonial-slider">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div
-                                    class="testimonial-card d-flex justify-content-center">
+                <h2>What our clients have to say !</h2>
+                <div class="swiper-container testimonial-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="testimonial-card d-flex justify-content-center">
+                                <div>
+                                    <img src="./img/Shape.png">
+                                </div>
+                                <div style="margin-left: 20px;">
                                     <div>
-                                        <img src="./img/Shape.png">
+                                        <p class="client_reviews">"Lorem
+                                            ipsum dolor sit amet,
+                                            consectetur adipiscing elit, sed
+                                            do eiusmod tempor incididunt ut
+                                            labore et dolore magna
+                                            aliqua.”</p>
                                     </div>
-                                    <div style="margin-left: 20px;">
-                                        <div>
-                                            <p class="client_reviews">"Lorem
-                                                ipsum dolor sit amet,
-                                                consectetur adipiscing elit, sed
-                                                do eiusmod tempor incididunt ut
-                                                labore et dolore magna
-                                                aliqua.”</p>
-                                        </div>
-                                        <div>
-                                            <p class="author">Lorem Ipsum</p>
-                                            <p class="position_client">Head Of
-                                                Department</p>
-                                        </div>
+                                    <div>
+                                        <p class="author">Lorem Ipsum</p>
+                                        <p class="position_client">Head Of
+                                            Department</p>
                                     </div>
                                 </div>
                             </div>
-                            <!-- Add more swiper slides here -->
                         </div>
-                        <!-- Add Navigation Arrows -->
-                        <div
-                            class="swiper-button-prev-testimonial swiper-button-prev">
-                            <img id="arroww" style="margin-left: 35px;"
-                                src="./img/Left.png" alt>
-                        </div>
-                        <div
-                            class="swiper-button-next-testimonial swiper-button-next">
-                            <img id="arroww" style="margin-right: 10px;"
-                                src="./img/Right.png" alt>
-                        </div>
+                        <!-- Add more swiper slides here -->
+                    </div>
+                    <!-- Add Navigation Arrows -->
+                    <div class="swiper-button-prev-testimonial swiper-button-prev">
+                        <img id="arroww" style="margin-left: 35px;" src="./img/Left.png" alt>
+                    </div>
+                    <div class="swiper-button-next-testimonial swiper-button-next">
+                        <img id="arroww" style="margin-right: 35px;" src="./img/Right.png" alt>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <!-- partners section -->
-            <div class="section section-margin-bottom cust_partner_sec"
-                style="height:366px;background-color: #D9D9D9;position: relative;">
-                <h2 class="partner_title">STRATEGIC PARTNER'S</h2>
-                <div class="cust-partner-cont"
-                    style="background-color: white;position: absolute;top:166px; width: 100%;">
-                    <div class="row">
-                        <div class="col-lg-12" data-aos="fade-up"
-                            data-aos-duration="1100">
-                            <div
-                                class="container swiper-container partner-slider">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide partner-slide">
-                                        <a class="brand-item" href="#/">
-                                            <img src="img/image-1.png"
-                                                alt="Brand Image">
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide partner-slide">
-                                        <a class="brand-item" href="#/">
-                                            <img src="img/image-2.png"
-                                                alt="Brand Image">
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide partner-slide">
-                                        <a class="brand-item" href="#/">
-                                            <img src="img/image-3.png"
-                                                alt="Brand Image">
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide partner-slide">
-                                        <a class="brand-item" href="#/">
-                                            <img src="img/image-4.png"
-                                                alt="Brand Image">
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide partner-slide">
-                                        <a class="brand-item" href="#/">
-                                            <img src="img/image-5.png"
-                                                alt="Brand Image">
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide partner-slide">
-                                        <a class="brand-item" href="#/">
-                                            <img src="img/image-6.png"
-                                                alt="Brand Image">
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide partner-slide">
-                                        <a class="brand-item" href="#/">
-                                            <img src="img/image-7.png"
-                                                alt="Brand Image">
-                                        </a>
-                                    </div>
+        <!-- partners section -->
+        <div class="section section-margin-bottom cust_partner_sec"
+            style="height:366px;background-color: #5B7C991A;position: relative;">
+            <h2 class="partner_title">STRATEGIC PARTNER'S</h2>
+            <div class="cust-partner-cont"
+                style="background-color: 5b7c9903;position: absolute;top:166px; width: 100%;">
+                <div class="row">
+                    <div class="col-lg-12" data-aos="fade-up" data-aos-duration="1100">
+                        <div class="container swiper-container partner-slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide partner-slide">
+                                    <a class="brand-item" href="#/">
+                                        <img src="img/image-1.png" alt="Brand Image">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide partner-slide">
+                                    <a class="brand-item" href="#/">
+                                        <img src="img/image-2.png" alt="Brand Image">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide partner-slide">
+                                    <a class="brand-item" href="#/">
+                                        <img src="img/image-3.png" alt="Brand Image">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide partner-slide">
+                                    <a class="brand-item" href="#/">
+                                        <img src="img/image-4.png" alt="Brand Image">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide partner-slide">
+                                    <a class="brand-item" href="#/">
+                                        <img src="img/image-5.png" alt="Brand Image">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide partner-slide">
+                                    <a class="brand-item" href="#/">
+                                        <img src="img/image-6.png" alt="Brand Image">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide partner-slide">
+                                    <a class="brand-item" href="#/">
+                                        <img src="img/image-7.png" alt="Brand Image">
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- partners End Here -->
+        </div>
+        <!-- partners End Here -->
 
-            <!-- Project gallery starts  -->
+        <!-- Project gallery starts  -->
 
-            <section
-                class="container cards-services-section d-flex flex-column project_gallery">
-                <div class="section-heading">
-                    <div class="service_title">
-                        <h2> PROJECT GALLERY</h2>
+        <section class="container cards-services-section d-flex flex-column project_gallery">
+            <div class="section-heading">
+                <div class="service_title">
+                    <h2> PROJECT GALLERY</h2>
+                </div>
+            </div>
+            <div class="container-slider">
+                <div class="cards-project swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="service-card">
+                                <div class="cust-service-card"
+                                    style="width: 378px;height: 286px;background-color: lightgrey;border-radius: 10px;margin: 10px auto;">
+                                    <img src="image1.jpg" style="width: 100%;" alt="Service Image 1">
+                                </div>
+                                <h3>Lorem Ipsum</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="service-card">
+                                <div class="cust-service-card"
+                                    style="width: 378px;height: 286px;background-color: lightgrey;border-radius: 10px;margin: 10px auto;">
+                                    <img src="image1.jpg" style="width: 100%;" alt="Service Image 1">
+                                </div>
+                                <h3>Lorem Ipsum</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="service-card">
+                                <div class="cust-service-card"
+                                    style="width: 378px;height: 286px;background-color: lightgrey;border-radius: 10px;margin: 10px auto;">
+                                    <img src="image1.jpg" style="width: 100%;" alt="Service Image 1">
+                                </div>
+                                <h3>Lorem Ipsum</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et </p>
+                            </div>
+                        </div>
+                        <!-- Repeat the above swiper-slide for each service card -->
                     </div>
                 </div>
-                <div class="container-slider">
-                    <div class="cards-project swiper-container">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="service-card">
-                                    <div class="cust-service-card"
-                                        style="width: 378px;height: 286px;background-color: lightgrey;border-radius: 10px;margin: 10px auto;">
-                                        <img src="image1.jpg"
-                                            style="width: 100%;"
-                                            alt="Service Image 1">
-                                    </div>
-                                    <h3>Lorem Ipsum</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur
-                                        adipiscing elit, sed do eiusmod tempor
-                                        incididunt ut labore et </p>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="service-card">
-                                    <div class="cust-service-card"
-                                        style="width: 378px;height: 286px;background-color: lightgrey;border-radius: 10px;margin: 10px auto;">
-                                        <img src="image1.jpg"
-                                            style="width: 100%;"
-                                            alt="Service Image 1">
-                                    </div>
-                                    <h3>Lorem Ipsum</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur
-                                        adipiscing elit, sed do eiusmod tempor
-                                        incididunt ut labore et </p>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="service-card">
-                                    <div class="cust-service-card"
-                                        style="width: 378px;height: 286px;background-color: lightgrey;border-radius: 10px;margin: 10px auto;">
-                                        <img src="image1.jpg"
-                                            style="width: 100%;"
-                                            alt="Service Image 1">
-                                    </div>
-                                    <h3>Lorem Ipsum</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur
-                                        adipiscing elit, sed do eiusmod tempor
-                                        incididunt ut labore et </p>
-                                </div>
-                            </div>
-                            <!-- Repeat the above swiper-slide for each service card -->
-                        </div>
+            </div>
+        </section>
+
+        <!-- footer section  starts-->
+
+        <footer>
+            <div class="cust-footer-card" style="width: 100%;height: 390px;background-color: white;">
+                <div class="container get_in_touch col-lg-10">
+                    <div class="git_image_container">
+                        <img src="./img/young-business-people-putting-their-hands-together-2023-11-27-05-09-43-utc 2.png"
+                            alt>
+                    </div>
+                    <h3>Your Partner in Progress, Fueling Business
+                        Solutions.</h3>
+                    <div class="cust-txt-align">
+                        <a href="#" class="btn header_contactus_btn git_btn_cust">Get in
+                            touch</a>
                     </div>
                 </div>
-            </section>
+            </div>
+            <div class="footer_navigation"
+                style="width: 100%;height: 580px;background-color: #5B7C9933; position: relative;">
 
-            <!-- footer section  starts-->
-
-            <footer>
-                <div class="cust-footer-card"
-                    style="width: 100%;height: 390px;background-color: white;">
-                    <div class="container get_in_touch col-lg-10">
-                        <div class="git_image_container">
-                            <img src="/img" alt>
-                        </div>
-                        <h3>Your Partner in Progress, Fueling Business
-                            Solutions.</h3>
-                        <div class="cust-txt-align">
-                            <a href="#"
-                                class="btn header_contactus_btn git_btn_cust">Get
-                                in
-                                touch</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="footer_navigation"
-                    style="width: 100%;height: 580px;background-color: black; position: relative;">
-
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <!--== Start Footer Widget Area ==-->
-                                <div class="footer-widget-area">
-                                    <div class="row m-b-n40">
-                                        <div
-                                            class="col-sm-6 col-md-6 col-lg-3 m-b-40"
-                                            data-aos="fade-up"
-                                            data-aos-duration="1100">
-                                            <div class="widget-item pb-sm-20">
-                                                <h4 class="widget-title">Harry &
-                                                    Liu Co. Ltd</h4>
-                                                <div class="about-widget">
-                                                    <p>Tien Chu Commercial
-                                                        Building, 173 - 174
-                                                        Gloucester Road, Wanchai
-                                                        <br> <br>
-                                                        Hong Kong
-                                                    </p>
-                                                    <div class="social-icons">
-                                                        <a href="#/"><img
-                                                                src="./img/meta.png"
-                                                                alt="meta"></a>
-                                                        <a href="#/"><img
-                                                                src="./img/twitter.png"
-                                                                alt="twitter"></a>
-                                                        <a href="#/"><img
-                                                                src="./img/youtube.png"
-                                                                alt="youtube"></a>
-                                                        <a href="#/"><img
-                                                                src="./img/linkedin.png"
-                                                                alt="linkedin"></a>
-                                                    </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <!--== Start Footer Widget Area ==-->
+                            <div class="footer-widget-area">
+                                <div class="row m-b-n40">
+                                    <div class="col-sm-6 col-md-6 col-lg-3 m-b-40" data-aos="fade-up"
+                                        data-aos-duration="1100">
+                                        <div class="widget-item pb-sm-20">
+                                            <h4 class="widget-title">Harry &
+                                                Liu Co. Ltd</h4>
+                                            <div class="about-widget">
+                                                <p>Tien Chu Commercial
+                                                    Building, 173 - 174
+                                                    Gloucester Road, Wanchai
+                                                    <br> <br>
+                                                    Hong Kong
+                                                </p>
+                                                <div class="social-icons">
+                                                    <a href="#/"><img src="./img/meta-dark.png" alt="meta"></a>
+                                                    <a href="#/"><img src="./img/twitter-dark.png" alt="twitter"></a>
+                                                    <a href="#/"><img src="./img/youtube-dark.png" alt="youtube"></a>
+                                                    <a href="#/"><img src="./img/linkedin-dark.png" alt="linkedin"></a>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div
-                                            class="col-sm-6 col-md-6 col-lg-3 d-flex justify-content-start justify-content-lg-center m-b-40"
-                                            data-aos="fade-up"
-                                            data-aos-duration="1500">
-                                            <div
-                                                class="widget-item widget-item-1">
-                                                <h4
-                                                    class="widget-title">NAVIGATION</h4>
-                                                <ul class="widget-list"
-                                                    style="padding-left: 0;">
-                                                    <li><a href="#">What we
-                                                            do</a></li>
-                                                    <li><a href="#">Who we
-                                                            serve</a></li>
-                                                    <li><a href="#">What we
-                                                            are</a></li>
-                                                </ul>
-                                            </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-3 d-flex justify-content-start justify-content-lg-center m-b-40"
+                                        data-aos="fade-up" data-aos-duration="1500">
+                                        <div class="widget-item widget-item-1">
+                                            <h4 class="widget-title">NAVIGATION</h4>
+                                            <ul class="widget-list" style="padding-left: 0;">
+                                                <li><a href="#">What we
+                                                        do</a></li>
+                                                <li><a href="#">Who we
+                                                        serve</a></li>
+                                                <li><a href="#">What we
+                                                        are</a></li>
+                                            </ul>
                                         </div>
-                                        <div
-                                            class="col-sm-6 col-md-6 col-lg-3 m-b-40"
-                                            data-aos="fade-up"
-                                            data-aos-duration="2000">
-                                            <div class="widget-item">
-                                                <h4 class="widget-title">QUICK
-                                                    LINKS</h4>
-                                                <ul class="widget-post"
-                                                    style="padding-left: 0;">
-                                                    <li><a
-                                                            href="#">Services</a></li>
-                                                    <li><a
-                                                            href="#">Solutions</a></li>
-                                                    <li><a
-                                                            href="#">Application</a></li>
-                                                    <li><a
-                                                            href="#">Product</a></li>
-                                                    <li><a
-                                                            href="#">Contact</a></li>
-                                                </ul>
-                                            </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-3 m-b-40" data-aos="fade-up"
+                                        data-aos-duration="2000">
+                                        <div class="widget-item">
+                                            <h4 class="widget-title">QUICK
+                                                LINKS</h4>
+                                            <ul class="widget-post" style="padding-left: 0;">
+                                                <li><a href="#">Services</a></li>
+                                                <li><a href="#">Solutions</a></li>
+                                                <li><a href="#">Application</a></li>
+                                                <li><a href="#">Product</a></li>
+                                                <li><a href="#">Contact</a></li>
+                                            </ul>
                                         </div>
-                                        <div
-                                            class="col-sm-6 col-md-6 col-lg-3 m-b-40"
-                                            data-aos="fade-up"
-                                            data-aos-duration="2500">
-                                            <div class="widget-item">
-                                                <h4
-                                                    class="widget-title widget-item-2">CONTACT
-                                                    US</h4>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-3 m-b-40" data-aos="fade-up"
+                                        data-aos-duration="2500">
+                                        <div class="widget-item">
+                                            <h4 class="widget-title widget-item-2">CONTACT
+                                                US</h4>
 
-                                                <ul class="widget-post"
-                                                    style="padding-left: 0;">
-                                                    <li><a href="#"
-                                                            class="d-flex">
-                                                            <div>
-                                                                <img
-                                                                    src="./img/phone.png"
-                                                                    alt="Image-HasTech">
-                                                            </div>
-                                                            <div
-                                                                style="margin-left: 20px;">
-                                                                +86 15618878897
-                                                            </div>
-                                                        </a></li>
-                                                    <li><a href="#"
-                                                            class="d-flex">
-                                                            <div>
-                                                                <img
-                                                                    src="./img/mail.png"
-                                                                    alt="Image-HasTech">
-                                                            </div>
-                                                            <div
-                                                                style="margin-left: 20px;">
-                                                                info@harryandliu.com
-                                                            </div>
-                                                        </a></li>
-                                                    <li><a href="#"
-                                                            class="d-flex">
-                                                            <div>
-                                                                <img
-                                                                    src="./img/location.png"
-                                                                    alt="Image-HasTech">
-                                                            </div>
-                                                            <div
-                                                                style="margin-left: 20px;width: 238px;">
-                                                                <span
-                                                                    style="font-size: 16px;font-weight: 500;">Head
-                                                                    Office</span><br>
-                                                                <span
-                                                                    style="font-size: 12px;font-weight: 400;">
-                                                                    Chu
-                                                                    Commercial
-                                                                    Building,
-                                                                    173 - 174
-                                                                    Gloucester
-                                                                    Road,
-                                                                    Wanchai,
-                                                                    Hong Kong.
-                                                                </span>
-                                                            </div>
-                                                        </a></li>
+                                            <ul class="widget-post" style="padding-left: 0;">
+                                                <li><a href="#" class="d-flex">
+                                                        <div>
+                                                            <img src="./img/phone-dark.png" alt="Image-HasTech">
+                                                        </div>
+                                                        <div style="margin-left: 20px;">
+                                                            +86 15618878897
+                                                        </div>
+                                                    </a></li>
+                                                <li><a href="#" class="d-flex">
+                                                        <div>
+                                                            <img src="./img/mail-dark.png" alt="Image-HasTech">
+                                                        </div>
+                                                        <div style="margin-left: 20px;">
+                                                            info@harryandliu.com
+                                                        </div>
+                                                    </a></li>
+                                                <li><a href="#" class="d-flex">
+                                                        <div>
+                                                            <img src="./img/location-dark.png" alt="Image-HasTech">
+                                                        </div>
+                                                        <div style="margin-left: 20px;width: 238px;">
+                                                            <span style="font-size: 16px;font-weight: 500;">Head
+                                                                Office</span><br>
+                                                            <span style="font-size: 12px;font-weight: 400;">
+                                                                Chu
+                                                                Commercial
+                                                                Building,
+                                                                173 - 174
+                                                                Gloucester
+                                                                Road,
+                                                                Wanchai,
+                                                                Hong Kong.
+                                                            </span>
+                                                        </div>
+                                                    </a></li>
 
-                                                    <li><a href="#"
-                                                            class="d-flex">
-                                                            <div>
-                                                                <img
-                                                                    src="./img/location.png"
-                                                                    alt="Image-HasTech">
-                                                            </div>
-                                                            <div
-                                                                style="margin-left: 20px;width: 238px;">
-                                                                <span
-                                                                    style="font-size: 16px;font-weight: 500;">Mainland
-                                                                    China
-                                                                    Office</span><br>
-                                                                <span
-                                                                    style="font-size: 12px;font-weight: 400;">913,
-                                                                    Jinqi Wisdom
-                                                                    Valley 1,
-                                                                    Tangling
-                                                                    Road,
-                                                                    Liuxian
-                                                                    Blvd,
-                                                                    Nanshan,
-                                                                    Shenzhen.
-                                                                </span>
-                                                            </div>
-                                                        </a></li>
-                                                </ul>
-                                            </div>
+                                                <li><a href="#" class="d-flex">
+                                                        <div>
+                                                            <img src="./img/location-dark.png" alt="Image-HasTech">
+                                                        </div>
+                                                        <div style="margin-left: 20px;width: 238px;">
+                                                            <span style="font-size: 16px;font-weight: 500;">Mainland
+                                                                China
+                                                                Office</span><br>
+                                                            <span style="font-size: 12px;font-weight: 400;">913,
+                                                                Jinqi Wisdom
+                                                                Valley 1,
+                                                                Tangling
+                                                                Road,
+                                                                Liuxian
+                                                                Blvd,
+                                                                Nanshan,
+                                                                Shenzhen.
+                                                            </span>
+                                                        </div>
+                                                    </a></li>
+                                            </ul>
                                         </div>
                                     </div>
                                 </div>
-                                <!--== End Footer Widget Area ==-->
                             </div>
-                        </div>
-                    </div>
-
-                    <div class="footer-bottom">
-                        <div
-                            class="container d-flex justify-content-between cust-margin-0"
-                            style="margin: 10px auto;color: white;">
-                            <div class="rights-reserved">
-                                <p
-                                    style="font-size: 15px;font-weight: 700;">2024
-                                    All RIGHTS RESERVED - H&L</p>
-                            </div>
-                            <div
-                                class="d-flex justify-content-around footer-policy"
-                                style="width: 380px;font-size: 15px;font-weight: 600;">
-                                <p>PRIVACY POLICY</p>
-                                <p>TERMS & CONDITION</p>
-                            </div>
+                            <!--== End Footer Widget Area ==-->
                         </div>
                     </div>
                 </div>
-            </footer>
 
-        </div>
+                <div class="footer-bottom">
+                    <div class="container d-flex justify-content-between cust-margin-0"
+                        style="margin: 10px auto;color: black;">
+                        <div class="rights-reserved">
+                            <p style="font-size: 15px;font-weight: 700;">2024
+                                All RIGHTS RESERVED - H&L</p>
+                        </div>
+                        <div class="d-flex justify-content-around footer-policy"
+                            style="width: 380px;font-size: 15px;font-weight: 600;">
+                            <p>PRIVACY POLICY</p>
+                            <p>TERMS & CONDITION</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
 
-        <!-- jQuery js -->
-        <script src="js/plugins/jquery.min.js"></script>
-        <!-- swiper js -->
-        <script src="js/plugins/swiper.min.js"></script>
-        <!-- <script src="js/plugins/swiper-bundle.min.js"></script> -->
-        <!-- itsulu js -->
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-        <script type="text/javascript">
+    </div>
+
+    <!-- jQuery js -->
+    <script src="js/plugins/jquery.min.js"></script>
+    <!-- swiper js -->
+    <script src="js/plugins/swiper.min.js"></script>
+    <!-- <script src="js/plugins/swiper-bundle.min.js"></script> -->
+    <!-- itsulu js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript">
 
         /*--
     Client's Activation
@@ -660,10 +566,6 @@
             var swiper = new Swiper('.cards-services', {
                 slidesPerView: 1,
                 spaceBetween: 30,
-                autoplay: {
-                    delay: 5000,
-                    disableOnInteraction: false,
-                },
                 loop: true,
             });
 
@@ -676,7 +578,7 @@
                 },
                 loop: true,
             });
-            
+
 
             var testimonialSlider = new Swiper('.testimonial-slider', {
                 loop: true,
@@ -705,6 +607,6 @@
         });
 
     </script>
-    </body>
+</body>
 
 </html>

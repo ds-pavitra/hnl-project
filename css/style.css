@@ -40,7 +40,7 @@ body {
 }
 
 .banner_top_container {
-    background-color: #D9D9D9;
+    background-color: white;
     /* width: 100vw; */
     height: 550px;
     max-width: none;
@@ -55,7 +55,14 @@ body {
 
 .navbar-nav .nav-link.hover,
 .navbar-nav .nav-link.show {
-    color: #5857F9 !important;
+    color: #5B7C99 !important;
+}
+
+.nav-item{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 27px;
+    color: black;
 }
 
 .cust_positioning_banner {
@@ -78,6 +85,7 @@ body {
     margin-bottom: 40px;
     border-radius: 20px;
     padding: 20px;
+    text-decoration: none;
 }
 
 .section.section-demos .demo-item .item-img {
@@ -89,7 +97,8 @@ body {
     transition: all ease 0.3s;
     max-height: 24rem;
     box-shadow: 8px 11px 6px 1px #5B7C99;
-    position: relative;
+    padding: 26% 32% 0 32%;
+    /* position: relative; */
 }
 
 .section.section-demos .demo-item .item-img:hover {
@@ -105,9 +114,19 @@ body {
 .section.section-demos .demo-item img {
     width: 100px;
     height: 100px;
-    position: absolute;
+    margin-bottom: 13px;
+    /* position: absolute;
     top: 31%;
-    left: 30%;
+    left: 30%; */
+}
+
+.section.section-demos .demo-item .item-img h5 {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 21px;
+    text-align: center;
+    color: #000;
 }
 
 .section.section-demos .demo-item:hover .item-title {
@@ -120,6 +139,7 @@ body {
     width: 523px !important;
     height: 261px !important;
     padding: 30px;
+    border: 1px solid #5B7C99;
     border-radius: 0;
 }
 
@@ -148,7 +168,7 @@ body {
 
 .cust-dropdown-menu .dropdown-item-custom:hover,
 .dropdown-item-custom:active {
-    color: #5857F9;
+    color: #5B7C99;
 }
 
 .cust-dropdown-menu .submenu-active {
@@ -281,7 +301,7 @@ body {
 /* ----------------------------------------------------- */
 
 .our_services {
-    background-color: #D9D9D9;
+    background-color: #5B7C991A;
     /* height: 990px; */
     padding: 80px 0 40px 0;
 }
@@ -353,10 +373,19 @@ body {
     object-fit: cover
 }
 
+.our_services .service-content h4,
+.our_services .service-cust h4 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    text-align: left;
+    color: #000;
+}
+
 .service_disc {
     font-weight: 500;
-    font-size: 28px;
-    line-height: 42px;
+    font-size: 20px !important;
+    line-height: 30px !important;
     color: black;
     width: 578px;
 }
@@ -391,6 +420,19 @@ body {
     color: black;
     overflow-x: hidden;
     margin: 140px auto 70px auto;
+    position: relative;
+}
+
+.cards-services-section .swiper-button-prev-keySolutions {
+    position: absolute;
+    top: 18%;
+    left: 90%;
+}
+
+.cards-services-section .swiper-button-next-keySolutions {
+    position: absolute;
+    top: 18%;
+    right: 2%;
 }
 
 .container-slider {
@@ -418,9 +460,9 @@ body {
 
 .service-card {
     width: 438px;
-    height: 580px;
+    height: 605px;
     background-color: #ffffff;
-    border: 1px solid #dddddd;
+    border: 1px solid #5B7C99;
     border-radius: 10px;
     padding: 20px;
     text-align: center;
@@ -447,19 +489,22 @@ body {
     margin: 0 0 20px 10px;
     text-align: left;
     width: 378px;
-    height: 120px;
+    height: 145px;
 }
 
 
 /* why choose us  */
 
 .why-choose-us-section {
-    background-color: black;
-    color: white;
+    background-color: #5B7C991A;
+    color: black;
     padding: 40px 0;
 }
 
 .why-choose-us-section h2 {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 48px;
     text-align: left;
     margin-bottom: 70px;
 }
@@ -537,7 +582,7 @@ body {
     background-color: white;
     padding: 20px;
     border-radius: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #000000;
     width: 920px;
     height: 230px;
     padding: 45px;
@@ -579,8 +624,14 @@ body {
 
 .swiper-button-prev:after,
 .swiper-rtl .swiper-button-next:after {
-    content: '';
+    content: '' !important;
 }
+
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+    content: '' !important;
+}
+
 
 /* partners css  */
 
@@ -602,7 +653,7 @@ body {
 
 /* footer  */
 .get_in_touch {
-    background-color: #D9D9D9;
+    background-color: #5B7C99;
     position: relative;
     height: 280px;
     top: 165px;
@@ -623,8 +674,8 @@ body {
 }
 
 .git_image_container {
-    width: 398px;
-    height: 322px;
+    width: 465px;
+    height: 310px;
     border-radius: 10px;
     position: absolute;
     bottom: 6vh;
@@ -633,16 +684,16 @@ body {
     box-shadow: 0 -4px 22px rgba(0, 0, 0, 0.1)
 }
 
-.git_image_container img{
+.git_image_container img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: none;
     border-radius: 10px;
 }
 
 
 .footer-bottom {
-    border-top: 1px solid rgb(244 238 238 / 25%);
+    border-top: 1px solid #5B7C99;
     padding: 15px 0 14px;
     position: absolute;
     bottom: 0;
@@ -656,14 +707,14 @@ body {
 
 
 .footer-widget-area .widget-item .widget-title {
-    color: #ffffff;
+    color: #000;
     font-size: 25px;
     margin-bottom: 25px;
     font-weight: 900;
 }
 
 .footer-widget-area .about-widget p {
-    color: white;
+    color: #000;
     margin-bottom: 15px;
     font-size: 17px;
     font-weight: 400;
@@ -671,7 +722,7 @@ body {
 }
 
 .footer-widget-area .about-widget .social-icons a {
-    color: white;
+    color: #000;
     margin-right: 16px;
     -webkit-transition: all 0.3s ease-out;
     -o-transition: all 0.3s ease-out;
@@ -679,7 +730,7 @@ body {
 }
 
 .footer-widget-area .about-widget .social-icons a:hover {
-    color: #ffffff;
+    color: #000;
 }
 
 .footer-widget-area .widget-list li,
@@ -696,7 +747,7 @@ body {
 
 .footer-widget-area .widget-list li a,
 .footer-widget-area .widget-post li a {
-    color: white;
+    color: #000;
     -webkit-transition: .3s;
     -o-transition: .3s;
     transition: .3s;
@@ -708,7 +759,7 @@ body {
 
 .footer-widget-area .widget-list li a:hover,
 .footer-widget-area .widget-post li a:hover {
-    color: #ffffff;
+    color: #000;
 }
 
 .footer-widget-area .widget-list li:last-child,
@@ -765,16 +816,18 @@ uiux page css style
     width: 529px;
     height: 386px;
     background-color: #D9D9D9;
+    border-radius: 16px;
 }
 
 .uiux_image_bnr img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
+    border-radius: 16px;
 }
 
 .uiux_top_banner_container {
-    background-color: #d9d9d982;
+    background-color: white;
     /* width: 100vw; */
     height: 550px;
     max-width: none;
@@ -798,7 +851,7 @@ uiux page css style
 }
 
 .key_benefit_container .container-slider {
-    height: 400px;
+    height: 462px;
     margin: 50px;
 }
 
@@ -806,12 +859,18 @@ uiux page css style
     width: auto;
     height: auto;
     border: none;
-    border-radius: 10px;
+    border-radius: 16px;
     padding: 0;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #5b7c9900;
+}
+
+.key_benefit_container .service-card img{
+    border-radius: 16px;
+    box-shadow: 8px 11px 0px 1px #5B7C99;
 }
 
 .key_benefit_container .service-card p {
@@ -820,9 +879,10 @@ uiux page css style
     line-height: 35px;
     margin: 0;
     text-align: center;
-    width: 273px;
-    height: 72px;
+    width: 324px;
+    height: 108px;
 }
+
 
 /* ----------------------  uiux style ends ------------------------------ */
 
@@ -833,6 +893,8 @@ uiux page css style
     display: flex;
     align-items: flex-start;
     margin: 70px auto;
+    padding: 50px 0;
+    background: #5B7C991A;
 }
 
 .overview .section-heading {
@@ -889,7 +951,8 @@ uiux page css style
 .overview .service-image img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
+    border-radius: 16px;
 }
 
 .overview .service_disc {
@@ -934,7 +997,7 @@ uiux page css style
     width: 412px;
     height: 412px;
     border-radius: 24px;
-    background-color: black;
+    background-color: #5B7C99;
     margin-bottom: 15px;
 }
 
@@ -942,16 +1005,16 @@ uiux page css style
     width: 412px;
     height: 412px;
     border-radius: 24px 167px 24px 24px;
-    border: 1px solid #8A8A8A;
+    border: 1px solid #5B7C99;
     background-color: white;
     color: black;
     padding: 20px;
 }
 
 .f_card_icon {
-    width: 109px;
-    height: 109px;
-    margin-bottom: 15px;
+    width: 64px;
+    height: 64px;
+    margin: 20px;
 }
 
 .f_card_icon img {
@@ -1063,7 +1126,7 @@ uiux page css style
     width: 270px;
     height: 91px;
     border-radius: 20px;
-    border: 1px solid black;
+    border: 1px solid #5B7C99;
     background-color: white;
     margin-right: 60px;
 }
@@ -1072,7 +1135,8 @@ uiux page css style
     font-size: 32px;
     font-weight: 500;
     line-height: 27px;
-    padding: 32px 30px;
+    padding: 32px 0;
+    color: #000;
 }
 
 .technology-slider {
@@ -2347,7 +2411,7 @@ uiux page css style
         width: 353px !important;
         height: 123px !important;
         border-radius: 0 !important;
-        background-color: #D9D9D9;
+        background-color: #5B7C99;
         margin: 0;
         display: block !important;
         position: absolute;
@@ -2581,7 +2645,7 @@ uiux page css style
     }
 
     .our_services {
-        background-color: #D9D9D9;
+        background-color: #5B7C991A;
         padding: 60px 0 40px 0;
     }
 
@@ -3050,7 +3114,7 @@ uiux page css style
     width: 544px;
     height: 566px;
     border-radius: 10px;
-    background-color: #D9D9D9;
+    background-color: #5B7C99;
     margin: 0;
     position: relative;
 }
@@ -3065,6 +3129,15 @@ uiux page css style
     top: 68px;
     right: 158px;
     box-shadow: 0px 4px 20px 0px #00000040;
+}
+
+.whoweare_container .service-image img {
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+    position: relative;
+    top: 10%;
+    left: 13%;
 }
 
 .whoweare_container h2 {
@@ -3099,13 +3172,15 @@ uiux page css style
 #card3 {
     width: 428px;
     height: 443px;
-    background-color: #000;
-    color: #fff;
+    background-color: white;
+    color: black;
     padding: 40px;
     margin: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 8px 11px 0px 1px #5B7C99;
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
+    border: 1px solid #5B7C99;
     justify-content: space-between;
 }
 
@@ -3140,14 +3215,19 @@ uiux page css style
 }
 
 .team20 h1 {
-    color: white;
+    color: black;
     text-align: center;
     padding: 45px 0 0 0;
     margin-top: 40px;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 48px;
+    text-align: center;
+
 }
 
 .team20 {
-    background-color: black;
+    background-color: #5B7C9980;
 }
 
 .team-card {
@@ -3158,11 +3238,11 @@ uiux page css style
     line-height: 150px;
     border-radius: 50%;
     margin: 65px 65px 25px 65px;
-    box-shadow: 0 4px 8px rgb(255 255 255 / 99%);
+    /* box-shadow: 0 4px 8px rgb(255 255 255 / 99%); */
 }
 
 .whoweare_teams p {
-    color: white;
+    color: black;
     font-size: 32px;
     font-weight: 600;
     line-height: 48px;
@@ -3216,6 +3296,13 @@ uiux page css style
     height: 300px;
     border-radius: 16px;
     box-shadow: 4px 4px 30px 10px #5B7C9933;
+}
+
+.j-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px;
 }
 
 .service-journey2 {
@@ -3343,8 +3430,15 @@ uiux page css style
 
 
 .contact_banner {
-    width: 902px;
-    padding: 178px 0 40px 0;
+    width: 1162px;
+    height: 596px;
+    padding: 0 0 40px 0;
+    display: flex;
+    align-items: center;
+}
+
+.contact_banner .h_banner_text {
+    text-align: left;
 }
 
 .consec {
@@ -3356,6 +3450,7 @@ uiux page css style
 
 .contain {
     display: flex;
+    flex-direction: row-reverse;
     justify-content: space-between;
     width: 1320px;
     margin-top: 60px;
@@ -3367,7 +3462,7 @@ uiux page css style
     width: 826px;
     /* margin: 10px; */
     display: flex;
-    background-color: #000;
+    background-color: #5B7C99;
     /* margin-top: 48px; */
     flex-direction: column;
     justify-content: space-between;
@@ -3435,7 +3530,7 @@ uiux page css style
 }
 
 .custom-card h4 {
-    color: white;
+    color: black;
     text-align: center;
     margin-bottom: 20px;
     font-size: 18px;
@@ -3531,7 +3626,7 @@ uiux page css style
     top: 23px;
     left: 66px;
     transform: translate(-50%, -50%);
-    color: #bbb1b1;
+    color: black;
     font-size: 18px;
     font-weight: 600;
     line-height: 25px;
@@ -3543,7 +3638,7 @@ uiux page css style
 .accordion {
     width: 795px;
     border-radius: 8px;
-    border: 1px solid #C1C1C1;
+    border: 1px solid #000;
     font-size: 20px;
     font-weight: 500;
     line-height: 30px;
@@ -3581,18 +3676,32 @@ uiux page css style
     right: 15px;
 }
 
-.active:after {
+.accordion.active:after {
     content: "\2212";
-    color: white;
+    color: black;
 }
 
 .accordion.active {
-    background-color: black;
-    color: white;
+    background-color: #5B7C9980;
+    color: black;
+    border: none;
+    transition: background-color 0.4s;
+}
+
+.accordion.active p {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 32px;
 }
 
 .accordion.active .panel {
     max-height: 100px;
+}
+
+.accordion.active .panel p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 27px;
 }
 
 /* work path stroke css */
