@@ -42,7 +42,7 @@ body {
 .banner_top_container {
     background-color: white;
     /* width: 100vw; */
-    height: 550px;
+    /* height: 550px; */
     max-width: none;
 }
 
@@ -55,14 +55,15 @@ body {
 
 .navbar-nav .nav-link.hover,
 .navbar-nav .nav-link.show {
-    color: #5B7C99 !important;
+    color: #004E9E !important;
 }
 
-.nav-item{
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 27px;
-    color: black;
+.nav-link,
+.nav-item {
+    font-size: 18px !important;
+    font-weight: 600 !important;
+    line-height: 27px !important;
+    color: black !important;
 }
 
 .cust_positioning_banner {
@@ -73,7 +74,15 @@ body {
 }
 
 .home_banner .cust_positioning_banner {
-    padding: 30px 0;
+    padding: 100px 0;
+}
+
+.home_banner .h_banner_text {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 45px;
+    text-align: center;
+    color: #000;
 }
 
 .section.section-demos {
@@ -96,7 +105,7 @@ body {
     overflow: hidden;
     transition: all ease 0.3s;
     max-height: 24rem;
-    box-shadow: 8px 11px 6px 1px #5B7C99;
+    box-shadow: 8px 11px 6px 1px#004E9E;
     padding: 26% 32% 0 32%;
     /* position: relative; */
 }
@@ -139,7 +148,7 @@ body {
     width: 523px !important;
     height: 261px !important;
     padding: 30px;
-    border: 1px solid #5B7C99;
+    border: 1px solid#004E9E;
     border-radius: 0;
 }
 
@@ -168,7 +177,7 @@ body {
 
 .cust-dropdown-menu .dropdown-item-custom:hover,
 .dropdown-item-custom:active {
-    color: #5B7C99;
+    color: #004E9E;
 }
 
 .cust-dropdown-menu .submenu-active {
@@ -300,24 +309,28 @@ body {
 
 /* ----------------------------------------------------- */
 
-.our_services {
-    background-color: #5B7C991A;
-    /* height: 990px; */
+/* .our_services {
+    background-color: #004E9E1A;
+    height: 990px;
     padding: 80px 0 40px 0;
-}
+} */
 
 
 .services-section {
+    width: 1175px;
+    height: 476px;
+    border-radius: 40px;
+    background: #004E9E;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    /* margin-bottom: 50px; */
+    margin: 0 auto;
 }
 
 .service-item {
     display: flex;
     align-items: center;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
 }
 
 .service-item.reverse {
@@ -355,9 +368,9 @@ body {
 
 .service-image {
     background-color: transparent;
-    width: 553px;
-    height: 363px;
-    border-radius: 10px;
+    width: 498px;
+    height: 367px;
+    /* border-radius: 10px; */
 }
 
 .service-image img {
@@ -383,18 +396,20 @@ body {
 }
 
 .service_disc {
-    font-weight: 500;
-    font-size: 20px !important;
-    line-height: 30px !important;
-    color: black;
-    width: 578px;
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 63px;
+    text-align: left;
+    color: #fff;
+    width: 547px;
+    margin-bottom: 25px;
 }
 
 .service_title h2 {
     font-weight: 600;
     font-size: 32px;
     line-height: 48px;
-    color: black;
+    color: #004E9E;
     padding: 0 0 16px 16px;
 }
 
@@ -402,8 +417,32 @@ body {
     font-size: 20px;
     font-weight: 400;
     text-decoration: none;
-    color: black;
+    color: #004E9E;
     margin-bottom: 30px;
+}
+
+.explore_btn_service {
+    width: 194px;
+    height: 56px;
+    border-radius: 5px;
+    color: #000;
+    background: #FFFFFF;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vector_background {
+    width: 1260px;
+    height: 1211px;
+    position: absolute;
+    top: 1377px;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 /* cards slider css  */
@@ -462,7 +501,7 @@ body {
     width: 438px;
     height: 605px;
     background-color: #ffffff;
-    border: 1px solid #5B7C99;
+    border: 1px solid#004E9E;
     border-radius: 10px;
     padding: 20px;
     text-align: center;
@@ -493,25 +532,62 @@ body {
 }
 
 
+.keySolution_card .service_type {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.keySolution_card .service-content h4{
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 48px;
+    text-align: left;
+    color: #000;
+}
+
+.keySolution_card .service-content p{
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 33px;
+    text-align: left;
+    color: #000;
+}
+
+.keySolution_card .service-image{
+    width: 100%;
+    height: 100%;
+}
+
+.keySolution_card .service-item {
+    width: 1180px;
+    height: 451px;
+    display: flex;
+    align-items: center;
+}
+
 /* why choose us  */
 
 .why-choose-us-section {
-    background-color: #5B7C991A;
+    /* background-color: #004E9E1A; */
     color: black;
     padding: 40px 0;
 }
 
 .why-choose-us-section h2 {
-    font-size: 32px;
+    font-size: 36px;
     font-weight: 600;
     line-height: 48px;
     text-align: left;
     margin-bottom: 70px;
+    color: #004E9E;
 }
 
 .card {
     margin-bottom: 20px;
-    border: 1px solid white;
+    background: transparent;
+    border: 1px solid transparent;
     /* width: 600px; */
     height: 245px;
     border-radius: 10px;
@@ -520,7 +596,7 @@ body {
 .card_img_div {
     width: 64px;
     height: 64px;
-    background-color: white;
+    background-color: transparent;
     border-radius: 15px;
 }
 
@@ -576,13 +652,14 @@ body {
     font-size: 18px;
     font-weight: 400;
     margin-bottom: 10px;
+    color: #004E9E;
 }
 
 .testimonial-card {
     background-color: white;
     padding: 20px;
     border-radius: 10px;
-    border: 1px solid #000000;
+    border: 1px solid #004E9E;
     width: 920px;
     height: 230px;
     padding: 45px;
@@ -634,6 +711,26 @@ body {
 
 
 /* partners css  */
+.partnersSection {
+    height: 326px;
+    background-color: transparent;
+    position: relative;
+    margin: 150px auto 0 auto !important;
+    border-width: 1px 1px 0 1px;
+    border-color: #004E9E;
+    border-style: solid;
+    margin-bottom: 0px;
+}
+
+.clientsSection {
+    height: 366px;
+    background-color: transparent;
+    position: relative;
+    margin: 0 auto 150px auto !important;
+    border-width: 0 1px 1px 1px;
+    border-color: #004E9E;
+    border-style: solid;
+}
 
 .partner-slider {
     overflow-x: hidden;
@@ -648,12 +745,12 @@ body {
     padding: 85px 0 52px 0;
     font-size: 32px;
     font-weight: 600;
-    color: black;
+    color: #004E9E;
 }
 
 /* footer  */
 .get_in_touch {
-    background-color: #5B7C99;
+    background: #004E9E;
     position: relative;
     height: 280px;
     top: 165px;
@@ -665,7 +762,7 @@ body {
 }
 
 .get_in_touch h3 {
-    color: black;
+    color: #fff;
     font-size: 36px;
     font-weight: 600;
     line-height: 52px;
@@ -675,26 +772,30 @@ body {
 
 .git_image_container {
     width: 465px;
-    height: 310px;
+    height: 352px;
     border-radius: 10px;
     position: absolute;
     bottom: 6vh;
     right: 5vw;
     background-color: transparent;
-    box-shadow: 0 -4px 22px rgba(0, 0, 0, 0.1)
+    /* box-shadow: 0 -4px 22px rgba(0, 0, 0, 0.1) */
+}
+
+.git_btn_cust {
+    width: 167px;
 }
 
 .git_image_container img {
     width: 100%;
     height: 100%;
-    object-fit: none;
-    border-radius: 10px;
+    object-fit: contain;
+    /* border-radius: 10px; */
 }
 
 
 .footer-bottom {
-    border-top: 1px solid #5B7C99;
-    padding: 15px 0 14px;
+    /* border-top: 1px solid#004E9E;
+    padding: 15px 0 14px; */
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -800,10 +901,6 @@ body {
     flex-direction: column;
 }
 
-.explore_btn_service {
-    width: fit-content;
-}
-
 
 /* ---------------------------------------------
 
@@ -865,12 +962,12 @@ uiux page css style
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #5b7c9900;
+    background-color: #004E9E00;
 }
 
-.key_benefit_container .service-card img{
+.key_benefit_container .service-card img {
     border-radius: 16px;
-    box-shadow: 8px 11px 0px 1px #5B7C99;
+    box-shadow: 8px 11px 0px 1px#004E9E;
 }
 
 .key_benefit_container .service-card p {
@@ -894,7 +991,7 @@ uiux page css style
     align-items: flex-start;
     margin: 70px auto;
     padding: 50px 0;
-    background: #5B7C991A;
+    background: #004E9E1A;
 }
 
 .overview .section-heading {
@@ -997,7 +1094,7 @@ uiux page css style
     width: 412px;
     height: 412px;
     border-radius: 24px;
-    background-color: #5B7C99;
+    background-color: #004E9E;
     margin-bottom: 15px;
 }
 
@@ -1005,7 +1102,7 @@ uiux page css style
     width: 412px;
     height: 412px;
     border-radius: 24px 167px 24px 24px;
-    border: 1px solid #5B7C99;
+    border: 1px solid#004E9E;
     background-color: white;
     color: black;
     padding: 20px;
@@ -1126,7 +1223,7 @@ uiux page css style
     width: 270px;
     height: 91px;
     border-radius: 20px;
-    border: 1px solid #5B7C99;
+    border: 1px solid#004E9E;
     background-color: white;
     margin-right: 60px;
 }
@@ -1363,11 +1460,11 @@ uiux page css style
     }
 
     .navbar-expand-lg {
-        background-color: #5B7C99;
+        background-color: #004E9E;
     }
 
     .banner_top_container {
-        background-color: #5B7C99;
+        background-color: #004E9E;
         height: 200px;
     }
 
@@ -1408,7 +1505,7 @@ uiux page css style
     }
 
     .our_services {
-        background-color: #5B7C99;
+        background-color: #004E9E;
         padding: 60px 0 40px 0;
         border-radius: 30px 30px 0 0;
     }
@@ -1507,7 +1604,7 @@ uiux page css style
     }
 
     .why-choose-us-section {
-        background-color: #5B7C99;
+        background-color: #004E9E;
         color: black;
         border-radius: 30px 30px 0 0;
         padding: 1px 0;
@@ -1522,7 +1619,7 @@ uiux page css style
     }
 
     .why-choose-us-section .card {
-        background-color: #5B7C99;
+        background-color: #004E9E;
         border: none;
         height: 110px;
         border-radius: 10px;
@@ -1601,7 +1698,7 @@ uiux page css style
 
     .cust_partner_sec {
         height: 174px !important;
-        background-color: #5B7C99 !important;
+        background-color: #004E9E !important;
         position: relative !important;
         border-radius: 30px 30px 0 0 !important;
         margin-bottom: 40px;
@@ -1627,7 +1724,7 @@ uiux page css style
     }
 
     .get_in_touch {
-        background-color: #5B7C99;
+        background-color: #004E9E;
         height: 190px;
         padding: 40px;
         top: 0;
@@ -1652,7 +1749,7 @@ uiux page css style
     }
 
     .footer_navigation {
-        background-color: #5B7C99 !important;
+        background-color: #004E9E !important;
         border-radius: 30px 30px 0 0;
         height: 100% !important;
     }
@@ -2031,7 +2128,7 @@ uiux page css style
         line-height: 27px;
         padding: 22px 0;
         height: 71px;
-        background: #5B7C99;
+        background: #004E9E;
     }
 
     .sd_mob .container {
@@ -2113,7 +2210,7 @@ uiux page css style
     }
 
     .testimonial_mob {
-        background-color: #5B7C99 !important;
+        background-color: #004E9E !important;
         position: relative !important;
         border-radius: 30px 30px 0 0 !important;
         margin-bottom: 40px;
@@ -2126,7 +2223,7 @@ uiux page css style
         height: 70px;
         border-radius: 0;
         margin: 40px auto 0 auto;
-        background-color: #5b7c9900;
+        background-color: #004E9E00;
         box-shadow: none;
         display: flex;
         justify-content: space-between;
@@ -2217,7 +2314,7 @@ uiux page css style
 
     .clients_mob {
         height: 190px !important;
-        background-color: #5B7C99 !important;
+        background-color: #004E9E !important;
         position: relative !important;
         border-radius: 0 !important;
         bottom: 5px;
@@ -2253,7 +2350,7 @@ uiux page css style
     }
 
     .our_solutions {
-        background-color: #5B7C99;
+        background-color: #004E9E;
         padding: 30px 0 0 0;
         border-radius: 0;
     }
@@ -2322,7 +2419,7 @@ uiux page css style
     .ourwork_container .brand_img {
         width: 258px;
         height: 261px;
-        background-color: #5B7C99;
+        background-color: #004E9E;
         position: absolute;
         left: 92px;
     }
@@ -2394,7 +2491,7 @@ uiux page css style
         margin: 120px auto 50px auto !important;
         padding-top: 20px;
         height: 430px;
-        background: #5B7C991A;
+        background: #004E9E1A;
         border-radius: 30px 30px 0 0;
     }
 
@@ -2411,7 +2508,7 @@ uiux page css style
         width: 353px !important;
         height: 123px !important;
         border-radius: 0 !important;
-        background-color: #5B7C99;
+        background-color: #004E9E;
         margin: 0;
         display: block !important;
         position: absolute;
@@ -2455,8 +2552,8 @@ uiux page css style
         display: flex !important;
         flex-direction: column !important;
         justify-content: space-between !important;
-        box-shadow: 5px 6px 4px 0px #5B7C99 !important;
-        border: 1px solid #5B7C99 !important;
+        box-shadow: 5px 6px 4px 0px#004E9E !important;
+        border: 1px solid#004E9E !important;
         border-radius: 5px !important;
         position: relative;
     }
@@ -2645,7 +2742,7 @@ uiux page css style
     }
 
     .our_services {
-        background-color: #5B7C991A;
+        background-color: #004E9E1A;
         padding: 60px 0 40px 0;
     }
 
@@ -2779,7 +2876,7 @@ uiux page css style
     }
 
     .why-choose-us-section .card {
-        background-color: #5B7C99;
+        background-color: #004E9E;
         border: none;
         height: 110px;
         border-radius: 10px;
@@ -2893,7 +2990,7 @@ uiux page css style
     }
 
     .get_in_touch {
-        /* background-color: #5B7C99; */
+        /* background-color:#004E9E; */
         height: 240px;
         padding: 40px;
         top: 0;
@@ -3114,7 +3211,7 @@ uiux page css style
     width: 544px;
     height: 566px;
     border-radius: 10px;
-    background-color: #5B7C99;
+    background-color: #004E9E;
     margin: 0;
     position: relative;
 }
@@ -3176,11 +3273,11 @@ uiux page css style
     color: black;
     padding: 40px;
     margin: 20px;
-    box-shadow: 8px 11px 0px 1px #5B7C99;
+    box-shadow: 8px 11px 0px 1px#004E9E;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
-    border: 1px solid #5B7C99;
+    border: 1px solid#004E9E;
     justify-content: space-between;
 }
 
@@ -3227,7 +3324,7 @@ uiux page css style
 }
 
 .team20 {
-    background-color: #5B7C9980;
+    background-color: #004E9E80;
 }
 
 .team-card {
@@ -3295,7 +3392,7 @@ uiux page css style
     width: 480px;
     height: 300px;
     border-radius: 16px;
-    box-shadow: 4px 4px 30px 10px #5B7C9933;
+    box-shadow: 4px 4px 30px 10px#004E9E33;
 }
 
 .j-img img {
@@ -3310,7 +3407,7 @@ uiux page css style
     width: 480px;
     height: 300px;
     border-radius: 16px;
-    box-shadow: 4px 4px 30px 10px #5B7C9933;
+    box-shadow: 4px 4px 30px 10px#004E9E33;
 }
 
 .service-journey3 {
@@ -3318,7 +3415,7 @@ uiux page css style
     width: 476px;
     height: 371px;
     border-radius: 16px;
-    box-shadow: 4px 4px 30px 10px #5B7C9933;
+    box-shadow: 4px 4px 30px 10px#004E9E33;
 }
 
 .service-journey4 {
@@ -3326,7 +3423,7 @@ uiux page css style
     width: 481px;
     height: 320px;
     border-radius: 16px;
-    box-shadow: 4px 4px 30px 10px #5B7C9933;
+    box-shadow: 4px 4px 30px 10px#004E9E33;
 }
 
 .content-journey {
@@ -3392,7 +3489,7 @@ uiux page css style
     font-weight: 700;
     line-height: 96px;
     text-align: left;
-    color: #5B7C99;
+    color: #004E9E;
 }
 
 .content-journey2 h1 {
@@ -3400,7 +3497,7 @@ uiux page css style
     font-weight: 700;
     line-height: 96px;
     text-align: left;
-    color: #5B7C99;
+    color: #004E9E;
 }
 
 .content-journey3 h1 {
@@ -3408,7 +3505,7 @@ uiux page css style
     font-weight: 700;
     line-height: 96px;
     text-align: left;
-    color: #5B7C99;
+    color: #004E9E;
 }
 
 .content-journey4 h1 {
@@ -3416,7 +3513,7 @@ uiux page css style
     font-weight: 700;
     line-height: 96px;
     text-align: left;
-    color: #5B7C99;
+    color: #004E9E;
 }
 
 
@@ -3462,7 +3559,7 @@ uiux page css style
     width: 826px;
     /* margin: 10px; */
     display: flex;
-    background-color: #5B7C99;
+    background-color: #004E9E;
     /* margin-top: 48px; */
     flex-direction: column;
     justify-content: space-between;
@@ -3682,7 +3779,7 @@ uiux page css style
 }
 
 .accordion.active {
-    background-color: #5B7C9980;
+    background-color: #004E9E80;
     color: black;
     border: none;
     transition: background-color 0.4s;
