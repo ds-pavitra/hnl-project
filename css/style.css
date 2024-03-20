@@ -1033,7 +1033,7 @@ uiux page css style
 .overview .section-heading {
     margin: 0 auto;
     text-align: left;
-    width: 1242px;
+    width: 100%;
 }
 
 .overview .service-item.reverse {
@@ -1203,9 +1203,10 @@ uiux page css style
     padding: 71px;
 }
 
-.sd_desk .section-heading_container .service_title h2{
+.sd_desk .section-heading_container .service_title h2 {
     text-align: center;
 }
+
 .sd_desk .section-heading_container h5 {
     font-size: 24px;
     font-weight: 500;
@@ -1300,6 +1301,74 @@ uiux page css style
     width: 562px;
 }
 
+.aiml_desk .service-content h5 {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 48px;
+    text-align: left;
+    color: black;
+}
+
+.aiml_desk .service-image {
+    width: auto;
+    height: auto;
+    border-radius: none;
+    background-color: transparent;
+    margin: 0 50px 0 0;
+}
+
+
+/* our solutions   */
+
+.our_solutions {
+    width: 1216px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    color: black;
+    overflow-x: hidden;
+    margin: 250px auto 200px auto;
+    position: relative;
+}
+
+.our_solutions_img {
+    position: absolute;
+    right: -5px;
+}
+
+.our_solutions .service_title {
+    text-align: left;
+    width: fit-content;
+    margin-left: 100px;
+}
+
+.our_solutions .section-heading_container {
+    width: 625px;
+    height: 726px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid #004E9E;
+    border-radius: 20px;
+    padding: 70px 37px 70px 70px;
+}
+
+.our_solutions .section-heading_container p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 33.03px;
+    text-align: left;
+    color: #000;
+}
+
+.our_solutions .section-heading_container h5 {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+    text-align: left;
+    color: #000;
+}
+
 /* ------  technology stack  -----  */
 
 .tech_card {
@@ -1339,8 +1408,16 @@ uiux page css style
 /* ------------- technolgy stack ends -------  */
 
 /* --------------- who we serve -------  */
+
+.whoweserve_desk {
+    margin: 0 auto 70px auto;
+}
+
+.whoweserve_container .cust_positioning_banner {
+    width: 650px;
+}
+
 .whoweserve_container .h_banner_text {
-    width: 994px;
     color: black;
     font-weight: 600;
     font-size: 36px;
@@ -1348,18 +1425,18 @@ uiux page css style
 }
 
 .whoweserve_container .section-heading {
+    width: 100%;
     margin: 0 auto;
     text-align: center;
 }
 
 .whoweserve_container .service-item {
-    width: 1340px;
-    height: 691px;
-    border-radius: 12px;
-    background-color: #D9D9D9;
-    padding: 60px;
+    width: 100%;
+    /* height: 691px; */
+    padding: 20px;
     color: black;
-    margin-bottom: 20px;
+    margin-bottom: 150px;
+    align-items: unset;
 }
 
 .whoweserve_container .service-item h4 {
@@ -1367,13 +1444,12 @@ uiux page css style
     font-weight: 600;
     line-height: 60px;
     text-align: left;
-    margin-bottom: 20px;
+    margin-bottom: 52px;
 }
 
 .whoweserve_container .service-image {
-    background-color: white;
-    width: 489px;
-    height: 201px;
+    width: 100%;
+    height: 100%;
     border-radius: 0;
     margin: 0 50px 17px 0;
 }
@@ -1383,7 +1459,7 @@ uiux page css style
     font-weight: 400;
     line-height: 33px;
     text-align: left;
-    width: 587px;
+    /* width: 587px; */
     margin-bottom: 47px;
 }
 
@@ -1391,6 +1467,7 @@ uiux page css style
     font-size: 24px;
     line-height: 44px;
     margin-left: 28px;
+    margin-bottom: 20px;
 }
 
 .whoweserve_container .eclipse_icon {
@@ -1414,8 +1491,17 @@ uiux page css style
 /* --------- our work -----------  */
 
 .ourwork_container_banner {
-    background-color: #D9D9D980;
     height: 550px;
+}
+
+.ourwork_container {
+    display: flex;
+    align-items: flex-start;
+    margin: 70px auto;
+    padding: 40px 0;
+    background: transparent;
+    height: 100%;
+    width: 1260px;
 }
 
 .ourwork_container .cust_positioning_banner {
@@ -1429,6 +1515,7 @@ uiux page css style
     font-size: 60px;
     font-weight: 600;
     line-height: 110px;
+    color: #004E9E;
 }
 
 .ourwork_container .cust_positioning_banner p {
@@ -1441,7 +1528,7 @@ uiux page css style
 }
 
 .ourwork_container .service-item {
-    width: 1340px;
+    width: 100%;
     height: 661px;
     background-color: white;
     color: black;
@@ -1450,8 +1537,8 @@ uiux page css style
 }
 
 .ourwork_container .brand_img {
-    width: 796px;
-    height: 661px;
+    width: 716px;
+    height: 641px;
     background-color: #D9D9D9;
     position: absolute;
     left: 544px;
@@ -1462,9 +1549,9 @@ uiux page css style
     height: 511px;
     background: #FFFFFF;
     border: 1px solid #000000;
-    box-shadow: 0px 4px 4px 0px #00000040;
+    box-shadow: 10px 10px 0px 0px #004E9E;
     position: absolute;
-    top: 75px;
+    top: 60px;
     z-index: 1;
     padding: 36px 134px 36px 36px;
 }
