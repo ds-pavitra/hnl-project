@@ -29,7 +29,7 @@
 <body>
     <div id="wrapper">
         <!-- navigation starts -->
-        <div id="navigation">
+        <div id="navigation" class="navigation_desk">
             <nav class="navbar navbar-expand-lg bg-body-white">
                 <div class="container">
                     <a class="navbar-brand" href="/index.html">
@@ -91,7 +91,7 @@
                                                     Solution</a></li>
                                         </ul>
                                     </li>
-                                    <li class="dropdown-submenu">
+                                    <li>
                                         <a class="dropdown-item dropdown-toggle test submenu-active"
                                             href="/ourwork.html">Our
                                             Work</a>
@@ -105,13 +105,117 @@
                             </li>
                         </ul>
                         <!-- <form class="d-flex" role="contactus">
-                          <input class="form-control me-2" type="contactus" placeholder="contactus" aria-label="contactus">
-                        </form> -->
+                      <input class="form-control me-2" type="contactus" placeholder="contactus" aria-label="contactus">
+                    </form> -->
                         <button class="btn header_contactus_btn" type="button"> Contact Us</button>
                     </div>
                 </div>
             </nav>
         </div>
+
+
+        <!-- navigation_mobile_tab   -->
+
+        <div id="navigation" class="navigation_mob">
+            <nav class="navbar navbar-expand-lg bg-body-white">
+                <div class="container">
+                    <a class="navbar-brand" href="/index.html">
+                        <img class="header_logo" src="./img/HL-1.png">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2" style="margin-right: 60px !important;">
+
+                            <li class="nav-item">
+                                <div class="d-flex justify-content-between" style="width: 430px;">
+                                    <p style="font-size: 28px;line-height: 32px;color: #004E9E;font-weight: 500;">Menu
+                                    </p>
+                                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                        aria-expanded="false" aria-label="Toggle navigation">
+                                        <img src="./img/close_vector.png"
+                                            style="width: 24px;height: 24px;position: absolute;top: 50px;right: 50px;">
+                                    </button>
+                                </div>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="/index.html"
+                                    style="font-size: 16px;">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="/whoweare.html"
+                                    style="font-size: 16px;">Who we
+                                    are</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false" style="font-size: 16px;">
+                                    What We Do
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end cust-dropdown-menu">
+                                    <li class="dropdown-submenu active dropend">
+                                        <a class="dropdown-item dropdown-toggle test submenu-active" tabindex="-1"
+                                            href="#">Services</a>
+                                        <ul class="dropdown-menu dropdown-menu-services cust-dropdown-menu-services"
+                                            style="display: none;">
+                                            <li><a class="dropdown-item dropdown-item-custom" tabindex="-1"
+                                                    href="/uiux.html">UI/UX</a></li>
+                                            <li><a class="dropdown-item dropdown-item-custom" tabindex="-1"
+                                                    href="/software-development.html">Software
+                                                    Development</a></li>
+                                            <li><a class="dropdown-item dropdown-item-custom" tabindex="-1"
+                                                    href="/mobile-development.html">Mobile
+                                                    Development</a></li>
+                                            <li><a class="dropdown-item dropdown-item-custom" tabindex="-1"
+                                                    href="/digital-marketing.html">Digital
+                                                    Marketing</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu dropend">
+                                        <a class="dropdown-item dropdown-toggle test submenu-active"
+                                            href="#">Solutions</a>
+                                        <ul class="dropdown-menu dropdown-menu-solutions cust-dropdown-menu-solutions">
+                                            <li><a class="dropdown-item dropdown-item-custom" href="/aiml.html">AI/ML
+                                                    Solution</a></li>
+                                            <li><a class="dropdown-item dropdown-item-custom"
+                                                    href="/smartcity-solutions.html">Smart City
+                                                    Solution</a></li>
+                                            <li><a class="dropdown-item dropdown-item-custom"
+                                                    href="/fintech-solutions.html">Fintech
+                                                    Solution</a></li>
+                                            <li><a class="dropdown-item dropdown-item-custom"
+                                                    href="/networking-solutions.html">Networking
+                                                    Solution</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item dropdown-toggle test submenu-active"
+                                            href="/ourwork.html">Our
+                                            Work</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="/whoweserve.html" style="font-size: 16px;">Who we
+                                    serve</a>
+                            </li>
+                        </ul>
+                        <!-- <form class="d-flex" role="contactus">
+                      <input class="form-control me-2" type="contactus" placeholder="contactus" aria-label="contactus">
+                    </form> -->
+                        <a href="#" class="nav_info">info@harryandliu.com</a>
+                        <button class="btn header_contactus_btn" type="button"> Contact Us</button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- navigation ends -->
 
 
         <section>
@@ -507,7 +611,7 @@
                                 </div>
                                 <div class="col-sm-6 col-md-6 col-lg-3 m-b-40" data-aos="fade-up"
                                     data-aos-duration="2000">
-                                    <div class="widget-item">
+                                    <div class="widget-item widget-item-3">
                                         <h4 class="widget-title">QUICK
                                             LINKS</h4>
                                         <ul class="widget-post" style="padding-left: 0;">
@@ -521,8 +625,8 @@
                                 </div>
                                 <div class="col-sm-6 col-md-6 col-lg-3 m-b-40" data-aos="fade-up"
                                     data-aos-duration="2500">
-                                    <div class="widget-item">
-                                        <h4 class="widget-title widget-item-2">CONTACT
+                                    <div class="widget-item widget-item-2">
+                                        <h4 class="widget-title">CONTACT
                                             US</h4>
 
                                         <ul class="widget-post" style="padding-left: 0;">
@@ -721,15 +825,17 @@
             });
 
 
-            const mediaQuery = window.matchMedia('(max-width: 768px)');
+            const mediaQuery = window.matchMedia('(min-width: 768px) and (max-width: 992px)');
 
             function updateSwiperConfig() {
                 if (mediaQuery.matches) {
                     partners.params.slidesPerView = 4;
                     clients.params.slidesPerView = 4;
+                    teams.params.slidesPerView = 4;
                 } else {
                     partners.params.slidesPerView = 6;
-                    clients.params.slidesPerView = 6;
+                    teams.params.slidesPerView = 3;
+                    clients.params.slidesPerView = 5;
                 }
                 partners.update();
             }
