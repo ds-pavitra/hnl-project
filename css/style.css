@@ -4328,6 +4328,7 @@ uiux page css style
         height: 192px;
         margin: 35px 0 25px 0;
     }
+
     .whoweare_teams p {
         color: white;
         font-size: 20px;
@@ -4338,16 +4339,316 @@ uiux page css style
         width: 146px;
     }
 
+    .contact_banner img {
+        display: none;
+    }
+
+    .contact_banner {
+        width: auto;
+    }
+
+    .contact_banner .h_banner_text {
+        text-align: center;
+    }
+
+    .contain {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        margin-top: 0;
+        margin-bottom: 0;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .contact-form {
+        width: 500px;
+        padding: 40px;
+        border: 1px solid #004E9E;
+        border-radius: 20px;
+        margin: 0 0 100px 0;
+    }
+
+    .accodcon {
+        display: flex;
+        justify-content: space-between;
+        width: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .overlay-text h1 {
+        left: 50%;
+        text-align: center;
+        font-size: 32px;
+        line-height: 48px;
+        width: 266px;
+    }
+
+    .overlay-text p {
+        left: 50%;
+        text-align: center;
+        top: 50px;
+    }
+
+    .image-container {
+        position: relative;
+        width: 739px;
+        height: 792px;
+        top: 38px;
+        right: 0;
+    }
+
+    .image-container img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        object-fit: contain;
+        bottom: 254px;
+    }
+
+    .custom-accord {
+        margin: 10px;
+        display: flex;
+        margin-top: -550px;
+    }
+
+    .accordion {
+        width: 700px;
+    }
+
+    .contact_banner_top_container {
+        background-color: white;
+        height: 315px;
+        margin-bottom: 0;
+    }
+
+    .uiux_image_bnr {
+        display: none;
+    }
+
+    .key_benefit_container {
+        width: auto;
+        margin: 0 auto 70px auto;
+    }
+
+    .section-heading_container {
+        width: 439px;
+        height: 336px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        border: 1px solid #004E9E;
+        border-radius: 20px;
+        padding: 0 0 0 114px;
+    }
+
+    .keybenefit_img {
+        width: 319px;
+        height: 222px;
+    }
+
+    .keybenefit_img img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .key_benefit_container .service_title h2 {
+        line-height: 27px;
+        padding: 0 0 0 57px;
+    }
 
 
+    .key_benefit_container .banner_top_container {
+        background-color: white;
+        height: 315px;
+        margin-bottom: 0px;
+    }
+
+    .key_benefit_container .section-heading_container p {
+        font-size: 20px;
+    }
+
+    .project_gallery .service-card {
+        width: 338px;
+        height: 477px;
+        padding: 30px;
+    }
+
+    .project_gallery .cust-service-card {
+        width: 278px !important;
+        height: 233px !important;
+        margin: 0 !important;
+    }
+
+    .project_gallery .service-card h3 {
+        font-size: 20px;
+        line-height: 30px;
+        margin: 30px 0 10px 0;
+    }
+
+    .project_gallery .service-card p {
+        font-size: 18px;
+        line-height: 27px;
+        margin: 0;
+        width: auto;
+        height: auto;
+    }
+
+    .overview {
+        height: auto;
+        border-radius: 0;
+        background: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .overview .service-item {
+        flex-direction: column;
+    }
+
+    .sd_desk .service-image {
+        width: 287px;
+        height: 233px;
+        margin: 0 0 58px 0;
+    }
+
+    .overview .service_title h2 {
+        text-align: center;
+    }
+
+    .overview .service-content p {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .overview_info h5 {
+        text-align: center;
+    }
+
+    .sd_desk .feature_card_container {
+        width: 365px;
+        height: 297px;
+        border-radius: 14.38px;
+        background-color: #004E9E;
+        margin-bottom: 40px;
+    }
+
+    .sd_desk .feature_cards {
+        width: 365px;
+        height: 297px;
+        border-radius: 14.38px 100.05px 14.38px 14.38px;
+        border: 1px solid#004E9E;
+        background-color: white;
+        color: black;
+        padding: 12px;
+    }
+
+    .sd_desk .f_card_icon {
+        width: 38.34px;
+        height: 38.34px;
+        margin: 20px;
+    }
+
+    .sd_desk .f_title {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 30px;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+
+    .sd_desk .f_description {
+        font-size: 11px;
+        font-weight: 400;
+        line-height: 21px;
+        text-align: left;
+    }
+
+    .sd_desk .section-heading_container {
+        padding: 50px 20px 50px 82px !important;
+        width: 497px !important;
+        height: 645px !important;
+    }
+
+    .sd_desk .section-heading_container .service_title h2 {
+        text-align: center;
+        font-size: 32px;
+        line-height: 48px;
+        padding: 0;
+    }
+
+    .sd_desk .section-heading_container h5 {
+        font-size: 20px;
+    }
+
+    .sd_desk .section-heading_container p {
+        font-size: 18px;
+        line-height: 27px;
+    }
+
+    .sd_desk .keybenefit_img {
+        width: 282px;
+        height: 270px;
+    }
+
+    .md_desk .service-image {
+        width: 352px;
+        height: 226px;
+        margin: 0 0 50px 0;
+    }
+
+    .feature_card_container,
+    .feature_cards {
+        width: 368px;
+        height: 380px;
+    }
+
+    .feature_cards{
+        padding: 20px;
+    }
 
 
+    .f_card_icon {
+        width: 109px;
+        height: 109px;
+        margin: 0;
+    }
+
+    .f_title {
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 36px;
+        text-align: left;
+        margin-bottom: 14px;
+    }
+
+    .f_description {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 30px;
+        text-align: left;
+    }
+
+    .sd_mob {
+        margin-bottom: 90px !important;
+    }
 
 
+    .dm_desk .service-image {
+        width: 330px;
+        height: 331px;
+        margin: 0 0 50px 0;
+    }
 
-
-
-
+    .dm_desk .f_card_icon {
+        width: 64px;
+        height: 64px;
+        margin: 0 0 30px 0;
+    }
 
 
 
@@ -4373,6 +4674,21 @@ uiux page css style
 
     .container .row .min-40 {
         margin: 0px 0px;
+    }
+
+    .section-heading_container {
+        width: 439px;
+        height: 336px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        border: 1px solid #004E9E;
+        border-radius: 20px;
+        padding: 20px 0 0 64px;
+    }
+
+    .uiux_top_banner_container {
+        margin-bottom: 0px;
     }
 
     @keyframes fadeInDown {
