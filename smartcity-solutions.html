@@ -243,7 +243,7 @@
             <img src="./img/Vector-bg3.png" style="height: 950px;">
         </div>
 
-        <section class="overview services-section d-flex flex-column aiml_desk">
+        <section class="overview services-section d-flex flex-column aiml_desk sc_overview">
             <div class="section-heading">
                 <div class="service_title">
                     <h2>OVERVIEW</h2>
@@ -268,7 +268,7 @@
         <!-- our solutions starts   -->
 
         <div>
-            <section class="container cards-services-section d-flex flex-row-reverse our_solutions">
+            <section class="container cards-services-section d-flex flex-row-reverse our_solutions sc_solutions">
                 <div class="section-heading_container" style="height:737px;">
                     <div class="service_title">
                         <h2>OUR SOLUTIONS</h2>
@@ -281,7 +281,7 @@
                             and connectivity for diverse applications.
                         </p>
                     </div>
-                    <div style="width: 485px;">
+                    <div class="sol_desc2" style="width: 485px;">
                         <h5>Electric Vehicle charging Solution</h5>
                         <p>
                             As the world embraces sustainable transportation, we offer Electric Vehicle Charging
@@ -464,16 +464,16 @@
                                             <ul class="widget-list" style="padding-left: 0;">
                                                 <li><a href="#">What we
                                                         do</a></li>
-                                                <li><a href="#">Who we
+                                                <li><a href="./whoweserve.html">Who we
                                                         serve</a></li>
-                                                <li><a href="#">What we
+                                                <li><a href="./whoweare.html">What we
                                                         are</a></li>
                                             </ul>
                                         </div>
                                     </div>
                                     <div class="col-sm-6 col-md-6 col-lg-3 m-b-40" data-aos="fade-up"
                                         data-aos-duration="2000">
-                                        <div class="widget-item">
+                                        <div class="widget-item widget-item-3">
                                             <h4 class="widget-title">QUICK
                                                 LINKS</h4>
                                             <ul class="widget-post" style="padding-left: 0;">
@@ -481,14 +481,14 @@
                                                 <li><a href="#">Solutions</a></li>
                                                 <li><a href="#">Application</a></li>
                                                 <li><a href="#">Product</a></li>
-                                                <li><a href="#">Contact</a></li>
+                                                <li><a href="./contact.html">Contact</a></li>
                                             </ul>
                                         </div>
                                     </div>
                                     <div class="col-sm-6 col-md-6 col-lg-3 m-b-40" data-aos="fade-up"
                                         data-aos-duration="2500">
-                                        <div class="widget-item">
-                                            <h4 class="widget-title widget-item-2">CONTACT
+                                        <div class="widget-item widget-item-2">
+                                            <h4 class="widget-title">CONTACT
                                                 US</h4>
 
                                             <ul class="widget-post" style="padding-left: 0;">
@@ -508,7 +508,7 @@
                                                             info@harryandliu.com
                                                         </div>
                                                     </a></li>
-                                                <li><a href="#" class="d-flex">
+                                                <li class="ho_1"><a href="#" class="d-flex">
                                                         <div>
                                                             <img src="./img/location-dark.png" alt="Image-HasTech">
                                                         </div>
@@ -528,7 +528,7 @@
                                                         </div>
                                                     </a></li>
 
-                                                <li><a href="#" class="d-flex">
+                                                <li class="ho_1"><a href="#" class="d-flex">
                                                         <div>
                                                             <img src="./img/location-dark.png" alt="Image-HasTech">
                                                         </div>
@@ -675,7 +675,7 @@
             });
 
 
-            const mediaQuery = window.matchMedia('(max-width: 768px)');
+            const mediaQuery = window.matchMedia('(min-width: 359px) and (max-width: 992px) ');
 
             function updateSwiperConfig() {
                 if (mediaQuery.matches) {
