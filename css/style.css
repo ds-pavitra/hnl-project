@@ -605,6 +605,12 @@ body {
     border-radius: 15px;
 }
 
+.card_img_div img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
 .card img {
     width: 100%;
     height: auto;
@@ -687,6 +693,7 @@ body {
 .testimonial-slider {
     position: relative;
     width: 1000px;
+    height: 232px;
     margin: 0 auto;
     overflow-x: hidden;
 }
@@ -942,6 +949,29 @@ uiux page css style
     margin: 0;
 }
 
+.uiux_top_banner_container .cust_positioning_banner p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    color: #000;
+    margin-bottom: 30px;
+}
+
+.uiux_top_banner_container .cust_positioning_banner a {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid;
+    background-color: #000;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: center;
+    text-decoration: none;
+
+}
+
 .project_gallery .service-card {
     height: auto;
 }
@@ -952,7 +982,7 @@ uiux page css style
     justify-content: end;
     align-items: center;
     color: black;
-    overflow-x: hidden;
+    overflow-x: visible;
     margin: 140px auto 70px auto;
     position: relative;
 }
@@ -1000,7 +1030,7 @@ uiux page css style
     height: 108px;
 }
 
-.section-heading_container {
+/* .section-heading_container {
     width: 550px;
     height: 508px;
     display: flex;
@@ -1009,6 +1039,39 @@ uiux page css style
     border: 1px solid #004E9E;
     border-radius: 20px;
     padding: 0 0 0 114px;
+} */
+
+.section-heading_container {
+    width: 610px;
+    height: 508px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* border: 1px solid #004E9E; */
+    border-radius: 20px;
+    padding: 0 0 0 50px;
+}
+
+.service_title h2 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #004E9E;
+    padding: 0;
+}
+
+.key_benefit_container h3 {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 54px;
+    text-align: left;
+}
+
+.key_benefit_container p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 40px;
+    text-align: left;
 }
 
 .section-heading_container p {
@@ -1017,6 +1080,16 @@ uiux page css style
     line-height: 35.7px;
     text-align: left;
     color: #000;
+}
+
+.keybenefit_img {
+    position: absolute;
+    left: 0;
+    width: 645px;
+}
+
+.keybenefit_img img {
+    width: 100%;
 }
 
 
@@ -2349,6 +2422,48 @@ uiux page css style
     margin: 0 134px;
 }
 
+.process-slide {
+    width: 565px;
+    height: 204px;
+    border-right: 1px solid #00000033;
+    padding: 0 50px;
+    display: flex;
+}
+
+.process-slide h5,
+.process-slide h4 {
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 54px;
+    text-align: left;
+    color: #000;
+}
+
+.process-slide p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    color: #000;
+}
+
+.nums{
+    margin-right: 40px;
+}
+
+.swiper-button-prev-process{
+    top: 125%;
+    left: 47%;
+}
+
+.swiper-button-next-process{
+    top: 125%;
+    right: 47%;
+}
+
+.process-slider{
+    overflow: hidden;
+}
 
 @media only screen and (min-width: 359px) and (max-width: 767px) {
     body {
