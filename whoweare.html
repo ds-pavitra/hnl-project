@@ -285,7 +285,7 @@
             </div>
         </section>
 
-        <section>
+        <section class="vision_card_container">
             <div id="container3">
 
                 <div id="card1">
@@ -829,23 +829,26 @@
                 pagination: false,
             });
 
-
-            const mediaQuery = window.matchMedia('(min-width: 359px) and (max-width: 992px) ');
+            const breakpoints = [
+                { query: '(min-width: 359px) and (max-width: 767px)', slides: { partners: 4, clients: 4, teams: 6 } },
+                { query: '(min-width: 768px) and (max-width: 992px)', slides: { partners: 4, clients: 4, teams: 4 } }
+            ];
 
             function updateSwiperConfig() {
-                if (mediaQuery.matches) {
-                    partners.params.slidesPerView = 4;
-                    clients.params.slidesPerView = 4;
-                    teams.params.slidesPerView = 5;
-                } else {
-                    partners.params.slidesPerView = 6;
-                    teams.params.slidesPerView = 3;
-                    clients.params.slidesPerView = 5;
+                for (const breakpoint of breakpoints) {
+                    if (window.matchMedia(breakpoint.query).matches) {
+                        partners.params.slidesPerView = breakpoint.slides.partners;
+                        clients.params.slidesPerView = breakpoint.slides.clients;
+                        teams.params.slidesPerView = breakpoint.slides.teams;
+                        partners.update();
+                        break; // Exit loop after first match
+                    }
                 }
-                partners.update();
             }
+
             updateSwiperConfig();
-            mediaQuery.addListener(updateSwiperConfig);
+            window.addEventListener('resize', updateSwiperConfig);
+
 
             var technology = new Swiper('.technology-slider', {
                 slidesPerView: 4,
