@@ -53,9 +53,13 @@ body {
     line-height: 54px;
 }
 
-.navbar-nav .nav-link.hover,
+.navbar-nav .nav-link:hover,
 .navbar-nav .nav-link.show {
     color: #004E9E !important;
+}
+
+.nav-item {
+    padding: 0 18px;
 }
 
 .nav-link,
@@ -563,7 +567,7 @@ body {
 
 .keySolution_card .service-item {
     width: 1180px;
-    height: 451px;
+    height: 400px;
     display: flex;
     align-items: center;
 }
@@ -2292,6 +2296,60 @@ uiux page css style
     display: flex !important;
 }
 
+.privacy_policy_container {
+    width: 100vw;
+    color: #000;
+    margin: 68px auto 100px auto;
+}
+
+.privacy_policy_container h3 {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 48px;
+    text-align: left;
+    margin-bottom: 24px;
+}
+
+.privacy_policy_container h4 {
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 48px;
+    text-align: left;
+    margin-bottom: 24px;
+}
+
+.privacy_policy_container p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    margin-bottom: 24px;
+}
+
+.keySolution_card .img1 {
+    width: 504px;
+    height: auto;
+}
+
+.keySolution_card .img2 {
+    width: 234px;
+    height: auto;
+    margin: 0 134px;
+}
+
+.keySolution_card .img3 {
+    width: 343px;
+    height: auto;
+    margin: 0 80px;
+}
+
+.keySolution_card .img4 {
+    width: 235px;
+    height: auto;
+    margin: 0 134px;
+}
+
+
 @media only screen and (min-width: 359px) and (max-width: 767px) {
     body {
         overflow-x: visible;
@@ -2640,25 +2698,25 @@ uiux page css style
     .keySolution_card .img1 {
         width: 235px;
         height: auto;
-        margin-bottom: 16px;
+        margin: 0 0 16px 0;
     }
 
     .keySolution_card .img2 {
         width: 179px;
         height: auto;
-        margin-bottom: 16px;
+        margin: 0 0 16px 0;
     }
 
     .keySolution_card .img3 {
         width: 303px;
         height: auto;
-        margin-bottom: 16px;
+        margin: 0 0 16px 0;
     }
 
     .keySolution_card .img4 {
         width: 167px;
         height: auto;
-        margin-bottom: 16px;
+        margin: 0 0 16px 0;
     }
 
     .keySolution_card .service-content h4 {
@@ -4337,19 +4395,19 @@ uiux page css style
     .keySolution_card .img2 {
         width: 150px;
         height: 145px;
-        margin-right: 70px;
+        margin: 0 70px 0 0;
     }
 
     .keySolution_card .img3 {
         width: 220px;
         height: 125px;
-        margin-right: 20px;
+        margin: 0 20px 0 0;
     }
 
     .keySolution_card .img4 {
         width: 151px;
         height: 157px;
-        margin-right: 50px;
+        margin: 0 50px 0 0;
     }
 
     .keySolution_card .service-content h4 {
@@ -5640,19 +5698,19 @@ uiux page css style
     .keySolution_card .img2 {
         width: 150px;
         height: 145px;
-        margin-right: 70px;
+        margin: 0 70px 0 0;
     }
 
     .keySolution_card .img3 {
         width: 220px;
         height: 125px;
-        margin-right: 20px;
+        margin: 0 20px 0 0;
     }
 
     .keySolution_card .img4 {
         width: 151px;
         height: 157px;
-        margin-right: 50px;
+        margin: 0 50px 0 0;
     }
 
     .keySolution_card .service-content h4 {
@@ -5679,6 +5737,10 @@ uiux page css style
 
     .testimonial-section h2 {
         font-size: 28px;
+    }
+
+    .nav-item {
+        padding: 0 9px;
     }
 
     .section-heading {

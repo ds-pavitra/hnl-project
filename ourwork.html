@@ -52,7 +52,7 @@
                                     style="font-size: 16px;">Who we
                                     are</a>
                             </li>
-                            <li class="nav-item dropdown">
+                            <li class="nav-item dropdown" id="what-we-do-dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                     aria-expanded="false" style="font-size: 16px;">
                                     What We Do
@@ -688,6 +688,19 @@
     Client's Activation
 -----------------------------------*/
         document.addEventListener('DOMContentLoaded', function () {
+
+            var dropdown = document.getElementById("what-we-do-dropdown");
+            var dropdownMenu = dropdown.querySelector(".dropdown-menu");
+
+            // Show dropdown menu on mouseover
+            dropdown.addEventListener("mouseover", function() {
+                dropdownMenu.classList.add("show");
+            });
+
+            // Hide dropdown menu on mouseout
+            dropdown.addEventListener("mouseout", function() {
+                dropdownMenu.classList.remove("show");
+            });
 
             // Use jQuery to toggle the 'focus' class on submenu item click
             $('.dropdown-menu .submenu-active').on('click', function () {
