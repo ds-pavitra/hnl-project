@@ -1,287 +1,372 @@
 <!DOCTYPE html>
 <html lang="zxx">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="shortcut icon" href="img/favicon.ico" />
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="shortcut icon" href="img/favicon.ico" />
 
-    <!-- bootstrap grid css -->
-    <link rel="stylesheet" href="css/plugins/bootstrap-grid.css">
-    <!-- font awesome css -->
-    <link rel="stylesheet" href="css/plugins/font-awesome.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- swiper css -->
-    <link rel="stylesheet" href="css/plugins/swiper.min.css">
-    <!-- itsulu css -->
-    <link rel="stylesheet" href="css/style.css">
-    <title>Harry & Liu</title>
-    <!-- fontawesome icons  -->
-    <script src="https://kit.fontawesome.com/f01ac4bad9.js" crossorigin="anonymous"></script>
-    <!-- Include GSAP library -->
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.9.1/dist/gsap.min.js"></script>
+        <!-- bootstrap grid css -->
+        <link rel="stylesheet" href="css/plugins/bootstrap-grid.css">
+        <!-- font awesome css -->
+        <link rel="stylesheet" href="css/plugins/font-awesome.min.css">
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+            rel="stylesheet">
+        <!-- swiper css -->
+        <link rel="stylesheet" href="css/plugins/swiper.min.css">
+        <!-- itsulu css -->
+        <link rel="stylesheet" href="css/style.css">
+        <title>Harry & Liu</title>
+        <!-- fontawesome icons  -->
+        <script src="https://kit.fontawesome.com/f01ac4bad9.js"
+            crossorigin="anonymous"></script>
+        <!-- Include GSAP library -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/gsap@3.9.1/dist/gsap.min.js"></script>
 
-    <!-- Include ScrollTrigger plugin -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/ScrollTrigger.min.js"></script>
+        <!-- Include ScrollTrigger plugin -->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/ScrollTrigger.min.js"></script>
 
-</head>
+    </head>
 
-<body>
-    <div id="wrapper">
-        <!-- navigation starts -->
-        <div id="navigation" class="navigation_desk">
-            <nav class="navbar navbar-expand-lg bg-body-white">
-                <div class="container">
-                    <a class="navbar-brand" href="./index.html">
-                        <img class="header_logo" src="./img/HL-1.png">
-                    </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2" style="margin-right: 60px !important;">
-                            <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="./index.html"
-                                    style="font-size: 16px;">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="./whoweare.html"
-                                    style="font-size: 16px;">Who we
-                                    are</a>
-                            </li>
-                            <li class="nav-item dropdown" id="what-we-do-dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false" style="font-size: 16px;">
-                                    What We Do
-                                </a>
-                                <ul class="dropdown-menu dropdown-menu-end cust-dropdown-menu">
-                                    <li class="dropdown-submenu active dropend">
-                                        <a class="dropdown-item dropdown-toggle test submenu-active focus" tabindex="-1"
-                                            href="#">Services</a>
-                                        <ul class="dropdown-menu dropdown-menu-services cust-dropdown-menu-services">
-                                            <li><a class="dropdown-item dropdown-item-custom" tabindex="-1"
-                                                    href="./uiux.html">UI/UX</a></li>
-                                            <li><a class="dropdown-item dropdown-item-custom" tabindex="-1"
-                                                    href="./software-development.html">Software
-                                                    Development</a></li>
-                                            <li><a class="dropdown-item dropdown-item-custom" tabindex="-1"
-                                                    href="./mobile-development.html">Mobile
-                                                    Development</a></li>
-                                            <li><a class="dropdown-item dropdown-item-custom" tabindex="-1"
-                                                    href="./digital-marketing.html">Digital
-                                                    Marketing</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="dropdown-submenu dropend">
-                                        <a class="dropdown-item dropdown-toggle test submenu-active"
-                                            href="#">Solutions</a>
-                                        <ul class="dropdown-menu dropdown-menu-solutions cust-dropdown-menu-solutions">
-                                            <li><a class="dropdown-item dropdown-item-custom" href="./aiml.html">AI/ML
-                                                    Solution</a></li>
-                                            <li><a class="dropdown-item dropdown-item-custom"
-                                                    href="./smartcity-solutions.html">Smart City
-                                                    Solution</a></li>
-                                            <li><a class="dropdown-item dropdown-item-custom"
-                                                    href="./fintech-solutions.html">Fintech
-                                                    Solution</a></li>
-                                            <li><a class="dropdown-item dropdown-item-custom"
-                                                    href="./networking-solutions.html">Networking
-                                                    Solution</a></li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item dropdown-toggle test submenu-active"
-                                            href="./ourwork.html">Our
-                                            Work</a>
-                                    </li>
-                                </ul>
-                            </li>
+    <body>
+        <div id="wrapper">
+            <!-- navigation starts -->
+            <div id="navigation" class="navigation_desk">
+                <nav class="navbar navbar-expand-lg bg-body-white">
+                    <div class="container">
+                        <a class="navbar-brand" href="./index.html">
+                            <img class="header_logo" src="./img/HL-1.png">
+                        </a>
+                        <button class="navbar-toggler" type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent"
+                            aria-controls="navbarSupportedContent"
+                            aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div
+                            class="collapse navbar-collapse justify-content-end"
+                            id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2"
+                                style="margin-right: 60px !important;">
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page"
+                                        href="./index.html"
+                                        style="font-size: 16px;">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page"
+                                        href="./whoweare.html"
+                                        style="font-size: 16px;">Who we
+                                        are</a>
+                                </li>
+                                <li class="nav-item dropdown"
+                                    id="what-we-do-dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#"
+                                        role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false"
+                                        style="font-size: 16px;">
+                                        What We Do
+                                    </a>
+                                    <ul
+                                        class="dropdown-menu dropdown-menu-end cust-dropdown-menu">
+                                        <li
+                                            class="dropdown-submenu active dropend">
+                                            <a
+                                                class="dropdown-item dropdown-toggle test submenu-active focus"
+                                                tabindex="-1"
+                                                href="#">Services</a>
+                                            <ul
+                                                class="dropdown-menu dropdown-menu-services cust-dropdown-menu-services">
+                                                <li><a
+                                                        class="dropdown-item dropdown-item-custom"
+                                                        tabindex="-1"
+                                                        href="./uiux.html">UI/UX</a></li>
+                                                <li><a
+                                                        class="dropdown-item dropdown-item-custom"
+                                                        tabindex="-1"
+                                                        href="./software-development.html">Software
+                                                        Development</a></li>
+                                                <li><a
+                                                        class="dropdown-item dropdown-item-custom"
+                                                        tabindex="-1"
+                                                        href="./mobile-development.html">Mobile
+                                                        Development</a></li>
+                                                <li><a
+                                                        class="dropdown-item dropdown-item-custom"
+                                                        tabindex="-1"
+                                                        href="./digital-marketing.html">Digital
+                                                        Marketing</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown-submenu dropend">
+                                            <a
+                                                class="dropdown-item dropdown-toggle test submenu-active"
+                                                href="#">Solutions</a>
+                                            <ul
+                                                class="dropdown-menu dropdown-menu-solutions cust-dropdown-menu-solutions">
+                                                <li><a
+                                                        class="dropdown-item dropdown-item-custom"
+                                                        href="./aiml.html">AI/ML
+                                                        Solution</a></li>
+                                                <li><a
+                                                        class="dropdown-item dropdown-item-custom"
+                                                        href="./smartcity-solutions.html">Smart
+                                                        City
+                                                        Solution</a></li>
+                                                <li><a
+                                                        class="dropdown-item dropdown-item-custom"
+                                                        href="./fintech-solutions.html">Fintech
+                                                        Solution</a></li>
+                                                <li><a
+                                                        class="dropdown-item dropdown-item-custom"
+                                                        href="./networking-solutions.html">Networking
+                                                        Solution</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a
+                                                class="dropdown-item dropdown-toggle test submenu-active"
+                                                href="./ourwork.html">Our
+                                                Work</a>
+                                        </li>
+                                    </ul>
+                                </li>
 
-                            <li class="nav-item">
-                                <a class="nav-link" href="./whoweserve.html" style="font-size: 16px;">Who we
-                                    serve</a>
-                            </li>
-                        </ul>
-                        <!-- <form class="d-flex" role="contactus">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./whoweserve.html"
+                                        style="font-size: 16px;">Who we
+                                        serve</a>
+                                </li>
+                            </ul>
+                            <!-- <form class="d-flex" role="contactus">
                       <input class="form-control me-2" type="contactus" placeholder="contactus" aria-label="contactus">
                     </form> -->
-                        <a href="./contact.html" class="btn header_contactus_btn"> Contact Us</a>
+                            <a href="./contact.html"
+                                class="btn header_contactus_btn"> Contact Us</a>
+                        </div>
                     </div>
-                </div>
-            </nav>
-        </div>
+                </nav>
+            </div>
 
+            <!-- navigation_mobile_tab   -->
 
-        <!-- navigation_mobile_tab   -->
+            <div id="navigation" class="navigation_mob">
+                <nav class="navbar navbar-expand-lg bg-body-white">
+                    <div class="container">
+                        <a class="navbar-brand" href="./index.html">
+                            <img class="header_logo" src="./img/HL-1.png">
+                        </a>
+                        <button class="navbar-toggler" type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent"
+                            aria-controls="navbarSupportedContent"
+                            aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div
+                            class="collapse navbar-collapse justify-content-end"
+                            id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2"
+                                style="margin-right: 60px !important;">
 
-        <div id="navigation" class="navigation_mob">
-            <nav class="navbar navbar-expand-lg bg-body-white">
-                <div class="container">
-                    <a class="navbar-brand" href="./index.html">
-                        <img class="header_logo" src="./img/HL-1.png">
-                    </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2" style="margin-right: 60px !important;">
+                                <li class="nav-item">
+                                    <div class="d-flex justify-content-between"
+                                        style="width: 430px;">
+                                        <p
+                                            style="font-size: 28px;line-height: 32px;color: #004E9E;font-weight: 500;">Menu
+                                        </p>
+                                        <button class="navbar-toggler"
+                                            type="button"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#navbarSupportedContent"
+                                            aria-controls="navbarSupportedContent"
+                                            aria-expanded="false"
+                                            aria-label="Toggle navigation">
+                                            <img src="./img/close_vector.png"
+                                                style="width: 24px;height: 24px;position: absolute;top: 50px;right: 50px;">
+                                        </button>
+                                    </div>
+                                </li>
 
-                            <li class="nav-item">
-                                <div class="d-flex justify-content-between" style="width: 430px;">
-                                    <p style="font-size: 28px;line-height: 32px;color: #004E9E;font-weight: 500;">Menu
-                                    </p>
-                                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                                        aria-expanded="false" aria-label="Toggle navigation">
-                                        <img src="./img/close_vector.png"
-                                            style="width: 24px;height: 24px;position: absolute;top: 50px;right: 50px;">
-                                    </button>
-                                </div>
-                            </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page"
+                                        href="./index.html"
+                                        style="font-size: 16px;">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page"
+                                        href="./whoweare.html"
+                                        style="font-size: 16px;">Who we
+                                        are</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#"
+                                        role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false"
+                                        style="font-size: 16px;">
+                                        What We Do
+                                    </a>
+                                    <ul
+                                        class="dropdown-menu dropdown-menu-end cust-dropdown-menu">
+                                        <li
+                                            class="dropdown-submenu active dropend">
+                                            <a
+                                                class="dropdown-item dropdown-toggle test submenu-active"
+                                                tabindex="-1"
+                                                href="#">Services</a>
+                                            <ul
+                                                class="dropdown-menu dropdown-menu-services cust-dropdown-menu-services"
+                                                style="display: none;">
+                                                <li><a
+                                                        class="dropdown-item dropdown-item-custom"
+                                                        tabindex="-1"
+                                                        href="./uiux.html">UI/UX</a></li>
+                                                <li><a
+                                                        class="dropdown-item dropdown-item-custom"
+                                                        tabindex="-1"
+                                                        href="./software-development.html">Software
+                                                        Development</a></li>
+                                                <li><a
+                                                        class="dropdown-item dropdown-item-custom"
+                                                        tabindex="-1"
+                                                        href="./mobile-development.html">Mobile
+                                                        Development</a></li>
+                                                <li><a
+                                                        class="dropdown-item dropdown-item-custom"
+                                                        tabindex="-1"
+                                                        href="./digital-marketing.html">Digital
+                                                        Marketing</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown-submenu dropend">
+                                            <a
+                                                class="dropdown-item dropdown-toggle test submenu-active"
+                                                href="#">Solutions</a>
+                                            <ul
+                                                class="dropdown-menu dropdown-menu-solutions cust-dropdown-menu-solutions">
+                                                <li><a
+                                                        class="dropdown-item dropdown-item-custom"
+                                                        href="./aiml.html">AI/ML
+                                                        Solution</a></li>
+                                                <li><a
+                                                        class="dropdown-item dropdown-item-custom"
+                                                        href="./smartcity-solutions.html">Smart
+                                                        City
+                                                        Solution</a></li>
+                                                <li><a
+                                                        class="dropdown-item dropdown-item-custom"
+                                                        href="./fintech-solutions.html">Fintech
+                                                        Solution</a></li>
+                                                <li><a
+                                                        class="dropdown-item dropdown-item-custom"
+                                                        href="./networking-solutions.html">Networking
+                                                        Solution</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a
+                                                class="dropdown-item dropdown-toggle test submenu-active"
+                                                href="./ourwork.html">Our
+                                                Work</a>
+                                        </li>
+                                    </ul>
+                                </li>
 
-                            <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="./index.html"
-                                    style="font-size: 16px;">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="./whoweare.html"
-                                    style="font-size: 16px;">Who we
-                                    are</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false" style="font-size: 16px;">
-                                    What We Do
-                                </a>
-                                <ul class="dropdown-menu dropdown-menu-end cust-dropdown-menu">
-                                    <li class="dropdown-submenu active dropend">
-                                        <a class="dropdown-item dropdown-toggle test submenu-active" tabindex="-1"
-                                            href="#">Services</a>
-                                        <ul class="dropdown-menu dropdown-menu-services cust-dropdown-menu-services"
-                                            style="display: none;">
-                                            <li><a class="dropdown-item dropdown-item-custom" tabindex="-1"
-                                                    href="./uiux.html">UI/UX</a></li>
-                                            <li><a class="dropdown-item dropdown-item-custom" tabindex="-1"
-                                                    href="./software-development.html">Software
-                                                    Development</a></li>
-                                            <li><a class="dropdown-item dropdown-item-custom" tabindex="-1"
-                                                    href="./mobile-development.html">Mobile
-                                                    Development</a></li>
-                                            <li><a class="dropdown-item dropdown-item-custom" tabindex="-1"
-                                                    href="./digital-marketing.html">Digital
-                                                    Marketing</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="dropdown-submenu dropend">
-                                        <a class="dropdown-item dropdown-toggle test submenu-active"
-                                            href="#">Solutions</a>
-                                        <ul class="dropdown-menu dropdown-menu-solutions cust-dropdown-menu-solutions">
-                                            <li><a class="dropdown-item dropdown-item-custom" href="./aiml.html">AI/ML
-                                                    Solution</a></li>
-                                            <li><a class="dropdown-item dropdown-item-custom"
-                                                    href="./smartcity-solutions.html">Smart City
-                                                    Solution</a></li>
-                                            <li><a class="dropdown-item dropdown-item-custom"
-                                                    href="./fintech-solutions.html">Fintech
-                                                    Solution</a></li>
-                                            <li><a class="dropdown-item dropdown-item-custom"
-                                                    href="./networking-solutions.html">Networking
-                                                    Solution</a></li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item dropdown-toggle test submenu-active"
-                                            href="./ourwork.html">Our
-                                            Work</a>
-                                    </li>
-                                </ul>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="./whoweserve.html" style="font-size: 16px;">Who we
-                                    serve</a>
-                            </li>
-                        </ul>
-                        <!-- <form class="d-flex" role="contactus">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./whoweserve.html"
+                                        style="font-size: 16px;">Who we
+                                        serve</a>
+                                </li>
+                            </ul>
+                            <!-- <form class="d-flex" role="contactus">
                       <input class="form-control me-2" type="contactus" placeholder="contactus" aria-label="contactus">
                     </form> -->
-                        <a href="#" class="nav_info">info@harryandliu.com</a>
-                        <a href="./contact.html" class="btn header_contactus_btn"> Contact Us</a>
+                            <a href="#"
+                                class="nav_info">info@harryandliu.com</a>
+                            <a href="./contact.html"
+                                class="btn header_contactus_btn"> Contact Us</a>
+                        </div>
                     </div>
-                </div>
-            </nav>
-        </div>
-        <!-- navigation ends -->
-
-        <!-- banner section starts -->
-        <section>
-            <div class="banner_top_container uiux_top_banner_container d-flex">
-                <div class="container d-flex justify-content-center align-items-center">
-                    <div class="cust_positioning_banner">
-                        <h3 class="h_banner_text">
-                            Empower Your Business on the Go: Unlock
-                            Limitless Potential
-                            with Tailored Mobile Development Solutions
-                        </h3>
-                    </div>
-                    <div class="uiux_image_bnr">
-                        <img src="./img/Rectangle 34624299.png" alt>
-                    </div>
-                </div>
-
+                </nav>
             </div>
-        </section>
+            <!-- navigation ends -->
 
-        <!-- banner section ends  -->
-
-        <div class="vector_background" style="top: 1100px;">
-            <img src="./img/Vector_home.png" style="margin-bottom: 562px;">
-            <img src="./img/Vector_home.png">
-        </div>
-
-        <section class="overview services-section d-flex flex-column md_desk ">
-            <div class="section-heading">
-                <div class="service_title">
-                    <h2>OVERVIEW</h2>
-                </div>
-            </div>
-            <div class="service-item">
-                <div class="service-image">
-                    <img src="./img/Rectangle 34624311.png" alt="Service Image 1">
-                </div>
-                <div class="service-content overview_info d-flex flex-column justify-content-center ">
-                    <div>
-                        <h5>Lorem ipsum</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur
-                            adipiscing elit,
-                            sed do eiusmod tempor incididunt ut labore et
-                            dolore magna
-                            aliqua. Ut enim ad minim veniam, quis nostrud
-                            exercitation
-                            ullamco laboris nisi ut</p>
+            <!-- banner section starts -->
+            <section>
+                <div
+                    class="banner_top_container uiux_top_banner_container d-flex">
+                    <div
+                        class="container d-flex justify-content-center align-items-center">
+                        <div class="cust_positioning_banner">
+                            <h3 class="h_banner_text">
+                                Empower Your Business on the Go: Unlock
+                                Limitless Potential
+                                with Tailored Mobile Development Solutions
+                            </h3>
+                        </div>
+                        <div class="uiux_image_bnr">
+                            <img src="./img/Rectangle 34624299.png" alt>
+                        </div>
                     </div>
-                    <div>
-                        <h5>Lorem ipsum</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur
-                            adipiscing elit,
-                            sed do eiusmod tempor incididunt ut labore et
-                            dolore magna
-                            aliqua. Ut enim ad minim veniam, quis nostrud
-                            exercitation
-                            ullamco laboris nisi ut</p>
+
+                </div>
+            </section>
+
+            <!-- banner section ends  -->
+
+            <div class="vector_background" style="top: 1100px;">
+                <img src="./img/Vector_home.png" style="margin-bottom: 562px;">
+                <img src="./img/Vector_home.png">
+            </div>
+
+            <section
+                class="overview services-section d-flex flex-column md_desk ">
+                <div class="section-heading">
+                    <div class="service_title">
+                        <h2>OVERVIEW</h2>
                     </div>
                 </div>
-            </div>
-        </section>
+                <div class="service-item">
+                    <div class="service-image">
+                        <img src="./img/Rectangle 34624311.png"
+                            alt="Service Image 1">
+                    </div>
+                    <div
+                        class="service-content overview_info d-flex flex-column justify-content-center ">
+                        <div>
+                            <h5>Lorem ipsum</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit,
+                                sed do eiusmod tempor incididunt ut labore et
+                                dolore magna
+                                aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation
+                                ullamco laboris nisi ut</p>
+                        </div>
+                        <div>
+                            <h5>Lorem ipsum</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit,
+                                sed do eiusmod tempor incididunt ut labore et
+                                dolore magna
+                                aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation
+                                ullamco laboris nisi ut</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-        <!-- --------- features -------------  -->
+            <!-- --------- features -------------  -->
 
-        <section class="feature_section sd_mob" style="margin-bottom: 296px;">
+            <!-- <section class="feature_section sd_mob" style="margin-bottom: 296px;">
             <div class="section-heading">
                 <div class="service_title">
                     <h2> FEATURES </h2>
@@ -386,304 +471,444 @@
 
             </div>
 
-        </section>
+        </section> -->
 
-        <!-- ------- features end  ----------  -->
+            <!-- ------- features end  ----------  -->
 
-        <!-- testimonials section starts  -->
+            <!-- why matters  starts -->
 
-        <section class="testimonial-section testimonial_mob">
-            <div class="container">
-                <h4>TESTIMONIALS</h4>
-
-                <h2>What our clients have to say !</h2>
-                <div class="swiper-container testimonial-slider">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="testimonial-card d-flex justify-content-center">
-                                <div>
-                                    <img src="./img/Shape.png">
-                                </div>
-                                <div style="margin-left: 20px;">
-                                    <div>
-                                        <p class="client_reviews">"Lorem
-                                            ipsum dolor sit amet,
-                                            consectetur adipiscing elit, sed
-                                            do eiusmod tempor incididunt ut
-                                            labore et dolore magna
-                                            aliqua.”</p>
-                                    </div>
-                                    <div>
-                                        <p class="author">Lorem Ipsum</p>
-                                        <p class="position_client">Head Of
-                                            Department</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Add more swiper slides here -->
-                    </div>
-                    <!-- Add Navigation Arrows -->
-                    <div class="swiper-button-prev-testimonial swiper-button-prev">
-                        <img id="arroww" style="margin-left: 35px;" src="./img/Left.png" alt>
-                    </div>
-                    <div class="swiper-button-next-testimonial swiper-button-next">
-                        <img id="arroww" style="margin-right: 35px;" src="./img/Right.png" alt>
+            <section
+                class="overview services-section d-flex flex-column why_matters_desk ">
+                <div class="section-heading">
+                    <div class="service_title" style="text-align: center;">
+                        <h2>WHY MOBILE APPS MATTERS</h2>
                     </div>
                 </div>
-
-                <div class="main-count">
-                    <div>
-                        <p class="counter" data-speed="20">10</p>
-                        <h5>Lorem Ipsum</h5>
-                    </div>
-                    <div>
-                        <p class="counter" data-speed="20">10</p>
-                        <h5>Lorem Ipsum</h5>
-                    </div>
-                    <div>
-                        <p class="counter" data-speed="20">10</p>
-                        <h5>Lorem Ipsum</h5>
-                    </div>
-                    <div>
-                        <p class="counter" data-speed="20">10</p>
-                        <h5>Lorem Ipsum</h5>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- partners section -->
-        <div class="section section-margin-bottom cust_partner_sec partners_mob"
-            style="height:366px;position: relative;">
-            <h2 class="partner_title">STRATEGIC PARTNER'S</h2>
-            <div class="cust-partner-cont"
-                style="background-color: 5b7c9903;position: absolute;top:166px; width: 100%;">
-                <div class="row">
-                    <div class="col-lg-12" data-aos="fade-up" data-aos-duration="1100">
-                        <div class="container swiper-container partner-slider">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide partner-slide">
-                                    <a class="brand-item" href="#/">
-                                        <img src="img/image-1.png" alt="Brand Image">
-                                    </a>
-                                </div>
-                                <div class="swiper-slide partner-slide">
-                                    <a class="brand-item" href="#/">
-                                        <img src="img/image-2.png" alt="Brand Image">
-                                    </a>
-                                </div>
-                                <div class="swiper-slide partner-slide">
-                                    <a class="brand-item" href="#/">
-                                        <img src="img/image-3.png" alt="Brand Image">
-                                    </a>
-                                </div>
-                                <div class="swiper-slide partner-slide">
-                                    <a class="brand-item" href="#/">
-                                        <img src="img/image-4.png" alt="Brand Image">
-                                    </a>
-                                </div>
-                                <div class="swiper-slide partner-slide">
-                                    <a class="brand-item" href="#/">
-                                        <img src="img/image-5.png" alt="Brand Image">
-                                    </a>
-                                </div>
-                                <div class="swiper-slide partner-slide">
-                                    <a class="brand-item" href="#/">
-                                        <img src="img/image-6.png" alt="Brand Image">
-                                    </a>
-                                </div>
-                                <div class="swiper-slide partner-slide">
-                                    <a class="brand-item" href="#/">
-                                        <img src="img/image-7.png" alt="Brand Image">
-                                    </a>
-                                </div>
-                            </div>
+                <div class="service-item">
+                    <div
+                        class="service-content overview_info d-flex flex-column justify-content-center ">
+                        <div>
+                            <h5>Accessibility</h5>
+                            <p>
+                                With smartphones becoming ubiquitous, mobile
+                                apps
+                                offer unparalleled accessibility, allowing users
+                                to access your products or services anytime,
+                                anywhere
+                            </p>
+                        </div>
+                        <div>
+                            <h5>Enhanced User Experience</h5>
+                            <p>
+                                Mobile apps provide a seamless and intuitive
+                                user experience, enabling personalized
+                                interactions and engagement that desktop or
+                                mobile websites cannot match
+                            </p>
+                        </div>
+                        <div>
+                            <h5>Brand Visibility</h5>
+                            <p>
+                                Having a mobile app increases your brand's
+                                visibility and presence on users' devices,
+                                serving as a constant reminder of your products
+                                or services
+                            </p>
+                        </div>
+                        <div>
+                            <h5>Customer Engagement</h5>
+                            <p>
+                                Mobile apps enable direct communication with
+                                your audience through push notifications, in-app
+                                messages, and personalized offers, fostering
+                                stronger relationships and loyalty
+                            </p>
+                        </div>
+                        <div>
+                            <h5>Competitive Advantage</h5>
+                            <p>
+                                In today's competitive market, having a mobile
+                                app sets you apart from competitors and
+                                positions your brand as innovative and
+                                forward-thinking
+                            </p>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-        <!-- partners End Here -->
 
-        <!-- footer section  starts-->
-
-
-        <footer>
-            <div class="cust-footer-card"
-                style="width: 100%;height: 390px;background-color: white;display: flex;align-items: flex-end;">
-                <div class="container-fluid" style="background: #004E9E;">
-                    <div class="container get_in_touch col-lg-10">
-                        <div class="git_image_container">
-                            <img src="./img/amico.png" alt>
-                        </div>
-                        <h3>Your Partner in Progress, Fueling Business
-                            Solutions.</h3>
-                        <div class="cust-txt-align">
-                            <a href="#" class="explore_btn_service git_btn_cust">Get in
-                                touch</a>
-                        </div>
+                    <div class="service-image">
+                        <img src="./img/cuate.png" alt="Service Image 1">
                     </div>
                 </div>
-            </div>
-            <div class="footer_navigation"
-                style="width: 100%;height: 580px;background-color: #FFFFFF33; position: relative;">
+            </section>
 
+            <!-- why matters  ends   -->
+
+            <!-- testimonials section starts  -->
+
+            <section class="testimonial-section testimonial_mob">
                 <div class="container">
+                    <h4>TESTIMONIALS</h4>
+
+                    <h2>What our clients have to say !</h2>
+                    <div class="swiper-container testimonial-slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div
+                                    class="testimonial-card d-flex justify-content-center">
+                                    <div>
+                                        <img src="./img/Shape.png">
+                                    </div>
+                                    <div style="margin-left: 20px;">
+                                        <div>
+                                            <p class="client_reviews">"Lorem
+                                                ipsum dolor sit amet,
+                                                consectetur adipiscing elit, sed
+                                                do eiusmod tempor incididunt ut
+                                                labore et dolore magna
+                                                aliqua.”</p>
+                                        </div>
+                                        <div>
+                                            <p class="author">Lorem Ipsum</p>
+                                            <p class="position_client">Head Of
+                                                Department</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Add more swiper slides here -->
+                        </div>
+                        <!-- Add Navigation Arrows -->
+                        <div
+                            class="swiper-button-prev-testimonial swiper-button-prev">
+                            <img id="arroww" style="margin-left: 35px;"
+                                src="./img/Left.png" alt>
+                        </div>
+                        <div
+                            class="swiper-button-next-testimonial swiper-button-next">
+                            <img id="arroww" style="margin-right: 35px;"
+                                src="./img/Right.png" alt>
+                        </div>
+                    </div>
+
+                    <div class="main-count">
+                        <div>
+                            <p class="counter" data-speed="20">10</p>
+                            <h5>Lorem Ipsum</h5>
+                        </div>
+                        <div>
+                            <p class="counter" data-speed="20">10</p>
+                            <h5>Lorem Ipsum</h5>
+                        </div>
+                        <div>
+                            <p class="counter" data-speed="20">10</p>
+                            <h5>Lorem Ipsum</h5>
+                        </div>
+                        <div>
+                            <p class="counter" data-speed="20">10</p>
+                            <h5>Lorem Ipsum</h5>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- partners section -->
+            <div
+                class="section section-margin-bottom cust_partner_sec partners_mob"
+                style="height:366px;position: relative;">
+                <h2 class="partner_title">STRATEGIC PARTNER'S</h2>
+                <div class="cust-partner-cont"
+                    style="background-color: 5b7c9903;position: absolute;top:166px; width: 100%;">
                     <div class="row">
-                        <div class="col-lg-12">
-                            <!--== Start Footer Widget Area ==-->
-                            <div class="footer-widget-area">
-                                <div class="row m-b-n40">
-                                    <div class="col-sm-6 col-md-6 col-lg-3 m-b-40" data-aos="fade-up"
-                                        data-aos-duration="1100">
-                                        <div class="widget-item pb-sm-20">
-                                            <h4 class="widget-title">Harry &
-                                                Liu Co. Ltd</h4>
-                                            <div class="about-widget">
-                                                <p>Tien Chu Commercial
-                                                    Building, 173 - 174
-                                                    Gloucester Road, Wanchai
-                                                    <br> <br>
-                                                    Hong Kong
-                                                </p>
-                                                <div class="social-icons">
-                                                    <a href="#/"><img src="./img/meta-dark.png" alt="meta"></a>
-                                                    <a href="#/"><img src="./img/twitter-dark.png" alt="twitter"></a>
-                                                    <a href="#/"><img src="./img/youtube-dark.png" alt="youtube"></a>
-                                                    <a href="#/"><img src="./img/linkedin-dark.png" alt="linkedin"></a>
+                        <div class="col-lg-12" data-aos="fade-up"
+                            data-aos-duration="1100">
+                            <div
+                                class="container swiper-container partner-slider">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide partner-slide">
+                                        <a class="brand-item" href="#/">
+                                            <img src="img/image-1.png"
+                                                alt="Brand Image">
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide partner-slide">
+                                        <a class="brand-item" href="#/">
+                                            <img src="img/image-2.png"
+                                                alt="Brand Image">
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide partner-slide">
+                                        <a class="brand-item" href="#/">
+                                            <img src="img/image-3.png"
+                                                alt="Brand Image">
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide partner-slide">
+                                        <a class="brand-item" href="#/">
+                                            <img src="img/image-4.png"
+                                                alt="Brand Image">
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide partner-slide">
+                                        <a class="brand-item" href="#/">
+                                            <img src="img/image-5.png"
+                                                alt="Brand Image">
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide partner-slide">
+                                        <a class="brand-item" href="#/">
+                                            <img src="img/image-6.png"
+                                                alt="Brand Image">
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide partner-slide">
+                                        <a class="brand-item" href="#/">
+                                            <img src="img/image-7.png"
+                                                alt="Brand Image">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- partners End Here -->
+
+            <!-- footer section  starts-->
+
+            <footer>
+                <div class="cust-footer-card"
+                    style="width: 100%;height: 390px;background-color: white;display: flex;align-items: flex-end;">
+                    <div class="container-fluid" style="background: #004E9E;">
+                        <div class="container get_in_touch col-lg-10">
+                            <div class="git_image_container">
+                                <img src="./img/amico.png" alt>
+                            </div>
+                            <h3>Your Partner in Progress, Fueling Business
+                                Solutions.</h3>
+                            <div class="cust-txt-align">
+                                <a href="#"
+                                    class="explore_btn_service git_btn_cust">Get
+                                    in
+                                    touch</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_navigation"
+                    style="width: 100%;height: 580px;background-color: #FFFFFF33; position: relative;">
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <!--== Start Footer Widget Area ==-->
+                                <div class="footer-widget-area">
+                                    <div class="row m-b-n40">
+                                        <div
+                                            class="col-sm-6 col-md-6 col-lg-3 m-b-40"
+                                            data-aos="fade-up"
+                                            data-aos-duration="1100">
+                                            <div class="widget-item pb-sm-20">
+                                                <h4 class="widget-title">Harry &
+                                                    Liu Co. Ltd</h4>
+                                                <div class="about-widget">
+                                                    <p>Tien Chu Commercial
+                                                        Building, 173 - 174
+                                                        Gloucester Road, Wanchai
+                                                        <br> <br>
+                                                        Hong Kong
+                                                    </p>
+                                                    <div class="social-icons">
+                                                        <a href="#/"><img
+                                                                src="./img/meta-dark.png"
+                                                                alt="meta"></a>
+                                                        <a href="#/"><img
+                                                                src="./img/twitter-dark.png"
+                                                                alt="twitter"></a>
+                                                        <a href="#/"><img
+                                                                src="./img/youtube-dark.png"
+                                                                alt="youtube"></a>
+                                                        <a href="#/"><img
+                                                                src="./img/linkedin-dark.png"
+                                                                alt="linkedin"></a>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="col-sm-6 col-md-6 col-lg-3 d-flex justify-content-start justify-content-lg-center m-b-40"
-                                        data-aos="fade-up" data-aos-duration="1500">
-                                        <div class="widget-item widget-item-1">
-                                            <h4 class="widget-title">NAVIGATION</h4>
-                                            <ul class="widget-list" style="padding-left: 0;">
-                                                <li><a href="#">What we
-                                                        do</a></li>
-                                                <li><a href="./whoweserve.html">Who we
-                                                        serve</a></li>
-                                                <li><a href="./whoweare.html">What we
-                                                        are</a></li>
-                                            </ul>
+                                        <div
+                                            class="col-sm-6 col-md-6 col-lg-3 d-flex justify-content-start justify-content-lg-center m-b-40"
+                                            data-aos="fade-up"
+                                            data-aos-duration="1500">
+                                            <div
+                                                class="widget-item widget-item-1">
+                                                <h4
+                                                    class="widget-title">NAVIGATION</h4>
+                                                <ul class="widget-list"
+                                                    style="padding-left: 0;">
+                                                    <li><a href="#">What we
+                                                            do</a></li>
+                                                    <li><a
+                                                            href="./whoweserve.html">Who
+                                                            we
+                                                            serve</a></li>
+                                                    <li><a
+                                                            href="./whoweare.html">What
+                                                            we
+                                                            are</a></li>
+                                                </ul>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="col-sm-6 col-md-6 col-lg-3 m-b-40" data-aos="fade-up"
-                                        data-aos-duration="2000">
-                                        <div class="widget-item widget-item-3">
-                                            <h4 class="widget-title">QUICK
-                                                LINKS</h4>
-                                            <ul class="widget-post" style="padding-left: 0;">
-                                                <li><a href="#">Services</a></li>
-                                                <li><a href="#">Solutions</a></li>
-                                                <li><a href="#">Application</a></li>
-                                                <li><a href="#">Product</a></li>
-                                                <li><a href="./contact.html">Contact</a></li>
-                                            </ul>
+                                        <div
+                                            class="col-sm-6 col-md-6 col-lg-3 m-b-40"
+                                            data-aos="fade-up"
+                                            data-aos-duration="2000">
+                                            <div
+                                                class="widget-item widget-item-3">
+                                                <h4 class="widget-title">QUICK
+                                                    LINKS</h4>
+                                                <ul class="widget-post"
+                                                    style="padding-left: 0;">
+                                                    <li><a
+                                                            href="#">Services</a></li>
+                                                    <li><a
+                                                            href="#">Solutions</a></li>
+                                                    <li><a
+                                                            href="#">Application</a></li>
+                                                    <li><a
+                                                            href="#">Product</a></li>
+                                                    <li><a
+                                                            href="./contact.html">Contact</a></li>
+                                                </ul>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="col-sm-6 col-md-6 col-lg-3 m-b-40" data-aos="fade-up"
-                                        data-aos-duration="2500">
-                                        <div class="widget-item widget-item-2">
-                                            <h4 class="widget-title">CONTACT
-                                                US</h4>
+                                        <div
+                                            class="col-sm-6 col-md-6 col-lg-3 m-b-40"
+                                            data-aos="fade-up"
+                                            data-aos-duration="2500">
+                                            <div
+                                                class="widget-item widget-item-2">
+                                                <h4 class="widget-title">CONTACT
+                                                    US</h4>
 
-                                            <ul class="widget-post" style="padding-left: 0;">
-                                                <li><a href="#" class="d-flex">
-                                                        <div>
-                                                            <img src="./img/phone-dark.png" alt="Image-HasTech">
-                                                        </div>
-                                                        <div style="margin-left: 20px;">
-                                                            +86 15618878897
-                                                        </div>
-                                                    </a></li>
-                                                <li><a href="#" class="d-flex">
-                                                        <div>
-                                                            <img src="./img/mail-dark.png" alt="Image-HasTech">
-                                                        </div>
-                                                        <div style="margin-left: 20px;">
-                                                            info@harryandliu.com
-                                                        </div>
-                                                    </a></li>
-                                                <li class="ho_1"><a href="#" class="d-flex">
-                                                        <div>
-                                                            <img src="./img/location-dark.png" alt="Image-HasTech">
-                                                        </div>
-                                                        <div style="margin-left: 20px;width: 238px;">
-                                                            <span style="font-size: 16px;font-weight: 500;">Head
-                                                                Office</span><br>
-                                                            <span style="font-size: 12px;font-weight: 400;">
-                                                                Chu
-                                                                Commercial
-                                                                Building,
-                                                                173 - 174
-                                                                Gloucester
-                                                                Road,
-                                                                Wanchai,
-                                                                Hong Kong.
-                                                            </span>
-                                                        </div>
-                                                    </a></li>
+                                                <ul class="widget-post"
+                                                    style="padding-left: 0;">
+                                                    <li><a href="#"
+                                                            class="d-flex">
+                                                            <div>
+                                                                <img
+                                                                    src="./img/phone-dark.png"
+                                                                    alt="Image-HasTech">
+                                                            </div>
+                                                            <div
+                                                                style="margin-left: 20px;">
+                                                                +86 15618878897
+                                                            </div>
+                                                        </a></li>
+                                                    <li><a href="#"
+                                                            class="d-flex">
+                                                            <div>
+                                                                <img
+                                                                    src="./img/mail-dark.png"
+                                                                    alt="Image-HasTech">
+                                                            </div>
+                                                            <div
+                                                                style="margin-left: 20px;">
+                                                                info@harryandliu.com
+                                                            </div>
+                                                        </a></li>
+                                                    <li class="ho_1"><a href="#"
+                                                            class="d-flex">
+                                                            <div>
+                                                                <img
+                                                                    src="./img/location-dark.png"
+                                                                    alt="Image-HasTech">
+                                                            </div>
+                                                            <div
+                                                                style="margin-left: 20px;width: 238px;">
+                                                                <span
+                                                                    style="font-size: 16px;font-weight: 500;">Head
+                                                                    Office</span><br>
+                                                                <span
+                                                                    style="font-size: 12px;font-weight: 400;">
+                                                                    Chu
+                                                                    Commercial
+                                                                    Building,
+                                                                    173 - 174
+                                                                    Gloucester
+                                                                    Road,
+                                                                    Wanchai,
+                                                                    Hong Kong.
+                                                                </span>
+                                                            </div>
+                                                        </a></li>
 
-                                                <li class="ho_1"><a href="#" class="d-flex">
-                                                        <div>
-                                                            <img src="./img/location-dark.png" alt="Image-HasTech">
-                                                        </div>
-                                                        <div style="margin-left: 20px;width: 238px;">
-                                                            <span style="font-size: 16px;font-weight: 500;">Mainland
-                                                                China
-                                                                Office</span><br>
-                                                            <span style="font-size: 12px;font-weight: 400;">913,
-                                                                Jinqi Wisdom
-                                                                Valley 1,
-                                                                Tangling
-                                                                Road,
-                                                                Liuxian
-                                                                Blvd,
-                                                                Nanshan,
-                                                                Shenzhen.
-                                                            </span>
-                                                        </div>
-                                                    </a></li>
-                                            </ul>
+                                                    <li class="ho_1"><a href="#"
+                                                            class="d-flex">
+                                                            <div>
+                                                                <img
+                                                                    src="./img/location-dark.png"
+                                                                    alt="Image-HasTech">
+                                                            </div>
+                                                            <div
+                                                                style="margin-left: 20px;width: 238px;">
+                                                                <span
+                                                                    style="font-size: 16px;font-weight: 500;">Mainland
+                                                                    China
+                                                                    Office</span><br>
+                                                                <span
+                                                                    style="font-size: 12px;font-weight: 400;">913,
+                                                                    Jinqi Wisdom
+                                                                    Valley 1,
+                                                                    Tangling
+                                                                    Road,
+                                                                    Liuxian
+                                                                    Blvd,
+                                                                    Nanshan,
+                                                                    Shenzhen.
+                                                                </span>
+                                                            </div>
+                                                        </a></li>
+                                                </ul>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
+                                <!--== End Footer Widget Area ==-->
                             </div>
-                            <!--== End Footer Widget Area ==-->
+                        </div>
+                    </div>
+
+                    <div class="footer-bottom">
+                        <div
+                            class="container d-flex justify-content-between cust-margin-0"
+                            style="margin: 0px auto;padding-top: 30px;color: black;">
+                            <div class="rights-reserved">
+                                <p
+                                    style="font-size: 15px;font-weight: 700;">2024
+                                    All RIGHTS RESERVED - H&L</p>
+                            </div>
+                            <div
+                                class="d-flex justify-content-around footer-policy"
+                                style="width: 380px;font-size: 15px;font-weight: 600;">
+                                <p>PRIVACY POLICY</p>
+                                <p>TERMS & CONDITION</p>
+                            </div>
                         </div>
                     </div>
                 </div>
+            </footer>
 
-                <div class="footer-bottom">
-                    <div class="container d-flex justify-content-between cust-margin-0"
-                        style="margin: 0px auto;padding-top: 30px;color: black;">
-                        <div class="rights-reserved">
-                            <p style="font-size: 15px;font-weight: 700;">2024
-                                All RIGHTS RESERVED - H&L</p>
-                        </div>
-                        <div class="d-flex justify-content-around footer-policy"
-                            style="width: 380px;font-size: 15px;font-weight: 600;">
-                            <p>PRIVACY POLICY</p>
-                            <p>TERMS & CONDITION</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
+        </div>
 
-    </div>
-
-    <!-- jQuery js -->
-    <script src="js/plugins/jquery.min.js"></script>
-    <!-- swiper js -->
-    <script src="js/plugins/swiper.min.js"></script>
-    <!-- <script src="js/plugins/swiper-bundle.min.js"></script> -->
-    <!-- itsulu js -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script type="text/javascript">
+        <!-- jQuery js -->
+        <script src="js/plugins/jquery.min.js"></script>
+        <!-- swiper js -->
+        <script src="js/plugins/swiper.min.js"></script>
+        <!-- <script src="js/plugins/swiper-bundle.min.js"></script> -->
+        <!-- itsulu js -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script type="text/javascript">
 
         /*--
     Client's Activation
@@ -825,6 +1050,6 @@
         })();
 
     </script>
-</body>
+    </body>
 
 </html>

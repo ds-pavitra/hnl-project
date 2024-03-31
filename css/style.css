@@ -2447,22 +2447,121 @@ uiux page css style
     color: #000;
 }
 
-.nums{
+.nums {
     margin-right: 40px;
 }
 
-.swiper-button-prev-process{
+.swiper-button-prev-process {
     top: 125%;
     left: 47%;
 }
 
-.swiper-button-next-process{
+.swiper-button-next-process {
     top: 125%;
     right: 47%;
 }
 
-.process-slider{
+.process-slider {
     overflow: hidden;
+}
+
+.our_service_title {
+    text-align: left;
+    padding: 85px 0 52px 0;
+    font-size: 32px;
+    font-weight: 600;
+    color: #004E9E;
+}
+
+.service-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.service-slide div {
+    margin-bottom: 30px;
+}
+
+.service-slide p {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    color: #000;
+}
+
+.os_description_cta {
+    height: 492px;
+    padding-top: 50px;
+    position: absolute;
+    top: 500px;
+}
+
+.os_description_cta:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 73%;
+    height: 1px;
+    background-color: #004E9E;
+}
+
+.os_description_cta p {
+    color: #000;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    text-align: left;
+    width: 658px;
+    margin-bottom: 30px;
+}
+
+.os_description_cta a {
+    text-decoration: none;
+    color: #000;
+    border: 1px solid black;
+    padding: 18px 36px;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+}
+.why_matters_desk .service-content{
+    padding-left: 50px;
+}
+
+.why_matters_desk .service-item {
+    position: relative;
+}
+
+.why_matters_desk .service-content::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -4px;
+    width: 4px;
+    height: 160px;
+    background-color: #000000;
+}
+
+.why_matters_desk h5 {
+    color: #000;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    text-align: left;
+}
+
+.why_matters_desk p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    color: #000;
 }
 
 @media only screen and (min-width: 359px) and (max-width: 767px) {
