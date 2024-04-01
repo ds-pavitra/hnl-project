@@ -592,10 +592,11 @@ body {
 .card {
     margin-bottom: 20px;
     background: transparent;
-    border: 1px solid transparent;
+    border: 1px solid #ffffff;
     /* width: 600px; */
-    height: 245px;
+    height: auto;
     border-radius: 10px;
+    box-shadow: 0px 4px 4px 1px #00000040;
 }
 
 .card_img_div {
@@ -633,7 +634,7 @@ body {
     font-weight: 400;
     line-height: 30px;
     /* width: 545px; */
-    height: 90px;
+    height: auto;
 }
 
 .card.white-background {
@@ -672,9 +673,15 @@ body {
     border-radius: 10px;
     border: 1px solid #004E9E;
     width: 920px;
-    height: 230px;
+    height: 325px;
     padding: 45px;
     margin: 0 auto;
+    position: relative;
+}
+
+.client_names {
+    position: absolute;
+    bottom: 45px;
 }
 
 .author {
@@ -693,7 +700,7 @@ body {
 .testimonial-slider {
     position: relative;
     width: 1000px;
-    height: 232px;
+    height: auto;
     margin: 0 auto;
     overflow-x: hidden;
 }
@@ -1145,7 +1152,7 @@ uiux page css style
     height: 433px;
     /* border-radius: 10px; */
     /* background-color: #D9D9D9; */
-    margin: 0 50px 0 0;
+    margin: 0 0 0 50px;
 }
 
 /* .overview .service-image2 {
@@ -1277,11 +1284,11 @@ uiux page css style
 }
 
 .sd_desk .section-heading_container {
-    padding: 71px;
+    padding: 0 0 0 71px;
 }
 
 .sd_desk .section-heading_container .service_title h2 {
-    text-align: center;
+    text-align: left;
 }
 
 .sd_desk .section-heading_container h5 {
@@ -2529,7 +2536,12 @@ uiux page css style
     font-weight: 400;
     line-height: 21px;
 }
-.why_matters_desk .service-content{
+
+.our_service_sec {
+    overflow: hidden;
+}
+
+.why_matters_desk .service-content {
     padding-left: 50px;
 }
 
@@ -2562,6 +2574,37 @@ uiux page css style
     line-height: 30px;
     text-align: left;
     color: #000;
+    width: 578px;
+}
+
+.why_matters_desk .service-image {
+    width: auto;
+    height: auto;
+}
+
+.md_wcus .card {
+    height: 316px;
+}
+
+.dm_desk .keybenefit_img {
+    width: 455px;
+}
+
+.dm_os_desk .service-slide {
+    position: relative;
+}
+
+.dm_os_desk .service-slide p {
+    position: absolute;
+    top: 150px;
+}
+
+.sc_desk .section-heading_container {
+    padding: 0 0 0 31px;
+}
+
+.sc_desk .card {
+    height: 256px;
 }
 
 @media only screen and (min-width: 359px) and (max-width: 767px) {
@@ -3010,6 +3053,7 @@ uiux page css style
 
     .card {
         height: auto;
+        box-shadow: none;
     }
 
     .card-body {
@@ -3081,17 +3125,21 @@ uiux page css style
 
     .testimonial-card {
         width: 353px;
-        height: 140px;
-        padding: 20px;
+        height: 185px;
+        padding: 15px;
         border: 1px solid black;
         border-radius: 5px;
     }
 
     .client_reviews {
-        font-size: 12px;
-        line-height: 18px;
+        font-size: 10px;
+        line-height: 16px;
         width: 285px;
         margin-bottom: 10px;
+    }
+
+    .client_names {
+        bottom: 15px;
     }
 
     .swiper-button-prev,
@@ -3683,12 +3731,89 @@ uiux page css style
     }
 
     .uiux_kb {
-        height: 380px;
+        height: auto;
     }
 
-    .kb_testimonial {
-        display: none;
+    .uiux_kb .section-heading_container {
+        width: 353px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        border: none;
+        border-radius: 20px;
+        padding: 0;
     }
+
+    .uiux_kb .key_benefit_container {
+        flex-direction: column-reverse;
+    }
+
+    .uiux_kb .key_benefit_container .service_title h2 {
+        line-height: 30px;
+        font-size: 20px;
+        padding: 0;
+    }
+
+    .uiux_kb .key_benefit_container h3 {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 27px;
+    }
+
+    .uiux_kb .keybenefit_img {
+        width: 353px;
+        height: auto;
+        position: relative;
+        left: 0;
+        top: 0;
+        transform: none
+    }
+
+
+    .process-slide h4 {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 27px;
+    }
+
+    .process-slide h5 {
+        font-size: 36px;
+        line-height: 54px;
+        font-weight: 300;
+    }
+
+    .process-slide p {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 18px;
+    }
+
+    .process-slide {
+        width: auto;
+        height: auto;
+        border-right: 1px solid #00000033;
+        padding: 0 20px;
+        display: flex;
+    }
+
+    .nums {
+        margin-right: 20px;
+    }
+
+    .cust-process-cont {
+        top: 78px !important;
+    }
+
+    .process_sec {
+        height: auto !important;
+        margin-bottom: 120px !important;
+        margin-top: 50px;
+    }
+
+    /* .kb_testimonial {
+        display: none;
+    } */
 
     .section-heading_container {
         width: 439px;
@@ -4235,6 +4360,23 @@ uiux page css style
         width: 240px;
     }
 
+    .our_service_title {
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .service-slide p {
+        width: 225px;
+    }
+
+    .os_description_cta {
+        height: auto;
+        padding-top: 50px;
+        position: absolute;
+        top: 500px;
+        transform: translate(10px, 10px);
+    }
+
     .custom-mob-2 {
         display: none !important;
     }
@@ -4272,6 +4414,22 @@ uiux page css style
 
     .uiux_top_banner_container {
         margin-bottom: 0px;
+    }
+
+    .uiux_top_banner_container .cust_positioning_banner a {
+        display: block;
+        margin: 0 auto;
+        width: 106px;
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 15px;
+    }
+
+    .uiux_top_banner_container .cust_positioning_banner p {
+        font-size: 12px;
+        line-height: 18px;
+        text-align: center;
+        margin-bottom: 20px;
     }
 
     @keyframes fadeInDown {
