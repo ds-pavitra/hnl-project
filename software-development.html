@@ -1531,10 +1531,10 @@
                 slidesPerView: 5,
                 spaceBetween: 0,
                 loop: true,
-                // autoplay: {
-                //     delay: 3000,
-                //     disableOnInteraction: false,
-                // },
+                autoplay: {
+                    delay: 3000,
+                    disableOnInteraction: false,
+                },
                 pagination: false,
             });
 
@@ -1576,7 +1576,10 @@
                 pagination: false,
             });
 
-            const mediaQuery = window.matchMedia('(min-width: 359px) and (max-width: 992px) ');
+            const mediaQuery = window.matchMedia('(min-width: 768px) and (max-width: 992px) ');
+
+            const mediaQuery1 = window.matchMedia('(min-width: 359px) and (max-width: 767px) ');
+
 
             function updateSwiperConfig() {
                 if (mediaQuery.matches) {
@@ -1587,7 +1590,25 @@
                 partners.update();
             }
             updateSwiperConfig();
+
+            function updateSwiperConfig1() {
+                if (mediaQuery1.matches) {
+                    partners.params.slidesPerView = 4;
+                   processSlider.params.slidesPerView = 1.2;
+                   servicesOur.params.slidesPerView = 1.05;
+                } else {
+                    processSlider.params.slidesPerView = 2.5;
+                    servicesOur.params.slidesPerView = 6;
+                    partners.params.slidesPerView = 6;
+                }
+                processSlider.update();
+                servicesOur.update();
+                partners.update();
+            }
+            updateSwiperConfig1();
+
             mediaQuery.addListener(updateSwiperConfig);
+            mediaQuery1.addListener(updateSwiperConfig1);
 
 
             var technology = new Swiper('.technology-slider', {

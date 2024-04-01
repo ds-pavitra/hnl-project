@@ -3052,7 +3052,7 @@ uiux page css style
     }
 
     .card {
-        height: auto;
+        height: 170px;
         box-shadow: none;
     }
 
@@ -3081,8 +3081,8 @@ uiux page css style
         font-size: 12px;
         font-weight: 400;
         line-height: 18px;
-        width: 240px;
-        height: 90px;
+        width: auto;
+        height: auto;
         position: absolute;
         top: 27px;
         left: 100px;
@@ -3991,7 +3991,7 @@ uiux page css style
     }
 
     .sd_desk .section-heading_container .service_title h2 {
-        text-align: center;
+        text-align: left;
         font-size: 20px;
         line-height: 30px;
         padding: 0;
@@ -4373,8 +4373,71 @@ uiux page css style
         height: auto;
         padding-top: 50px;
         position: absolute;
-        top: 500px;
+        top: 370px;
         transform: translate(10px, 10px);
+    }
+    .os_description_cta:before {
+        width: 100%;
+    }
+    .os_description_cta p {
+        color: #000;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 27px;
+        text-align: left;
+        width: 345px;
+        margin-bottom: 30px;
+    }
+
+    .os_description_cta a {
+        text-decoration: none;
+        color: #000;
+        border: 1px solid black;
+        padding: 10px 30px;
+        font-family: Poppins;
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 15px;
+        border-radius: 5px;
+    }
+
+    .our_service_sec{
+        height: 640px !important;
+    }
+
+    .our-service-cont{
+        top: 146px !important;
+    }
+
+    .cm_270{
+        margin-bottom: 0 !important;
+    }
+
+    .md_wcus .card , .sc_desk .card{
+        height: 170px;
+    }
+
+    .process_Sec_md{
+        height: 258px !important;
+    }
+
+    .process_sec_sc{
+        height: 170px !important;
+    }
+
+    .why_matters_desk .service-image {
+        display: none;
+    }
+    .why_matters_desk p {
+        width: auto;
+    }
+
+    .why_matters_desk .service-content {
+        padding-left: 30px;
+    }
+
+    .why_matters_desk .service-content::before {
+        height: 111px;
     }
 
     .custom-mob-2 {

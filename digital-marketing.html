@@ -1311,7 +1311,10 @@
                 pagination: false,
             });
 
-            const mediaQuery = window.matchMedia('(min-width: 359px) and (max-width: 992px) ');
+            const mediaQuery = window.matchMedia('(min-width: 768px) and (max-width: 992px) ');
+
+            const mediaQuery1 = window.matchMedia('(min-width: 359px) and (max-width: 767px) ');
+
 
             function updateSwiperConfig() {
                 if (mediaQuery.matches) {
@@ -1322,7 +1325,22 @@
                 partners.update();
             }
             updateSwiperConfig();
+
+            function updateSwiperConfig1() {
+                if (mediaQuery1.matches) {
+                    partners.params.slidesPerView = 4;
+                   servicesOur.params.slidesPerView = 1.05;
+                } else {
+                    servicesOur.params.slidesPerView = 5;
+                    partners.params.slidesPerView = 6;
+                }
+                servicesOur.update();
+                partners.update();
+            }
+            updateSwiperConfig1();
+
             mediaQuery.addListener(updateSwiperConfig);
+            mediaQuery1.addListener(updateSwiperConfig1);
 
             var technology = new Swiper('.technology-slider', {
                 slidesPerView: 4,

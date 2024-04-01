@@ -713,7 +713,8 @@
 
             <!-- our process section starts  -->
 
-            <div class="section section-margin-bottom process_sec"
+            <div
+                class="section section-margin-bottom process_sec process_Sec_md"
                 style="height:420px;position: relative;">
                 <h2 class="partner_title">OUR PROCESS</h2>
                 <div class="cust-process-cont"
@@ -757,6 +758,39 @@
                                                 practices to ensure your app is
                                                 robust, scalable, and
                                                 future-proof.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide process-slide">
+                                        <div class="nums">
+                                            <h5>03</h5>
+                                        </div>
+                                        <div class="descrip">
+                                            <h4>Testing & Quality Assurance</h4>
+                                            <p>We conduct rigorous testing
+                                                throughout the development
+                                                process to identify and resolve
+                                                any bugs or issues, ensuring
+                                                your app meets the highest
+                                                quality standards and delivers a
+                                                flawless user experience.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide process-slide">
+                                        <div class="nums">
+                                            <h5>04</h5>
+                                        </div>
+                                        <div class="descrip">
+                                            <h4>Deployment & Launch</h4>
+                                            <p>Once your app is developed and
+                                                tested, we assist with the
+                                                deployment process and ensure a
+                                                smooth launch on the appropriate
+                                                app stores. We provide support
+                                                and guidance to help you
+                                                maximize visibility and
+                                                downloads.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -824,7 +858,8 @@
                                     </div>
                                     <div style="margin-left: 20px;">
                                         <div>
-                                            <p class="client_reviews">“>Harry & Liu Co. Ltd does the
+                                            <p class="client_reviews">“>Harry &
+                                                Liu Co. Ltd does the
                                                 exact same thing with
                                                 technologies. It knows how to
                                                 gather the customer requirements
@@ -1433,7 +1468,10 @@
                 pagination: false,
             });
 
-            const mediaQuery = window.matchMedia('(min-width: 359px) and (max-width: 992px) ');
+            const mediaQuery = window.matchMedia('(min-width: 768px) and (max-width: 992px) ');
+
+            const mediaQuery1 = window.matchMedia('(min-width: 359px) and (max-width: 767px) ');
+
 
             function updateSwiperConfig() {
                 if (mediaQuery.matches) {
@@ -1444,7 +1482,25 @@
                 partners.update();
             }
             updateSwiperConfig();
+
+            function updateSwiperConfig1() {
+                if (mediaQuery1.matches) {
+                    partners.params.slidesPerView = 4;
+                   processSlider.params.slidesPerView = 1.2;
+                   servicesOur.params.slidesPerView = 1.05;
+                } else {
+                    processSlider.params.slidesPerView = 2.5;
+                    servicesOur.params.slidesPerView = 6;
+                    partners.params.slidesPerView = 6;
+                }
+                processSlider.update();
+                servicesOur.update();
+                partners.update();
+            }
+            updateSwiperConfig1();
+
             mediaQuery.addListener(updateSwiperConfig);
+            mediaQuery1.addListener(updateSwiperConfig1);
 
             var technology = new Swiper('.technology-slider', {
                 slidesPerView: 4,
