@@ -19,8 +19,8 @@ body {
     font-weight: 400;
     color: rgba(18, 24, 32, 0.4);
     line-height: 170%;
-    -ms-scroll-chaining: none;
-    overscroll-behavior: none;
+    -ms-scroll-chaining: smooth;
+    overscroll-behavior: smooth;
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
