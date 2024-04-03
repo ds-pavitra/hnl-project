@@ -1203,7 +1203,7 @@
             //         trigger: ".home-content1",
             //         start: "top 50%",
             //         toggleActions: "restart pause reverse pause",
-            //         scrub: 1,
+            //         scrub: 0.5,
             //         onEnter: () => {
             //             document.querySelector(".home-content1").style.opacity = "0";
             //         },
@@ -1220,7 +1220,7 @@
             //         trigger: ".home-content2",
             //         start: "top top",
             //         toggleActions: "restart pause reverse pause",
-            //         scrub: 1,
+            //         scrub: 0.5,
             //     },
             //     y: -835,
             // });
@@ -1231,7 +1231,7 @@
             //         trigger: ".home-content3",
             //         start: "top top",
             //         toggleActions: "restart pause reverse pause",
-            //         scrub: 1,
+            //         scrub: 0.5,
             //     },
             //     y: -1235,
             // });
@@ -1242,7 +1242,7 @@
             //         trigger: ".home-content4",
             //         start: "top top",
             //         toggleActions: "restart pause reverse pause",
-            //         scrub: 1,
+            //         scrub: 0.5,
             //     },
             //     y: -1635,
             // });
@@ -1253,7 +1253,7 @@
             //         trigger: ".home-content2",
             //         start: "top top",
             //         toggleActions: "restart pause reverse pause",
-            //         scrub: 1,
+            //         scrub: 0.5,
             //     },
             //     opacity: 0,
             // });
@@ -1264,7 +1264,7 @@
             //         trigger: ".home-content3",
             //         start: "top top",
             //         toggleActions: "restart pause reverse pause",
-            //         scrub: 1,
+            //         scrub: 0.5,
             //     },
             //     opacity: 0,
             // });
@@ -1275,7 +1275,7 @@
             //         trigger: ".home-content4",
             //         start: "top top",
             //         toggleActions: "restart pause reverse pause",
-            //         scrub: 1,
+            //         scrub: 0.5,
             //     },
             //     opacity: 0,
             // });
@@ -1445,7 +1445,7 @@ const tl = gsap.timeline();
 //         start: "top top",
 //         end: "+=200", // Adjust this value as needed
 //         toggleActions: "restart pause reverse pause",
-//         scrub: 1,
+//         scrub: 0.5,
 //         onEnter: () => {
 //             gsap.to(".home-content1", { y: -200, opacity: 0, duration: 0.5 });
 //         },
@@ -1462,7 +1462,7 @@ tl.to(".home-content2", {
         trigger: ".home-content1",
         start: "top top",
         toggleActions: "restart pause reverse pause",
-        scrub: 1,
+        scrub: 0.5,
         onEnter: () => {
             gsap.to(".home-content1", { y: -200, opacity: 0, duration: 0.5 });
         },
@@ -1488,7 +1488,7 @@ tl.to(".home-content3", {
         trigger: ".home-content2",
         start: "top top",
         toggleActions: "restart pause reverse pause",
-        scrub: 1,
+        scrub: 0.5,
         onEnter: () => {
             gsap.to(".home-content2", {y: -635, opacity: 0, duration: 0.5 });
         },
@@ -1518,7 +1518,7 @@ tl.to(".home-content4", {
         trigger: ".home-content3",
         start: "top top",
         toggleActions: "restart pause reverse pause",
-        scrub: 1,
+        scrub: 0.5,
         onEnter: () => {
             gsap.to(".home-content3", {y: -1035, opacity: 0, duration: 0.5 });
         },
@@ -1548,7 +1548,7 @@ tl.to(".home-content5", {
         trigger: ".home-content4",
         start: "top top",
         toggleActions: "restart pause reverse pause",
-        scrub: 1,
+        scrub: 0.5,
         onEnter: () => {
             gsap.to(".home-content4", {y: -1535, opacity: 0, duration: 0.5 });
             document.querySelector(".img1").classList.add("img4");
@@ -1580,7 +1580,7 @@ tl.to(".home-content6", {
         trigger: ".home-content5",
         start: "top top",
         toggleActions: "restart pause reverse pause",
-        scrub: 1,
+        scrub: 0.5,
         onEnter: () => {
             gsap.to(".home-content5", { opacity: 0, duration: 0.5 });
         },
