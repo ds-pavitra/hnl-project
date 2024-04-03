@@ -2431,7 +2431,7 @@ uiux page css style
 
 .process-slide {
     width: 565px;
-    height: 204px;
+    height: auto;
     border-right: 1px solid #00000033;
     padding: 0 50px;
     display: flex;
@@ -2542,14 +2542,22 @@ uiux page css style
 }
 
 .why_matters_desk .service-content {
+    padding-left: 0px;
+}
+
+.slide {
     padding-left: 50px;
+}
+
+.slide-1 {
+    border-left: 4px solid black;
 }
 
 .why_matters_desk .service-item {
     position: relative;
 }
 
-.why_matters_desk .service-content::before {
+/* .why_matters_desk .service-content::before {
     content: "";
     display: block;
     position: absolute;
@@ -2558,7 +2566,9 @@ uiux page css style
     width: 4px;
     height: 160px;
     background-color: #000000;
-}
+    transition: transform 0.5s ease-in-out;
+} */
+
 
 .why_matters_desk h5 {
     color: #000;
@@ -2606,6 +2616,17 @@ uiux page css style
 .sc_desk .card {
     height: 256px;
 }
+
+.no-scroll {
+    overflow: hidden !important;
+}
+
+[data-aos="fade-up1"].aos-animate {
+    opacity: 1;
+    transform: translateY(-108.5%) !important;
+}
+
+
 
 @media only screen and (min-width: 359px) and (max-width: 767px) {
     body {
@@ -4376,9 +4397,11 @@ uiux page css style
         top: 370px;
         transform: translate(10px, 10px);
     }
+
     .os_description_cta:before {
         width: 100%;
     }
+
     .os_description_cta p {
         color: #000;
         font-size: 18px;
@@ -4401,33 +4424,35 @@ uiux page css style
         border-radius: 5px;
     }
 
-    .our_service_sec{
+    .our_service_sec {
         height: 640px !important;
     }
 
-    .our-service-cont{
+    .our-service-cont {
         top: 146px !important;
     }
 
-    .cm_270{
+    .cm_270 {
         margin-bottom: 0 !important;
     }
 
-    .md_wcus .card , .sc_desk .card{
+    .md_wcus .card,
+    .sc_desk .card {
         height: 170px;
     }
 
-    .process_Sec_md{
+    .process_Sec_md {
         height: 258px !important;
     }
 
-    .process_sec_sc{
+    .process_sec_sc {
         height: 170px !important;
     }
 
     .why_matters_desk .service-image {
         display: none;
     }
+
     .why_matters_desk p {
         width: auto;
     }

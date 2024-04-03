@@ -362,10 +362,10 @@
                         <h2>WHY DIGITAL MARKETING MATTERS</h2>
                     </div>
                 </div>
-                <div class="service-item">
+                <div class="service-item wmsc">
                     <div
                         class="service-content overview_info d-flex flex-column justify-content-center ">
-                        <div>
+                        <div class="slide slide-1">
                             <h5>Reach & Visibility</h5>
                             <p>
                                 Digital marketing allows you to reach a global
@@ -374,7 +374,7 @@
                                 engines, social media platforms, and websites
                             </p>
                         </div>
-                        <div>
+                        <div class="slide slide-2">
                             <h5>Targeted Advertising</h5>
                             <p>
                                 With digital marketing, you can target specific
@@ -383,7 +383,7 @@
                                 at the right time with personalized messaging
                             </p>
                         </div>
-                        <div>
+                        <div class="slide slide-3">
                             <h5>Measurable Results</h5>
                             <p>
                                 Unlike traditional marketing methods, digital
@@ -393,7 +393,7 @@
                                 data-driven decisions
                             </p>
                         </div>
-                        <div>
+                        <div class="slide slide-4">
                             <h5>Cost-Effectiveness</h5>
                             <p>
                                 Digital marketing offers cost-effective
@@ -403,7 +403,7 @@
                                 the bank
                             </p>
                         </div>
-                        <div>
+                        <div class="slide slide-5">
                             <h5>Engagement & Interaction</h5>
                             <p>
                                 Digital marketing enables two-way communication
@@ -1214,6 +1214,64 @@
     Client's Activation
 -----------------------------------*/
         document.addEventListener('DOMContentLoaded', function () {
+
+            gsap.registerPlugin(ScrollTrigger);
+
+
+            const slides = document.querySelectorAll(".why_matters_desk .service-content > div");
+            const slideContainer = document.querySelector(".why_matters_desk .service-content");
+            const slideHeights = [];
+            const borderWidth = 4; // Width of the border-left
+
+            // Calculate the height of each slide
+            slides.forEach((slide, index) => {
+                slideHeights.push(slide.offsetHeight);
+            });
+
+            // Calculate the total height of all slides
+            const totalHeight = slideHeights.reduce((acc, curr) => acc + curr, 0);
+
+            // Disable other scrolls until animation completes
+            document.body.style.overflow = "hidden";
+
+            // Animate the scroll to the top of the slideContainer with a delay
+            gsap.fromTo(slideContainer, {
+                scrollTop: 0,
+            }, {
+                duration: 1, // Animation duration
+                delay: 1, // Delay before animation starts
+                scrollTop: slideContainer.offsetTop,
+                onComplete: () => {
+                    // Enable scrolling when animation completes
+                    document.body.style.overflow = "";
+                }
+            });
+
+            slides.forEach((slide, index) => {
+                ScrollTrigger.create({
+                    trigger: slide,
+                    start: "top 80%",
+                    end: "bottom 20%",
+                    // markers: { startColor: "green", endColor: "red", fontSize: "12px" },
+                    scrub: true,
+                    onUpdate: (self) => {
+                        const progress = self.progress;
+                        const slideHeight = slideHeights[index];
+                        const translateY = progress * (totalHeight - slideHeight);
+
+                        // Calculate the position of the border-left based on scroll progress
+                        const newBorderPosition = Math.floor((translateY / totalHeight) * slides.length);
+
+                        // Remove border-left from all slides
+                        slides.forEach((s, i) => {
+                            s.style.borderLeft = "none";
+                        });
+
+                        // Add border-left to the current slide
+                        slides[newBorderPosition].style.borderLeft = `${borderWidth}px solid black`;
+                    }
+                });
+            });
 
             var dropdown = document.getElementById("what-we-do-dropdown");
             var dropdownMenu = dropdown.querySelector(".dropdown-menu");
