@@ -1287,7 +1287,6 @@
                     scrub: 0.5,
                     onEnter: () => {
                         gsap.to(".home-content4", {y: -1535, opacity: 0, duration: 0.5 });
-                        document.querySelector(".img1").classList.add("img4");
                     },
                     onEnterBack: () => {
                         gsap.to(".home-content4", {y: -1235, opacity: 1, duration: 0.5 });
@@ -1301,6 +1300,7 @@
                         gsap.to(".home-content4", {y: -1535, opacity: 0, duration: 0.5 });
                         gsap.to(".animation_img", { opacity: 0, duration: 0.5, onComplete: () => {
                             document.querySelector(".animation_img").src = "./img/ai.png";
+                            document.querySelector(".img1").classList.add("img4");
                             gsap.to(".animation_img", { opacity: 1, duration: 0.5 });
                         }});
                     },
