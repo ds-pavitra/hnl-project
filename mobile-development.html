@@ -1378,9 +1378,10 @@
                 ease: "none",
                 scrollTrigger: {
                     trigger: "#process-slider",
-                    start: "top 60%", // Trigger when the top of the section hits the bottom of the viewport
-                    end: () => "+=400" + (document.querySelector(".process-wrapper").offsetWidth - window.innerWidth), // Adjust this value to control the scroll distance
-                    scrub: true, // Initially set to true
+                    pin:".process_Sec_md",
+                    start: "top 20%", // Trigger when the top of the section hits the bottom of the viewport
+                    end: () => "+=300" + (document.querySelector(".process-wrapper").offsetWidth - window.innerWidth), // Adjust this value to control the scroll distance
+                    scrub: 1, // Initially set to true
                     onEnter: () => {
                         document.body.classList.add('no-scroll'); // Disable body scroll when entering the section
                     },
@@ -1396,60 +1397,60 @@
             });
 
             
-            const slides = document.querySelectorAll(".why_matters_desk .service-content > div");
-            const slideContainer = document.querySelector(".why_matters_desk .service-content");
-            const slideHeights = [];
-            const borderWidth = 4; // Width of the border-left
+            // const slides = document.querySelectorAll(".why_matters_desk .service-content > div");
+            // const slideContainer = document.querySelector(".why_matters_desk .service-content");
+            // const slideHeights = [];
+            // const borderWidth = 4; // Width of the border-left
 
-            // Calculate the height of each slide
-            slides.forEach((slide, index) => {
-                slideHeights.push(slide.offsetHeight);
-            });
+            // // Calculate the height of each slide
+            // slides.forEach((slide, index) => {
+            //     slideHeights.push(slide.offsetHeight);
+            // });
 
-            // Calculate the total height of all slides
-            const totalHeight = slideHeights.reduce((acc, curr) => acc + curr, 0);
+            // // Calculate the total height of all slides
+            // const totalHeight = slideHeights.reduce((acc, curr) => acc + curr, 0);
 
-            // Disable other scrolls until animation completes
-            document.body.style.overflow = "hidden";
+            // // Disable other scrolls until animation completes
+            // document.body.style.overflow = "hidden";
 
-            // Animate the scroll to the top of the slideContainer with a delay
-            gsap.fromTo(slideContainer, {
-                scrollTop: 0,
-            }, {
-                duration: 1, // Animation duration
-                delay: 1, // Delay before animation starts
-                scrollTop: slideContainer.offsetTop,
-                onComplete: () => {
-                    // Enable scrolling when animation completes
-                    document.body.style.overflow = "";
-                }
-            });
+            // // Animate the scroll to the top of the slideContainer with a delay
+            // gsap.fromTo(slideContainer, {
+            //     scrollTop: 0,
+            // }, {
+            //     duration: 1, // Animation duration
+            //     delay: 1, // Delay before animation starts
+            //     scrollTop: slideContainer.offsetTop,
+            //     onComplete: () => {
+            //         // Enable scrolling when animation completes
+            //         document.body.style.overflow = "";
+            //     }
+            // });
 
-            slides.forEach((slide, index) => {
-                ScrollTrigger.create({
-                    trigger: slide,
-                    start: "top bottom",
-                    end: "bottom top",
-                    // markers: { startColor: "green", endColor: "red", fontSize: "12px" },
-                    scrub: true,
-                    onUpdate: (self) => {
-                        const progress = self.progress;
-                        const slideHeight = slideHeights[index];
-                        const translateY = progress * (totalHeight - slideHeight);
+            // slides.forEach((slide, index) => {
+            //     ScrollTrigger.create({
+            //         trigger: slide,
+            //         start: "top bottom",
+            //         end: "bottom top",
+            //         // markers: { startColor: "green", endColor: "red", fontSize: "12px" },
+            //         scrub: 1,
+            //         onUpdate: (self) => {
+            //             const progress = self.progress;
+            //             const slideHeight = slideHeights[index];
+            //             const translateY = progress * (totalHeight - slideHeight);
 
-                        // Calculate the position of the border-left based on scroll progress
-                        const newBorderPosition = Math.floor((translateY / totalHeight) * slides.length);
+            //             // Calculate the position of the border-left based on scroll progress
+            //             const newBorderPosition = Math.floor((translateY / totalHeight) * slides.length);
 
-                        // Remove border-left from all slides
-                        slides.forEach((s, i) => {
-                            s.style.borderLeft = "none";
-                        });
+            //             // Remove border-left from all slides
+            //             slides.forEach((s, i) => {
+            //                 s.style.borderLeft = "none";
+            //             });
 
-                        // Add border-left to the current slide
-                        slides[newBorderPosition].style.borderLeft = `${borderWidth}px solid black`;
-                    }
-                });
-            });
+            //             // Add border-left to the current slide
+            //             slides[newBorderPosition].style.borderLeft = `${borderWidth}px solid black`;
+            //         }
+            //     });
+            // });
 
 
             var dropdown = document.getElementById("what-we-do-dropdown");

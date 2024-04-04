@@ -667,12 +667,12 @@
 
             <!-- why choose us section  -->
 
-            <section class="why-choose-us-section">
+            <section class="why-choose-us-section lazy-container">
                 <div class="container" style="margin: 70px auto;">
                     <h2>Why Choose Us</h2>
                     <div class="row" id="row-cust-row-1"
                         style="margin-bottom: 40px;">
-                        <div class="col-md-6">
+                        <div class="col-md-6 lazy-container">
                             <div class="card">
                                 <div class="card-body">
                                     <div class="row">
@@ -703,14 +703,14 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-6 lazy-container">
                             <div class="card">
                                 <div class="card-body">
                                     <div class="row" id="row-cust-row-1">
                                         <div
                                             class="col-md-12 d-flex align-items-center">
                                             <div class="col-md-4 card_img_div">
-                                                <img src="./img/Group3.png"
+                                                <img src="./img/group3.png"
                                                     style="width: 100%;"
                                                     alt="Image 1">
                                             </div>
@@ -735,7 +735,7 @@
                         </div>
                     </div>
                     <div class="row" id="row-cust-row-1">
-                        <div class="col-md-6">
+                        <div class="col-md-6 lazy-container">
                             <div class="card">
                                 <div class="card-body">
                                     <div class="row">
@@ -773,7 +773,7 @@
 
             <!-- our process section starts  -->
 
-            <div class="section section-margin-bottom process_sec"
+            <div class="section section-margin-bottom process_sec lazy-container"
                 style="height:420px;position: relative;">
                 <h2 class="partner_title">OUR PROCESS</h2>
                 <div class="cust-process-cont"
@@ -1508,14 +1508,30 @@
 
             gsap.registerPlugin(ScrollTrigger);
 
+            const lazyContainers = document.querySelectorAll('.lazy-container');
+
+            lazyContainers.forEach((lazyContainer, index) => {
+                gsap.to(lazyContainer, {
+                    opacity: 1,
+                    duration: 1, // Animation duration
+                    scrollTrigger: {
+                        trigger: lazyContainer,
+                        start: 'top 60%', // Trigger the animation when 80% of the container is visible at the top of the viewport
+                        end: 'bottom 20%', // End the animation when 20% of the container is visible at the bottom of the viewport
+                        toggleActions: 'play none none none', // Play the animation when scrolling down and reverse it when scrolling up
+                    },
+                });
+            });
+
             gsap.to(".process-wrapper", {
                 xPercent: -53.5 * (2), // Adjust this value according to the number of slides
                 ease: "none",
                 scrollTrigger: {
                     trigger: "#process-slider",
-                    start: "top 60%", // Trigger when the top of the section hits the bottom of the viewport
-                    end: () => "+=400" + (document.querySelector(".process-wrapper").offsetWidth - window.innerWidth), // Adjust this value to control the scroll distance
-                    scrub: true, // Initially set to true
+                    pin:".process_sec",
+                    start: "top 20%", // Trigger when the top of the section hits the bottom of the viewport
+                    end: () => "+=200" + (document.querySelector(".process-wrapper").offsetWidth - window.innerWidth), // Adjust this value to control the scroll distance
+                    scrub: 1, // Initially set to true
                     onEnter: () => {
                         document.body.classList.add('no-scroll'); // Disable body scroll when entering the section
                     },

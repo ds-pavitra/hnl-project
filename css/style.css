@@ -24,7 +24,11 @@ body {
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
-
+.lazy-container {
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+  
 .header_logo {
     width: 84px;
     height: 70px;
