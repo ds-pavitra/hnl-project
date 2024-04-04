@@ -436,12 +436,14 @@
     
                             <div class="service-content home-content3">
                                 <h4 class="fin_title">Fintech Solution</h4>
-                                <p class="service_disc" style="color: #000;">
-                                    Seamlessly Tap to Pay Using Smart Watches, Access Online Payment Solutions Platform, and
-                                    Harness POS Devices for Effortless Transactions
-                                </p>
-                                <a href="#" class="know_more">Know More <i class="fa-solid fa-arrow-right-long"
-                                        style="vertical-align:middle;"></i></a>
+                                <div class="fin_content">
+                                    <p class="service_disc" style="color: #000;">
+                                        Seamlessly Tap to Pay Using Smart Watches, Access Online Payment Solutions Platform, and
+                                        Harness POS Devices for Effortless Transactions
+                                    </p>
+                                    <a href="#" class="know_more">Know More <i class="fa-solid fa-arrow-right-long"
+                                            style="vertical-align:middle;"></i></a>
+                                </div>
                             </div>
     
                             <!-- <div class="service-image img3">
@@ -453,12 +455,14 @@
     
                             <div class="service-content home-content4">
                                 <h4 class="net_title">Networking Solution</h4>
-                                <p class="service_disc" style="color: #000;">
-                                    Experience High-Speed Fiber Services & IPTV, Enhanced by GPON Network & Optical Network
-                                    Terminal (ONU) Technologies
-                                </p>
-                                <a href="#" class="know_more">Know More <i class="fa-solid fa-arrow-right-long"
-                                        style="vertical-align:middle;"></i></a>
+                                <div class="net_content">
+                                    <p class="service_disc" style="color: #000;">
+                                        Experience High-Speed Fiber Services & IPTV, Enhanced by GPON Network & Optical Network
+                                        Terminal (ONU) Technologies
+                                    </p>
+                                    <a href="#" class="know_more">Know More <i class="fa-solid fa-arrow-right-long"
+                                            style="vertical-align:middle;"></i></a>
+                                </div>
                             </div>
     
                             <!-- <div class="service-image img4">
@@ -470,12 +474,14 @@
     
                             <div class="service-content home-content5">
                                 <h4 class="ai_title">AI/ML Solution</h4>
-                                <p class="service_disc" style="color: #000;">
-                                    From Image Recognition to Fraud Detection, and Seamlessly Integrated Smart Home Devices,
-                                    Transforming the Way You Interact with Your Environment
-                                </p>
-                                <a href="#" class="know_more">Know More <i class="fa-solid fa-arrow-right-long"
-                                        style="vertical-align:middle;"></i></a>
+                                <div class="ai_content">
+                                    <p class="service_disc" style="color: #000;">
+                                        From Image Recognition to Fraud Detection, and Seamlessly Integrated Smart Home Devices,
+                                        Transforming the Way You Interact with Your Environment
+                                    </p>
+                                    <a href="#" class="know_more">Know More <i class="fa-solid fa-arrow-right-long"
+                                            style="vertical-align:middle;"></i></a>
+                                </div>
                             </div>
     
                             <!-- <div class="service-image img5">
@@ -490,8 +496,8 @@
                                 <h4>Fintech Solution</h4>
                                 <br>
                                 <h4>Networking Solution</h4>
-                                <br>
-                                <h4>AI/ML Solution</h4>
+                                <!-- <br>
+                                <h4>AI/ML Solution</h4> -->
                             </div>
                             <!-- <div class="service-image img6">
                                 <img src="./img/cityskyline.png" alt="Service Image 1">
@@ -1174,7 +1180,7 @@
             gsap.registerPlugin(ScrollTrigger);
 
             // Set initial opacity of home-content elements to 0
-            gsap.set(".home-content2, .home-content3, .home-content4, .home-content5, .home-content6", { opacity: 0 });
+            gsap.set(".home-content2,.fin_content, .net_content, .ai_content, .fin_title, .net_title, .ai_title,.home-content6", { opacity: 0 });
 
             // Create a timeline
             const tl = gsap.timeline();
@@ -1212,132 +1218,302 @@
             });
 
 
-            // Animation for home-content3
-            tl.to(".home-content3", {
+            tl.to(".fin_title", {
                 scrollTrigger: {
                     trigger: ".home-content2",
                     start: "top top",
                     toggleActions: "restart pause reverse pause",
                     scrub: 0.5,
                     onEnter: () => {
-                        gsap.to(".home-content2", {y: -635, opacity: 0, duration: 0.5 });
                         gsap.to(".smart-city", {y: -635, opacity: 0, duration: 0.5 });
+                        gsap.to(".home-content2", {y: -635, opacity: 0, duration: 0.5 });
+                        // gsap.to(".fin_title", {y: -835, opacity: 1, duration: 0.5 });
                     },
                     onEnterBack: () => {
+                        gsap.to(".smart-city", {y: 0, opacity: 1, duration: 0.5 });
                         gsap.to(".home-content2", {y: -390, opacity: 1, duration: 0.5 });
-                        gsap.to(".smart-city", {y: 0, opacity: 1, duration: 0.5 });
-                        gsap.to(".animation_img", { opacity: 0, duration: 0.5, onComplete: () => {
-                            document.querySelector(".animation_img").src = "./img/cityskyline.png";
-                            gsap.to(".animation_img", { opacity: 1, duration: 0.5 });
-                        }});
-                    },
-                    onLeave: () => {
-                        gsap.to(".home-content2", {y: -635, opacity: 0, duration: 0.5 });
-                        gsap.to(".smart-city", {y: -635, opacity: 0, duration: 0.5 });
-                        gsap.to(".animation_img", { opacity: 0, duration: 0.5, onComplete: () => {
-                            document.querySelector(".animation_img").src = "./img/amico@2x.png";
-                            gsap.to(".animation_img", { opacity: 1, duration: 0.5 });
-                        }});
-                    },
-                    onLeaveBack:()=> {
-                        gsap.to(".smart-city", {y: 0, opacity: 1, duration: 0.5 });
+                        gsap.to(".fin_title", {y: 0, opacity: 1, duration: 0.5 });
                     },
                 },
                 y: -835,
-                opacity: 1, // Set opacity to 1 during animation
-                duration: 1 // Set duration of the animation
+                opacity: 1,
+                duration: 1
             });
 
-            // Animation for home-content4
-            tl.to(".home-content4", {
+            // Animation for fin_content
+            tl.to(".fin_content", {
                 scrollTrigger: {
-                    trigger: ".home-content3",
+                    trigger: ".fin_title",
                     start: "top top",
                     toggleActions: "restart pause reverse pause",
                     scrub: 0.5,
                     onEnter: () => {
-                        gsap.to(".home-content3", {y: -1035, opacity: 0, duration: 0.5 });
-                    },
-                    onEnterBack: () => {
-                        gsap.to(".home-content3", {y: -835, opacity: 1, duration: 0.5 });
+                        gsap.to(".fin_content", {y: -800, opacity: 1, duration: 0.5 });
                         gsap.to(".animation_img", { opacity: 0, duration: 0.5, onComplete: () => {
                             document.querySelector(".animation_img").src = "./img/amico@2x.png";
                             gsap.to(".animation_img", { opacity: 1, duration: 0.5 });
                         }});
                     },
-                    onLeave: () => {
-                        gsap.to(".home-content3", {y: -1035, opacity: 0, duration: 0.5 });
+                    onEnterBack: () => {
+                        gsap.to(".fin_content", {y: 0, opacity: 1, duration: 0.5 });
                         gsap.to(".animation_img", { opacity: 0, duration: 0.5, onComplete: () => {
-                            document.querySelector(".animation_img").src = "./img/pana.png";
+                            document.querySelector(".animation_img").src = "./img/amico@2x.png";
                             gsap.to(".animation_img", { opacity: 1, duration: 0.5 });
                         }});
                     },
                 },
-                y: -1235,
-                opacity: 1, // Set opacity to 1 during animation
-                duration: 1 // Set duration of the animation
+                y: -800,
+                opacity: 1,
+                duration: 1
             });
 
-            // Animation for home-content5
-            tl.to(".home-content5", {
+           // Animation for net_title
+            tl.to(".net_title", {
                 scrollTrigger: {
-                    trigger: ".home-content4",
+                    trigger: ".net_title",
                     start: "top top",
                     toggleActions: "restart pause reverse pause",
                     scrub: 0.5,
                     onEnter: () => {
-                        gsap.to(".home-content4", {y: -1535, opacity: 0, duration: 0.5 });
+                        gsap.to(".fin_title", {y: -835, opacity: 0, duration: 0.5 });
+                        gsap.to(".fin_content", {y: -800, opacity: 0, duration: 0.5 });
                     },
                     onEnterBack: () => {
-                        gsap.to(".home-content4", {y: -1235, opacity: 1, duration: 0.5 });
+                        gsap.to(".fin_title", {y: -835, opacity: 1, duration: 0.5 });
+                        gsap.to(".fin_content", {y: -800, opacity: 1, duration: 0.5 });
+                        gsap.to(".net_title", {y: -1235, opacity: 1, duration: 0.5 });
+                    },
+                },
+                y: -1235,
+                opacity: 1,
+                duration: 1
+            });
+
+            // Animation for net_content
+            tl.to(".net_content", {
+                scrollTrigger: {
+                    trigger: ".net_content",
+                    start: "top top",
+                    toggleActions: "restart pause reverse pause",
+                    scrub: 0.5,
+                    onEnter: () => {
                         gsap.to(".animation_img", { opacity: 0, duration: 0.5, onComplete: () => {
                             document.querySelector(".animation_img").src = "./img/pana.png";
-                            document.querySelector(".img1").classList.remove("img4");
                             gsap.to(".animation_img", { opacity: 1, duration: 0.5 });
                         }});
                     },
-                    onLeave: () => {
-                        gsap.to(".home-content4", {y: -1535, opacity: 0, duration: 0.5 });
+                    onEnterBack: () => {
+                        gsap.to(".net_content", {y: -800, opacity: 1, duration: 0.5 });
                         gsap.to(".animation_img", { opacity: 0, duration: 0.5, onComplete: () => {
-                            document.querySelector(".animation_img").src = "./img/ai.png";
-                            document.querySelector(".img1").classList.add("img4");
+                            document.querySelector(".animation_img").src = "./img/pana.png";
                             gsap.to(".animation_img", { opacity: 1, duration: 0.5 });
                         }});
                     },
                 },
+                y: -1200,
+                opacity: 1,
+                duration: 1
+            });
+
+            // Animation for ai_title
+            tl.to(".ai_title", {
+                scrollTrigger: {
+                    trigger: ".ai_title",
+                    start: "top top",
+                    toggleActions: "restart pause reverse pause",
+                    scrub: 0.5,
+                    onEnter: () => {
+                        gsap.to(".net_title", {y: -1235, opacity: 0, duration: 0.5 });
+                        gsap.to(".net_content", {y: -1200, opacity: 0, duration: 0.5 });
+                    },
+                    onEnterBack: () => {
+                        gsap.to(".net_title", {y: -1235, opacity: 1, duration: 0.5 });
+                        gsap.to(".net_content", {y: -1200, opacity: 1, duration: 0.5 });
+                    },
+                },
                 y: -1635,
-                opacity: 1, // Set opacity to 1 during animation
-                duration: 1 // Set duration of the animation
+                opacity: 1,
+                duration: 1
+            });
+
+            // Animation for ai_content
+            tl.to(".ai_content", {
+                scrollTrigger: {
+                    trigger: ".ai_content",
+                    start: "top top",
+                    toggleActions: "restart pause reverse pause",
+                    scrub: 0.5,
+                    onEnter: () => {
+                        gsap.to(".animation_img", { opacity: 0, duration: 0.5, onComplete: () => {
+                            document.querySelector(".animation_img").src = "./img/ai.png";
+                            gsap.to(".animation_img", { opacity: 1, duration: 0.5 });
+                        }});
+                    },
+                    onEnterBack: () => {
+                        gsap.to(".ai_content", {y: -1200, opacity: 1, duration: 0.5 });
+                        gsap.to(".animation_img", { opacity: 0, duration: 0.5, onComplete: () => {
+                            document.querySelector(".animation_img").src = "./img/ai.png";
+                            gsap.to(".animation_img", { opacity: 1, duration: 0.5 });
+                        }});
+                    },
+                },
+                y: -1600,
+                opacity: 1,
+                duration: 1
             });
 
             // Animation for home-content6
             tl.to(".home-content6", {
                 scrollTrigger: {
-                    trigger: ".home-content5",
+                    trigger: ".home-content6",
                     start: "top top",
                     toggleActions: "restart pause reverse pause",
                     scrub: 0.5,
                     onEnter: () => {
-                        gsap.to(".home-content5", { opacity: 0, duration: 0.5 });
+                        gsap.to(".ai_title", {y: -1335, opacity: 1, duration: 0.5 });
+                        gsap.to(".ai_content", {y: -1600, opacity: 0, duration: 0.5 });
                     },
                     onEnterBack: () => {
-                        gsap.to(".home-content5", { opacity: 1, duration: 0.5 });
-                        gsap.to(".animation_img", { opacity: 0, duration: 0.5, onComplete: () => {
-                            document.querySelector(".animation_img").src = "./img/ai.png";
-                            gsap.to(".animation_img", { opacity: 1, duration: 0.5 });
-                        }});
-                    },
-                    onLeave: () => {
-                        gsap.to(".animation_img", { opacity: 0, duration: 0.5, onComplete: () => {
-                            document.querySelector(".animation_img").src = "./img/ai.png";
-                            gsap.to(".animation_img", { opacity: 1, duration: 0.5 });
-                        }});
+                        gsap.to(".home-content6", {y: -1990, opacity: 1, duration: 0.5 });
+                        gsap.to(".ai_title", {y: -1635, opacity: 1, duration: 0.5 });
+                        gsap.to(".ai_content", {y: -1600, opacity: 1, duration: 0.5 });
                     },
                 },
                 y: -1990,
-                opacity: 1, // Set opacity to 1 during animation
-                duration: 1 // Set duration of the animation
+                opacity: 1,
+                duration: 1
             });
+
+
+            // // Animation for home-content3
+            // tl.to(".fin_title", {
+            //     scrollTrigger: {
+            //         trigger: ".home-content2",
+            //         start: "top top",
+            //         toggleActions: "restart pause reverse pause",
+            //         scrub: 0.5,
+            //         onEnter: () => {
+            //             gsap.to(".home-content2", {y: -635, opacity: 0, duration: 0.5 });
+            //             gsap.to(".smart-city", {y: -635, opacity: 0, duration: 0.5 });
+            //         },
+            //         onEnterBack: () => {
+            //             gsap.to(".home-content2", {y: -390, opacity: 1, duration: 0.5 });
+            //             gsap.to(".smart-city", {y: 0, opacity: 1, duration: 0.5 });
+            //             gsap.to(".animation_img", { opacity: 0, duration: 0.5, onComplete: () => {
+            //                 document.querySelector(".animation_img").src = "./img/cityskyline.png";
+            //                 gsap.to(".animation_img", { opacity: 1, duration: 0.5 });
+            //             }});
+            //         },
+            //         onLeave: () => {
+            //             gsap.to(".home-content2", {y: -635, opacity: 0, duration: 0.5 });
+            //             gsap.to(".smart-city", {y: -635, opacity: 0, duration: 0.5 });
+            //             gsap.to(".fin_title", {y: -835, opacity: 1, duration: 0.5 });
+            //             gsap.to(".animation_img", { opacity: 0, duration: 0.5, onComplete: () => {
+            //                 document.querySelector(".animation_img").src = "./img/amico@2x.png";
+            //                 gsap.to(".animation_img", { opacity: 1, duration: 0.5 });
+            //             }});
+            //         },
+            //         onLeaveBack:()=> {
+            //             gsap.to(".smart-city", {y: 0, opacity: 1, duration: 0.5 });
+            //         },
+            //     },
+            //     y: -835,
+            //     opacity: 1, // Set opacity to 1 during animation
+            //     duration: 1 // Set duration of the animation
+            // });
+
+            // // Animation for home-content4
+            // tl.to(".home-content4", {
+            //     scrollTrigger: {
+            //         trigger: ".fin_content",
+            //         start: "top top",
+            //         toggleActions: "restart pause reverse pause",
+            //         scrub: 0.5,
+            //         onEnter: () => {
+            //             gsap.to(".fin_content", {y: -835, opacity: 0, duration: 0.5 });
+            //         },
+            //         onEnterBack: () => {
+            //             gsap.to(".fin_title", {y: -835, opacity: 1, duration: 0.5 });
+            //             gsap.to(".fin_content", {y: -835, opacity: 1, duration: 0.5 });
+            //             gsap.to(".animation_img", { opacity: 0, duration: 0.5, onComplete: () => {
+            //                 document.querySelector(".animation_img").src = "./img/amico@2x.png";
+            //                 gsap.to(".animation_img", { opacity: 1, duration: 0.5 });
+            //             }});
+            //         },
+            //         onLeave: () => {
+            //             gsap.to(".fin_content", {y: -1035, opacity: 0, duration: 0.5 });
+            //             gsap.to(".fin_title", {y: -1035, opacity: 0, duration: 0.5 });                        
+            //             gsap.to(".animation_img", { opacity: 0, duration: 0.5, onComplete: () => {
+            //                 document.querySelector(".animation_img").src = "./img/pana.png";
+            //                 gsap.to(".animation_img", { opacity: 1, duration: 0.5 });
+            //             }});
+            //         },
+            //     },
+            //     y: -1235,
+            //     opacity: 1, // Set opacity to 1 during animation
+            //     duration: 1 // Set duration of the animation
+            // });
+
+            // Animation for home-content5
+            // tl.to(".home-content5", {
+            //     scrollTrigger: {
+            //         trigger: ".home-content4",
+            //         start: "top top",
+            //         toggleActions: "restart pause reverse pause",
+            //         scrub: 0.5,
+            //         onEnter: () => {
+            //             gsap.to(".home-content4", {y: -1535, opacity: 0, duration: 0.5 });
+            //         },
+            //         onEnterBack: () => {
+            //             gsap.to(".home-content4", {y: -1235, opacity: 1, duration: 0.5 });
+            //             gsap.to(".animation_img", { opacity: 0, duration: 0.5, onComplete: () => {
+            //                 document.querySelector(".animation_img").src = "./img/pana.png";
+            //                 document.querySelector(".img1").classList.remove("img4");
+            //                 gsap.to(".animation_img", { opacity: 1, duration: 0.5 });
+            //             }});
+            //         },
+            //         onLeave: () => {
+            //             gsap.to(".home-content4", {y: -1535, opacity: 0, duration: 0.5 });
+            //             gsap.to(".animation_img", { opacity: 0, duration: 0.5, onComplete: () => {
+            //                 document.querySelector(".animation_img").src = "./img/ai.png";
+            //                 document.querySelector(".img1").classList.add("img4");
+            //                 gsap.to(".animation_img", { opacity: 1, duration: 0.5 });
+            //             }});
+            //         },
+            //     },
+            //     y: -1635,
+            //     opacity: 1, // Set opacity to 1 during animation
+            //     duration: 1 // Set duration of the animation
+            // });
+
+            // // Animation for home-content6
+            // tl.to(".home-content6", {
+            //     scrollTrigger: {
+            //         trigger: ".home-content5",
+            //         start: "top top",
+            //         toggleActions: "restart pause reverse pause",
+            //         scrub: 0.5,
+            //         onEnter: () => {
+            //             gsap.to(".home-content5", { opacity: 0, duration: 0.5 });
+            //         },
+            //         onEnterBack: () => {
+            //             gsap.to(".home-content5", { opacity: 1, duration: 0.5 });
+            //             gsap.to(".animation_img", { opacity: 0, duration: 0.5, onComplete: () => {
+            //                 document.querySelector(".animation_img").src = "./img/ai.png";
+            //                 gsap.to(".animation_img", { opacity: 1, duration: 0.5 });
+            //             }});
+            //         },
+            //         onLeave: () => {
+            //             gsap.to(".animation_img", { opacity: 0, duration: 0.5, onComplete: () => {
+            //                 document.querySelector(".animation_img").src = "./img/ai.png";
+            //                 gsap.to(".animation_img", { opacity: 1, duration: 0.5 });
+            //             }});
+            //         },
+            //     },
+            //     y: -1990,
+            //     opacity: 1, // Set opacity to 1 during animation
+            //     duration: 1 // Set duration of the animation
+            // });
 
 
 
