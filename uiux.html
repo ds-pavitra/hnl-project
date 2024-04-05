@@ -14,6 +14,8 @@
         <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
             rel="stylesheet">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
         <!-- swiper css -->
         <link rel="stylesheet" href="css/plugins/swiper.min.css">
         <!-- itsulu css -->
@@ -382,7 +384,7 @@
 
             <!-- why choose us section  -->
 
-            <section class="why-choose-us-section">
+            <section class="why-choose-us-section uiux_desk">
                 <div class="container" style="margin: 70px auto;">
                     <h2>Why Choose Us</h2>
                     <div class="row" id="row-cust-row-1"
@@ -1279,6 +1281,57 @@
 -----------------------------------*/
         document.addEventListener('DOMContentLoaded', function () {
 
+            const options = {
+                threshold: 0.2 // Trigger when 20% of the element is visible
+            };
+
+            // Observer for left animation
+            const leftObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate__animated', 'animate__fadeInLeft');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, options);
+
+            // Observer for right animation
+            const rightObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate__animated', 'animate__fadeInRight');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, options);
+
+            // Observer for fade-up animation
+            const fadeUpObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate__animated', 'animate__fadeInUp');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, options);
+
+            // Observer for fade-down animation
+            const fadeDownObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (!entry.isIntersecting) {
+                        entry.target.classList.add('animate__animated', 'animate__fadeOutDown');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, options);
+
+
+            const fadeUpTargets = document.querySelectorAll('.keybenefit_img');
+            fadeUpTargets.forEach(target => {
+                fadeUpObserver.observe(target);
+            });
+
+
             gsap.registerPlugin(ScrollTrigger);
 
             gsap.to(".process-wrapper", {
@@ -1288,7 +1341,7 @@
                     trigger: "#process-slider",
                     start: "top 60%", // Trigger when the top of the section hits the bottom of the viewport
                     end: () => "+=400" + (document.querySelector(".process-wrapper").offsetWidth - window.innerWidth), // Adjust this value to control the scroll distance
-                    scrub: true, // Initially set to true
+                    scrub: 1, // Initially set to true
                     onEnter: () => {
                         document.body.classList.add('no-scroll'); // Disable body scroll when entering the section
                     },

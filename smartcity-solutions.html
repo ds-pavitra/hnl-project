@@ -14,6 +14,8 @@
         <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
             rel="stylesheet">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
         <!-- swiper css -->
         <link rel="stylesheet" href="css/plugins/swiper.min.css">
         <!-- itsulu css -->
@@ -337,7 +339,7 @@
             <!-- key benefits  section starts  -->
             <div class="uiux_kb">
                 <section
-                    class="container cards-services-section d-flex key_benefit_container sd_desk cm_270 sc_desk">
+                    class="container cards-services-section d-flex key_benefit_container sd_desk cm_270">
                     <div class="keybenefit_img">
                         <img src="./img/smartcity_overview.png" alt>
                     </div>
@@ -375,7 +377,7 @@
                 <div class="service-item wmsc">
                     <div
                         class="service-content overview_info d-flex flex-column justify-content-center ">
-                        <div  class="slide slide-1">
+                        <div class="slide slide-1">
                             <h5>Electric Vehicle Charging Stations</h5>
                             <p>
                                 Our EV charging stations are equipped with
@@ -384,7 +386,7 @@
                                 processing, and remote monitoring
                             </p>
                         </div>
-                        <div  class="slide slide-2">
+                        <div class="slide slide-2">
                             <h5>Smart Garbage Collection Systems</h5>
                             <p>
                                 Our systems utilize IoT sensors and
@@ -395,7 +397,7 @@
                                 processes
                             </p>
                         </div>
-                        <div  class="slide slide-3">
+                        <div class="slide slide-3">
                             <h5>Solar Grids</h5>
                             <p>
                                 We design and implement solar energy systems to
@@ -404,7 +406,7 @@
                                 energy sources and lowering carbon footprint
                             </p>
                         </div>
-                        <div  class="slide slide-4">
+                        <div class="slide slide-4">
                             <h5>Industrial IoT Solutions</h5>
                             <p>
                                 Our IoT solutions for industrial purposes
@@ -1009,6 +1011,69 @@
 -----------------------------------*/
         document.addEventListener('DOMContentLoaded', function () {
 
+            const options = {
+                threshold: 0.2 // Trigger when 20% of the element is visible
+            };
+
+            // Observer for left animation
+            const leftObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate__animated', 'animate__fadeInLeft');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, options);
+
+            // Observer for right animation
+            const rightObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate__animated', 'animate__fadeInRight');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, options);
+
+            // Observer for fade-up animation
+            const fadeUpObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate__animated', 'animate__fadeInUp');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, options);
+
+            // Observer for fade-down animation
+            const fadeDownObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (!entry.isIntersecting) {
+                        entry.target.classList.add('animate__animated', 'animate__fadeOutDown');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, options);
+
+
+            
+
+            // Targets for left animation
+            const leftTargets = document.querySelectorAll('.slide');
+            leftTargets.forEach(target => {
+                leftObserver.observe(target);
+            });
+
+            const fadeUpTargets = document.querySelectorAll('.keybenefit_img');
+            fadeUpTargets.forEach(target => {
+                fadeUpObserver.observe(target);
+            });
+
+            // Target for right animation
+            const rightTarget = document.querySelector('.service-image');
+            rightObserver.observe(rightTarget);
+
+
             gsap.registerPlugin(ScrollTrigger);
 
             gsap.to(".process-wrapper", {
@@ -1018,7 +1083,7 @@
                     trigger: "#process-slider",
                     start: "top 60%", // Trigger when the top of the section hits the bottom of the viewport
                     end: () => "+=400" + (document.querySelector(".process-wrapper").offsetWidth - window.innerWidth), // Adjust this value to control the scroll distance
-                    scrub: true, // Initially set to true
+                    scrub: 1, // Initially set to true
                     onEnter: () => {
                         document.body.classList.add('no-scroll'); // Disable body scroll when entering the section
                     },
@@ -1033,60 +1098,60 @@
                 }
             });
 
-            const slides = document.querySelectorAll(".why_matters_desk .service-content > div");
-            const slideContainer = document.querySelector(".why_matters_desk .service-content");
-            const slideHeights = [];
-            const borderWidth = 4; // Width of the border-left
+            // const slides = document.querySelectorAll(".why_matters_desk .service-content > div");
+            // const slideContainer = document.querySelector(".why_matters_desk .service-content");
+            // const slideHeights = [];
+            // const borderWidth = 4; // Width of the border-left
 
-            // Calculate the height of each slide
-            slides.forEach((slide, index) => {
-                slideHeights.push(slide.offsetHeight);
-            });
+            // // Calculate the height of each slide
+            // slides.forEach((slide, index) => {
+            //     slideHeights.push(slide.offsetHeight);
+            // });
 
-            // Calculate the total height of all slides
-            const totalHeight = slideHeights.reduce((acc, curr) => acc + curr, 0);
+            // // Calculate the total height of all slides
+            // const totalHeight = slideHeights.reduce((acc, curr) => acc + curr, 0);
 
-            // Disable other scrolls until animation completes
-            document.body.style.overflow = "hidden";
+            // // Disable other scrolls until animation completes
+            // document.body.style.overflow = "hidden";
 
-            // Animate the scroll to the top of the slideContainer with a delay
-            gsap.fromTo(slideContainer, {
-                scrollTop: 0,
-            }, {
-                duration: 1, // Animation duration
-                delay: 1, // Delay before animation starts
-                scrollTop: slideContainer.offsetTop,
-                onComplete: () => {
-                    // Enable scrolling when animation completes
-                    document.body.style.overflow = "";
-                }
-            });
+            // // Animate the scroll to the top of the slideContainer with a delay
+            // gsap.fromTo(slideContainer, {
+            //     scrollTop: 0,
+            // }, {
+            //     duration: 1, // Animation duration
+            //     delay: 1, // Delay before animation starts
+            //     scrollTop: slideContainer.offsetTop,
+            //     onComplete: () => {
+            //         // Enable scrolling when animation completes
+            //         document.body.style.overflow = "";
+            //     }
+            // });
 
-            slides.forEach((slide, index) => {
-                ScrollTrigger.create({
-                    trigger: slide,
-                    start: "top 80%",
-                    end: "bottom 20%",
-                    // markers: { startColor: "green", endColor: "red", fontSize: "12px" },
-                    scrub: true,
-                    onUpdate: (self) => {
-                        const progress = self.progress;
-                        const slideHeight = slideHeights[index];
-                        const translateY = progress * (totalHeight - slideHeight);
+            // slides.forEach((slide, index) => {
+            //     ScrollTrigger.create({
+            //         trigger: slide,
+            //         start: "top 80%",
+            //         end: "bottom 20%",
+            //         // markers: { startColor: "green", endColor: "red", fontSize: "12px" },
+            //         scrub: true,
+            //         onUpdate: (self) => {
+            //             const progress = self.progress;
+            //             const slideHeight = slideHeights[index];
+            //             const translateY = progress * (totalHeight - slideHeight);
 
-                        // Calculate the position of the border-left based on scroll progress
-                        const newBorderPosition = Math.floor((translateY / totalHeight) * slides.length);
+            //             // Calculate the position of the border-left based on scroll progress
+            //             const newBorderPosition = Math.floor((translateY / totalHeight) * slides.length);
 
-                        // Remove border-left from all slides
-                        slides.forEach((s, i) => {
-                            s.style.borderLeft = "none";
-                        });
+            //             // Remove border-left from all slides
+            //             slides.forEach((s, i) => {
+            //                 s.style.borderLeft = "none";
+            //             });
 
-                        // Add border-left to the current slide
-                        slides[newBorderPosition].style.borderLeft = `${borderWidth}px solid black`;
-                    }
-                });
-            });
+            //             // Add border-left to the current slide
+            //             slides[newBorderPosition].style.borderLeft = `${borderWidth}px solid black`;
+            //         }
+            //     });
+            // });
 
             var dropdown = document.getElementById("what-we-do-dropdown");
             var dropdownMenu = dropdown.querySelector(".dropdown-menu");
@@ -1178,6 +1243,7 @@
                 autoplay: {
                     delay: 3000,
                     disableOnInteraction: false,
+                    reverseDirection: true
                 },
                 pagination: false,
             });

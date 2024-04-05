@@ -14,6 +14,8 @@
         <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
             rel="stylesheet">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
         <!-- swiper css -->
         <link rel="stylesheet" href="css/plugins/swiper.min.css">
         <!-- itsulu css -->
@@ -667,12 +669,12 @@
 
             <!-- why choose us section  -->
 
-            <section class="why-choose-us-section lazy-container">
+            <section class="why-choose-us-section sd_desk">
                 <div class="container" style="margin: 70px auto;">
                     <h2>Why Choose Us</h2>
                     <div class="row" id="row-cust-row-1"
                         style="margin-bottom: 40px;">
-                        <div class="col-md-6 lazy-container">
+                        <div class="col-md-6">
                             <div class="card">
                                 <div class="card-body">
                                     <div class="row">
@@ -703,7 +705,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6 lazy-container">
+                        <div class="col-md-6">
                             <div class="card">
                                 <div class="card-body">
                                     <div class="row" id="row-cust-row-1">
@@ -735,7 +737,7 @@
                         </div>
                     </div>
                     <div class="row" id="row-cust-row-1">
-                        <div class="col-md-6 lazy-container">
+                        <div class="col-md-6">
                             <div class="card">
                                 <div class="card-body">
                                     <div class="row">
@@ -773,7 +775,8 @@
 
             <!-- our process section starts  -->
 
-            <div class="section section-margin-bottom process_sec lazy-container"
+            <div
+                class="section section-margin-bottom process_sec"
                 style="height:420px;position: relative;">
                 <h2 class="partner_title">OUR PROCESS</h2>
                 <div class="cust-process-cont"
@@ -845,7 +848,8 @@
                                         </div>
                                     </div>
 
-                                    <div class="swiper-slide process-slide" style="border-right: none;">
+                                    <div class="swiper-slide process-slide"
+                                        style="border-right: none;">
                                         <div class="nums">
                                             <h5>05</h5>
                                         </div>
@@ -1506,22 +1510,57 @@
 -----------------------------------*/
         document.addEventListener('DOMContentLoaded', function () {
 
-            gsap.registerPlugin(ScrollTrigger);
+            const options = {
+                threshold: 0.2 // Trigger when 20% of the element is visible
+            };
 
-            const lazyContainers = document.querySelectorAll('.lazy-container');
-
-            lazyContainers.forEach((lazyContainer, index) => {
-                gsap.to(lazyContainer, {
-                    opacity: 1,
-                    duration: 1, // Animation duration
-                    scrollTrigger: {
-                        trigger: lazyContainer,
-                        start: 'top 60%', // Trigger the animation when 80% of the container is visible at the top of the viewport
-                        end: 'bottom 20%', // End the animation when 20% of the container is visible at the bottom of the viewport
-                        toggleActions: 'play none none none', // Play the animation when scrolling down and reverse it when scrolling up
-                    },
+            // Observer for left animation
+            const leftObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate__animated', 'animate__fadeInLeft');
+                        observer.unobserve(entry.target);
+                    }
                 });
+            }, options);
+
+            // Observer for right animation
+            const rightObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate__animated', 'animate__fadeInRight');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, options);
+
+            // Observer for fade-up animation
+            const fadeUpObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate__animated', 'animate__fadeInUp');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, options);
+
+            // Observer for fade-down animation
+            const fadeDownObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (!entry.isIntersecting) {
+                        entry.target.classList.add('animate__animated', 'animate__fadeOutDown');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, options);
+
+
+            const fadeUpTargets = document.querySelectorAll('.keybenefit_img');
+            fadeUpTargets.forEach(target => {
+                fadeUpObserver.observe(target);
             });
+
+            gsap.registerPlugin(ScrollTrigger);
 
             gsap.to(".process-wrapper", {
                 xPercent: -53.5 * (2), // Adjust this value according to the number of slides

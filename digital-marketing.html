@@ -14,6 +14,9 @@
         <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
             rel="stylesheet">
+
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
         <!-- swiper css -->
         <link rel="stylesheet" href="css/plugins/swiper.min.css">
         <!-- itsulu css -->
@@ -605,13 +608,15 @@
                                         <div>
                                             <img src="./img/osdm1.png">
                                         </div>
-                                        <p>Search Engine <br> Optimization (SEO)</p>
+                                        <p>Search Engine <br> Optimization
+                                            (SEO)</p>
                                     </div>
                                     <div class="swiper-slide service-slide">
                                         <div>
                                             <img src="./img/osdm2.png">
                                         </div>
-                                        <p>Pay-Per-Click <br> Advertising (PPC)</p>
+                                        <p>Pay-Per-Click <br> Advertising
+                                            (PPC)</p>
                                     </div>
                                     <div class="swiper-slide service-slide">
                                         <div>
@@ -623,7 +628,8 @@
                                         <div>
                                             <img src="./img/osdm4.png">
                                         </div>
-                                        <p>Online Reputation Management (ORM)</p>
+                                        <p>Online Reputation Management
+                                            (ORM)</p>
                                     </div>
                                     <div class="swiper-slide service-slide">
                                         <div>
@@ -645,7 +651,8 @@
 
                 <div class="os_description_cta">
                     <p>
-                        We empower brands to tell compelling stories through impactful digital marketing
+                        We empower brands to tell compelling stories through
+                        impactful digital marketing
                     </p>
                     <a href="#"> Let's work together</a>
                 </div>
@@ -697,7 +704,8 @@
                                     </div>
                                     <div style="margin-left: 20px;">
                                         <div>
-                                            <p class="client_reviews">“Harry & Liu Co. Ltd does the
+                                            <p class="client_reviews">“Harry &
+                                                Liu Co. Ltd does the
                                                 exact same thing with
                                                 technologies. It knows how to
                                                 gather the customer requirements
@@ -1215,63 +1223,64 @@
 -----------------------------------*/
         document.addEventListener('DOMContentLoaded', function () {
 
-            gsap.registerPlugin(ScrollTrigger);
+            const options = {
+                threshold: 0.2 // Trigger when 20% of the element is visible
+            };
 
-
-            const slides = document.querySelectorAll(".why_matters_desk .service-content > div");
-            const slideContainer = document.querySelector(".why_matters_desk .service-content");
-            const slideHeights = [];
-            const borderWidth = 4; // Width of the border-left
-
-            // Calculate the height of each slide
-            slides.forEach((slide, index) => {
-                slideHeights.push(slide.offsetHeight);
-            });
-
-            // Calculate the total height of all slides
-            const totalHeight = slideHeights.reduce((acc, curr) => acc + curr, 0);
-
-            // Disable other scrolls until animation completes
-            document.body.style.overflow = "hidden";
-
-            // Animate the scroll to the top of the slideContainer with a delay
-            gsap.fromTo(slideContainer, {
-                scrollTop: 0,
-            }, {
-                duration: 1, // Animation duration
-                delay: 1, // Delay before animation starts
-                scrollTop: slideContainer.offsetTop,
-                onComplete: () => {
-                    // Enable scrolling when animation completes
-                    document.body.style.overflow = "";
-                }
-            });
-
-            slides.forEach((slide, index) => {
-                ScrollTrigger.create({
-                    trigger: slide,
-                    start: "top 80%",
-                    end: "bottom 20%",
-                    // markers: { startColor: "green", endColor: "red", fontSize: "12px" },
-                    scrub: true,
-                    onUpdate: (self) => {
-                        const progress = self.progress;
-                        const slideHeight = slideHeights[index];
-                        const translateY = progress * (totalHeight - slideHeight);
-
-                        // Calculate the position of the border-left based on scroll progress
-                        const newBorderPosition = Math.floor((translateY / totalHeight) * slides.length);
-
-                        // Remove border-left from all slides
-                        slides.forEach((s, i) => {
-                            s.style.borderLeft = "none";
-                        });
-
-                        // Add border-left to the current slide
-                        slides[newBorderPosition].style.borderLeft = `${borderWidth}px solid black`;
+            // Observer for left animation
+            const leftObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate__animated', 'animate__fadeInLeft');
+                        observer.unobserve(entry.target);
                     }
                 });
+            }, options);
+
+            // Observer for right animation
+            const rightObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate__animated', 'animate__fadeInRight');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, options);
+
+            // Observer for fade-up animation
+            const fadeUpObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate__animated', 'animate__fadeInUp');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, options);
+
+            // Observer for fade-down animation
+            const fadeDownObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (!entry.isIntersecting) {
+                        entry.target.classList.add('animate__animated', 'animate__fadeOutDown');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, options);
+
+            // Targets for left animation
+            const leftTargets = document.querySelectorAll('.slide');
+            leftTargets.forEach(target => {
+                leftObserver.observe(target);
             });
+
+            const fadeUpTargets = document.querySelectorAll('.keybenefit_img');
+            fadeUpTargets.forEach(target => {
+                fadeUpObserver.observe(target);
+            });
+
+            // Target for right animation
+            const rightTarget = document.querySelector('.service-image');
+            rightObserver.observe(rightTarget);
 
             var dropdown = document.getElementById("what-we-do-dropdown");
             var dropdownMenu = dropdown.querySelector(".dropdown-menu");

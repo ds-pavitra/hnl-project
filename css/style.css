@@ -24,11 +24,12 @@ body {
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
+
 .lazy-container {
     opacity: 0;
     transition: opacity 0.5s;
-  }
-  
+}
+
 .header_logo {
     width: 84px;
     height: 70px;
@@ -2546,22 +2547,22 @@ uiux page css style
 }
 
 .why_matters_desk .service-content {
-    padding-left: 0px;
-}
-
-.slide {
     padding-left: 50px;
 }
 
+/* .slide {
+    padding-left: 0px;
+} */
+/* 
 .slide-1 {
     border-left: 4px solid black;
-}
+} */
 
 .why_matters_desk .service-item {
     position: relative;
 }
 
-/* .why_matters_desk .service-content::before {
+.why_matters_desk .service-content::before {
     content: "";
     display: block;
     position: absolute;
@@ -2571,7 +2572,7 @@ uiux page css style
     height: 160px;
     background-color: #000000;
     transition: transform 0.5s ease-in-out;
-} */
+}
 
 
 .why_matters_desk h5 {
@@ -2621,6 +2622,25 @@ uiux page css style
     height: 256px;
 }
 
+.aiml_desk .keybenefit_img {
+    width: 398px;
+}
+
+.aiml_desk .section-heading_container {
+    width: 761px;
+    padding: 0 0 0 50px;
+}
+
+.ns_desk .keybenefit_img {
+    width: 451px;
+}
+
+.wmns .service-image {
+    width: auto;
+    height: auto;
+    margin: 0;
+}
+
 .no-scroll {
     overflow: hidden !important;
 }
@@ -2629,6 +2649,21 @@ uiux page css style
     opacity: 1;
     transform: translateY(-108.5%) !important;
 }
+
+.animate__fadeInLeft,
+.animate__fadeInRight,
+.animate__fadeInUp,
+.animate__fadeOutDown {
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Initially hide the elements */
+.slide,
+.keybenefit_img,
+.service-image {
+    opacity: 0;
+}
+
 
 
 
@@ -4522,6 +4557,12 @@ uiux page css style
         line-height: 18px;
         text-align: center;
         margin-bottom: 20px;
+    }
+
+    .img1 {
+        opacity: 1;
+        right: 10% !important;
+        top: 35% !important;
     }
 
     @keyframes fadeInDown {
@@ -7311,8 +7352,59 @@ uiux page css style
 
 }
 
-/* @media only screen and (min-width: 993px) and (max-width:1366px) {
-    .section.section-demos .demo-item .item-img {
+@media only screen and (min-width: 993px) and (max-width:1400px) {
+
+    .card h3 {
+        margin-top: 0;
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 48px;
+    }
+
+    .swiper-button-next-process,
+    .swiper-button-prev-process {
+        top: 125%;
+        right: 45%;
+    }
+
+    .process-slide {
+        padding: 0 30px;
+    }
+
+    .process-slide h5,
+    .process-slide h4 {
+        font-size: 30px;
+        line-height: 42px;
+    }
+
+    .uiux_desk .card,
+    .sd_desk .card {
+        height: 286px;
+    }
+
+    .uiux_kb .keybenefit_img img {
+        width: 88%;
+    }
+
+    #card1,
+    #card2,
+    #card3 {
+        position: relative;
+    }
+
+    #container3 h2 {
+        font-size: 30px;
+        position: absolute;
+        bottom: 20px;
+    }
+
+    .img1 {
+        position: fixed;
+        top: 10%;
+        right: 10% !important;
+    }
+
+    /* .section.section-demos .demo-item .item-img {
         width: 215px;
         height: 215px;
         background-color: white;
@@ -7354,5 +7446,5 @@ uiux page css style
 
     .whoweare_container .service-content {
         margin-right: 0;
-    }
-} */
+    } */
+}
