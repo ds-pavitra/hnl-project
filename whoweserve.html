@@ -1072,6 +1072,10 @@
                 rightObserver.observe(target);
             });
 
+            const fadeUpTargets = document.querySelectorAll('.git_image_container');
+            fadeUpTargets.forEach(target => {
+                fadeUpObserver.observe(target);
+            });
             
 
             var dropdown = document.getElementById("what-we-do-dropdown");

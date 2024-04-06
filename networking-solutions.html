@@ -444,7 +444,7 @@
                     <div class="row" id="row-cust-row-1"
                         style="margin-bottom: 40px;">
                         <div class="col-md-6">
-                            <div class="card">
+                            <div class="card fade_left">
                                 <div class="card-body">
                                     <div class="row">
                                         <div
@@ -474,7 +474,7 @@
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <div class="card">
+                            <div class="card fade_right">
                                 <div class="card-body">
                                     <div class="row" id="row-cust-row-1">
                                         <div
@@ -508,7 +508,7 @@
                     <div class="row" id="row-cust-row-1"
                         style="margin-bottom: 40px;">
                         <div class="col-md-6">
-                            <div class="card">
+                            <div class="card fade_left">
                                 <div class="card-body">
                                     <div class="row">
                                         <div
@@ -538,7 +538,7 @@
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <div class="card">
+                            <div class="card fade_right">
                                 <div class="card-body">
                                     <div class="row">
                                         <div
@@ -1101,20 +1101,21 @@
 
             
 
-            // Targets for left animation
-            const leftTargets = document.querySelectorAll('.slide');
+             // Targets for left animation
+             const leftTargets = document.querySelectorAll('.fade_left ,.slide');
             leftTargets.forEach(target => {
                 leftObserver.observe(target);
             });
 
-            const fadeUpTargets = document.querySelectorAll('.keybenefit_img');
+            const fadeUpTargets = document.querySelectorAll('.keybenefit_img, .git_image_container');
             fadeUpTargets.forEach(target => {
                 fadeUpObserver.observe(target);
             });
 
-            // Target for right animation
-            const rightTarget = document.querySelector('.service-image');
-            rightObserver.observe(rightTarget);
+            const rightTarget = document.querySelectorAll('.service-image, .fade_right');
+            rightTarget.forEach(target => {
+                rightObserver.observe(target);
+            });
 
 
 

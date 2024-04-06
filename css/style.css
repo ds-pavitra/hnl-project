@@ -2660,7 +2660,8 @@ uiux page css style
 /* Initially hide the elements */
 .slide,
 .keybenefit_img,
-.service-image {
+.service-image,
+.git_image_container {
     opacity: 0;
 }
 

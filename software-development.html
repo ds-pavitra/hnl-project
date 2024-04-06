@@ -675,7 +675,7 @@
                     <div class="row" id="row-cust-row-1"
                         style="margin-bottom: 40px;">
                         <div class="col-md-6">
-                            <div class="card">
+                            <div class="card fade_left">
                                 <div class="card-body">
                                     <div class="row">
                                         <div
@@ -706,7 +706,7 @@
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <div class="card">
+                            <div class="card fade_right">
                                 <div class="card-body">
                                     <div class="row" id="row-cust-row-1">
                                         <div
@@ -738,7 +738,7 @@
                     </div>
                     <div class="row" id="row-cust-row-1">
                         <div class="col-md-6">
-                            <div class="card">
+                            <div class="card fade_left">
                                 <div class="card-body">
                                     <div class="row">
                                         <div
@@ -1555,9 +1555,19 @@
             }, options);
 
 
-            const fadeUpTargets = document.querySelectorAll('.keybenefit_img');
+            const fadeUpTargets = document.querySelectorAll('.keybenefit_img, .git_image_container');
             fadeUpTargets.forEach(target => {
                 fadeUpObserver.observe(target);
+            });
+
+            const rightTarget = document.querySelectorAll('.fade_right');
+            rightTarget.forEach(target => {
+                rightObserver.observe(target);
+            });
+
+            const leftTargets = document.querySelectorAll('.fade_left');
+            leftTargets.forEach(target => {
+                leftObserver.observe(target);
             });
 
             gsap.registerPlugin(ScrollTrigger);

@@ -338,7 +338,7 @@
                         </div>
 
                         <div class="journey-service flex-row-reverse">
-                            <div class="service-journey j-img">
+                            <div class="service-journey j-img fade_right">
                                 <img src="./img/image 32.png" alt="Service Image 1">
                             </div>
                             <div class="content-journey2">
@@ -349,7 +349,7 @@
                         </div>
 
                         <div class="service-item cust-p-relative">
-                            <div class="service-journey2 j-img">
+                            <div class="service-journey2 j-img fade_left">
                                 <img src="./img/image 20.png" alt="Service Image 1">
                             </div>
                             <div class="content-journey">
@@ -359,7 +359,7 @@
                         </div>
 
                         <div class="journey-service3 flex-row-reverse">
-                            <div class="service-journey3 j-img">
+                            <div class="service-journey3 j-img fade_right">
                                 <img src="./img/image 27.png" alt="Service Image 1">
                             </div>
                             <div class="content-journey3">
@@ -370,7 +370,7 @@
                         </div>
 
                         <div class="service-item cust-p-relative">
-                            <div class="service-journey4 j-img">
+                            <div class="service-journey4 j-img fade_left">
                                 <img src="./img/image 31.png" alt="Service Image 1">
                             </div>
                             <div class="content-journey4">
@@ -783,9 +783,19 @@
 
 
               // Target for right animation
-              const rightTarget = document.querySelectorAll('.service-image');
+            const rightTarget = document.querySelectorAll('.service-image, .fade_right');
             rightTarget.forEach(target => {
                 rightObserver.observe(target);
+            });
+
+            const fadeUpTargets = document.querySelectorAll('.git_image_container');
+            fadeUpTargets.forEach(target => {
+                fadeUpObserver.observe(target);
+            });
+
+            const leftTargets = document.querySelectorAll('.fade_left');
+            leftTargets.forEach(target => {
+                leftObserver.observe(target);
             });
             
 
@@ -870,6 +880,7 @@
                 autoplay: {
                     delay: 3000,
                     disableOnInteraction: false,
+                    reverseDirection: true,
                 },
                 pagination: false,
             });
