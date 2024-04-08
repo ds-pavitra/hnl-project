@@ -1232,11 +1232,15 @@
                 if (mediaQuery.matches) {
                     partners.params.slidesPerView = 4;
                     clients.params.slidesPerView = 4;
+                    processSlider.params.slidesPerView = 1.2;
                 } else {
                     partners.params.slidesPerView = 6;
                     clients.params.slidesPerView = 6;
+                    processSlider.params.slidesPerView = 2.5;
                 }
+                processSlider.update();
                 partners.update();
+                clients.update();
             }
             updateSwiperConfig();
             mediaQuery.addListener(updateSwiperConfig);

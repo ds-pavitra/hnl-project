@@ -50,6 +50,11 @@
             overflow: visible;
         }
 
+        .service-image, .git_image_container {
+            opacity: 1;
+        }
+
+
 </style>
 
     </head>
@@ -494,7 +499,93 @@
                 <img src="./img/Vector_home.png" alt>
             </div>
             <!-- cards section starts  -->
-            <div style="height: 3000px; margin: 140px auto 280px auto;">
+
+            <section class="container cards-services-section d-flex flex-column keySolution_card Kscard_mob">
+                <div class="section-heading">
+                    <div class="service_title">
+                        <h2> KEY SOLUTIONS BY H&L</h2>
+                    </div>
+                    <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et </p> -->
+                </div>
+                <div>
+                    <section class="service_type d-flex flex-column">
+                        <div class="service-item">
+    
+                            <div class="service-content">
+                                <h4>Smart City Solution</h4>
+                                <p class="service_disc" style="color: #000;">
+                                    Transforming Urban Living with Integrated Smart City Solutions: Waste Management, Face
+                                    Recognition Security, and Housing Society Management Systems by H&L
+                                </p>
+                                <a href="#" class="know_more">Know More <i class="fa-solid fa-arrow-right-long"
+                                        style="vertical-align:middle;"></i></a>
+                            </div>
+                            <div class="service-image img1">
+                                <img src="./img/cityskyline.png" alt="Service Image 1">
+                            </div>
+    
+                        </div>
+    
+                        <div class="service-item">
+    
+                            <div class="service-content">
+                                <h4>Fintech Solution</h4>
+                                <p class="service_disc" style="color: #000;">
+                                    Seamlessly Tap to Pay Using Smart Watches, Access Online Payment Solutions Platform, and
+                                    Harness POS Devices for Effortless Transactions
+                                </p>
+                                <a href="#" class="know_more">Know More <i class="fa-solid fa-arrow-right-long"
+                                        style="vertical-align:middle;"></i></a>
+                            </div>
+    
+                            <div class="service-image img2">
+                                <img src="./img/amico@2x.png" alt="Service Image 1">
+                            </div>
+                        </div>
+    
+                        <div class="service-item">
+    
+                            <div class="service-content">
+                                <h4>Networking Solution</h4>
+                                <p class="service_disc" style="color: #000;">
+                                    Experience High-Speed Fiber Services & IPTV, Enhanced by GPON Network & Optical Network
+                                    Terminal (ONU) Technologies
+                                </p>
+                                <a href="#" class="know_more">Know More <i class="fa-solid fa-arrow-right-long"
+                                        style="vertical-align:middle;"></i></a>
+                            </div>
+    
+                            <div class="service-image img3">
+                                <img src="./img/pana.png" alt="Service Image 1">
+                            </div>
+                        </div>
+    
+                        <div class="service-item">
+    
+                            <div class="service-content">
+                                <h4>AI/ML Solution</h4>
+                                <p class="service_disc" style="color: #000;">
+                                    From Image Recognition to Fraud Detection, and Seamlessly Integrated Smart Home Devices,
+                                    Transforming the Way You Interact with Your Environment
+                                </p>
+                                <a href="#" class="know_more">Know More <i class="fa-solid fa-arrow-right-long"
+                                        style="vertical-align:middle;"></i></a>
+                            </div>
+    
+                            <div class="service-image img4">
+                                <img src="./img/ai.png" alt="Service Image 1">
+                            </div>
+                        </div>
+    
+                    </section>
+                </div>
+            </section>
+
+
+
+
+            <div class="Kscard_desk" style="height: 3000px; margin: 140px auto 280px auto;">
                 <section
                     class="container cards-services-section d-flex flex-column keySolution_card">
                     <div class="section-heading">
@@ -1381,66 +1472,61 @@
 -----------------------------------*/
         document.addEventListener('DOMContentLoaded', function () {
 
-            const options = {
-                threshold: 0.2 // Trigger when 20% of the element is visible
-            };
+            // const options = {
+            //     threshold: 0.2 // Trigger when 20% of the element is visible
+            // };
 
-            // Observer for left animation
-            const leftObserver = new IntersectionObserver((entries, observer) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('animate__animated', 'animate__fadeInLeft');
-                        observer.unobserve(entry.target);
-                    }
-                });
-            }, options);
+            // // Observer for left animation
+            // const leftObserver = new IntersectionObserver((entries, observer) => {
+            //     entries.forEach(entry => {
+            //         if (entry.isIntersecting) {
+            //             entry.target.classList.add('animate__animated', 'animate__fadeInLeft');
+            //             observer.unobserve(entry.target);
+            //         }
+            //     });
+            // }, options);
 
-            // Observer for right animation
-            const rightObserver = new IntersectionObserver((entries, observer) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('animate__animated', 'animate__fadeInRight');
-                        observer.unobserve(entry.target);
-                    }
-                });
-            }, options);
+            // // Observer for right animation
+            // const rightObserver = new IntersectionObserver((entries, observer) => {
+            //     entries.forEach(entry => {
+            //         if (entry.isIntersecting) {
+            //             entry.target.classList.add('animate__animated', 'animate__fadeInRight');
+            //             observer.unobserve(entry.target);
+            //         }
+            //     });
+            // }, options);
 
-            // Observer for fade-up animation
-            const fadeUpObserver = new IntersectionObserver((entries, observer) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('animate__animated', 'animate__fadeInUp');
-                        observer.unobserve(entry.target);
-                    }
-                });
-            }, options);
+            // // Observer for fade-up animation
+            // const fadeUpObserver = new IntersectionObserver((entries, observer) => {
+            //     entries.forEach(entry => {
+            //         if (entry.isIntersecting) {
+            //             entry.target.classList.add('animate__animated', 'animate__fadeInUp');
+            //             observer.unobserve(entry.target);
+            //         }
+            //     });
+            // }, options);
 
-            // Observer for fade-down animation
-            const fadeDownObserver = new IntersectionObserver((entries, observer) => {
-                entries.forEach(entry => {
-                    if (!entry.isIntersecting) {
-                        entry.target.classList.add('animate__animated', 'animate__fadeOutDown');
-                        observer.unobserve(entry.target);
-                    }
-                });
-            }, options);
+            // // Observer for fade-down animation
+            // const fadeDownObserver = new IntersectionObserver((entries, observer) => {
+            //     entries.forEach(entry => {
+            //         if (!entry.isIntersecting) {
+            //             entry.target.classList.add('animate__animated', 'animate__fadeOutDown');
+            //             observer.unobserve(entry.target);
+            //         }
+            //     });
+            // }, options);
 
 
               // Target for right animation
-            const rightTarget = document.querySelectorAll('.banner_img, .fade_right');
-            rightTarget.forEach(target => {
-                rightObserver.observe(target);
-            });
+            // const rightTarget = document.querySelectorAll('.fade_right');
+            // rightTarget.forEach(target => {
+            //     rightObserver.observe(target);
+            // });
 
-            const leftTargets = document.querySelectorAll('.fade_left');
-            leftTargets.forEach(target => {
-                leftObserver.observe(target);
-            });
-
-            const fadeUpTargets = document.querySelectorAll('.git_image_container');
-            fadeUpTargets.forEach(target => {
-                fadeUpObserver.observe(target);
-            });
+            // const leftTargets = document.querySelectorAll('.fade_left');
+            // leftTargets.forEach(target => {
+            //     leftObserver.observe(target);
+            // });
 
             gsap.registerPlugin(ScrollTrigger);
 

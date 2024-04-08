@@ -634,14 +634,9 @@
 
             // Targets for left animation
 
-            const fadeUpTargets = document.querySelectorAll('.git_image_container');
+            const fadeUpTargets = document.querySelectorAll('.git_image_container, .fade_right');
             fadeUpTargets.forEach(target => {
                 fadeUpObserver.observe(target);
-            });
-
-            const rightTarget = document.querySelectorAll('.fade_right');
-            rightTarget.forEach(target => {
-                rightObserver.observe(target);
             });
 
             var dropdown = document.getElementById("what-we-do-dropdown");

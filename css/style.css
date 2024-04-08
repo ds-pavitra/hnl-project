@@ -1700,12 +1700,12 @@ uiux page css style
     overflow-x: hidden;
 }
 
-.navigation_desk {
-    display: block;
+.navigation_desk, .Kscard_desk {
+    display: block !important;
 }
 
-.navigation_mob {
-    display: none;
+.navigation_mob , .Kscard_mob {
+    display: none !important;
 }
 
 /* gautam styles */
@@ -2674,12 +2674,12 @@ uiux page css style
         overflow: hidden;
     }
 
-    .navigation_desk {
-        display: none;
+    .navigation_desk , .Kscard_desk{
+        display: none !important;
     }
 
-    .navigation_mob {
-        display: block;
+    .navigation_mob , .Kscard_mob {
+        display: block !important;
     }
 
     .nav-link,
@@ -2748,7 +2748,7 @@ uiux page css style
         font-size: 10px;
         font-weight: 600;
         height: 35px;
-        border-radius: 3.21px 0px 0px 0px;
+        border-radius: 5px;
         position: absolute;
         bottom: 26px;
         left: 9%;
@@ -3010,31 +3010,39 @@ uiux page css style
         height: 100%;
         margin-bottom: 60px;
         flex-direction: column-reverse;
-        align-items: flex-start;
+        align-items: center;
     }
 
     .keySolution_card .img1 {
         width: 235px;
         height: auto;
         margin: 0 0 16px 0;
+        position: unset !important;
+        opacity: 1 !important;
     }
 
     .keySolution_card .img2 {
         width: 179px;
         height: auto;
         margin: 0 0 16px 0;
+        position: unset !important;
+        opacity: 1 !important;
     }
 
     .keySolution_card .img3 {
         width: 303px;
         height: auto;
         margin: 0 0 16px 0;
+        position: unset !important;
+        opacity: 1 !important;
     }
 
     .keySolution_card .img4 {
         width: 167px;
         height: auto;
         margin: 0 0 16px 0;
+        position: unset !important;
+        opacity: 1 !important;
     }
 
     .keySolution_card .service-content h4 {
@@ -3049,7 +3057,7 @@ uiux page css style
         font-size: 16px !important;
         font-weight: 400;
         line-height: 24px !important;
-        text-align: left;
+        text-align: center;
         color: #000;
         margin-bottom: 0px;
         width: 314px;
@@ -3766,7 +3774,7 @@ uiux page css style
     .accordion.active p {
         font-size: 14px;
         font-weight: 700;
-        line-height: 27px;
+        line-height: 20px;
     }
 
     .accordion.active .panel p {
@@ -4519,7 +4527,19 @@ uiux page css style
         margin-bottom: 1px !important;
     }
 
+    .keySolution_div{
+        margin: 0 auto 280px auto !important;
+    }
 
+    .keySolution_card .slides-1 {
+        height: 610px !important;
+        justify-content: flex-end;
+    }
+
+    .home-content1{
+        top: 10px !important;
+    }
+    
     .container-slider {
         max-width: 370px;
     }
@@ -4566,6 +4586,17 @@ uiux page css style
         top: 35% !important;
     }
 
+    .service-content {
+        padding: 0 12px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ourwork_container .cust_positioning_banner {
+        margin: 0 auto 70px auto;
+    }
+
     @keyframes fadeInDown {
         from {
             opacity: 0;
@@ -4598,12 +4629,12 @@ uiux page css style
         overflow: hidden;
     }
 
-    .navigation_desk {
-        display: none;
+    .navigation_desk, .Kscard_mob {
+        display: none !important;
     }
 
-    .navigation_mob {
-        display: block;
+    .navigation_mob .Kscard_desk{
+        display: block !important;
     }
 
     .nav-link,
@@ -6039,11 +6070,11 @@ uiux page css style
         overflow: hidden;
     }
 
-    .navigation_desk {
+    .navigation_desk , .Kscard_desk {
         display: block !important;
     }
 
-    .navigation_mob {
+    .navigation_mob , .Kscard_mob {
         display: none;
     }
 
