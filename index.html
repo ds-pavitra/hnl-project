@@ -1538,7 +1538,7 @@
 
             tl.to(".smart_title", {
                 scrollTrigger: {
-                    trigger: ".home-content1",
+                    trigger: ".smart_title",
                     start: "top 15%",
                     end:"+=600",
                     pin:".home-content1",
@@ -1551,7 +1551,7 @@
                         tl.to(".smart_content", {
                                 y: -57,
                                 opacity: 0,
-                                duration: 0,
+                                duration: 0.5,
                                 ease: "power1.out",
                                 scrub: 1,
                         });
@@ -1559,18 +1559,18 @@
                         tl.to(".smart_content", {
                                 x: 0,
                                 opacity: 1,
-                                duration: 1,
+                                duration: 0.5,
                                 ease: "power1.out",
                                 scrub: 1,
                         });
-                        gsap.to(".img1", { opacity: 0, duration: 0.5, position:"fixed" , top: "10%" , right: "20%", onComplete: () => {
-                            gsap.to(".img1", { opacity: 1, duration: 0.5});
+                        gsap.to(".img1", { opacity: 0, duration: 0, position:"fixed" , top: "10%" , right: "15%", onComplete: () => {
+                            gsap.to(".img1", { opacity: 1, duration: 0});
                         }});
                     },
                     onEnterBack: () => {
-                        gsap.to(".animation_img", { opacity: 0, duration: 0.5, onComplete: () => {
+                        gsap.to(".animation_img", { opacity: 0, duration: 0, onComplete: () => {
                             document.querySelector(".animation_img").src = "./img/cityskyline.png";
-                            gsap.to(".animation_img", { opacity: 1, duration: 0.5});
+                            gsap.to(".animation_img", { opacity: 1, duration: 0});
                         }});
                     },
 
@@ -1581,12 +1581,12 @@
                                 ease: "power1.out",
                                 position:"fixed",
                                 top:"10%",
-                                right:"20%"
+                                right:"15%"
                         });
                         tl.to(".smart_content", {
                                 x: -100,
                                 opacity: 0,
-                                duration: 1,
+                                duration: 0.5,
                                 ease: "power1.out",
                                 scrub: 1,
                         });
@@ -1594,7 +1594,7 @@
                         tl.to(".smart_content", {
                                 y: -57,
                                 opacity: 0,
-                                duration: 0,
+                                duration: 0.5,
                                 ease: "power1.out",
                                 scrub: 1,
                         });
@@ -1616,26 +1616,26 @@
                         tl.to(".fin_content", {
                                 x: 0,
                                 opacity: 1,
-                                duration: 1,
+                                duration: 0.5,
                                 ease: "power1.out",
                                 scrub: 1,
                         });
-                        gsap.to(".animation_img", { opacity: 0, duration: 0.5, onComplete: () => {
+                        gsap.to(".animation_img", { opacity: 0, duration: 0, onComplete: () => {
                             document.querySelector(".animation_img").src = "./img/amico@2x.png";
-                            gsap.to(".animation_img", { opacity: 1, duration: 0.5});
+                            gsap.to(".animation_img", { opacity: 1, duration: 0});
                         }});
                     },
                     onEnterBack: () => {
-                        gsap.to(".animation_img", { opacity: 0, duration: 0.5, onComplete: () => {
+                        gsap.to(".animation_img", { opacity: 0, duration: 0, onComplete: () => {
                             document.querySelector(".animation_img").src = "./img/amico@2x.png";
-                            gsap.to(".animation_img", { opacity: 1, duration: 0.5});
+                            gsap.to(".animation_img", { opacity: 1, duration: 0});
                         }});
                     },
                     onLeaveBack: () => {
                         tl.to(".fin_content", {
                                 x: -100,
                                 opacity: 0,
-                                duration: 1,
+                                duration: 0.5,
                                 ease: "power1.out",
                                 scrub: 1,
                         });
@@ -1657,20 +1657,20 @@
                         tl.to(".net_content", {
                                 x: 0,
                                 opacity: 1,
-                                duration: 1,
+                                duration: 0.5,
                                 ease: "power1.out",
                                 scrub: 1,
                         });
-                        gsap.to(".animation_img", { opacity: 0, duration: 0.5, onComplete: () => {
+                        gsap.to(".animation_img", { opacity: 0, duration: 0, onComplete: () => {
                             document.querySelector(".animation_img").src = "./img/pana.png";
-                            gsap.to(".animation_img", { opacity: 1, duration: 0.5});
+                            gsap.to(".animation_img", { opacity: 1, duration: 0});
                         }});
                     },
                     onEnterBack: () => {
                         gsap.to(".animation_img", { opacity: 0, duration: 0.5, onComplete: () => {
                             document.querySelector(".animation_img").src = "./img/pana.png";
                             document.querySelector(".img1").classList.remove("img4");
-                            gsap.to(".animation_img", { opacity: 1, duration: 0.5});
+                            gsap.to(".animation_img", { opacity: 1, duration: 0});
                         }});
                     },
 
@@ -1678,7 +1678,7 @@
                         tl.to(".net_content", {
                                 x: -100,
                                 opacity: 0,
-                                duration: 1,
+                                duration: 0.5,
                                 ease: "power1.out",
                                 scrub: 1,
                         });
@@ -1701,32 +1701,32 @@
                         tl.to(".ai_content", {
                                 x: 0,
                                 opacity: 1,
-                                duration: 1,
+                                duration: 0.5,
                                 ease: "power1.out",
                                 scrub: 1,
                         });
 
-                        gsap.to(".animation_img", { opacity: 0, duration: 0.5, onComplete: () => {
+                        gsap.to(".animation_img", { opacity: 0, duration: 0, onComplete: () => {
                             document.querySelector(".animation_img").src = "./img/ai.png";
                             document.querySelector(".img1").classList.add("img4");
-                            gsap.to(".animation_img", { opacity: 1, duration: 0.5});
+                            gsap.to(".animation_img", { opacity: 1, duration: 0});
                         }});
                     },
                     onEnterBack: () => {
                         tl.to(".ai_content", {
                                 x: 0,
                                 opacity: 1,
-                                duration: 1,
+                                duration: 0.5,
                                 ease: "power1.out",
                                 scrub: 1,
                         });
                         tl.to(".img1", {
                                 opacity: 1,
-                                duration: 1,
+                                duration: 0,
                                 ease: "power1.out",
                                 position:"fixed",
                                 top:"10%",
-                                right:"20%"
+                                right:"15%"
                         });
                         
                     },
@@ -1737,14 +1737,14 @@
                                 ease: "power1.out",
                                 position:"fixed",
                                 top:"10%",
-                                right:"20%"
+                                right:"15%"
                         });
                     },
                     onLeaveBack: () => {
                         tl.to(".ai_content", {
                                 x: -100,
                                 opacity: 0,
-                                duration: 1,
+                                duration: 0,
                                 ease: "power1.out",
                                 scrub: 1,
                         });
