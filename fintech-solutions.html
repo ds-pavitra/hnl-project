@@ -317,7 +317,7 @@
                                 engineered, cutting-edge solutions for enhanced
                                 efficiency
                             </p>
-                            <a href="#"> Learn More</a>
+                            <a href="#"> Let's Work</a>
                         </div>
                         <div class="uiux_image_bnr">
                             <img src="./img/fintech_banner.png" alt>
@@ -439,7 +439,7 @@
                     <div class="row" id="row-cust-row-1"
                         style="margin-bottom: 40px;">
                         <div class="col-md-6">
-                            <div class="card fade_left">
+                            <div class="card">
                                 <div class="card-body">
                                     <div class="row">
                                         <div
@@ -469,7 +469,7 @@
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <div class="card fade_right">
+                            <div class="card">
                                 <div class="card-body">
                                     <div class="row" id="row-cust-row-1">
                                         <div
@@ -502,7 +502,7 @@
                     <div class="row" id="row-cust-row-1"
                         style="margin-bottom: 40px;">
                         <div class="col-md-6">
-                            <div class="card fade_left">
+                            <div class="card">
                                 <div class="card-body">
                                     <div class="row">
                                         <div
@@ -532,7 +532,7 @@
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <div class="card fade_right">
+                            <div class="card">
                                 <div class="card-body">
                                     <div class="row">
                                         <div
@@ -798,7 +798,7 @@
                                 Solutions.</h3>
                             <div class="cust-txt-align">
                                 <a href="#"
-                                    class="explore_btn_service git_btn_cust">Get
+                                    class="btn explore_btn_service git_btn_cust">Get
                                     in
                                     touch</a>
                             </div>
@@ -1073,24 +1073,12 @@
             }, options);
 
 
-            
 
-             // Targets for left animation
-             const leftTargets = document.querySelectorAll('.fade_left ,.slide');
-            leftTargets.forEach(target => {
-                leftObserver.observe(target);
-            });
 
-            const fadeUpTargets = document.querySelectorAll('.keybenefit_img, .git_image_container');
+            const fadeUpTargets = document.querySelectorAll('.keybenefit_img, .slide, .service-image');
             fadeUpTargets.forEach(target => {
                 fadeUpObserver.observe(target);
             });
-
-            const rightTarget = document.querySelectorAll('.service-image, .fade_right');
-            rightTarget.forEach(target => {
-                rightObserver.observe(target);
-            });
-
 
             gsap.registerPlugin(ScrollTrigger);
 
@@ -1224,24 +1212,30 @@
             });
 
 
-            const mediaQuery = window.matchMedia('(min-width: 359px) and (max-width: 992px) ');
+            const mediaQuery = window.matchMedia('(min-width: 768px) and (max-width: 992px) ');
 
-            function updateSwiperConfig() {
-                if (mediaQuery.matches) {
+            const mediaQuery1 = window.matchMedia('(min-width: 359px) and (max-width: 767px) ');
+
+            function updateSwiperConfig1() {
+                if (mediaQuery1.matches) {
                     partners.params.slidesPerView = 4;
                     clients.params.slidesPerView = 4;
-                    processSlider.params.slidesPerView = 1;
+                    processSlider.params.slidesPerView = 1.2;
+                } else  if(mediaQuery.matches){
+                    partners.params.slidesPerView = 4;
+                    clients.params.slidesPerView = 4;
+                    processSlider.params.slidesPerView = 1.2;
                 } else {
+                    processSlider.params.slidesPerView = 2.5;
                     partners.params.slidesPerView = 6;
                     clients.params.slidesPerView = 6;
-                    processSlider.params.slidesPerView = 2.5;
                 }
-                partners.update();
-                clients.update();
                 processSlider.update();
+                clients.update();
+                partners.update();
             }
-            updateSwiperConfig();
-            mediaQuery.addListener(updateSwiperConfig);
+            updateSwiperConfig1();
+            mediaQuery1.addListener(updateSwiperConfig1);
 
 
             var technology = new Swiper('.technology-slider', {

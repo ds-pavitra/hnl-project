@@ -317,7 +317,7 @@
                                 intelligence and machine learning through
                                 seamlessly integrated solutions
                             </p>
-                            <a href="#"> Learn More</a>
+                            <a href="#"> Let's Work</a>
                         </div>
                         <div class="uiux_image_bnr">
                             <img src="./img/aiml_bannerimg.png" alt>
@@ -742,7 +742,7 @@
                                 Solutions.</h3>
                             <div class="cust-txt-align">
                                 <a href="#"
-                                    class="explore_btn_service git_btn_cust">Get
+                                    class="btn explore_btn_service git_btn_cust">Get
                                     in
                                     touch</a>
                             </div>
@@ -1016,26 +1016,12 @@
                     }
                 });
             }, options);
+     
 
-
-            
-
-            // Targets for left animation
-            const leftTargets = document.querySelectorAll('.slide');
-            leftTargets.forEach(target => {
-                leftObserver.observe(target);
-            });
-
-            const fadeUpTargets = document.querySelectorAll('.keybenefit_img, .git_image_container');
+            const fadeUpTargets = document.querySelectorAll('.keybenefit_img, .slide, .service-image');
             fadeUpTargets.forEach(target => {
                 fadeUpObserver.observe(target);
             });
-
-            const rightTarget = document.querySelectorAll('.service-image');
-            rightTarget.forEach(target => {
-                rightObserver.observe(target);
-            });
-
 
             gsap.registerPlugin(ScrollTrigger);
 
@@ -1226,24 +1212,30 @@
             });
 
 
-            const mediaQuery =  window.matchMedia('(min-width: 359px) and (max-width: 992px) ');
+            const mediaQuery = window.matchMedia('(min-width: 768px) and (max-width: 992px) ');
 
-            function updateSwiperConfig() {
-                if (mediaQuery.matches) {
+            const mediaQuery1 = window.matchMedia('(min-width: 359px) and (max-width: 767px) ');
+
+            function updateSwiperConfig1() {
+                if (mediaQuery1.matches) {
+                    partners.params.slidesPerView = 4;
+                    clients.params.slidesPerView = 4;
+                    processSlider.params.slidesPerView = 1.2;
+                } else  if(mediaQuery.matches){
                     partners.params.slidesPerView = 4;
                     clients.params.slidesPerView = 4;
                     processSlider.params.slidesPerView = 1.2;
                 } else {
+                    processSlider.params.slidesPerView = 2.3;
                     partners.params.slidesPerView = 6;
                     clients.params.slidesPerView = 6;
-                    processSlider.params.slidesPerView = 2.5;
                 }
                 processSlider.update();
-                partners.update();
                 clients.update();
+                partners.update();
             }
-            updateSwiperConfig();
-            mediaQuery.addListener(updateSwiperConfig);
+            updateSwiperConfig1();
+            mediaQuery1.addListener(updateSwiperConfig1);
 
 
             var technology = new Swiper('.technology-slider', {

@@ -483,7 +483,7 @@
                                     <!-- <a href="#" class="know_more">Know More <i class="fa-solid fa-arrow-right-long"
                                         style="vertical-align:middle;"></i></a> -->
                                     <a href="#"
-                                        class="explore_btn_service">Explore
+                                        class="btn explore_btn_service">Explore
                                         Services</a>
                                 </div>
                             </div>
@@ -1237,7 +1237,7 @@
                                 Solutions.</h3>
                             <div class="cust-txt-align">
                                 <a href="#"
-                                    class="explore_btn_service git_btn_cust">Get
+                                    class="btn explore_btn_service git_btn_cust">Get
                                     in
                                     touch</a>
                             </div>
@@ -1720,13 +1720,6 @@
                     },
                     onEnterBack: () => {
                         gsap.to(".animation_img", { opacity: 1, duration: 0});
-                        tl.to(".ai_content", {
-                                x: 0,
-                                opacity: 1,
-                                duration: 0.5,
-                                ease: "power1.out",
-                                scrub: 1,
-                        });
                         tl.to(".img1", {
                                 opacity: 1,
                                 duration: 0,
@@ -1734,6 +1727,13 @@
                                 position:"fixed",
                                 top:"10%",
                                 right:"15%"
+                        });
+                        tl.to(".ai_content", {
+                                x: 0,
+                                opacity: 1,
+                                duration: 0.5,
+                                ease: "power1.out",
+                                scrub: 1,
                         });
                         
                     },
