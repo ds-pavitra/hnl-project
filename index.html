@@ -1565,16 +1565,20 @@
                         });
                         gsap.to(".img1", { opacity: 0, duration: 0, position:"fixed" , top: "10%" , right: "15%", onComplete: () => {
                             gsap.to(".img1", { opacity: 1, duration: 0});
+                            document.querySelector(".animation_img").src = "./img/cityskyline.png";
+                            gsap.to(".animation_img", { opacity: 1, duration: 0});
                         }});
                     },
                     onEnterBack: () => {
                         gsap.to(".animation_img", { opacity: 0, duration: 0, onComplete: () => {
+                            gsap.to(".img1", { opacity: 1, duration: 0});
                             document.querySelector(".animation_img").src = "./img/cityskyline.png";
                             gsap.to(".animation_img", { opacity: 1, duration: 0});
                         }});
                     },
 
                     onLeaveBack: () => {
+                        gsap.to(".animation_img", { opacity: 0, duration: 0});
                         tl.to(".img1", {
                                 opacity: 0,
                                 duration: 0,
@@ -1632,6 +1636,7 @@
                         }});
                     },
                     onLeaveBack: () => {
+                        gsap.to(".animation_img", { opacity: 0, duration: 0});
                         tl.to(".fin_content", {
                                 x: -100,
                                 opacity: 0,
@@ -1667,7 +1672,7 @@
                         }});
                     },
                     onEnterBack: () => {
-                        gsap.to(".animation_img", { opacity: 0, duration: 0.5, onComplete: () => {
+                        gsap.to(".animation_img", { opacity: 0, duration: 0, onComplete: () => {
                             document.querySelector(".animation_img").src = "./img/pana.png";
                             document.querySelector(".img1").classList.remove("img4");
                             gsap.to(".animation_img", { opacity: 1, duration: 0});
@@ -1675,6 +1680,7 @@
                     },
 
                     onLeaveBack: () => {
+                        gsap.to(".animation_img", { opacity: 0, duration: 0});
                         tl.to(".net_content", {
                                 x: -100,
                                 opacity: 0,
@@ -1713,6 +1719,7 @@
                         }});
                     },
                     onEnterBack: () => {
+                        gsap.to(".animation_img", { opacity: 1, duration: 0});
                         tl.to(".ai_content", {
                                 x: 0,
                                 opacity: 1,
@@ -1731,6 +1738,7 @@
                         
                     },
                     onLeave: () => {
+                        gsap.to(".animation_img", { opacity: 0, duration: 0});
                         tl.to(".img1", {
                                 opacity: 0,
                                 duration: 0,

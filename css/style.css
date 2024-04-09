@@ -2414,6 +2414,7 @@ uiux page css style
 .keySolution_card .img1 {
     width: 504px;
     height: auto;
+    opacity: 0;
 }
 
 .keySolution_card .img2 {
