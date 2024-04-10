@@ -5845,9 +5845,9 @@ uiux page css style
         margin: 0 0 50px 0;
     }
 
-    .overview .service-image {
+    /* .overview .service-image {
         display: none;
-    }
+    } */
 
     .aiml_desk .section-heading_container {
         width: auto;
