@@ -70,7 +70,11 @@ body {
 }
 
 .nav-item {
-    padding: 0 18px;
+    padding: 5px 18px;
+}
+
+.custom_active{
+    color: #004E9E !important;
 }
 
 .nav-link,
