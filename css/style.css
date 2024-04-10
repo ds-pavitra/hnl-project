@@ -2553,7 +2553,7 @@ uiux page css style
     line-height: 36px;
     text-align: left;
     width: 658px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
 .os_description_cta a {
@@ -2677,9 +2677,8 @@ uiux page css style
     overflow: hidden !important;
 }
 
-[data-aos="fade-up1"].aos-animate {
-    opacity: 1;
-    transform: translateY(-108.5%) !important;
+.hp_banner_p{
+    margin-bottom: 0;
 }
 
 .animate__fadeInLeft,
@@ -4527,11 +4526,12 @@ uiux page css style
     }
 
     .process_Sec_md {
-        height: 258px !important;
+        height: 210px !important;
     }
 
     .process_sec_sc {
         height: 170px !important;
+        margin-top: 0;
     }
 
     .why_matters_desk .service-image {
@@ -4628,6 +4628,10 @@ uiux page css style
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    .mob_wws .service-content{
+        align-items: flex-start;
     }
 
     .ourwork_container .cust_positioning_banner {
@@ -5120,7 +5124,7 @@ uiux page css style
         /* width: 690px; */
         /* height: 125px; */
         border-radius: 15px;
-        border: 1px solid #004E9E1A;
+        /* border: 1px solid #004E9E1A; */
     }
 
     .footer_navigation .col-md-6 {
@@ -6494,7 +6498,7 @@ uiux page css style
         width: auto;
         height: auto;
         border-radius: 15px;
-        border: 1px solid #004E9E1A;
+        /* border: 1px solid #004E9E1A; */
     }
 
     .footer_navigation .col-md-6 {

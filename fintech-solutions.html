@@ -80,11 +80,10 @@
                                         <li
                                             class="dropdown-submenu active dropend">
                                             <a
-                                                class="dropdown-item dropdown-toggle test submenu-active focus"
-                                                tabindex="-1"
+                                                class="dropdown-item dropdown-toggle test submenu-active"
                                                 href="#">Services</a>
                                             <ul
-                                                class="dropdown-menu dropdown-menu-services cust-dropdown-menu-services">
+                                                class="dropdown-menu dropdown-menu-services cust-dropdown-menu-services" style="display: none;">
                                                 <li><a
                                                         class="dropdown-item dropdown-item-custom"
                                                         tabindex="-1"
@@ -108,10 +107,10 @@
                                         </li>
                                         <li class="dropdown-submenu dropend">
                                             <a
-                                                class="dropdown-item dropdown-toggle test submenu-active"
+                                                class="dropdown-item dropdown-toggle test submenu-active focus"
                                                 href="#">Solutions</a>
                                             <ul
-                                                class="dropdown-menu dropdown-menu-solutions cust-dropdown-menu-solutions">
+                                                class="dropdown-menu dropdown-menu-solutions cust-dropdown-menu-solutions" style="display: block;">
                                                 <li><a
                                                         class="dropdown-item dropdown-item-custom"
                                                         href="./aiml.html">AI/ML
@@ -317,7 +316,7 @@
                                 engineered, cutting-edge solutions for enhanced
                                 efficiency
                             </p>
-                            <a href="#"> Let's Work</a>
+                            <a href="./contact.html"> Let's Work</a>
                         </div>
                         <div class="uiux_image_bnr">
                             <img src="./img/fintech_banner.png" alt>
@@ -797,7 +796,7 @@
                             <h3>Your Partner in Progress, Fueling Business
                                 Solutions.</h3>
                             <div class="cust-txt-align">
-                                <a href="#"
+                                <a href="./contact.html"
                                     class="btn explore_btn_service git_btn_cust">Get
                                     in
                                     touch</a>
@@ -1000,7 +999,7 @@
                             <div
                                 class="d-flex justify-content-around footer-policy"
                                 style="width: 380px;font-size: 15px;font-weight: 600;">
-                                <p>PRIVACY POLICY</p>
+                                <a href="./privacy-policy.html" style="text-decoration: none;color: #000;"><p>PRIVACY POLICY</p></a>
                                 <p>TERMS & CONDITION</p>
                             </div>
                         </div>
@@ -1082,28 +1081,54 @@
 
             gsap.registerPlugin(ScrollTrigger);
 
-            gsap.to(".process-wrapper", {
-                xPercent: -12 * (2), // Adjust this value according to the number of slides
-                ease: "none",
-                scrollTrigger: {
-                    trigger: "#process-slider",
-                    pin:".process_sec",
-                    start: "top 20%", // Trigger when the top of the section hits the bottom of the viewport
-                    end: () => "+=200" + (document.querySelector(".process-wrapper").offsetWidth - window.innerWidth), // Adjust this value to control the scroll distance
-                    scrub: 1, // Initially set to true
-                    onEnter: () => {
-                        document.body.classList.add('no-scroll'); // Disable body scroll when entering the section
-                    },
-                    onLeaveBack: () => {
-                        document.body.classList.remove('no-scroll'); // Re-enable body scroll when leaving the section
-                    },
-                    onUpdate: (self) => {
-                        if (self.progress >= 1) {
-                            document.body.classList.remove('no-scroll'); // Re-enable body scroll when the last slide is visible
+            if (window.matchMedia("(min-width: 359px) and (max-width: 767px)").matches) {
+                gsap.to(".process-wrapper", {
+                    xPercent: -80 * (2), // Adjust this value according to the number of slides
+                    ease: "none",
+                    scrollTrigger: {
+                        trigger: "#process-slider",
+                        // pin:".process_sec",
+                        duration:1,
+                        start: "top 60%", // Adjusted start position
+                        end: () =>  "+=200" + (document.querySelector(".process-wrapper").offsetWidth - window.innerWidth), // Adjust this value to control the scroll distance
+                        scrub: 1, // Initially set to true
+                        onEnter: () => {
+                            document.body.classList.add('no-scroll'); // Disable body scroll when entering the section
+                        },
+                        onLeaveBack: () => {
+                            document.body.classList.remove('no-scroll'); // Re-enable body scroll when leaving the section
+                        },
+                        onUpdate: (self) => {
+                            if (self.progress >= 1) {
+                                document.body.classList.remove('no-scroll'); // Re-enable body scroll when the last slide is visible
+                            }
                         }
                     }
-                }
-            });
+                });
+            } else {
+                gsap.to(".process-wrapper", {
+                    xPercent: -12 * (2), // Adjust this value according to the number of slides
+                    ease: "none",
+                    scrollTrigger: {
+                        trigger: "#process-slider",
+                        pin:".process_sec",
+                        start: "top 20%", // Trigger when the top of the section hits the bottom of the viewport
+                        end: () => "+=200" + (document.querySelector(".process-wrapper").offsetWidth - window.innerWidth), // Adjust this value to control the scroll distance
+                        scrub: 1, // Initially set to true
+                        onEnter: () => {
+                            document.body.classList.add('no-scroll'); // Disable body scroll when entering the section
+                        },
+                        onLeaveBack: () => {
+                            document.body.classList.remove('no-scroll'); // Re-enable body scroll when leaving the section
+                        },
+                        onUpdate: (self) => {
+                            if (self.progress >= 1) {
+                                document.body.classList.remove('no-scroll'); // Re-enable body scroll when the last slide is visible
+                            }
+                        }
+                    }
+                });
+            }
 
             var dropdown = document.getElementById("what-we-do-dropdown");
             var dropdownMenu = dropdown.querySelector(".dropdown-menu");
