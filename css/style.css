@@ -2867,6 +2867,7 @@ uiux page css style
         animation: fadeInDown 0.3s ease-in-out;
         transform-origin: top;
         background: transparent;
+        backdrop-filter: none;
     }
 
     .cust-dropdown-menu .submenu-active {
@@ -3009,7 +3010,7 @@ uiux page css style
     }
 
     .explore_btn_service {
-        width: 58px;
+        width: 65px;
         height: 16px;
         border-radius: 1.5px;
         font-size: 5px;
@@ -3156,6 +3157,10 @@ uiux page css style
         box-shadow: none;
     }
 
+    .sd_desk .card {
+        height: auto;
+    }
+
     .card-body {
         background-color: white;
         width: auto;
@@ -3174,6 +3179,7 @@ uiux page css style
         position: absolute;
         top: 12px;
         left: 100px;
+        width: 245px;
     }
 
     .card p {
@@ -4084,11 +4090,11 @@ uiux page css style
         text-align: center;
     }
 
-    .sd_desk .section-heading_container {
+    /* .sd_desk .section-heading_container {
         padding: 40px !important;
         width: 350px !important;
         height: 407px !important;
-    }
+    } */
 
     .sd_desk .section-heading_container .service_title h2 {
         text-align: left;
@@ -4310,12 +4316,12 @@ uiux page css style
         width: 217px;
     }
 
-    .f_solutions .section-heading_container {
+    /* .f_solutions .section-heading_container {
         width: auto !important;
         height: auto !important;
         border-radius: 20px;
         padding: 30px !important;
-    }
+    } */
 
     .f_solutions .service_title {
         margin-left: 0px !important;
@@ -4791,6 +4797,7 @@ uiux page css style
         animation: fadeInDown 0.3s ease-in-out;
         transform-origin: top;
         background: transparent;
+        backdrop-filter: none;
     }
 
     .cust-dropdown-menu .submenu-active {
