@@ -2460,7 +2460,8 @@ uiux page css style
 .keySolution_card .img4 {
     width: 370px;
     height: auto;
-    margin: 0 134px;
+    /* margin: 0 134px; */
+    align-self: flex-end;
 }
 
 .process-slide {

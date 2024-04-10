@@ -33,17 +33,17 @@
 
 
         .slides-1{
-            height:720px !important
+            height:760px !important
         }
         .slides-2{
-            height:720px !important
+            height:760px !important
         }
 
         .slides-3{
-            height:720px !important
+            height:760px !important
         }
         .slides-4{
-            height:720px !important
+            height:760px !important
         }
 
         .cards-services-section {
@@ -1539,7 +1539,7 @@
             tl.to(".smart_title", {
                 scrollTrigger: {
                     trigger: ".smart_title",
-                    start: "top 15%",
+                    start: "top 35%",
                     end:"+=600",
                     pin:".home-content1",
                     toggleActions: "restart pause reverse pause",
@@ -1563,15 +1563,15 @@
                                 ease: "power1.out",
                                 scrub: 1,
                         });
-                        gsap.to(".img1", { opacity: 0, duration: 0, position:"fixed" , top: "10%" , right: "15%", onComplete: () => {
-                            gsap.to(".img1", { opacity: 1, duration: 0});
+                        gsap.to(".img1", { opacity: 0, duration: 0, position:"fixed" , top: "30%" , right: "15%", onComplete: () => {
+                            gsap.to(".img1", { opacity: 1, duration: 0.5});
                             document.querySelector(".animation_img").src = "./img/cityskyline.svg";
                             gsap.to(".animation_img", { opacity: 1, duration: 0});
                         }});
                     },
                     onEnterBack: () => {
                         gsap.to(".animation_img", { opacity: 0, duration: 0, onComplete: () => {
-                            gsap.to(".img1", { opacity: 1, duration: 0});
+                            gsap.to(".img1", { opacity: 1, duration: 0.5});
                             document.querySelector(".animation_img").src = "./img/cityskyline.svg";
                             gsap.to(".animation_img", { opacity: 1, duration: 0});
                         }});
@@ -1584,7 +1584,7 @@
                                 duration: 0,
                                 ease: "power1.out",
                                 position:"fixed",
-                                top:"10%",
+                                top:"25%",
                                 right:"15%"
                         });
                         tl.to(".smart_content", {
@@ -1609,7 +1609,7 @@
             tl.to(".fin_title", {
                 scrollTrigger: {
                     trigger: ".home-content2",
-                    start: "top 15%",
+                    start: "top 35%",
                     pin:".home-content2",
                     end:"+=500",
                     toggleActions: "restart pause reverse pause",
@@ -1651,7 +1651,7 @@
             tl.to(".net_title", {
                 scrollTrigger: {
                     trigger: ".home-content3",
-                    start: "top 15%",
+                    start: "top 35%",
                     pin:".home-content3",
                     end:"+=500",
                     toggleActions: "restart pause reverse pause",
@@ -1672,15 +1672,27 @@
                         }});
                     },
                     onEnterBack: () => {
+
+                        // gsap.to(".animation_img", { opacity: 1, duration: 0});
+                        tl.to(".img1", {
+                                opacity: 1,
+                                duration: 0,
+                                ease: "power1.out",
+                                position:"fixed",
+                                top:"30%",
+                                right:"15%"
+                        });
                         gsap.to(".animation_img", { opacity: 0, duration: 0, onComplete: () => {
                             document.querySelector(".animation_img").src = "./img/pana.svg";
-                            document.querySelector(".img1").classList.remove("img4");
+                            // document.querySelector(".img1").classList.remove("img4");
+                            gsap.to(".img4", { opacity: 0, duration: 0});
+                            // gsap.to(".img1", { opacity: 1, duration: 0});
                             gsap.to(".animation_img", { opacity: 1, duration: 0});
                         }});
                     },
 
                     onLeaveBack: () => {
-                        gsap.to(".animation_img", { opacity: 0, duration: 0});
+                        gsap.to(".animation_img", { opacity: 1, duration: 0});
                         tl.to(".net_content", {
                                 x: -100,
                                 opacity: 0,
@@ -1695,9 +1707,9 @@
             tl.to(".ai_title", {
                 scrollTrigger: {
                     trigger: ".home-content4",
-                    start: "top 15%",
+                    start: "top 35%",
                     pin:".home-content4",
-                    end:"+=400",
+                    end:"+=280",
                     toggleActions: "restart pause reverse pause",
                     ease: "power1.out",
                     scrub: 1,
@@ -1714,18 +1726,19 @@
 
                         gsap.to(".animation_img", { opacity: 0, duration: 0, onComplete: () => {
                             document.querySelector(".animation_img").src = "./img/ai.svg";
-                            document.querySelector(".img1").classList.add("img4");
-                            gsap.to(".animation_img", { opacity: 1, duration: 0});
+                            // gsap.to(".img1", { width: 420 , duration: 0});
+                            gsap.to(".img4", { opacity: 1, duration: 0, position: "relative", right: "10%"});
+                            // gsap.to(".animation_img", { opacity: 1, duration: 0});
                         }});
                     },
                     onEnterBack: () => {
-                        gsap.to(".animation_img", { opacity: 1, duration: 0});
+                        gsap.to(".animation_img", { opacity: 0, duration: 0});
                         tl.to(".img1", {
-                                opacity: 1,
-                                duration: 0,
+                                opacity: 0,
+                                duration: 0.5,
                                 ease: "power1.out",
                                 position:"fixed",
-                                top:"10%",
+                                top:"30%",
                                 right:"15%"
                         });
                         tl.to(".ai_content", {
@@ -1744,7 +1757,7 @@
                                 duration: 0,
                                 ease: "power1.out",
                                 position:"fixed",
-                                top:"10%",
+                                top:"30%",
                                 right:"15%"
                         });
                     },
