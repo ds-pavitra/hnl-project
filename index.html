@@ -1563,7 +1563,7 @@
                                 ease: "power1.out",
                                 scrub: 1,
                         });
-                        gsap.to(".img1", { opacity: 0, duration: 0, position:"fixed" , top: "30%" , right: "15%", onComplete: () => {
+                        gsap.to(".img1", { opacity: 0, duration: 0, position:"fixed" , top: "25%" , right: "15%", onComplete: () => {
                             gsap.to(".img1", { opacity: 1, duration: 0.5});
                             document.querySelector(".animation_img").src = "./img/cityskyline.svg";
                             gsap.to(".animation_img", { opacity: 1, duration: 0});
@@ -1571,6 +1571,7 @@
                     },
                     onEnterBack: () => {
                         gsap.to(".animation_img", { opacity: 0, duration: 0, onComplete: () => {
+                            gsap.to(".img1", {top:"25%"});
                             gsap.to(".img1", { opacity: 1, duration: 0.5});
                             document.querySelector(".animation_img").src = "./img/cityskyline.svg";
                             gsap.to(".animation_img", { opacity: 1, duration: 0});
@@ -1624,14 +1625,16 @@
                                 ease: "power1.out",
                                 scrub: 1,
                         });
-                        gsap.to(".animation_img", { opacity: 0, duration: 0, onComplete: () => {
+                        gsap.to(".animation_img", { opacity: 0, duration: 0,onComplete: () => {
                             document.querySelector(".animation_img").src = "./img/amico@2x.svg";
+                            gsap.to(".img1", {top:"20%"});
                             gsap.to(".animation_img", { opacity: 1, duration: 0});
                         }});
                     },
                     onEnterBack: () => {
                         gsap.to(".animation_img", { opacity: 0, duration: 0, onComplete: () => {
                             document.querySelector(".animation_img").src = "./img/amico@2x.svg";
+                            gsap.to(".img1", {top:"20%"});
                             gsap.to(".animation_img", { opacity: 1, duration: 0});
                         }});
                     },
@@ -1668,6 +1671,7 @@
                         });
                         gsap.to(".animation_img", { opacity: 0, duration: 0, onComplete: () => {
                             document.querySelector(".animation_img").src = "./img/pana.svg";
+                            gsap.to(".img1", {top:"28%"});
                             gsap.to(".animation_img", { opacity: 1, duration: 0});
                         }});
                     },
@@ -1684,9 +1688,8 @@
                         });
                         gsap.to(".animation_img", { opacity: 0, duration: 0, onComplete: () => {
                             document.querySelector(".animation_img").src = "./img/pana.svg";
-                            // document.querySelector(".img1").classList.remove("img4");
                             gsap.to(".img4", { opacity: 0, duration: 0});
-                            // gsap.to(".img1", { opacity: 1, duration: 0});
+                            gsap.to(".img1", {top:"28%"});
                             gsap.to(".animation_img", { opacity: 1, duration: 0});
                         }});
                     },
@@ -1726,9 +1729,7 @@
 
                         gsap.to(".animation_img", { opacity: 0, duration: 0, onComplete: () => {
                             document.querySelector(".animation_img").src = "./img/ai.svg";
-                            // gsap.to(".img1", { width: 420 , duration: 0});
-                            gsap.to(".img4", { opacity: 1, duration: 0, position: "relative", right: "10%"});
-                            // gsap.to(".animation_img", { opacity: 1, duration: 0});
+                            gsap.to(".img4", { opacity: 1, duration: 0, position: "relative", right: "10%", top:"10%"});
                         }});
                     },
                     onEnterBack: () => {

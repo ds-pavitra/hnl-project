@@ -683,7 +683,7 @@
             <!-- our process section ends  -->
 
             <!-- partners section -->
-            <div class="section section-margin-bottom cust_partner_sec"
+            <div class="section section-margin-bottom cust_partner_sec mt_100"
                 style="height:326px;position: relative;margin-bottom: 0px;">
                 <h2 class="partner_title">STRATEGIC PARTNER'S</h2>
                 <div class="cust-partner-cont"
@@ -1114,10 +1114,10 @@
                     scrollTrigger: {
                         trigger: "#process-slider",
                         // pin:".process_sec",
-                        duration:1,
-                        start: "top 60%", // Adjusted start position
-                        end: () =>  "+=200" + (document.querySelector(".process-wrapper").offsetWidth - window.innerWidth), // Adjust this value to control the scroll distance
-                        scrub: 1, // Initially set to true
+                        duration:0.5,
+                        start: "top 90%", // Adjusted start position
+                        end: () =>  "+=700" + (document.querySelector(".process-wrapper").offsetWidth - window.innerWidth), // Adjust this value to control the scroll distance
+                        scrub: 0.5, // Initially set to true
                         onEnter: () => {
                             document.body.classList.add('no-scroll'); // Disable body scroll when entering the section
                         },

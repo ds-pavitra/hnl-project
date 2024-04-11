@@ -1088,10 +1088,10 @@
                     scrollTrigger: {
                         trigger: "#process-slider",
                         // pin:".process_sec",
-                        duration:1,
-                        start: "top 60%", // Adjusted start position
-                        end: () =>  "+=200" + (document.querySelector(".process-wrapper").offsetWidth - window.innerWidth), // Adjust this value to control the scroll distance
-                        scrub: 1, // Initially set to true
+                        duration:0.5,
+                        start: "top 90%", // Adjusted start position
+                        end: () =>  "+=700" + (document.querySelector(".process-wrapper").offsetWidth - window.innerWidth), // Adjust this value to control the scroll distance
+                        scrub: 0.5, // Initially set to true
                         onEnter: () => {
                             document.body.classList.add('no-scroll'); // Disable body scroll when entering the section
                         },

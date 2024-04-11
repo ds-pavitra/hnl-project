@@ -2686,6 +2686,10 @@ uiux page css style
     margin-bottom: 0;
 }
 
+.mt_100{
+    margin-top: 100px;
+}
+
 .animate__fadeInLeft,
 .animate__fadeInRight,
 .animate__fadeInUp,
@@ -4941,7 +4945,7 @@ uiux page css style
         font-weight: 500;
         font-size: 25px !important;
         line-height: 30px;
-        width: 321px;
+        width: 310px;
     }
 
     .explore_btn_service {
@@ -4995,11 +4999,11 @@ uiux page css style
     }
 
     .keySolution_card .img1 {
-        width: 270px;
-        height: 199px;
+        width: 301px;
+        height: auto;
         position: fixed;
-        top: 10%;
-        right: 10% !important;
+        top: 32% !important;
+        right: 8% !important;
     }
 
 
@@ -5016,9 +5020,11 @@ uiux page css style
     }
 
     .keySolution_card .img4 {
-        width: 151px;
-        height: 157px;
+        width: 220px;
+        height: auto;
         margin: 0 50px 0 0;
+        top: -38% !important;
+        right: -10% !important;
     }
 
     .keySolution_card .service-content h4 {
@@ -5048,15 +5054,15 @@ uiux page css style
     }
 
     .keySolution_card .slides-1 {
-        height: 750px !important;
+        height: 775px !important;
     }
 
     .keySolution_card .slides-2 {
-        height: 605px !important;
+        height: 645px !important;
     }
 
     .keySolution_card .slides-3 {
-        height: 610px !important;
+        height: 655px !important;
     }
 
     .testimonial-section h4 {
@@ -6367,11 +6373,11 @@ uiux page css style
     }
 
     .keySolution_card .img1 {
-        width: 270px;
-        height: 199px;
+        width: 380px;
+        height: auto;
         position: fixed;
-        top: 13% !important;
-        right: 15% !important;
+        top: 32% !important;
+        right: 10% !important;
     }
 
 
@@ -6388,9 +6394,11 @@ uiux page css style
     }
 
     .keySolution_card .img4 {
-        width: 151px;
-        height: 157px;
+        width: 260px;
+        height: auto;
         margin: 0 50px 0 0;
+        top: -38% !important;
+        right: -10% !important;
     }
 
     .Kscard_desk{
@@ -6399,15 +6407,15 @@ uiux page css style
     }
 
     .keySolution_card .slides-1 {
-        height: 750px !important;
+        height: 775px !important;
     }
 
     .keySolution_card .slides-2 {
-        height: 605px !important;
+        height: 645px !important;
     }
 
     .keySolution_card .slides-3 {
-        height: 610px !important;
+        height: 655px !important;
     }
 
 
@@ -7677,4 +7685,13 @@ uiux page css style
     .whoweare_container .service-content {
         margin-right: 0;
     } */
+}
+
+@media only screen and (min-width: 1560px) and (max-width:2160px) {
+    .img1, .img2, .img3{
+        right: 20% !important;
+    }
+     .img4 {
+        right: 5% !important;
+    }
 }
