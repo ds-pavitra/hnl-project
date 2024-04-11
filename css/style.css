@@ -4936,6 +4936,13 @@ uiux page css style
         padding: 0 0 16px 0;
     }
 
+    .c_pb_100{
+        padding: 0 0 100px 0;
+        font-size: 36px;
+        font-weight: 600;
+        line-height: 48px;
+    }
+
     .service-image {
         width: 320px;
         height: 236px;
@@ -4988,7 +4995,7 @@ uiux page css style
     }
 
     .know_more {
-        font-size: 12px;
+        font-size: 18px;
         margin-bottom: 0;
     }
 
@@ -5029,17 +5036,17 @@ uiux page css style
     }
 
     .keySolution_card .service-content h4 {
-        font-size: 20px;
+        font-size: 24px;
         font-weight: 600;
-        line-height: 30px;
+        line-height: 48px;
         text-align: left;
         color: #000;
     }
 
     .keySolution_card .service-content p {
-        font-size: 16px !important;
+        font-size: 18px !important;
         font-weight: 400;
-        line-height: 24px !important;
+        line-height: 30px !important;
         text-align: left;
         color: #000;
         margin-bottom: 0px;
@@ -5055,15 +5062,15 @@ uiux page css style
     }
 
     .keySolution_card .slides-1 {
-        height: 775px !important;
+        height: 855px !important;
     }
 
     .keySolution_card .slides-2 {
-        height: 645px !important;
+        height: 705px !important;
     }
 
     .keySolution_card .slides-3 {
-        height: 655px !important;
+        height: 715px !important;
     }
 
     .testimonial-section h4 {

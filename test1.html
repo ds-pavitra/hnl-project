@@ -33,8 +33,10 @@
 
 
         .slides-1{
-            height:760px !important
+            height:620px !important;
+            align-items: flex-start !important;
         }
+
         .slides-2{
             height:760px !important
         }
@@ -596,7 +598,7 @@
                     <div>
                         <section class="service_type d-flex flex-column">
                             <div class="service-item home-item slides-1">
-                                <div class="service-content home-content1">
+                                <div class="service-content home-content1" style="width: 1280px !important; display: flex;justify-content: space-between;padding: 0px !important;">
                                     <h4 class="smart_title">Smart City
                                         Solution</h4>
                                     <br>
@@ -608,7 +610,7 @@
                                     <br>
                                     <h4 class="dummy_title">AI/ML
                                         Solution</h4>
-                                    <div class="smart_content">
+                                    <div class="smart_content" style="display: none;">
                                         <p class="service_disc"
                                             style="color: #000;">
                                             Transforming Urban Living with
@@ -624,7 +626,7 @@
                                                 style="vertical-align:middle;"></i></a>
                                     </div>
                                 </div>
-                                <div class="service-image img1">
+                                <div class="service-image img1" style="display: none;">
                                     <img class="animation_img"
                                         src="./img/cityskyline.svg"
                                         alt="Service Image 1">
@@ -1547,26 +1549,29 @@
                     scrub: 1,
                     // markers:true,
                     onEnter: () => {
-                        tl.to(".dummy_title", { y: 200, display: "none", duration: 0, ease: "power1.out" });
+                        tl.to(".dummy_title", { y: 0, display: "none", duration: 0, ease: "power1.out" });
+                        tl.to(".smart_title", { x: 66, y:0, duration: 0.5, ease: "power1.out" });
+                        tl.to(".home-content1", { y: 0, flexDirection:"column", duration: 0.5, ease: "power1.out" });
                         tl.to(".smart_content", {
                                 y: -57,
                                 opacity: 0,
                                 duration: 0.5,
                                 ease: "power1.out",
                                 scrub: 1,
+                                display:"block",
                         });
 
                         tl.to(".smart_content", {
-                                x: 0,
+                                x: 66,
                                 opacity: 1,
                                 duration: 0.5,
                                 ease: "power1.out",
                                 scrub: 1,
                         });
-                        gsap.to(".img1", { opacity: 0, duration: 0, position:"fixed" , top: "25%" , right: "15%", onComplete: () => {
+                        gsap.to(".img1", { opacity: 0, duration: 0,display: "block", position:"fixed" , top: "25%" , right: "15%", onComplete: () => {
                             gsap.to(".img1", { opacity: 1, duration: 0.5});
                             document.querySelector(".animation_img").src = "./img/cityskyline.svg";
-                            gsap.to(".animation_img", { opacity: 1, duration: 0});
+                            gsap.to(".animation_img", { opacity: 1, duration: 0.5});
                         }});
                     },
                     onEnterBack: () => {
@@ -1586,7 +1591,8 @@
                                 ease: "power1.out",
                                 position:"fixed",
                                 top:"25%",
-                                right:"15%"
+                                right:"15%",
+                                display:"none",
                         });
                         tl.to(".smart_content", {
                                 x: -100,
@@ -1595,14 +1601,18 @@
                                 ease: "power1.out",
                                 scrub: 1,
                         });
-                        tl.to(".dummy_title", { y: 0, display: "block", duration: 0, ease: "power1.out" });
+                        tl.to(".smart_title", { x: 0, duration: 0.5, ease: "power1.out" });
+                        tl.to(".home-content1", { y: 0, flexDirection:"row", duration: 0, ease: "power1.out" });
                         tl.to(".smart_content", {
-                                y: -57,
-                                opacity: 0,
-                                duration: 0.5,
-                                ease: "power1.out",
-                                scrub: 1,
+                            y: -57,
+                            opacity: 0,
+                            duration: 0.5,
+                            ease: "power1.out",
+                            scrub: 1,
+                            display:"none",
                         });
+                        tl.to(".dummy_title", { y: 0, display: "block", duration: 0, ease: "power1.out" });
+
                     }
                 },
             });
