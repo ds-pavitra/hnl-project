@@ -2704,6 +2704,13 @@ uiux page css style
     opacity: 0;
 }
 
+.c_pb_100 h2{
+    padding: 0 0 100px 0;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 48px;
+}
+
 
 
 

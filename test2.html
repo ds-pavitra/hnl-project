@@ -599,17 +599,15 @@
                         <section class="service_type d-flex flex-column">
                             <div class="service-item home-item slides-1">
                                 <div class="service-content home-content1" style="width: 1280px !important; display: flex;justify-content: space-between;padding: 0px !important;">
-                                    <h4 class="smart_title">Smart City
+                                    <h4 class="smart_title" style="display: none;">Smart City
                                         Solution</h4>
+                                    <img class="dummy_title" src="./img/letter-s.png" style="width: 100px;">
                                     <br>
-                                    <h4 class="dummy_title">Fintech
-                                        Solution</h4>
+                                    <img class="dummy_title" src="./img/letter-f.png" style="width: 100px;">
                                     <br>
-                                    <h4 class="dummy_title">Networking
-                                        Solution</h4>
-                                    <br>
-                                    <h4 class="dummy_title">AI/ML
-                                        Solution</h4>
+                                    <img class="dummy_title" src="./img/letter-n.png" style="width: 100px;">
+                                        <br>
+                                    <img class="dummy_title" src="./img/letter-a.png" style="width: 100px;">
                                     <div class="smart_content" style="display: none;">
                                         <p class="service_disc"
                                             style="color: #000;">
@@ -1541,7 +1539,7 @@
             tl.to(".dummy_title", {
                 scrollTrigger: {
                     trigger: ".dummy_title",
-                    start: "top 80%",
+                    start: "top 65%",
                     end:"+=200",
                     // pin:".home-content1",
                     toggleActions: "restart pause reverse pause",
@@ -1549,7 +1547,7 @@
                     scrub: 1,
                     // markers:true,
                     onEnter: () => {
-                        tl.to(".dummy_title", { y: 0, x:300, opacity: 0, duration: 2 , ease: "power1.out" });
+                        tl.to(".dummy_title", { y: 0, x:-300, opacity: 0, duration: 2 , ease: "power1.out" });
                        
                     },
                     // onEnterBack: () => {
@@ -1570,12 +1568,12 @@
                     // markers:true,
                     onEnter: () => {
                         tl.to(".dummy_title", { y: 0, display: "none", duration: 0, ease: "power1.out" });
-                        tl.to(".smart_title", { x: 66, y:0, duration: 0.5, ease: "power1.out" });
+                        tl.to(".smart_title", { x: 66, y:0, opacity: 1, display:"block", duration: 0.2, ease: "power1.out" });
                         tl.to(".home-content1", { y: 0, flexDirection:"column", duration: 0.5, ease: "power1.out" });
                         tl.to(".smart_content", {
                                 y: -57,
                                 opacity: 0,
-                                duration: 0.5,
+                                duration: 0,
                                 ease: "power1.out",
                                 scrub: 1,
                                 display:"block",
@@ -1584,7 +1582,7 @@
                         tl.to(".smart_content", {
                                 x: 66,
                                 opacity: 1,
-                                duration: 0.5,
+                                duration: 0.2,
                                 ease: "power1.out",
                                 scrub: 1,
                         });
@@ -1621,7 +1619,7 @@
                                 ease: "power1.out",
                                 scrub: 1,
                         });
-                        tl.to(".smart_title", { x: 0, duration: 0.5, ease: "power1.out" });
+                        tl.to(".smart_title", { x: 0, duration: 0.5, opacity: 0, display:"none", ease: "power1.out" });
                         tl.to(".home-content1", { y: 0, flexDirection:"row", duration: 0, ease: "power1.out" });
                         tl.to(".smart_content", {
                             y: -57,
@@ -1632,7 +1630,7 @@
                             display:"none",
                         });
                         tl.to(".dummy_title", { y: 0, display: "block", duration: 0, ease: "power1.out" });
-                        tl.to(".dummy_title", { y: 0,x:0, opacity: 1, duration: 0.5 , ease: "power1.out" });
+                        tl.to(".dummy_title", { y: 0,x:0, opacity: 1, duration: 0.2 , ease: "power1.out" });
 
                     }
                 },
