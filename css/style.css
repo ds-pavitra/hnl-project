@@ -3083,6 +3083,7 @@ uiux page css style
         margin: 0 0 16px 0;
         position: unset !important;
         opacity: 1 !important;
+        align-self: center;;
     }
 
     .keySolution_card .service-content h4 {
