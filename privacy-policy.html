@@ -1,767 +1,887 @@
 <!DOCTYPE html>
 <html lang="zxx">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" href="img/favicon.ico" />
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="shortcut icon" href="img/favicon.ico" />
+    <!-- bootstrap grid css -->
+    <link rel="stylesheet" href="css/plugins/bootstrap-grid.css" />
+    <!-- font awesome css -->
+    <link rel="stylesheet" href="css/plugins/font-awesome.min.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- swiper css -->
+    <link rel="stylesheet" href="css/plugins/swiper.min.css" />
+    <!-- itsulu css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Harry & Liu</title>
+    <!-- fontawesome icons  -->
+    <script
+      src="https://kit.fontawesome.com/f01ac4bad9.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Include GSAP library -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.9.1/dist/gsap.min.js"></script>
 
-        <!-- bootstrap grid css -->
-        <link rel="stylesheet" href="css/plugins/bootstrap-grid.css">
-        <!-- font awesome css -->
-        <link rel="stylesheet" href="css/plugins/font-awesome.min.css">
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-            rel="stylesheet">
-        <!-- swiper css -->
-        <link rel="stylesheet" href="css/plugins/swiper.min.css">
-        <!-- itsulu css -->
-        <link rel="stylesheet" href="css/style.css">
-        <title>Harry & Liu</title>
-        <!-- fontawesome icons  -->
-        <script src="https://kit.fontawesome.com/f01ac4bad9.js"
-            crossorigin="anonymous"></script>
-        <!-- Include GSAP library -->
-        <script
-            src="https://cdn.jsdelivr.net/npm/gsap@3.9.1/dist/gsap.min.js"></script>
+    <!-- Include ScrollTrigger plugin -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/ScrollTrigger.min.js"></script>
+  </head>
 
-        <!-- Include ScrollTrigger plugin -->
-        <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/ScrollTrigger.min.js"></script>
+  <body>
+    <div id="wrapper">
+      <!-- navigation starts -->
+      <div id="navigation" class="navigation_desk">
+        <nav class="navbar navbar-expand-lg bg-body-white">
+          <div class="container">
+            <a class="navbar-brand" href="./index.html">
+              <img class="header_logo" src="./img/HL-1.svg" />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="collapse navbar-collapse justify-content-end"
+              id="navbarSupportedContent"
+            >
+              <ul
+                class="navbar-nav me-auto mb-2"
+                style="margin-right: 60px !important"
+              >
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    aria-current="page"
+                    href="./index.html"
+                    style="font-size: 16px"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    aria-current="page"
+                    href="./whoweare.html"
+                    style="font-size: 16px"
+                    >Who we are</a
+                  >
+                </li>
+                <li class="nav-item dropdown" id="what-we-do-dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    style="font-size: 16px"
+                  >
+                    What We Do
+                  </a>
+                  <ul
+                    class="dropdown-menu dropdown-menu-end cust-dropdown-menu"
+                  >
+                    <li class="dropdown-submenu active dropend">
+                      <a
+                        class="dropdown-item dropdown-toggle test submenu-active focus"
+                        tabindex="-1"
+                        href="#"
+                        >Services</a
+                      >
+                      <ul
+                        class="dropdown-menu dropdown-menu-services cust-dropdown-menu-services"
+                      >
+                        <li>
+                          <a
+                            class="dropdown-item dropdown-item-custom"
+                            tabindex="-1"
+                            href="./uiux.html"
+                            >UI/UX</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item dropdown-item-custom"
+                            tabindex="-1"
+                            href="./software-development.html"
+                            >Software Development</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item dropdown-item-custom"
+                            tabindex="-1"
+                            href="./mobile-development.html"
+                            >Mobile Development</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item dropdown-item-custom"
+                            tabindex="-1"
+                            href="./digital-marketing.html"
+                            >Digital Marketing</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="dropdown-submenu dropend">
+                      <a
+                        class="dropdown-item dropdown-toggle test submenu-active"
+                        href="#"
+                        >Solutions</a
+                      >
+                      <ul
+                        class="dropdown-menu dropdown-menu-solutions cust-dropdown-menu-solutions"
+                      >
+                        <li>
+                          <a
+                            class="dropdown-item dropdown-item-custom"
+                            href="./aiml.html"
+                            >AI/ML Solution</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item dropdown-item-custom"
+                            href="./smartcity-solutions.html"
+                            >Smart City Solution</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item dropdown-item-custom"
+                            href="./fintech-solutions.html"
+                            >Fintech Solution</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item dropdown-item-custom"
+                            href="./networking-solutions.html"
+                            >Networking Solution</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item dropdown-toggle test submenu-active"
+                        href="./ourwork.html"
+                        >Our Work</a
+                      >
+                    </li>
+                  </ul>
+                </li>
 
-    </head>
-
-    <body>
-        <div id="wrapper">
-            <!-- navigation starts -->
-            <div id="navigation" class="navigation_desk">
-                <nav class="navbar navbar-expand-lg bg-body-white">
-                    <div class="container">
-                        <a class="navbar-brand" href="./index.html">
-                            <img class="header_logo" src="./img/HL-1.svg">
-                        </a>
-                        <button class="navbar-toggler" type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#navbarSupportedContent"
-                            aria-controls="navbarSupportedContent"
-                            aria-expanded="false"
-                            aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div
-                            class="collapse navbar-collapse justify-content-end"
-                            id="navbarSupportedContent">
-                            <ul class="navbar-nav me-auto mb-2"
-                                style="margin-right: 60px !important;">
-                                <li class="nav-item">
-                                    <a class="nav-link" aria-current="page"
-                                        href="./index.html"
-                                        style="font-size: 16px;">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" aria-current="page"
-                                        href="./whoweare.html"
-                                        style="font-size: 16px;">Who we
-                                        are</a>
-                                </li>
-                                <li class="nav-item dropdown" id="what-we-do-dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#"
-                                        role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false"
-                                        style="font-size: 16px;">
-                                        What We Do
-                                    </a>
-                                    <ul
-                                        class="dropdown-menu dropdown-menu-end cust-dropdown-menu">
-                                        <li
-                                            class="dropdown-submenu active dropend">
-                                            <a
-                                                class="dropdown-item dropdown-toggle test submenu-active focus"
-                                                tabindex="-1"
-                                                href="#">Services</a>
-                                            <ul
-                                                class="dropdown-menu dropdown-menu-services cust-dropdown-menu-services">
-                                                <li><a
-                                                        class="dropdown-item dropdown-item-custom"
-                                                        tabindex="-1"
-                                                        href="./uiux.html">UI/UX</a></li>
-                                                <li><a
-                                                        class="dropdown-item dropdown-item-custom"
-                                                        tabindex="-1"
-                                                        href="./software-development.html">Software
-                                                        Development</a></li>
-                                                <li><a
-                                                        class="dropdown-item dropdown-item-custom"
-                                                        tabindex="-1"
-                                                        href="./mobile-development.html">Mobile
-                                                        Development</a></li>
-                                                <li><a
-                                                        class="dropdown-item dropdown-item-custom"
-                                                        tabindex="-1"
-                                                        href="./digital-marketing.html">Digital
-                                                        Marketing</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="dropdown-submenu dropend">
-                                            <a
-                                                class="dropdown-item dropdown-toggle test submenu-active"
-                                                href="#">Solutions</a>
-                                            <ul
-                                                class="dropdown-menu dropdown-menu-solutions cust-dropdown-menu-solutions">
-                                                <li><a
-                                                        class="dropdown-item dropdown-item-custom"
-                                                        href="./aiml.html">AI/ML
-                                                        Solution</a></li>
-                                                <li><a
-                                                        class="dropdown-item dropdown-item-custom"
-                                                        href="./smartcity-solutions.html">Smart
-                                                        City
-                                                        Solution</a></li>
-                                                <li><a
-                                                        class="dropdown-item dropdown-item-custom"
-                                                        href="./fintech-solutions.html">Fintech
-                                                        Solution</a></li>
-                                                <li><a
-                                                        class="dropdown-item dropdown-item-custom"
-                                                        href="./networking-solutions.html">Networking
-                                                        Solution</a></li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <a
-                                                class="dropdown-item dropdown-toggle test submenu-active"
-                                                href="./ourwork.html">Our
-                                                Work</a>
-                                        </li>
-                                    </ul>
-                                </li>
-
-                                <li class="nav-item">
-                                    <a class="nav-link" href="./whoweserve.html"
-                                        style="font-size: 16px;">Who we
-                                        serve</a>
-                                </li>
-                            </ul>
-                            <!-- <form class="d-flex" role="contactus">
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    href="./whoweserve.html"
+                    style="font-size: 16px"
+                    >Who we serve</a
+                  >
+                </li>
+              </ul>
+              <!-- <form class="d-flex" role="contactus">
                       <input class="form-control me-2" type="contactus" placeholder="contactus" aria-label="contactus">
                     </form> -->
-                            <a href="./contact.html"
-                                class="btn header_contactus_btn"> Contact Us</a>
-                        </div>
-                    </div>
-                </nav>
+              <a href="./contact.html" class="btn header_contactus_btn">
+                Contact Us</a
+              >
             </div>
+          </div>
+        </nav>
+      </div>
 
-            <!-- navigation_mobile_tab   -->
+      <!-- navigation_mobile_tab   -->
 
-            <div id="navigation" class="navigation_mob">
-                <nav class="navbar navbar-expand-lg bg-body-white">
-                    <div class="container">
-                        <a class="navbar-brand" href="./index.html">
-                            <img class="header_logo" src="./img/HL-1.svg">
-                        </a>
-                        <button class="navbar-toggler" type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#navbarSupportedContent"
-                            aria-controls="navbarSupportedContent"
-                            aria-expanded="false"
-                            aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div
-                            class="collapse navbar-collapse justify-content-end"
-                            id="navbarSupportedContent">
-                            <ul class="navbar-nav me-auto mb-2"
-                                style="margin-right: 60px !important;">
+      <div id="navigation" class="navigation_mob">
+        <nav class="navbar navbar-expand-lg bg-body-white">
+          <div class="container">
+            <a class="navbar-brand" href="./index.html">
+              <img class="header_logo" src="./img/HL-1.svg" />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="collapse navbar-collapse justify-content-end"
+              id="navbarSupportedContent"
+            >
+              <ul
+                class="navbar-nav me-auto mb-2"
+                style="margin-right: 60px !important"
+              >
+                <li class="nav-item">
+                  <div
+                    class="d-flex justify-content-between"
+                    style="width: 430px"
+                  >
+                    <p
+                      style="
+                        font-size: 28px;
+                        line-height: 32px;
+                        color: #004e9e;
+                        font-weight: 500;
+                      "
+                    >
+                      Menu
+                    </p>
+                    <button
+                      class="navbar-toggler"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#navbarSupportedContent"
+                      aria-controls="navbarSupportedContent"
+                      aria-expanded="false"
+                      aria-label="Toggle navigation"
+                    >
+                      <img
+                        src="./img/close_vector.png"
+                        style="
+                          width: 24px;
+                          height: 24px;
+                          position: absolute;
+                          top: 50px;
+                          right: 50px;
+                        "
+                      />
+                    </button>
+                  </div>
+                </li>
 
-                                <li class="nav-item">
-                                    <div class="d-flex justify-content-between"
-                                        style="width: 430px;">
-                                        <p
-                                            style="font-size: 28px;line-height: 32px;color: #004E9E;font-weight: 500;">Menu
-                                        </p>
-                                        <button class="navbar-toggler"
-                                            type="button"
-                                            data-bs-toggle="collapse"
-                                            data-bs-target="#navbarSupportedContent"
-                                            aria-controls="navbarSupportedContent"
-                                            aria-expanded="false"
-                                            aria-label="Toggle navigation">
-                                            <img src="./img/close_vector.png"
-                                                style="width: 24px;height: 24px;position: absolute;top: 50px;right: 50px;">
-                                        </button>
-                                    </div>
-                                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    aria-current="page"
+                    href="./index.html"
+                    style="font-size: 16px"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    aria-current="page"
+                    href="./whoweare.html"
+                    style="font-size: 16px"
+                    >Who we are</a
+                  >
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    style="font-size: 16px"
+                  >
+                    What We Do
+                  </a>
+                  <ul
+                    class="dropdown-menu dropdown-menu-end cust-dropdown-menu"
+                  >
+                    <li class="dropdown-submenu active dropend">
+                      <a
+                        class="dropdown-item dropdown-toggle test submenu-active"
+                        tabindex="-1"
+                        href="#"
+                        >Services</a
+                      >
+                      <ul
+                        class="dropdown-menu dropdown-menu-services cust-dropdown-menu-services"
+                        style="display: none"
+                      >
+                        <li>
+                          <a
+                            class="dropdown-item dropdown-item-custom"
+                            tabindex="-1"
+                            href="./uiux.html"
+                            >UI/UX</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item dropdown-item-custom"
+                            tabindex="-1"
+                            href="./software-development.html"
+                            >Software Development</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item dropdown-item-custom"
+                            tabindex="-1"
+                            href="./mobile-development.html"
+                            >Mobile Development</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item dropdown-item-custom"
+                            tabindex="-1"
+                            href="./digital-marketing.html"
+                            >Digital Marketing</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="dropdown-submenu dropend">
+                      <a
+                        class="dropdown-item dropdown-toggle test submenu-active"
+                        href="#"
+                        >Solutions</a
+                      >
+                      <ul
+                        class="dropdown-menu dropdown-menu-solutions cust-dropdown-menu-solutions"
+                      >
+                        <li>
+                          <a
+                            class="dropdown-item dropdown-item-custom"
+                            href="./aiml.html"
+                            >AI/ML Solution</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item dropdown-item-custom"
+                            href="./smartcity-solutions.html"
+                            >Smart City Solution</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item dropdown-item-custom"
+                            href="./fintech-solutions.html"
+                            >Fintech Solution</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item dropdown-item-custom"
+                            href="./networking-solutions.html"
+                            >Networking Solution</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item dropdown-toggle test submenu-active"
+                        href="./ourwork.html"
+                        >Our Work</a
+                      >
+                    </li>
+                  </ul>
+                </li>
 
-                                <li class="nav-item">
-                                    <a class="nav-link" aria-current="page"
-                                        href="./index.html"
-                                        style="font-size: 16px;">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" aria-current="page"
-                                        href="./whoweare.html"
-                                        style="font-size: 16px;">Who we
-                                        are</a>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#"
-                                        role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false"
-                                        style="font-size: 16px;">
-                                        What We Do
-                                    </a>
-                                    <ul
-                                        class="dropdown-menu dropdown-menu-end cust-dropdown-menu">
-                                        <li
-                                            class="dropdown-submenu active dropend">
-                                            <a
-                                                class="dropdown-item dropdown-toggle test submenu-active"
-                                                tabindex="-1"
-                                                href="#">Services</a>
-                                            <ul
-                                                class="dropdown-menu dropdown-menu-services cust-dropdown-menu-services"
-                                                style="display: none;">
-                                                <li><a
-                                                        class="dropdown-item dropdown-item-custom"
-                                                        tabindex="-1"
-                                                        href="./uiux.html">UI/UX</a></li>
-                                                <li><a
-                                                        class="dropdown-item dropdown-item-custom"
-                                                        tabindex="-1"
-                                                        href="./software-development.html">Software
-                                                        Development</a></li>
-                                                <li><a
-                                                        class="dropdown-item dropdown-item-custom"
-                                                        tabindex="-1"
-                                                        href="./mobile-development.html">Mobile
-                                                        Development</a></li>
-                                                <li><a
-                                                        class="dropdown-item dropdown-item-custom"
-                                                        tabindex="-1"
-                                                        href="./digital-marketing.html">Digital
-                                                        Marketing</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="dropdown-submenu dropend">
-                                            <a
-                                                class="dropdown-item dropdown-toggle test submenu-active"
-                                                href="#">Solutions</a>
-                                            <ul
-                                                class="dropdown-menu dropdown-menu-solutions cust-dropdown-menu-solutions">
-                                                <li><a
-                                                        class="dropdown-item dropdown-item-custom"
-                                                        href="./aiml.html">AI/ML
-                                                        Solution</a></li>
-                                                <li><a
-                                                        class="dropdown-item dropdown-item-custom"
-                                                        href="./smartcity-solutions.html">Smart
-                                                        City
-                                                        Solution</a></li>
-                                                <li><a
-                                                        class="dropdown-item dropdown-item-custom"
-                                                        href="./fintech-solutions.html">Fintech
-                                                        Solution</a></li>
-                                                <li><a
-                                                        class="dropdown-item dropdown-item-custom"
-                                                        href="./networking-solutions.html">Networking
-                                                        Solution</a></li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <a
-                                                class="dropdown-item dropdown-toggle test submenu-active"
-                                                href="./ourwork.html">Our
-                                                Work</a>
-                                        </li>
-                                    </ul>
-                                </li>
-
-                                <li class="nav-item">
-                                    <a class="nav-link" href="./whoweserve.html"
-                                        style="font-size: 16px;">Who we
-                                        serve</a>
-                                </li>
-                            </ul>
-                            <!-- <form class="d-flex" role="contactus">
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    href="./whoweserve.html"
+                    style="font-size: 16px"
+                    >Who we serve</a
+                  >
+                </li>
+              </ul>
+              <!-- <form class="d-flex" role="contactus">
                       <input class="form-control me-2" type="contactus" placeholder="contactus" aria-label="contactus">
                     </form> -->
-                            <a href="#"
-                                class="nav_info">info@harryandliu.com</a>
-                            <a href="./contact.html"
-                                class="btn header_contactus_btn"> Contact Us</a>
-                        </div>
-                    </div>
-                </nav>
+              <a href="#" class="nav_info">info@harryandliu.com</a>
+              <a href="./contact.html" class="btn header_contactus_btn">
+                Contact Us</a
+              >
             </div>
-            <!-- navigation ends -->
+          </div>
+        </nav>
+      </div>
+      <!-- navigation ends -->
 
-            <!-- privacy policy starts    -->
-            <section class="container privacy_policy_container">
-                <div>
-                    <h3>Private: Privacy Policy</h3>
+      <!-- privacy policy starts    -->
+      <section class="container privacy_policy_container">
+        <div>
+          <h3>Private: Privacy Policy</h3>
 
-                    <h4>Who we are <br>
-                        Suggested text: Our website address is:
-                        <b>http://35.154.8.157/hnl.</b></h4>
-                </div>
-
-                <div>
-                    <h3>Comments</h3>
-
-                    <p><b>Suggested text:</b> When visitors leave comments on
-                        the site we collect the data shown in the comments form,
-                        and also the visitor's IP address and browser user agent
-                        string to help spam detection.</p>
-                    <p>An anonymized string created from your email address
-                        (also called a hash) may be provided to the Gravatar
-                        service to see if you are using it. The Gravatar service
-                        privacy policy is available here:
-                        https://automattic.com/privacy/. After approval of your
-                        comment, your profile picture is visible to the public
-                        in the context of your comment.</p>
-                </div>
-
-                <div>
-                    <h3>Media</h3>
-
-                    <p><b>Suggested text:</b> If you upload images to the
-                        website, you should avoid uploading images with embedded
-                        location data (EXIF GPS) included. Visitors to the
-                        website can download and extract any location data from
-                        images on the website.</p>
-                </div>
-
-                <div>
-                    <h3>Cookies</h3>
-
-                    <p><b>Suggested text:</b> If you leave a comment on our site
-                        you may opt-in to saving your name, email address and
-                        website in cookies. These are for your convenience so
-                        that you do not have to fill in your details again when
-                        you leave another comment. These cookies will last for
-                        one year.</p>
-                    <p>If you visit our login page, we will set a temporary
-                        cookie to determine if your browser accepts cookies.
-                        This cookie contains no personal data and is discarded
-                        when you close your browser.</p>
-                    <p>When you log in, we will also set up several cookies to
-                        save your login information and your screen display
-                        choices. Login cookies last for two days, and screen
-                        options cookies last for a year. If you select “Remember
-                        Me”, your login will persist for two weeks. If you log
-                        out of your account, the login cookies will be
-                        removed.</p>
-                    <p>If you edit or publish an article, an additional cookie
-                        will be saved in your browser. This cookie includes no
-                        personal data and simply indicates the post ID of the
-                        article you just edited. It expires after 1 day.</p>
-                </div>
-
-                <div>
-                    <h3>Embedded content from other websites</h3>
-
-                    <p><b>Suggested text:</b> Articles on this site may include
-                        embedded content (e.g. videos, images, articles, etc.).
-                        Embedded content from other websites behaves in the
-                        exact same way as if the visitor has visited the other
-                        website.</p>
-                    <p>These websites may collect data about you, use cookies,
-                        embed additional third-party tracking, and monitor your
-                        interaction with that embedded content, including
-                        tracking your interaction with the embedded content if
-                        you have an account and are logged in to that
-                        website.</p>
-                </div>
-
-                <div>
-                    <h3>Who we share your data with</h3>
-
-                    <p><b>Suggested text:</b> If you request a password reset,
-                        your IP address will be included in the reset email.</p>
-                </div>
-
-                <div>
-                    <h3>How long we retain your data</h3>
-
-                    <p><b>Suggested text:</b> If you leave a comment, the
-                        comment and its metadata are retained indefinitely. This
-                        is so we can recognize and approve any follow-up
-                        comments automatically instead of holding them in a
-                        moderation queue.</p>
-                    <p>For users that register on our website (if any), we also
-                        store the personal information they provide in their
-                        user profile. All users can see, edit, or delete their
-                        personal information at any time (except they cannot
-                        change their username). Website administrators can also
-                        see and edit that information.</p>
-                </div>
-
-                <div>
-                    <h3>What rights you have over your data</h3>
-
-                    <p><b>Suggested text:</b> If you have an account on this
-                        site, or have left comments, you can request to receive
-                        an exported file of the personal data we hold about you,
-                        including any data you have provided to us. You can also
-                        request that we erase any personal data we hold about
-                        you. This does not include any data we are obliged to
-                        keep for administrative, legal, or security
-                        purposes.</p>
-                </div>
-
-                <div>
-                    <h3>Where your data is sent</h3>
-
-                    <p><b>Suggested text:</b> Visitor comments may be checked
-                        through an automated spam detection service.</p>
-                </div>
-
-            </section>
-            <!-- privacy policy ends    -->
-
-            <!-- footer section  starts-->
-
-            <footer>
-                <div class="cust-footer-card"
-                    style="width: 100%;height: 390px;background-color: white;display: flex;align-items: flex-end;">
-                    <div class="container-fluid" style="background: #004E9E;">
-                        <div class="container get_in_touch col-lg-10">
-                            <div class="git_image_container">
-                                <img src="./img/amico.svg" alt>
-                            </div>
-                            <h3>Your Partner in Progress, Fueling Business
-                                Solutions.</h3>
-                            <div class="cust-txt-align">
-                                <a href="./contact.html"
-                                    class="btn explore_btn_service git_btn_cust">Get
-                                    in
-                                    touch</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="footer_navigation"
-                    style="width: 100%;height: 580px;background-color: #FFFFFF33; position: relative;">
-
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <!--== Start Footer Widget Area ==-->
-                                <div class="footer-widget-area">
-                                    <div class="row m-b-n40">
-                                        <div
-                                            class="col-sm-6 col-md-6 col-lg-3 m-b-40"
-                                            data-aos="fade-up"
-                                            data-aos-duration="1100">
-                                            <div class="widget-item pb-sm-20">
-                                                <h4 class="widget-title">Harry &
-                                                    Liu Co. Ltd</h4>
-                                                <div class="about-widget">
-                                                    <p>Tien Chu Commercial
-                                                        Building, 173 - 174
-                                                        Gloucester Road, Wanchai
-                                                        <br> <br>
-                                                        Hong Kong
-                                                    </p>
-                                                    <div class="social-icons">
-                                                        <a href="#/"><img
-                                                                src="./img/meta-dark.svg"
-                                                                alt="meta"></a>
-                                                        <a href="#/"><img
-                                                                src="./img/twitter-dark.svg"
-                                                                alt="twitter"></a>
-                                                        <a href="#/"><img
-                                                                src="./img/youtube-dark.svg"
-                                                                alt="youtube"></a>
-                                                        <a href="#/"><img
-                                                                src="./img/linkedin-dark.svg"
-                                                                alt="linkedin"></a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div
-                                            class="col-sm-6 col-md-6 col-lg-3 d-flex justify-content-start justify-content-lg-center m-b-40"
-                                            data-aos="fade-up"
-                                            data-aos-duration="1500">
-                                            <div
-                                                class="widget-item widget-item-1">
-                                                <h4
-                                                    class="widget-title">NAVIGATION</h4>
-                                                <ul class="widget-list"
-                                                    style="padding-left: 0;">
-                                                    <li><a href="#">What we
-                                                            do</a></li>
-                                                    <li><a
-                                                            href="./whoweserve.html">Who
-                                                            we
-                                                            serve</a></li>
-                                                    <li><a
-                                                            href="./whoweare.html">What
-                                                            we
-                                                            are</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div
-                                            class="col-sm-6 col-md-6 col-lg-3 m-b-40"
-                                            data-aos="fade-up"
-                                            data-aos-duration="2000">
-                                            <div
-                                                class="widget-item widget-item-3">
-                                                <h4 class="widget-title">QUICK
-                                                    LINKS</h4>
-                                                <ul class="widget-post"
-                                                    style="padding-left: 0;">
-                                                    <li><a
-                                                            href="#">Services</a></li>
-                                                    <li><a
-                                                            href="#">Solutions</a></li>
-                                                    <li><a
-                                                            href="#">Application</a></li>
-                                                    <li><a
-                                                            href="#">Product</a></li>
-                                                    <li><a
-                                                            href="./contact.html">Contact</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div
-                                            class="col-sm-6 col-md-6 col-lg-3 m-b-40"
-                                            data-aos="fade-up"
-                                            data-aos-duration="2500">
-                                            <div
-                                                class="widget-item widget-item-2">
-                                                <h4 class="widget-title">CONTACT
-                                                    US</h4>
-
-                                                <ul class="widget-post"
-                                                    style="padding-left: 0;">
-                                                    <li><a href="#"
-                                                            class="d-flex">
-                                                            <div>
-                                                                <img
-                                                                    src="./img/phone-dark.svg"
-                                                                    alt="Image-HasTech">
-                                                            </div>
-                                                            <div
-                                                                style="margin-left: 20px;">
-                                                                +86 15618878897
-                                                            </div>
-                                                        </a></li>
-                                                    <li><a href="#"
-                                                            class="d-flex">
-                                                            <div>
-                                                                <img
-                                                                    src="./img/mail-dark.svg"
-                                                                    alt="Image-HasTech">
-                                                            </div>
-                                                            <div
-                                                                style="margin-left: 20px;">
-                                                                info@harryandliu.com
-                                                            </div>
-                                                        </a></li>
-                                                    <li class="ho_1"><a href="#"
-                                                            class="d-flex">
-                                                            <div>
-                                                                <img
-                                                                    src="./img/location-dark.svg"
-                                                                    alt="Image-HasTech">
-                                                            </div>
-                                                            <div
-                                                                style="margin-left: 20px;width: 238px;">
-                                                                <span
-                                                                    style="font-size: 16px;font-weight: 500;">Head
-                                                                    Office</span><br>
-                                                                <span
-                                                                    style="font-size: 12px;font-weight: 400;">
-                                                                    Chu
-                                                                    Commercial
-                                                                    Building,
-                                                                    173 - 174
-                                                                    Gloucester
-                                                                    Road,
-                                                                    Wanchai,
-                                                                    Hong Kong.
-                                                                </span>
-                                                            </div>
-                                                        </a></li>
-
-                                                    <li class="ho_1"><a href="#"
-                                                            class="d-flex">
-                                                            <div>
-                                                                <img
-                                                                    src="./img/location-dark.svg"
-                                                                    alt="Image-HasTech">
-                                                            </div>
-                                                            <div
-                                                                style="margin-left: 20px;width: 238px;">
-                                                                <span
-                                                                    style="font-size: 16px;font-weight: 500;">Mainland
-                                                                    China
-                                                                    Office</span><br>
-                                                                <span
-                                                                    style="font-size: 12px;font-weight: 400;">913,
-                                                                    Jinqi Wisdom
-                                                                    Valley 1,
-                                                                    Tangling
-                                                                    Road,
-                                                                    Liuxian
-                                                                    Blvd,
-                                                                    Nanshan,
-                                                                    Shenzhen.
-                                                                </span>
-                                                            </div>
-                                                        </a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--== End Footer Widget Area ==-->
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="footer-bottom">
-                        <div
-                            class="container d-flex justify-content-between cust-margin-0"
-                            style="margin: 0px auto;padding-top: 30px;color: black;">
-                            <div class="rights-reserved">
-                                <p
-                                    style="font-size: 15px;font-weight: 700;">2024
-                                    All RIGHTS RESERVED - H&L</p>
-                            </div>
-                            <div
-                                class="d-flex justify-content-around footer-policy"
-                                style="width: 380px;font-size: 15px;font-weight: 600;">
-                                <a href="./privacy-policy.html" style="text-decoration: none;color: #000;"><p>PRIVACY POLICY</p></a>
-                                <p>TERMS & CONDITION</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </footer>
-
+          <h4>
+            Who we are <br />
+            Suggested text: Our website address is:
+            <b>http://35.154.8.157/hnl.</b>
+          </h4>
         </div>
 
-        <!-- jQuery js -->
-        <script src="js/plugins/jquery.min.js"></script>
-        <!-- swiper js -->
-        <script src="js/plugins/swiper.min.js"></script>
-        <!-- <script src="js/plugins/swiper-bundle.min.js"></script> -->
-        <!-- itsulu js -->
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-        <script type="text/javascript">
+        <div>
+          <h3>Comments</h3>
 
-        /*--
+          <p>
+            <b>Suggested text:</b> When visitors leave comments on the site we
+            collect the data shown in the comments form, and also the visitor's
+            IP address and browser user agent string to help spam detection.
+          </p>
+          <p>
+            An anonymized string created from your email address (also called a
+            hash) may be provided to the Gravatar service to see if you are
+            using it. The Gravatar service privacy policy is available here:
+            https://automattic.com/privacy/. After approval of your comment,
+            your profile picture is visible to the public in the context of your
+            comment.
+          </p>
+        </div>
+
+        <div>
+          <h3>Media</h3>
+
+          <p>
+            <b>Suggested text:</b> If you upload images to the website, you
+            should avoid uploading images with embedded location data (EXIF GPS)
+            included. Visitors to the website can download and extract any
+            location data from images on the website.
+          </p>
+        </div>
+
+        <div>
+          <h3>Cookies</h3>
+
+          <p>
+            <b>Suggested text:</b> If you leave a comment on our site you may
+            opt-in to saving your name, email address and website in cookies.
+            These are for your convenience so that you do not have to fill in
+            your details again when you leave another comment. These cookies
+            will last for one year.
+          </p>
+          <p>
+            If you visit our login page, we will set a temporary cookie to
+            determine if your browser accepts cookies. This cookie contains no
+            personal data and is discarded when you close your browser.
+          </p>
+          <p>
+            When you log in, we will also set up several cookies to save your
+            login information and your screen display choices. Login cookies
+            last for two days, and screen options cookies last for a year. If
+            you select “Remember Me”, your login will persist for two weeks. If
+            you log out of your account, the login cookies will be removed.
+          </p>
+          <p>
+            If you edit or publish an article, an additional cookie will be
+            saved in your browser. This cookie includes no personal data and
+            simply indicates the post ID of the article you just edited. It
+            expires after 1 day.
+          </p>
+        </div>
+
+        <div>
+          <h3>Embedded content from other websites</h3>
+
+          <p>
+            <b>Suggested text:</b> Articles on this site may include embedded
+            content (e.g. videos, images, articles, etc.). Embedded content from
+            other websites behaves in the exact same way as if the visitor has
+            visited the other website.
+          </p>
+          <p>
+            These websites may collect data about you, use cookies, embed
+            additional third-party tracking, and monitor your interaction with
+            that embedded content, including tracking your interaction with the
+            embedded content if you have an account and are logged in to that
+            website.
+          </p>
+        </div>
+
+        <div>
+          <h3>Who we share your data with</h3>
+
+          <p>
+            <b>Suggested text:</b> If you request a password reset, your IP
+            address will be included in the reset email.
+          </p>
+        </div>
+
+        <div>
+          <h3>How long we retain your data</h3>
+
+          <p>
+            <b>Suggested text:</b> If you leave a comment, the comment and its
+            metadata are retained indefinitely. This is so we can recognize and
+            approve any follow-up comments automatically instead of holding them
+            in a moderation queue.
+          </p>
+          <p>
+            For users that register on our website (if any), we also store the
+            personal information they provide in their user profile. All users
+            can see, edit, or delete their personal information at any time
+            (except they cannot change their username). Website administrators
+            can also see and edit that information.
+          </p>
+        </div>
+
+        <div>
+          <h3>What rights you have over your data</h3>
+
+          <p>
+            <b>Suggested text:</b> If you have an account on this site, or have
+            left comments, you can request to receive an exported file of the
+            personal data we hold about you, including any data you have
+            provided to us. You can also request that we erase any personal data
+            we hold about you. This does not include any data we are obliged to
+            keep for administrative, legal, or security purposes.
+          </p>
+        </div>
+
+        <div>
+          <h3>Where your data is sent</h3>
+
+          <p>
+            <b>Suggested text:</b> Visitor comments may be checked through an
+            automated spam detection service.
+          </p>
+        </div>
+      </section>
+      <!-- privacy policy ends    -->
+
+      <!-- footer section  starts-->
+
+      <footer>
+        <div
+          class="cust-footer-card"
+          style="
+            width: 100%;
+            height: 390px;
+            background-color: white;
+            display: flex;
+            align-items: flex-end;
+          "
+        >
+          <div class="container-fluid" style="background: #004e9e">
+            <div class="container get_in_touch col-lg-10">
+              <div class="git_image_container">
+                <img src="./img/amico.svg" alt />
+              </div>
+              <h3>Your Partner in Progress, Fueling Business Solutions.</h3>
+              <div class="cust-txt-align">
+                <a
+                  href="./contact.html"
+                  class="btn explore_btn_service git_btn_cust"
+                  >Get in touch</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="footer_navigation"
+          style="
+            width: 100%;
+            height: 580px;
+            background-color: #ffffff33;
+            position: relative;
+          "
+        >
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                <!--== Start Footer Widget Area ==-->
+                <div class="footer-widget-area">
+                  <div class="row m-b-n40">
+                    <div
+                      class="col-sm-6 col-md-6 col-lg-3 m-b-40"
+                      data-aos="fade-up"
+                      data-aos-duration="1100"
+                    >
+                      <div class="widget-item pb-sm-20">
+                        <h4 class="widget-title">Harry & Liu Co. Ltd</h4>
+                        <div class="about-widget">
+                          <p>
+                            Tien Chu Commercial Building, 173 - 174 Gloucester
+                            Road, Wanchai <br />
+                            <br />
+                            Hong Kong
+                          </p>
+                          <div class="social-icons">
+                            <a href="#/"
+                              ><img src="./img/meta-dark.svg" alt="meta"
+                            /></a>
+                            <a href="#/"
+                              ><img src="./img/twitter-dark.svg" alt="twitter"
+                            /></a>
+                            <a href="#/"
+                              ><img src="./img/youtube-dark.svg" alt="youtube"
+                            /></a>
+                            <a href="#/"
+                              ><img
+                                src="./img/linkedin-dark.svg"
+                                alt="linkedin"
+                            /></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="col-sm-6 col-md-6 col-lg-3 d-flex justify-content-start justify-content-lg-center m-b-40"
+                      data-aos="fade-up"
+                      data-aos-duration="1500"
+                    >
+                      <div class="widget-item widget-item-1">
+                        <h4 class="widget-title">NAVIGATION</h4>
+                        <ul class="widget-list" style="padding-left: 0">
+                          <li><a href="#">What we do</a></li>
+                          <li><a href="./whoweserve.html">Who we serve</a></li>
+                          <li><a href="./whoweare.html">What we are</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div
+                      class="col-sm-6 col-md-6 col-lg-3 m-b-40"
+                      data-aos="fade-up"
+                      data-aos-duration="2000"
+                    >
+                      <div class="widget-item widget-item-3">
+                        <h4 class="widget-title">QUICK LINKS</h4>
+                        <ul class="widget-post" style="padding-left: 0">
+                          <li><a href="./uiux.html">Services</a></li>
+                          <li><a href="./aiml.html">Solutions</a></li>
+                          <li><a href="#">Application</a></li>
+                          <li><a href="./ourwork.html">Our Work</a></li>
+                          <li><a href="./contact.html">Contact Us</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div
+                      class="col-sm-6 col-md-6 col-lg-3 m-b-40"
+                      data-aos="fade-up"
+                      data-aos-duration="2500"
+                    >
+                      <div class="widget-item widget-item-2">
+                        <h4 class="widget-title">CONTACT US</h4>
+
+                        <ul class="widget-post" style="padding-left: 0">
+                          <li>
+                            <a href="#" class="d-flex">
+                              <div>
+                                <img
+                                  src="./img/phone-dark.svg"
+                                  alt="Image-HasTech"
+                                />
+                              </div>
+                              <div style="margin-left: 20px">
+                                +86 15618878897
+                              </div>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#" class="d-flex">
+                              <div>
+                                <img
+                                  src="./img/mail-dark.svg"
+                                  alt="Image-HasTech"
+                                />
+                              </div>
+                              <div style="margin-left: 20px">
+                                info@harryandliu.com
+                              </div>
+                            </a>
+                          </li>
+                          <li class="ho_1">
+                            <a href="#" class="d-flex">
+                              <div>
+                                <img
+                                  src="./img/location-dark.svg"
+                                  alt="Image-HasTech"
+                                />
+                              </div>
+                              <div style="margin-left: 20px; width: 238px">
+                                <span style="font-size: 16px; font-weight: 500"
+                                  >Head Office</span
+                                ><br />
+                                <span style="font-size: 12px; font-weight: 400">
+                                  Chu Commercial Building, 173 - 174 Gloucester
+                                  Road, Wanchai, Hong Kong.
+                                </span>
+                              </div>
+                            </a>
+                          </li>
+
+                          <li class="ho_1">
+                            <a href="#" class="d-flex">
+                              <div>
+                                <img
+                                  src="./img/location-dark.svg"
+                                  alt="Image-HasTech"
+                                />
+                              </div>
+                              <div style="margin-left: 20px; width: 238px">
+                                <span style="font-size: 16px; font-weight: 500"
+                                  >Mainland China Office</span
+                                ><br />
+                                <span style="font-size: 12px; font-weight: 400"
+                                  >913, Jinqi Wisdom Valley 1, Tangling Road,
+                                  Liuxian Blvd, Nanshan, Shenzhen.
+                                </span>
+                              </div>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--== End Footer Widget Area ==-->
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-bottom">
+            <div
+              class="container d-flex justify-content-between cust-margin-0"
+              style="margin: 0px auto; padding-top: 30px; color: black"
+            >
+              <div class="rights-reserved">
+                <p style="font-size: 15px; font-weight: 700">
+                  2024 All RIGHTS RESERVED - H&L
+                </p>
+              </div>
+              <div
+                class="d-flex justify-content-around footer-policy"
+                style="width: 380px; font-size: 15px; font-weight: 600"
+              >
+                <a
+                  href="./privacy-policy.html"
+                  style="text-decoration: none; color: #000"
+                  ><p>PRIVACY POLICY</p></a
+                >
+                <p>TERMS & CONDITION</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- jQuery js -->
+    <script src="js/plugins/jquery.min.js"></script>
+    <!-- swiper js -->
+    <script src="js/plugins/swiper.min.js"></script>
+    <!-- <script src="js/plugins/swiper-bundle.min.js"></script> -->
+    <!-- itsulu js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript">
+      /*--
     Client's Activation
 -----------------------------------*/
-        document.addEventListener('DOMContentLoaded', function () {
+      document.addEventListener("DOMContentLoaded", function () {
+        var dropdown = document.getElementById("what-we-do-dropdown");
+        var dropdownMenu = dropdown.querySelector(".dropdown-menu");
 
-            var dropdown = document.getElementById("what-we-do-dropdown");
-            var dropdownMenu = dropdown.querySelector(".dropdown-menu");
-
-            // Show dropdown menu on mouseover
-            dropdown.addEventListener("mouseover", function() {
-                dropdownMenu.classList.add("show");
-            });
-
-            // Hide dropdown menu on mouseout
-            dropdown.addEventListener("mouseout", function() {
-                dropdownMenu.classList.remove("show");
-            });
-
-            // Use jQuery to toggle the 'focus' class on submenu item click
-            $('.dropdown-menu .submenu-active').on('click', function () {
-                $('.dropdown-menu .submenu-active').removeClass('focus');
-                $(this).addClass('focus');
-            });
-
-
-            $('.dropdown-submenu a.test').on("click", function (e) {
-                // Hide all other dropdowns
-                $('.dropdown-submenu .dropdown-menu').not($(this).next('ul')).hide();
-                // Toggle the clicked dropdown
-                $(this).next('ul').toggle();
-                e.stopPropagation();
-                e.preventDefault();
-            });
-
-
-            var brands = new Swiper('.brand-slider', {
-                slidesPerView: 5,
-                loop: true,
-                autoplay: {
-                    delay: 3000,
-                    disableOnInteraction: false,
-                },
-                pagination: false,
-            });
-
-            var swiper = new Swiper('.cards-services', {
-                slidesPerView: 1,
-                spaceBetween: 30,
-                loop: true,
-            });
-
-            var swiper = new Swiper('.cards-project', {
-                slidesPerView: 1,
-                spaceBetween: 30,
-                autoplay: {
-                    delay: 5000,
-                    disableOnInteraction: false,
-                },
-                loop: true,
-            });
-
-
-            var testimonialSlider = new Swiper('.testimonial-slider', {
-                loop: true,
-                spaceBetween: 30,
-                autoplay: {
-                    delay: 5000,
-                    disableOnInteraction: false,
-                },
-                navigation: {
-                    nextEl: '.swiper-button-next-testimonial',
-                    prevEl: '.swiper-button-prev-testimonial',
-                },
-            });
-
-            var partners = new Swiper('.partner-slider', {
-                slidesPerView: 6,
-                spaceBetween: 0,
-                loop: true,
-                autoplay: {
-                    delay: 3000,
-                    disableOnInteraction: false,
-                },
-                pagination: false,
-            });
-
-
-            const mediaQuery = window.matchMedia('(min-width: 359px) and (max-width: 992px) ');
-
-            function updateSwiperConfig() {
-                if (mediaQuery.matches) {
-                    partners.params.slidesPerView = 4;
-                    clients.params.slidesPerView = 4;
-                } else {
-                    partners.params.slidesPerView = 6;
-                    clients.params.slidesPerView = 6;
-                }
-                partners.update();
-            }
-            updateSwiperConfig();
-            mediaQuery.addListener(updateSwiperConfig);
-
+        // Show dropdown menu on mouseover
+        dropdown.addEventListener("mouseover", function () {
+          dropdownMenu.classList.add("show");
         });
 
-    </script>
-    </body>
+        // Hide dropdown menu on mouseout
+        dropdown.addEventListener("mouseout", function () {
+          dropdownMenu.classList.remove("show");
+        });
 
+        // Use jQuery to toggle the 'focus' class on submenu item click
+        $(".dropdown-menu .submenu-active").on("click", function () {
+          $(".dropdown-menu .submenu-active").removeClass("focus");
+          $(this).addClass("focus");
+        });
+
+        $(".dropdown-submenu a.test").on("click", function (e) {
+          // Hide all other dropdowns
+          $(".dropdown-submenu .dropdown-menu").not($(this).next("ul")).hide();
+          // Toggle the clicked dropdown
+          $(this).next("ul").toggle();
+          e.stopPropagation();
+          e.preventDefault();
+        });
+
+        var brands = new Swiper(".brand-slider", {
+          slidesPerView: 5,
+          loop: true,
+          autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+          },
+          pagination: false,
+        });
+
+        var swiper = new Swiper(".cards-services", {
+          slidesPerView: 1,
+          spaceBetween: 30,
+          loop: true,
+        });
+
+        var swiper = new Swiper(".cards-project", {
+          slidesPerView: 1,
+          spaceBetween: 30,
+          autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+          },
+          loop: true,
+        });
+
+        var testimonialSlider = new Swiper(".testimonial-slider", {
+          loop: true,
+          spaceBetween: 30,
+          autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next-testimonial",
+            prevEl: ".swiper-button-prev-testimonial",
+          },
+        });
+
+        var partners = new Swiper(".partner-slider", {
+          slidesPerView: 6,
+          spaceBetween: 0,
+          loop: true,
+          autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+          },
+          pagination: false,
+        });
+
+        const mediaQuery = window.matchMedia(
+          "(min-width: 359px) and (max-width: 992px) "
+        );
+
+        function updateSwiperConfig() {
+          if (mediaQuery.matches) {
+            partners.params.slidesPerView = 4;
+            clients.params.slidesPerView = 4;
+          } else {
+            partners.params.slidesPerView = 6;
+            clients.params.slidesPerView = 6;
+          }
+          partners.update();
+        }
+        updateSwiperConfig();
+        mediaQuery.addListener(updateSwiperConfig);
+      });
+    </script>
+  </body>
 </html>
