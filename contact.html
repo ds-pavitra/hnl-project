@@ -427,7 +427,7 @@
               vision to life with immersive experiences — fast and without
               issues.
             </h3>
-            <img src="./img/image 45.svg" />
+            <img src="./img/image 45.svg" alt="" />
           </div>
         </div>
       </section>
@@ -435,7 +435,17 @@
       <section class="consec">
         <div class="contain">
           <div class="contact-form">
-            <form>
+            <form
+              action="https://api.web3forms.com/submit"
+              method="POST"
+              id="contactForm"
+            >
+              <input
+                type="hidden"
+                name="access_key"
+                value="de82db44-29b3-41d1-a7b9-42079cfc8db4"
+              />
+
               <label for="fullName1"
                 >Full Name <span style="color: #ff0000">*</span></label
               >
@@ -496,8 +506,10 @@
                   Wanchai, Hong Kong
                 </p>
                 <h4>Head Office</h4>
-                <a href="your_link_url2"
-                  ><img src="your_image_url1.jpg" alt=""
+                <a
+                  href="https://maps.app.goo.gl/7Hv7WQVVvHTGuNcW9"
+                  target="_blank"
+                  ><img src="./img//hongkong.png" alt="hongkong"
                 /></a>
               </div>
 
@@ -507,8 +519,10 @@
                   Nanshan, Shenzhen.
                 </p>
                 <h4>Mainland China Office</h4>
-                <a href="your_link_url2"
-                  ><img src="your_image_url1.jpg" alt=""
+                <a
+                  href="https://maps.app.goo.gl/tLVYsTQJehaBZsxc6"
+                  target="_blank"
+                  ><img src="./img//shenzhen.png" alt="shenzhen"
                 /></a>
               </div>
             </div>
@@ -545,63 +559,64 @@
 
           <div class="custom-accord flex-column">
             <div class="accordion fade_right" onclick="toggleAccordion(this)">
-              <p>Lorem Ipsum Dolor Sit Amet?</p>
+              <p>What information do you need from me to start work?</p>
               <div class="panel">
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Share the details of your project - like scope, timeframes, or
+                  business challenges you'd like to solve.
                 </p>
               </div>
             </div>
 
             <div class="accordion fade_right" onclick="toggleAccordion(this)">
               <p>
-                Lorem ipsum dolor sit amet, consectetur.Lorem ipsum dolor sit
-                amet, consectetur ?
+                What are the industries that Harry and Liu mainly works with?
               </p>
               <div class="panel">
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Harry and Liu mainly works with you regardless of what
+                  industry your business is in. So, whether you want enterprise
+                  application development or want to develop your website or
+                  application or any other customised digital solutions.
                 </p>
               </div>
             </div>
 
             <div class="accordion fade_right" onclick="toggleAccordion(this)">
               <p>
-                Lorem ipsum dolor sit amet, consectetur.Lorem ipsum dolor sit
-                amet, consectetur ?
+                Do you provide product support services after the app
+                development is complete?
               </p>
               <div class="panel">
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Yes, we are always glad to provide technical support and
+                  service the apps we have developed. We can also further
+                  develop your software product if you need to implement new
+                  features or integrate third-party services.
                 </p>
               </div>
             </div>
 
             <div class="accordion fade_right" onclick="toggleAccordion(this)">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur.Lorem ipsum dolor sit
-                amet, consectetur ?
-              </p>
+              <p>How does the project work process take place?</p>
               <div class="panel">
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Each project is unique and requires a customized approach, but
+                  most of the development stages are relevant to all of them.
+                  However, the very process of their implementation may differ
+                  somewhat. We recommend you read more about our work processes
+                  on our website.
                 </p>
               </div>
             </div>
 
             <div class="accordion fade_right" onclick="toggleAccordion(this)">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur.Lorem ipsum dolor sit
-                amet, consectetur ?
-              </p>
+              <p>How long does software development take?</p>
               <div class="panel">
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  To provide you with a precise answer, we have to evaluate the
+                  project complexity and the work scope. Knowing this
+                  information, we can provide you with the estimated time frame.
                 </p>
               </div>
             </div>
@@ -892,11 +907,19 @@
     <!-- <script src="js/plugins/swiper-bundle.min.js"></script> -->
     <!-- itsulu js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      window.onload = function() {
+          // Reset the form fields when the page loads
+          document.getElementById("contactForm").reset();
+      };
+  </script>
     <script type="text/javascript">
       /*--
     Client's Activation
 -----------------------------------*/
       document.addEventListener("DOMContentLoaded", function () {
+
         const options = {
           threshold: 0.2, // Trigger when 20% of the element is visible
         };
@@ -1028,26 +1051,27 @@
           },
           pagination: false,
         });
-      });
 
-      const mediaQuery = window.matchMedia(
-        "(min-width: 359px) and (max-width: 992px) "
-      );
+        const mediaQuery = window.matchMedia(
+          "(min-width: 359px) and (max-width: 992px) "
+        );
 
-      function updateSwiperConfig() {
-        if (mediaQuery.matches) {
-          partners.params.slidesPerView = 4;
-        } else {
-          partners.params.slidesPerView = 6;
+        function updateSwiperConfig() {
+          if (mediaQuery.matches) {
+            partners.params.slidesPerView = 4;
+          } else {
+            partners.params.slidesPerView = 6;
+          }
+          partners.update();
         }
-        partners.update();
-      }
-      updateSwiperConfig();
-      mediaQuery.addListener(updateSwiperConfig);
+        updateSwiperConfig();
+        mediaQuery.addListener(updateSwiperConfig);
+      });
 
       function toggleAccordion(accordion) {
         accordion.classList.toggle("active");
       }
+
     </script>
   </body>
 </html>

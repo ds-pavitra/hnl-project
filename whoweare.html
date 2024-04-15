@@ -234,22 +234,22 @@
                         <div class="container">
                             <div class="main-count">
                                 <div>
-                                    <p class="counter" data-speed="50">10</p>
-                                    <h5>Lorem Ipsum</h5>
+                                    <p class="counter" data-duration="500" data-increment="1000" data-symbol="+">20000</p>
+                                    <h5>Hours Of Code</h5>
                                 </div>
                                 <div>
-                                    <p class="counter" data-speed="50">10</p>
-                                    <h5>Lorem Ipsum</h5>
+                                    <p class="counter" data-duration="5000" data-increment="10" data-symbol="+">12</p>
+                                    <h5>Services</h5>
                                 </div>
                                 <div>
-                                    <p class="counter" data-speed="50">10</p>
-                                    <h5>Lorem Ipsum</h5>
+                                    <p class="counter" data-duration="5000" data-increment="10" data-symbol="+">41</p>
+                                    <h5>Technologies</h5>
                                 </div>
                                 <div>
-                                    <p class="counter" data-speed="50">10</p>
-                                    <h5>Lorem Ipsum</h5>
+                                    <p class="counter" data-duration="5000" data-increment="10" data-symbol="%">86</p>
+                                    <h5>Repeat Business</h5>
                                 </div>
-                            </div>
+                            </div>                           
                         </div>
                     </div>
                 </section>
@@ -943,31 +943,31 @@
 
 
         (() => {
-            const counter = document.querySelectorAll('.counter');
-            // convert to array
-            const array = Array.from(counter);
-            // select array element
-            array.map((item) => {
-                // data layer
-                let counterInnerText = parseInt(item.textContent); // Convert text to integer
+            const counters = document.querySelectorAll('.counter');
+            counters.forEach((counter) => {
+                const counterValue = parseInt(counter.textContent); // Get the counter value
+                const duration = counter.dataset.duration; // Custom duration or default to 1000ms
+                const symbol = counter.dataset.symbol || ''; // Custom symbol or default to empty string
+                const increment = counter.dataset.increment || 1; // Custom increment or default to 1
 
-                let count = 1;
-                let speed = item.dataset.speed / counterInnerText;
-                speed = speed * 10;
+                let count = 0;
+                const steps = Math.ceil(duration / 10); // Calculate the number of steps needed
+                const stepValue = Math.ceil(counterValue / steps); // Calculate the step value
+                const incrementValue = Math.ceil(increment / steps); // Calculate the increment value
 
                 function counterUp() {
-                    item.textContent = count + "+";
-                    count++;
-                    if (counterInnerText < count) {
+                    count += stepValue;
+                    if (count >= counterValue) {
                         clearInterval(stop);
+                        count = counterValue; // Ensure the final value is exact
                     }
+                    counter.textContent = count + symbol; // Update the counter value
                 }
 
-                const stop = setInterval(() => {
-                    counterUp();
-                }, speed);
+                const stop = setInterval(counterUp, 10); // Set interval for updating counter
             });
         })();
+
 
 
 
