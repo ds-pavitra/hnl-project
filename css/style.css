@@ -73,7 +73,7 @@ body {
     padding: 5px 18px;
 }
 
-.custom_active{
+.custom_active {
     color: #004E9E !important;
 }
 
@@ -459,7 +459,7 @@ body {
     align-items: center;
 }
 
-.explore_btn_service:hover{
+.explore_btn_service:hover {
     color: #fff;
     background-color: #000;
 }
@@ -1337,7 +1337,7 @@ uiux page css style
     color: #363535;
 }
 
-.sd_desk .card{
+.sd_desk .card {
     height: 286px;
 }
 
@@ -1729,11 +1729,14 @@ uiux page css style
     overflow-x: hidden;
 }
 
-.navigation_desk, .Kscard_desk {
+.navigation_desk,
+.Kscard_desk,
+.black {
     display: block !important;
 }
 
-.navigation_mob , .Kscard_mob {
+.navigation_mob,
+.Kscard_mob {
     display: none !important;
 }
 
@@ -1872,11 +1875,18 @@ uiux page css style
     /* box-shadow: 0 4px 8px rgb(255 255 255 / 99%); */
 }
 
-.team-card img {
+/* .team-card img {
     width: 100%;
     height: 100%;
     border-radius: 50%;
     object-fit: none;
+} */
+
+.team-card img {
+    width: 80%;
+    height: 100%;
+    border-radius: 38%;
+    object-fit: contain;
 }
 
 .whoweare_teams p {
@@ -2683,11 +2693,11 @@ uiux page css style
     overflow: hidden !important;
 }
 
-.hp_banner_p{
+.hp_banner_p {
     margin-bottom: 0;
 }
 
-.mt_100{
+.mt_100 {
     margin-top: 100px;
 }
 
@@ -2705,14 +2715,14 @@ uiux page css style
     opacity: 0;
 }
 
-.c_pb_100 h2{
+.c_pb_100 h2 {
     padding: 0 0 100px 0;
     font-size: 36px;
     font-weight: 600;
     line-height: 48px;
 }
 
-.cw_1280{
+.cw_1280 {
     width: 1280 !important;
 }
 
@@ -2725,11 +2735,14 @@ uiux page css style
         overflow: hidden;
     }
 
-    .navigation_desk , .Kscard_desk{
+    .navigation_desk,
+    .Kscard_desk,
+    .black {
         display: none !important;
     }
 
-    .navigation_mob , .Kscard_mob {
+    .navigation_mob,
+    .Kscard_mob {
         display: block !important;
     }
 
@@ -3095,7 +3108,8 @@ uiux page css style
         margin: 0 0 16px 0;
         position: unset !important;
         opacity: 1 !important;
-        align-self: center;;
+        align-self: center;
+        ;
     }
 
     .keySolution_card .service-content h4 {
@@ -3709,10 +3723,17 @@ uiux page css style
         line-height: 0;
     }
 
-    .team-card img {
+    /* .team-card img {
         width: 100%;
         height: 100%;
         border-radius: 50%;
+        object-fit: contain;
+    } */
+
+    .team-card img {
+        width: 80%;
+        height: 100%;
+        border-radius: 38%;
         object-fit: contain;
     }
 
@@ -4587,7 +4608,7 @@ uiux page css style
         margin-bottom: 1px !important;
     }
 
-    .keySolution_div{
+    .keySolution_div {
         margin: 0 auto 280px auto !important;
     }
 
@@ -4596,10 +4617,10 @@ uiux page css style
         justify-content: flex-end;
     }
 
-    .home-content1{
+    .home-content1 {
         top: 10px !important;
     }
-    
+
     .container-slider {
         max-width: 370px;
     }
@@ -4653,7 +4674,7 @@ uiux page css style
         align-items: center;
     }
 
-    .mob_wws .service-content{
+    .mob_wws .service-content {
         align-items: flex-start;
     }
 
@@ -4693,11 +4714,14 @@ uiux page css style
         overflow: hidden;
     }
 
-    .navigation_desk, .Kscard_mob {
+    .navigation_desk,
+    .Kscard_mob {
         display: none !important;
     }
 
-    .navigation_mob, .Kscard_desk{
+    .navigation_mob,
+    .Kscard_desk,
+    .black {
         display: block !important;
     }
 
@@ -4884,9 +4908,10 @@ uiux page css style
         padding: 30px 32px;
     }
 
-    .banner_img{
+    .banner_img {
         opacity: 1;
     }
+
     .h_banner_text {
         font-size: 32px;
         font-weight: 600;
@@ -4949,7 +4974,7 @@ uiux page css style
         padding: 0 0 16px 0;
     }
 
-    .c_pb_100{
+    .c_pb_100 {
         padding: 0 0 100px 0;
         font-size: 36px;
         font-weight: 600;
@@ -5069,7 +5094,8 @@ uiux page css style
         margin: 80px auto 70px auto;
     }
 
-    .Kscard_desk{
+    .Kscard_desk,
+    .black {
         height: 3240px !important;
         margin: 0 auto !important;
     }
@@ -5391,7 +5417,7 @@ uiux page css style
         border-radius: 10px;
     }
 
-    .main-count div{
+    .main-count div {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -5787,7 +5813,8 @@ uiux page css style
         margin: 100px auto 0 auto;
     }
 
-    .whoweserve_mob, .whoweserve_desk{
+    .whoweserve_mob,
+    .whoweserve_desk {
         margin: 0 auto;
     }
 
@@ -6205,7 +6232,7 @@ uiux page css style
         display: flex !important;
     }
 
-    .cw_1280{
+    .cw_1280 {
         width: 700px !important;
     }
 
@@ -6242,11 +6269,14 @@ uiux page css style
         overflow: hidden;
     }
 
-    .navigation_desk , .Kscard_desk {
+    .navigation_desk,
+    .Kscard_desk,
+    .black {
         display: block !important;
     }
 
-    .navigation_mob , .Kscard_mob {
+    .navigation_mob,
+    .Kscard_mob {
         display: none;
     }
 
@@ -6357,7 +6387,7 @@ uiux page css style
         height: 236px;
     }
 
-    .banner_img{
+    .banner_img {
         opacity: 1 !important;
     }
 
@@ -6433,7 +6463,8 @@ uiux page css style
         right: -10% !important;
     }
 
-    .Kscard_desk{
+    .Kscard_desk,
+    .black {
         height: 3240px !important;
         margin: 0 auto !important;
     }
@@ -7080,7 +7111,7 @@ uiux page css style
         display: none;
     }
 
-     .key_benefit_container {
+    .key_benefit_container {
         width: auto;
         margin: 70px auto 70px auto;
         display: flex;
@@ -7277,15 +7308,15 @@ uiux page css style
         height: auto;
     }
 
-    .process_Sec_md{
+    .process_Sec_md {
         height: 800px !important;
     }
 
-    .process_sec_sc{
+    .process_sec_sc {
         height: 750px !important;
     }
 
-    
+
     .md_desk .service-image {
         width: 352px;
         height: 226px;
@@ -7730,10 +7761,14 @@ uiux page css style
 }
 
 @media only screen and (min-width: 1560px) and (max-width:2160px) {
-    .img1, .img2, .img3{
+
+    .img1,
+    .img2,
+    .img3 {
         right: 20% !important;
     }
-     .img4 {
+
+    .img4 {
         right: 5% !important;
     }
 }
