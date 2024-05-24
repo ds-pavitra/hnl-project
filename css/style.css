@@ -2726,6 +2726,25 @@ uiux page css style
     width: 1280 !important;
 }
 
+@keyframes scaleUpDown {
+    0% {
+        transform: scale(0);
+    }
+
+    50% {
+        transform: scale(0.5);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.scale_animate {
+    animation: scaleUpDown 1s ease-in-out 1s;
+    /* Adjust the duration and timing function as needed */
+}
+
 
 
 
@@ -4986,12 +5005,30 @@ uiux page css style
         height: 236px;
     }
 
+    .text-wrap {
+        width: 425px !important;
+        margin-left: 0 !important;
+    }
 
     .service_disc {
         font-weight: 500;
         font-size: 25px !important;
         line-height: 30px;
         width: 310px;
+    }
+
+    .black .service_disc {
+        font-size: 16px !important;
+        font-weight: 400;
+        line-height: 20px !important;
+        text-align: left;
+        margin-bottom: 5px !important;
+        color: #000;
+    }
+
+    .black {
+        height: 800px !important;
+        max-height: 800px !important;
     }
 
     .explore_btn_service {
@@ -5094,8 +5131,7 @@ uiux page css style
         margin: 80px auto 70px auto;
     }
 
-    .Kscard_desk,
-    .black {
+    .Kscard_desk {
         height: 3240px !important;
         margin: 0 auto !important;
     }
@@ -6397,6 +6433,25 @@ uiux page css style
         font-size: 25px !important;
         line-height: 30px;
         width: 321px;
+    }
+
+    .black .service_disc {
+        font-size: 18px !important;
+        font-weight: 400;
+        line-height: 24px !important;
+        text-align: left;
+        margin-bottom: 5px !important;
+        color: #000;
+    }
+
+    .text-wrap {
+        width: 450px !important;
+        margin-left: 0 !important;
+    }
+
+    .black {
+        height: 800px !important;
+        max-height: 800px !important;
     }
 
     .explore_btn_service {
@@ -7713,6 +7768,15 @@ uiux page css style
         position: unset;
         left: 0;
         width: 570px;
+    }
+
+    .black {
+        padding: 100px 0 0 0 !important;
+        height: 600px !important;
+    }
+
+    .c-mb-100 {
+        margin-bottom: 60px !important;
     }
 
     /* .section.section-demos .demo-item .item-img {
