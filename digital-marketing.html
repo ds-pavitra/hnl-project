@@ -245,7 +245,7 @@
                       style="
                         font-size: 28px;
                         line-height: 32px;
-                        color: #004e9e;
+                        color: var(--blue-color);
                         font-weight: 500;
                       "
                     >
@@ -1088,7 +1088,7 @@
               display: flex;
               align-items: flex-end;
             ">
-          <div class="container-fluid" style="background: #004e9e">
+          <div class="container-fluid" style="background: var(--blue-color)">
             <div class="container get_in_touch col-lg-10">
               <div class="git_image_container fade_up">
                 <img src="./img/amico.svg" alt />
@@ -1253,14 +1253,16 @@
         threshold: 0.5 // Trigger when 20% of the element is visible
       };
 
-      const onloadObserver = new IntersectionObserver((entries, observer) => {
+     const onloadObserver = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
+          entry.target.classList.remove("hidden");
           entry.target.classList.add('animate__animated', 'animate__fadeInDown');
           observer.unobserve(entry.target);
         });
       }, options);
 
       const onloadTarget = document.querySelectorAll('.onload_animate');
+      onloadTarget.forEach(card => card.classList.add("hidden"));
       onloadTarget.forEach(target => {
         onloadObserver.observe(target);
       });
@@ -1269,6 +1271,7 @@
         const leftObserver = new IntersectionObserver((entries, observer) => {
           entries.forEach((entry) => {
             if (entry.isIntersecting) {
+              entry.target.classList.remove("hidden");
               entry.target.classList.add(
                 "animate__animated",
                 "animate__fadeInLeft"
@@ -1282,6 +1285,7 @@
         const rightObserver = new IntersectionObserver((entries, observer) => {
           entries.forEach((entry) => {
             if (entry.isIntersecting) {
+              entry.target.classList.remove("hidden");
               entry.target.classList.add(
                 "animate__animated",
                 "animate__fadeInRight"
@@ -1292,19 +1296,21 @@
         }, options);
 
         // Observer for fade-up animation
-        const fadeUpObserver = new IntersectionObserver((entries, observer) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              entry.target.classList.add(
-                "animate__animated",
-                "animate__fadeInUp"
-              );
-              observer.unobserve(entry.target);
-            }
-          });
-        }, options);
+         const fadeUpObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.remove("hidden");
+                        entry.target.classList.add(
+                            "animate__animated",
+                            "animate__fadeInUp"
+                        );
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, options);
 
         const upTargets = document.querySelectorAll('.fade_up');
+        upTargets.forEach(card => card.classList.add("hidden"));
         upTargets.forEach(target => {
           fadeUpObserver.observe(target);
         });
@@ -1314,6 +1320,7 @@
           (entries, observer) => {
             entries.forEach((entry) => {
               if (!entry.isIntersecting) {
+                entry.target.classList.remove("hidden");
                 entry.target.classList.add(
                   "animate__animated",
                   "animate__fadeOutDown"
@@ -1328,6 +1335,7 @@
         const fadeUpTargets = document.querySelectorAll(
           ".keybenefit_img, .service-image, .slide"
         );
+        fadeUpTargets.forEach(card => card.classList.add("hidden"));
         fadeUpTargets.forEach((target) => {
           fadeUpObserver.observe(target);
         });
