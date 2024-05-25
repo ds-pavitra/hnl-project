@@ -25,6 +25,15 @@ body {
     overflow-x: hidden;
 }
 
+/* .scroll-content {
+    -webkit-transform: translate3d(0, 0, 0) !important;
+    transform: translate3d(0, 0, 0) !important;
+} */
+
+.scrollbar-track-x{
+    display: none !important;
+}
+
 .lazy-container {
     opacity: 0;
     transition: opacity 0.5s;
@@ -3254,7 +3263,14 @@ uiux page css style
     }
 
     .row .m-b-n40 {
-        width: 677px;
+        width: 360px;
+    }
+
+    .mrl_0{
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
     }
 
     .why-choose-us-section .container {
