@@ -458,7 +458,6 @@ body {
     height: 56px;
     border-radius: 5px;
     color: #000;
-    background: #FFFFFF;
     font-size: 16px;
     font-weight: 600;
     line-height: 24px;
@@ -466,11 +465,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #FFFFFF;
 }
 
 .explore_btn_service:hover {
     color: #fff;
     background-color: #000;
+    transition: background-color 0.5s ease;
 }
 
 .vector_background {
@@ -629,7 +630,8 @@ body {
     /* width: 600px; */
     height: auto;
     border-radius: 10px;
-    box-shadow: 4px 4px 60px 8px #00000033;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    /* box-shadow: 4px 4px 60px 8px #00000033; */
     /* box-shadow: 0px 4px 4px 1px #00000040; */
 }
 
@@ -660,15 +662,17 @@ body {
     font-size: 24px;
     font-weight: 600;
     line-height: 48px;
+    color: #302c2c;
 }
 
 .card p {
     margin: 16px 0;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
     line-height: 30px;
     /* width: 545px; */
     height: auto;
+    color: #727272;
 }
 
 .card.white-background {
@@ -860,8 +864,8 @@ body {
 
 .footer-widget-area .widget-item .widget-title {
     color: #000;
-    font-size: 25px;
-    margin-bottom: 25px;
+    font-size: 22px;
+    margin-bottom: 20px;
     font-weight: 900;
 }
 
@@ -1300,9 +1304,9 @@ uiux page css style
     margin-bottom: 70px;
 }
 
-.sd_desk .container {
+/* .sd_desk .container {
     max-width: 1260px !important;
-}
+} */
 
 .sd_desk .feature_card_container {
     width: 610px;
@@ -2539,6 +2543,8 @@ uiux page css style
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: end;
+    height: 165px;
 }
 
 .service-slide div {
@@ -2546,9 +2552,9 @@ uiux page css style
 }
 
 .service-slide p {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
-    line-height: 30px;
+    line-height: 24px;
     text-align: center;
     color: #000;
 }
@@ -2557,7 +2563,7 @@ uiux page css style
     height: 492px;
     padding-top: 50px;
     position: absolute;
-    top: 500px;
+    top: 430px;
 }
 
 .os_description_cta:before {
@@ -2573,11 +2579,11 @@ uiux page css style
 
 .os_description_cta p {
     color: #000;
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 600;
-    line-height: 36px;
+    line-height: 28px;
     text-align: left;
-    width: 658px;
+    width: 491px;
     margin-bottom: 50px;
 }
 
@@ -2585,11 +2591,11 @@ uiux page css style
     text-decoration: none;
     color: #000;
     border: 1px solid black;
-    padding: 18px 36px;
+    padding: 13px 23px;
     font-family: Poppins;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 400;
-    line-height: 21px;
+    line-height: 18px;
     border-radius: 5px;
 }
 
@@ -2995,14 +3001,14 @@ uiux page css style
     }
 
 
-    .home_banner .h_banner_text>span {
-        font-size: 20px !important;
+    .home_banner .h_banner_text>p {
+        font-size: 40px !important;
         font-weight: 600 !important;
         line-height: 30px !important;
     }
 
     .home_banner .h_banner_text {
-        font-size: 18px;
+        font-size: 16px;
         font-weight: 600;
         line-height: 27px;
     }
@@ -4717,6 +4723,10 @@ uiux page css style
         margin: 0 auto 70px auto;
     }
 
+    .scroller{
+        overflow-x: hidden;
+    }
+
     @keyframes fadeInDown {
         from {
             opacity: 0;
@@ -4955,7 +4965,7 @@ uiux page css style
     }
 
 
-    .home_banner .h_banner_text>span {
+    .home_banner .h_banner_text>p {
         font-size: 60px !important;
         font-weight: 600 !important;
         line-height: 90px !important;
@@ -5226,7 +5236,7 @@ uiux page css style
         width: 625px;
         height: auto;
         border-radius: 10px;
-        box-shadow: 4px 4px 60px 8px #00000033;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     }
 
     .card-body {
@@ -6380,7 +6390,7 @@ uiux page css style
     }
 
 
-    .home_banner .h_banner_text>span {
+    .home_banner .h_banner_text>p {
         font-size: 60px !important;
         font-weight: 600 !important;
         line-height: 90px !important;

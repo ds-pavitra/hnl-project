@@ -59,8 +59,6 @@
       line-height: 48px;
     }
 
-
-
     .scroller {
       height: 100vh;
     }
@@ -416,14 +414,14 @@
     <section>
       <div class="container banner_top_container home_banner">
         <div class="cust_positioning_banner">
-          <h3 class="h_banner_text">
-            <span style="
+          <h3 class="h_banner_text animate__animated animate__pulse animate__slow">
+            <p style="
                   font-size: 80px;
                   font-weight: 600;
                   line-height: 120px;
                   text-align: center;
-                ">Harry & Liu</span>
-            <br />
+                " class="animate__animated animate__backInDown animate__slow ">Harry & Liu</p>
+            <!-- <br /> -->
             Pioneering Smart Solutions through <br />
             Innovative Design, Procurement & Manufacturing
           </h3>
@@ -1450,24 +1448,19 @@
         });
       }, options);
 
-      const onloadTarget = document.querySelectorAll('.onload_animate');
-      onloadTarget.forEach(target => {
-        onloadObserver.observe(target);
-      });
+      // const scaleObserver = new IntersectionObserver((entries, observer) => {
+      //   entries.forEach(entry => {
+      //     if (entry.isIntersecting) {
+      //       entry.target.classList.add('animate__animated', 'scale_animate');
+      //       observer.unobserve(entry.target);
+      //     }
+      //   });
+      // }, options);
 
-      const scaleObserver = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('animate__animated', 'scale_animate');
-            observer.unobserve(entry.target);
-          }
-        });
-      }, options);
-
-      const scaleTarget = document.querySelectorAll('.scale_animated');
-      scaleTarget.forEach(target => {
-        scaleObserver.observe(target);
-      });
+      // const scaleTarget = document.querySelectorAll('.scale_animated');
+      // scaleTarget.forEach(target => {
+      //   scaleObserver.observe(target);
+      // });
 
 
       // Observer for left animation
