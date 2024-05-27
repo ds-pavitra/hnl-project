@@ -2830,6 +2830,9 @@ uiux page css style
         backdrop-filter: blur(30px);
         z-index: 9;
         border-radius: 20px 0 0 20px;
+        @supports (-webkit-touch-callout: none) {
+            background: rgba(255, 255, 255, 0.5);
+        }
     }
 
     .nav_info {
