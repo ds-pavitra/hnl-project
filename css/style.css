@@ -2823,16 +2823,13 @@ uiux page css style
         height: 640px;
         top: 55px;
         right: 0px;
-        /* background: #FFFFFF80; */
-        background: rgba(255, 255, 255, 0.5);
+        background: #FFFFFF80;
         border: 1px solid  var(--blue-color);
         padding: 30px;
+        -webkit-backdrop-filter: blur(30px);
         backdrop-filter: blur(30px);
         z-index: 9;
         border-radius: 20px 0 0 20px;
-        @supports (-webkit-touch-callout: none) {
-            background: rgba(255, 255, 255, 0.5);
-        }
     }
 
     .nav_info {
