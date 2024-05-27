@@ -1,459 +1,267 @@
 <!DOCTYPE html>
 <html lang="zxx">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="shortcut icon" href="img/favicon.ico" />
 
-    <!-- bootstrap grid css -->
-    <link rel="stylesheet" href="css/plugins/bootstrap-grid.css" />
-    <!-- font awesome css -->
-    <link rel="stylesheet" href="css/plugins/font-awesome.min.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-    <!-- swiper css -->
-    <link rel="stylesheet" href="css/plugins/swiper.min.css" />
-    <!-- itsulu css -->
-    <link rel="stylesheet" href="css/style.css" />
-    <title>Harry & Liu</title>
-    <!-- fontawesome icons  -->
-    <script
-      src="https://kit.fontawesome.com/f01ac4bad9.js"
-      crossorigin="anonymous"
-    ></script>
-    <!-- Include GSAP library -->
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.9.1/dist/gsap.min.js"></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="shortcut icon" href="img/favicon.ico" />
 
-    <!-- Include ScrollTrigger plugin -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/ScrollTrigger.min.js"></script>
-  </head>
+  <!-- bootstrap grid css -->
+  <link rel="stylesheet" href="css/plugins/bootstrap-grid.css" />
+  <!-- font awesome css -->
+  <link rel="stylesheet" href="css/plugins/font-awesome.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!-- swiper css -->
+  <link rel="stylesheet" href="css/plugins/swiper.min.css" />
+  <!-- itsulu css -->
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Harry & Liu</title>
+  <!-- fontawesome icons  -->
+  <script src="https://kit.fontawesome.com/f01ac4bad9.js" crossorigin="anonymous"></script>
+  <!-- Include GSAP library -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.9.1/dist/gsap.min.js"></script>
 
-  <body>
-    <div id="wrapper">
-      <!-- navigation starts -->
-      <div id="navigation" class="navigation_desk">
-        <nav class="navbar navbar-expand-lg bg-body-white">
-          <div class="container">
-            <a class="navbar-brand" href="./index.html">
-              <img class="header_logo onload_animate" src="./img/HL-1.svg" />
-            </a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div
-              class="collapse navbar-collapse justify-content-end"
-              id="navbarSupportedContent"
-            >
-              <ul
-                class="navbar-nav me-auto mb-2"
-                style="margin-right: 60px !important"
-              >
-                <li class="nav-item">
-                  <a
-                    class="nav-link onload_animate"
-                    aria-current="page"
-                    href="./index.html"
-                    style="font-size: 16px"
-                    >Home</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a
-                    class="nav-link onload_animate"
-                    aria-current="page"
-                    href="./whoweare.html"
-                    style="font-size: 16px"
-                    >Who we are</a
-                  >
-                </li>
-                <li class="nav-item dropdown" id="what-we-do-dropdown">
-                  <a
-                    class="nav-link onload_animate dropdown-toggle"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                    style="font-size: 16px"
-                  >
-                    What We Do
-                  </a>
-                  <ul
-                    class="dropdown-menu dropdown-menu-end cust-dropdown-menu"
-                  >
-                    <li class="dropdown-submenu active dropend">
-                      <a
-                        class="dropdown-item dropdown-toggle test submenu-active focus"
-                        tabindex="-1"
-                        href="#"
-                        >Services</a
-                      >
-                      <ul
-                        class="dropdown-menu dropdown-menu-services cust-dropdown-menu-services"
-                      >
-                        <li>
-                          <a
-                            class="dropdown-item dropdown-item-custom"
-                            tabindex="-1"
-                            href="./uiux.html"
-                            >UI/UX</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            class="dropdown-item dropdown-item-custom custom_active"
-                            tabindex="-1"
-                            href="./software-development.html"
-                            >Software Development</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            class="dropdown-item dropdown-item-custom"
-                            tabindex="-1"
-                            href="./mobile-development.html"
-                            >Mobile Development</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            class="dropdown-item dropdown-item-custom"
-                            tabindex="-1"
-                            href="./digital-marketing.html"
-                            >Digital Marketing</a
-                          >
-                        </li>
-                      </ul>
-                    </li>
-                    <li class="dropdown-submenu dropend">
-                      <a
-                        class="dropdown-item dropdown-toggle test submenu-active"
-                        href="#"
-                        >Solutions</a
-                      >
-                      <ul
-                        class="dropdown-menu dropdown-menu-solutions cust-dropdown-menu-solutions"
-                      >
-                        <li>
-                          <a
-                            class="dropdown-item dropdown-item-custom"
-                            href="./aiml.html"
-                            >AI/ML Solution</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            class="dropdown-item dropdown-item-custom"
-                            href="./smartcity-solutions.html"
-                            >Smart City Solution</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            class="dropdown-item dropdown-item-custom"
-                            href="./fintech-solutions.html"
-                            >Fintech Solution</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            class="dropdown-item dropdown-item-custom"
-                            href="./networking-solutions.html"
-                            >Networking Solution</a
-                          >
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <a
-                        class="dropdown-item dropdown-toggle test submenu-active"
-                        href="./ourwork.html"
-                        >Our Work</a
-                      >
-                    </li>
-                  </ul>
-                </li>
+  <!-- Include ScrollTrigger plugin -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/ScrollTrigger.min.js"></script>
+</head>
 
-                <li class="nav-item">
-                  <a
-                    class="nav-link onload_animate"
-                    href="./whoweserve.html"
-                    style="font-size: 16px"
-                    >Who we serve</a
-                  >
-                </li>
-              </ul>
-              <!-- <form class="d-flex" role="contactus">
+<body>
+  <div id="wrapper">
+    <!-- navigation starts -->
+    <div id="navigation" class="navigation_desk">
+      <nav class="navbar navbar-expand-lg bg-body-white">
+        <div class="container">
+          <a class="navbar-brand" href="./index.html">
+            <img class="header_logo onload_animate" src="./img/HL-1.svg" />
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2" style="margin-right: 60px !important">
+              <li class="nav-item">
+                <a class="nav-link onload_animate" aria-current="page" href="./index.html"
+                  style="font-size: 16px">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link onload_animate" aria-current="page" href="./whoweare.html"
+                  style="font-size: 16px">Who we are</a>
+              </li>
+              <li class="nav-item dropdown" id="what-we-do-dropdown">
+                <a class="nav-link onload_animate dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false" style="font-size: 16px">
+                  What We Do
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end cust-dropdown-menu">
+                  <li class="dropdown-submenu active dropend">
+                    <a class="dropdown-item dropdown-toggle test submenu-active focus" tabindex="-1"
+                      href="#">Services</a>
+                    <ul class="dropdown-menu dropdown-menu-services cust-dropdown-menu-services">
+                      <li>
+                        <a class="dropdown-item dropdown-item-custom" tabindex="-1" href="./uiux.html">UI/UX</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item dropdown-item-custom custom_active" tabindex="-1"
+                          href="./software-development.html">Software Development</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item dropdown-item-custom" tabindex="-1"
+                          href="./mobile-development.html">Mobile Development</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item dropdown-item-custom" tabindex="-1"
+                          href="./digital-marketing.html">Digital Marketing</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="dropdown-submenu dropend">
+                    <a class="dropdown-item dropdown-toggle test submenu-active" href="#">Solutions</a>
+                    <ul class="dropdown-menu dropdown-menu-solutions cust-dropdown-menu-solutions">
+                      <li>
+                        <a class="dropdown-item dropdown-item-custom" href="./aiml.html">AI/ML Solution</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item dropdown-item-custom" href="./smartcity-solutions.html">Smart City
+                          Solution</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item dropdown-item-custom" href="./fintech-solutions.html">Fintech
+                          Solution</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item dropdown-item-custom" href="./networking-solutions.html">Networking
+                          Solution</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a class="dropdown-item dropdown-toggle test submenu-active" href="./ourwork.html">Our Work</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link onload_animate" href="./whoweserve.html" style="font-size: 16px">Who we serve</a>
+              </li>
+            </ul>
+            <!-- <form class="d-flex" role="contactus">
                       <input class="form-control me-2" type="contactus" placeholder="contactus" aria-label="contactus">
                     </form> -->
-              <a href="./contact.html" class="btn header_contactus_btn onload_animate">
-                Contact Us</a
-              >
-            </div>
+            <a href="./contact.html" class="btn header_contactus_btn onload_animate">
+              Contact Us</a>
           </div>
-        </nav>
-      </div>
+        </div>
+      </nav>
+    </div>
 
-      <!-- navigation_mobile_tab   -->
+    <!-- navigation_mobile_tab   -->
 
-      <div id="navigation" class="navigation_mob">
-        <nav class="navbar navbar-expand-lg bg-body-white">
-          <div class="container">
-            <a class="navbar-brand" href="./index.html">
-              <img class="header_logo" src="./img/HL-1.svg" />
-            </a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div
-              class="collapse navbar-collapse justify-content-end"
-              id="navbarSupportedContent"
-            >
-              <ul
-                class="navbar-nav me-auto mb-2"
-                style="margin-right: 60px !important"
-              >
-                <li class="nav-item">
-                  <div
-                    class="d-flex justify-content-between"
-                    style="width: 430px"
-                  >
-                    <p
-                      style="
+    <div id="navigation" class="navigation_mob">
+      <nav class="navbar navbar-expand-lg bg-body-white">
+        <div class="container">
+          <a class="navbar-brand" href="./index.html">
+            <img class="header_logo" src="./img/HL-1.svg" />
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2" style="margin-right: 60px !important">
+              <li class="nav-item">
+                <div class="d-flex justify-content-between" style="width: 430px">
+                  <p style="
                         font-size: 28px;
                         line-height: 32px;
                         color: var(--blue-color);
                         font-weight: 500;
-                      "
-                    >
-                      Menu
-                    </p>
-                    <button
-                      class="navbar-toggler"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#navbarSupportedContent"
-                      aria-controls="navbarSupportedContent"
-                      aria-expanded="false"
-                      aria-label="Toggle navigation"
-                    >
-                      <img
-                        src="./img/close_vector.png"
-                        style="
+                      ">
+                    Menu
+                  </p>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <img src="./img/close_vector.png" style="
                           width: 24px;
                           height: 24px;
                           position: absolute;
                           top: 50px;
                           right: 50px;
-                        "
-                      />
-                    </button>
-                  </div>
-                </li>
+                        " />
+                  </button>
+                </div>
+              </li>
 
-                <li class="nav-item">
-                  <a
-                    class="nav-link"
-                    aria-current="page"
-                    href="./index.html"
-                    style="font-size: 16px"
-                    >Home</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a
-                    class="nav-link"
-                    aria-current="page"
-                    href="./whoweare.html"
-                    style="font-size: 16px"
-                    >Who we are</a
-                  >
-                </li>
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                    style="font-size: 16px"
-                  >
-                    What We Do
-                  </a>
-                  <ul
-                    class="dropdown-menu dropdown-menu-end cust-dropdown-menu"
-                  >
-                    <li class="dropdown-submenu active dropend">
-                      <a
-                        class="dropdown-item dropdown-toggle test submenu-active"
-                        tabindex="-1"
-                        href="#"
-                        >Services</a
-                      >
-                      <ul
-                        class="dropdown-menu dropdown-menu-services cust-dropdown-menu-services"
-                        style="display: none"
-                      >
-                        <li>
-                          <a
-                            class="dropdown-item dropdown-item-custom"
-                            tabindex="-1"
-                            href="./uiux.html"
-                            >UI/UX</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            class="dropdown-item dropdown-item-custom"
-                            tabindex="-1"
-                            href="./software-development.html"
-                            >Software Development</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            class="dropdown-item dropdown-item-custom"
-                            tabindex="-1"
-                            href="./mobile-development.html"
-                            >Mobile Development</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            class="dropdown-item dropdown-item-custom"
-                            tabindex="-1"
-                            href="./digital-marketing.html"
-                            >Digital Marketing</a
-                          >
-                        </li>
-                      </ul>
-                    </li>
-                    <li class="dropdown-submenu dropend">
-                      <a
-                        class="dropdown-item dropdown-toggle test submenu-active"
-                        href="#"
-                        >Solutions</a
-                      >
-                      <ul
-                        class="dropdown-menu dropdown-menu-solutions cust-dropdown-menu-solutions"
-                      >
-                        <li>
-                          <a
-                            class="dropdown-item dropdown-item-custom"
-                            href="./aiml.html"
-                            >AI/ML Solution</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            class="dropdown-item dropdown-item-custom"
-                            href="./smartcity-solutions.html"
-                            >Smart City Solution</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            class="dropdown-item dropdown-item-custom"
-                            href="./fintech-solutions.html"
-                            >Fintech Solution</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            class="dropdown-item dropdown-item-custom"
-                            href="./networking-solutions.html"
-                            >Networking Solution</a
-                          >
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <a
-                        class="dropdown-item dropdown-toggle test submenu-active"
-                        href="./ourwork.html"
-                        >Our Work</a
-                      >
-                    </li>
-                  </ul>
-                </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./index.html" style="font-size: 16px">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./whoweare.html" style="font-size: 16px">Who we are</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false" style="font-size: 16px">
+                  What We Do
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end cust-dropdown-menu">
+                  <li class="dropdown-submenu active dropend">
+                    <a class="dropdown-item dropdown-toggle test submenu-active" tabindex="-1" href="#">Services</a>
+                    <ul class="dropdown-menu dropdown-menu-services cust-dropdown-menu-services" style="display: none">
+                      <li>
+                        <a class="dropdown-item dropdown-item-custom" tabindex="-1" href="./uiux.html">UI/UX</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item dropdown-item-custom" tabindex="-1"
+                          href="./software-development.html">Software Development</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item dropdown-item-custom" tabindex="-1"
+                          href="./mobile-development.html">Mobile Development</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item dropdown-item-custom" tabindex="-1"
+                          href="./digital-marketing.html">Digital Marketing</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="dropdown-submenu dropend">
+                    <a class="dropdown-item dropdown-toggle test submenu-active" href="#">Solutions</a>
+                    <ul class="dropdown-menu dropdown-menu-solutions cust-dropdown-menu-solutions">
+                      <li>
+                        <a class="dropdown-item dropdown-item-custom" href="./aiml.html">AI/ML Solution</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item dropdown-item-custom" href="./smartcity-solutions.html">Smart City
+                          Solution</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item dropdown-item-custom" href="./fintech-solutions.html">Fintech
+                          Solution</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item dropdown-item-custom" href="./networking-solutions.html">Networking
+                          Solution</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a class="dropdown-item dropdown-toggle test submenu-active" href="./ourwork.html">Our Work</a>
+                  </li>
+                </ul>
+              </li>
 
-                <li class="nav-item">
-                  <a
-                    class="nav-link"
-                    href="./whoweserve.html"
-                    style="font-size: 16px"
-                    >Who we serve</a
-                  >
-                </li>
-              </ul>
-              <!-- <form class="d-flex" role="contactus">
+              <li class="nav-item">
+                <a class="nav-link" href="./whoweserve.html" style="font-size: 16px">Who we serve</a>
+              </li>
+            </ul>
+            <!-- <form class="d-flex" role="contactus">
                       <input class="form-control me-2" type="contactus" placeholder="contactus" aria-label="contactus">
                     </form> -->
-              <a href="#" class="nav_info">info@harryandliu.com</a>
-              <a href="./contact.html" class="btn header_contactus_btn">
-                Contact Us</a
-              >
-            </div>
-          </div>
-        </nav>
-      </div>
-      <!-- navigation ends -->
-
-      <!-- banner section starts -->
-
-      <section>
-        <div class="banner_top_container uiux_top_banner_container d-flex">
-          <div
-            class="container d-flex justify-content-around align-items-center"
-          >
-            <div class="cust_positioning_banner">
-              <h3 class="h_banner_text">
-                Unlocking Innovation Through Custom Software Solutions
-              </h3>
-              <p>
-                Empowering Innovation with tailored Software Solutions for
-                Unleashing Potential
-              </p>
-              <a href="./contact.html"> Let's Work</a>
-            </div>
-            <div class="uiux_image_bnr">
-              <img src="./img/image 54.svg" alt />
-            </div>
+            <a href="#" class="nav_info">info@harryandliu.com</a>
+            <a href="./contact.html" class="btn header_contactus_btn">
+              Contact Us</a>
           </div>
         </div>
-      </section>
+      </nav>
+    </div>
+    <!-- navigation ends -->
 
-      <!-- banner section ends  -->
+    <!-- banner section starts -->
 
-      <div class="vector_background" style="top: 1100px">
-        <img src="./img/Vector_home.png" style="margin-bottom: 917px" />
-        <img src="./img/Vector_home.png" style="margin-bottom: 480px" />
-        <img src="./img/Vector_home.png" />
+    <section>
+      <div class="banner_top_container uiux_top_banner_container d-flex">
+        <div class="container d-flex justify-content-around align-items-center">
+          <div class="cust_positioning_banner">
+            <h3 class="h_banner_text">
+              Unlocking Innovation Through Custom Software Solutions
+            </h3>
+            <p>
+              Empowering Innovation with tailored Software Solutions for
+              Unleashing Potential
+            </p>
+            <a href="./contact.html"> Let's Work</a>
+          </div>
+          <div class="uiux_image_bnr">
+            <img src="./img/image 54.svg" alt />
+          </div>
+        </div>
       </div>
+    </section>
 
-      <!-- <section
+    <!-- banner section ends  -->
+
+    <div class="vector_background" style="top: 1100px">
+      <img src="./img/Vector_home.png" style="margin-bottom: 917px" />
+      <img src="./img/Vector_home.png" style="margin-bottom: 480px" />
+      <img src="./img/Vector_home.png" />
+    </div>
+
+    <!-- <section
                 class="overview services-section d-flex flex-column sd_desk">
                 <div class="section-heading">
                     <div class="service_title">
@@ -511,9 +319,9 @@
                 </div>
             </section> -->
 
-      <!-- --------- features -------------  -->
+    <!-- --------- features -------------  -->
 
-      <!-- <section class="feature_section sd_mob sd_desk">
+    <!-- <section class="feature_section sd_mob sd_desk">
                 <div class="section-heading">
                     <div class="service_title">
                         <h2> OUR APPROACH </h2>
@@ -654,11 +462,11 @@
 
             </section> -->
 
-      <!-- ------- features end  ----------  -->
+    <!-- ------- features end  ----------  -->
 
-      <!-- ------------ technology stack -----------  -->
+    <!-- ------------ technology stack -----------  -->
 
-      <!-- <div class="section section-margin-bottom cust_partner_sec"
+    <!-- <div class="section section-margin-bottom cust_partner_sec"
             style="height:544px;background-color:#5B7C991A;position: relative;">
             <h2 class="partner_title">TECHNOLOGY STACK</h2>
             <div class="cust_technology_cont">
@@ -737,692 +545,632 @@
             </div>
         </div> -->
 
-      <!-- ------------ technology stack ends  -----------  -->
-      <!-- key benefits  section starts  -->
-      <div class="uiux_kb">
-        <section
-          class="container cards-services-section d-flex key_benefit_container sd_desk cm_270"
-        >
-          <div class="keybenefit_img">
-            <img src="./img/keybenefit_img1.svg" alt />
-          </div>
-          <div class="section-heading_container">
-            <div class="service_title">
-              <h2>INTRODUCTION</h2>
-            </div>
-            <h3>
-              Crafting Custom Software Solutions: Turning Your Vision into
-              Reality
-            </h3>
-            <p>
-              Welcome to our Software Development Services page. At Harry & Liu,
-              we specialize in creating bespoke software solutions tailored to
-              your unique needs and objectives. With our team of skilled
-              developers, we bring your ideas to life, transforming concepts
-              into functional, scalable, and innovative software applications
-            </p>
-          </div>
-        </section>
-      </div>
-
-      <section
-        class="container cards-services-section d-flex flex-column key_benefit_container_mobile"
-      >
-        <div class="section-heading">
+    <!-- ------------ technology stack ends  -----------  -->
+    <!-- key benefits  section starts  -->
+    <div class="uiux_kb">
+      <section class="container cards-services-section d-flex key_benefit_container sd_desk cm_270">
+        <div class="keybenefit_img">
+          <img src="./img/keybenefit_img1.svg" alt />
+        </div>
+        <div class="section-heading_container">
           <div class="service_title">
-            <h2>KEY BENEFITS</h2>
+            <h2>INTRODUCTION</h2>
           </div>
-        </div>
-        <div class="container">
-          <div class="d-flex sec1">
-            <img src alt />
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-          </div>
-          <div class="d-flex sec1 flex-row-reverse">
-            <img src alt />
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-          </div>
-          <div class="d-flex sec1">
-            <img src alt />
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-          </div>
-        </div>
-      </section>
-
-      <!-- why choose us section  -->
-
-      <section class="why-choose-us-section sd_desk">
-        <div class="container" style="margin: 70px auto">
-          <h2>Why Choose Us</h2>
-          <div class="row" id="row-cust-row-1">
-            <div class="col-md-6">
-              <div class="card">
-                <div class="card-body">
-                  <div class="row">
-                    <div class="col-md-12 d-flex align-items-center">
-                      <div class="col-md-4 card_img_div">
-                        <img
-                          src="./img/Group.svg"
-                          style="width: 100%"
-                          alt="Image 1"
-                        />
-                      </div>
-                      <div class="col-md-8" style="margin-left: 15px">
-                        <h3>Expertise</h3>
-                      </div>
-                    </div>
-                    <div class="col-md-12">
-                      <p>
-                        Our team comprises seasoned software engineers with
-                        extensive experience across a wide range of technologies
-                        and industries. We stay ahead of the curve with the
-                        latest advancements in software development to deliver
-                        cutting-edge solutions.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="card">
-                <div class="card-body">
-                  <div class="row" id="row-cust-row-1">
-                    <div class="col-md-12 d-flex align-items-center">
-                      <div class="col-md-4 card_img_div">
-                        <img
-                          src="./img/group3.svg"
-                          style="width: 100%"
-                          alt="Image 1"
-                        />
-                      </div>
-                      <div class="col-md-8" style="margin-left: 15px">
-                        <h3>Collaborative Approach</h3>
-                      </div>
-                    </div>
-                    <div class="col-md-12">
-                      <p>
-                        We believe in close collaboration with our clients
-                        throughout the development process. From initial concept
-                        to final delivery, we prioritize communication and
-                        transparency to ensure your vision is realized.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row" id="row-cust-row-1">
-            <div class="col-md-6">
-              <div class="card">
-                <div class="card-body">
-                  <div class="row">
-                    <div class="col-md-12 d-flex align-items-center">
-                      <div class="col-md-4 card_img_div">
-                        <img
-                          src="./img/Group2.svg"
-                          style="width: 100%"
-                          alt="Image 1"
-                        />
-                      </div>
-                      <div class="col-md-8" style="margin-left: 15px">
-                        <h3>Custom Solutions</h3>
-                      </div>
-                    </div>
-                    <div class="col-md-12">
-                      <p>
-                        Every project is different, which is why we offer
-                        customized software development solutions to meet your
-                        specific requirements. Whether you need a web
-                        application, enterprise software, or cloud-based
-                        solution, we have the expertise to bring your vision to
-                        fruition.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- our process section starts  -->
-
-      <div
-        class="section section-margin-bottom process_sec"
-        style="height: 420px; position: relative"
-      >
-        <h2 class="partner_title">OUR PROCESS</h2>
-        <div
-          class="cust-process-cont"
-          style="
-            background-color: 5b7c9903;
-            position: absolute;
-            top: 166px;
-            width: 100%;
-          "
-        >
-          <div class="row">
-            <div class="col-lg-12" data-aos="fade-up" data-aos-duration="1100">
-              <div
-                class="container swiper-container process-slider"
-                id="process-slider"
-              >
-                <div class="swiper-wrapper process-wrapper">
-                  <div class="swiper-slide process-slide">
-                    <div class="nums">
-                      <h5>01</h5>
-                    </div>
-                    <div class="descrip">
-                      <h4>Discovery</h4>
-                      <p>
-                        We start by understanding your business objectives,
-                        target audience, and technical requirements through
-                        comprehensive discovery sessions and stakeholder
-                        interviews.
-                      </p>
-                    </div>
-                  </div>
-
-                  <div class="swiper-slide process-slide">
-                    <div class="nums">
-                      <h5>02</h5>
-                    </div>
-                    <div class="descrip">
-                      <h4>Planning</h4>
-                      <p>
-                        Based on the insights gathered, we create a detailed
-                        project plan outlining milestones, timelines, and
-                        deliverables to ensure alignment with your goals and
-                        expectations.
-                      </p>
-                    </div>
-                  </div>
-
-                  <div class="swiper-slide process-slide">
-                    <div class="nums">
-                      <h5>03</h5>
-                    </div>
-                    <div class="descrip">
-                      <h4>Development</h4>
-                      <p>
-                        Our team of developers utilizes the latest technologies
-                        and best practices to build robust, scalable, and secure
-                        software solutions that meet your business needs.
-                      </p>
-                    </div>
-                  </div>
-
-                  <div class="swiper-slide process-slide">
-                    <div class="nums">
-                      <h5>04</h5>
-                    </div>
-                    <div class="descrip">
-                      <h4>Testing</h4>
-                      <p>
-                        We conduct rigorous testing throughout the development
-                        process to identify and resolve any bugs or issues,
-                        ensuring the final product meets the highest quality
-                        standards.
-                      </p>
-                    </div>
-                  </div>
-
-                  <div
-                    class="swiper-slide process-slide"
-                    style="border-right: none"
-                  >
-                    <div class="nums">
-                      <h5>05</h5>
-                    </div>
-                    <div class="descrip">
-                      <h4>Deployment</h4>
-                      <p>
-                        Once the software is developed and tested, we assist
-                        with deployment and provide ongoing support to ensure a
-                        smooth transition and optimal performance.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="swiper-button-prev-process swiper-button-prev">
-                  <img
-                    id="arroww"
-                    style="margin-left: 35px"
-                    src="./img/process-left.svg"
-                    alt
-                  />
-                </div>
-                <div class="swiper-button-next-process swiper-button-next">
-                  <img
-                    id="arroww"
-                    style="margin-right: 35px"
-                    src="./img/process-right.svg"
-                    alt
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- our process section ends  -->
-
-      <!-- our service section -->
-      <div
-        class="container section section-margin-bottom our_service_sec"
-        style="height: 800px; position: relative"
-      >
-        <h2 class="our_service_title">OUR SERVICES</h2>
-        <div
-          class="our-service-cont"
-          style="position: absolute; top: 210px; width: 100%"
-        >
-          <div class="row">
-            <div class="col-lg-12" data-aos="fade-up" data-aos-duration="1100">
-              <div class="container swiper-container service-slider">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide service-slide">
-                    <div>
-                      <img src="./img/sdgroup1.svg" />
-                    </div>
-                    <p>Web Application Development</p>
-                  </div>
-                  <div class="swiper-slide service-slide">
-                    <div>
-                      <img src="./img/sdgroup2.svg" />
-                    </div>
-                    <p>Enterprise Software Solutions</p>
-                  </div>
-                  <div class="swiper-slide service-slide">
-                    <div>
-                      <img src="./img/sdgroup3.svg" />
-                    </div>
-                    <p>Custom Software Development</p>
-                  </div>
-                  <div class="swiper-slide service-slide">
-                    <div>
-                      <img src="./img/sdgroup4.svg" />
-                    </div>
-                    <p>
-                      Cloud-Based <br />
-                      Solutions
-                    </p>
-                  </div>
-                  <div class="swiper-slide service-slide">
-                    <div>
-                      <img src="./img/sdgroup5.svg" />
-                    </div>
-                    <p>
-                      Quality Assurance <br />
-                      and Testing
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="os_description_cta">
+          <h3>
+            Crafting Custom Software Solutions: Turning Your Vision into
+            Reality
+          </h3>
           <p>
-            We empower your business with compelling software solutions,
-            communicating your brand story through innovative digital assets and
-            seamless user experiences
+            Welcome to our Software Development Services page. At Harry & Liu,
+            we specialize in creating bespoke software solutions tailored to
+            your unique needs and objectives. With our team of skilled
+            developers, we bring your ideas to life, transforming concepts
+            into functional, scalable, and innovative software applications
           </p>
-          <a href="./contact.html"> Let's work together</a>
+        </div>
+      </section>
+    </div>
+
+    <section class="container cards-services-section d-flex flex-column key_benefit_container_mobile">
+      <div class="section-heading">
+        <div class="service_title">
+          <h2>KEY BENEFITS</h2>
         </div>
       </div>
-      <!-- our services Here -->
+      <div class="container">
+        <div class="d-flex sec1">
+          <img src alt />
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+        </div>
+        <div class="d-flex sec1 flex-row-reverse">
+          <img src alt />
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+        </div>
+        <div class="d-flex sec1">
+          <img src alt />
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+        </div>
+      </div>
+    </section>
 
-      <!-- testimonials section starts  -->
+    <!-- why choose us section  -->
 
-      <section class="testimonial-section kb_testimonial">
-        <div class="container">
-          <h4>TESTIMONIALS</h4>
-
-          <h2>What our clients have to say !</h2>
-          <div class="swiper-container testimonial-slider">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="testimonial-card d-flex justify-content-center">
-                  <div>
-                    <img src="./img/Shape.svg" />
-                  </div>
-                  <div style="margin-left: 20px">
-                    <div>
-                      <p class="client_reviews">
-                        “Harry & Liu Co. Ltd blend this great vision they have
-                        for creating an extraordinary company by instilling a
-                        deep sense of practicality and methodology to deliver
-                        applications and mobile apps on time and on budget.”
-                      </p>
+    <section class="why-choose-us-section sd_desk">
+      <div class="container" style="margin: 70px auto">
+        <h2>Why Choose Us</h2>
+        <div class="row" id="row-cust-row-1">
+          <div class="col-md-6">
+            <div class="card fade_left">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-md-12 d-flex align-items-center">
+                    <div class="col-md-4 card_img_div">
+                      <img src="./img/Group.svg" style="width: 100%" alt="Image 1" />
                     </div>
-                    <div class="client_names">
-                      <p class="author">Jugal Shah</p>
-                      <p class="position_client">CEO | Leo9 Studio</p>
+                    <div class="col-md-8" style="margin-left: 15px">
+                      <h3>Expertise</h3>
                     </div>
                   </div>
-                </div>
-              </div>
-
-              <div class="swiper-slide">
-                <div class="testimonial-card d-flex justify-content-center">
-                  <div>
-                    <img src="./img/Shape.svg" />
-                  </div>
-                  <div style="margin-left: 20px">
-                    <div>
-                      <p class="client_reviews">
-                        “Harry & Liu Co. Ltd does the exact same thing with
-                        technologies. It knows how to gather the customer
-                        requirements and carve the imagination in a valuable
-                        product or a service. Their customised software helped
-                        us in our marketing campaigns to communicate the right
-                        message to our consumers.”
-                      </p>
-                    </div>
-                    <div class="client_names">
-                      <p class="author">Milind Trivedi</p>
-                      <p class="position_client">
-                        Creative & Production Head | Grace Communication
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="swiper-slide">
-                <div class="testimonial-card d-flex justify-content-center">
-                  <div>
-                    <img src="./img/Shape.svg" />
-                  </div>
-                  <div style="margin-left: 20px">
-                    <div>
-                      <p class="client_reviews">
-                        “Managing the cricket tournament wouldn't be possible if
-                        we had not used Procric8 designed and developed by Harry
-                        & Liu Co. Ltd. I'm very excited to say that all 200+
-                        Players were happy with LIVE SCORE updates on the ground
-                        as well as on App during matches. Their teams were
-                        remarkable on understanding requirements, and will
-                        recommend them in my contact sphere!”
-                      </p>
-                    </div>
-                    <div class="client_names">
-                      <p class="author">Jiten Oza</p>
-                      <p class="position_client">
-                        Proprietor | Compact Business Machines
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="swiper-slide">
-                <div class="testimonial-card d-flex justify-content-center">
-                  <div>
-                    <img src="./img/Shape.svg" />
-                  </div>
-                  <div style="margin-left: 20px">
-                    <div>
-                      <p class="client_reviews">
-                        “Harry & Liu Co. Ltd have blown me away when it comes to
-                        application development and deployment, providing
-                        unbelievable account management, great agility and
-                        serious innovation.”
-                      </p>
-                    </div>
-                    <div class="client_names">
-                      <p class="author">Nalin Shah</p>
-                      <p class="position_client">Director | India Latina PCI</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="swiper-slide">
-                <div class="testimonial-card d-flex justify-content-center">
-                  <div>
-                    <img src="./img/Shape.svg" />
-                  </div>
-                  <div style="margin-left: 20px">
-                    <div>
-                      <p class="client_reviews">
-                        “Harry & Liu Co. Ltd executes the design of a product
-                        exactly the way it is provided, or suggest ways to
-                        improve navigation, usability and scalability ; to make
-                        our lives easier. It is a pleasure to work with and I
-                        highly recommend the company to those who want a job
-                        done the way they envision it.”
-                      </p>
-                    </div>
-                    <div class="client_names">
-                      <p class="author">Jay Majithia</p>
-                      <p class="position_client">
-                        Proprietor | Niramay Briodant
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="swiper-slide">
-                <div class="testimonial-card d-flex justify-content-center">
-                  <div>
-                    <img src="./img/Shape.svg" />
-                  </div>
-                  <div style="margin-left: 20px">
-                    <div>
-                      <p class="client_reviews">
-                        “One word “Kaizen”. A popular concept of the Japanese
-                        “Kaizen” which means continuous self improvement. Can be
-                        seen here in Harry & Liu Co. Ltd ideas, solutions,
-                        methodologies, and practices followed by them. I extend
-                        my gratitude to Harry & Liu Co. Ltd team for their
-                        support.”
-                      </p>
-                    </div>
-                    <div class="client_names">
-                      <p class="author">Krishna Majithia</p>
-                      <p class="position_client">
-                        Managing Director | City Group
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="swiper-slide">
-                <div class="testimonial-card d-flex justify-content-center">
-                  <div>
-                    <img src="./img/Shape.svg" />
-                  </div>
-                  <div style="margin-left: 20px">
-                    <div>
-                      <p class="client_reviews">
-                        “Our project was executed elegantly with a high degree
-                        of professionalism and technical expertise. We would be
-                        happy to work with Harry & Liu Co. Ltd again and we hope
-                        the opportunity presents itself.”
-                      </p>
-                    </div>
-                    <div class="client_names">
-                      <p class="author">Arun Kochhar</p>
-                      <p class="position_client">
-                        Director | A K Kocchar & Associates
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="swiper-slide">
-                <div class="testimonial-card d-flex justify-content-center">
-                  <div>
-                    <img src="./img/Shape.svg" />
-                  </div>
-                  <div style="margin-left: 20px">
-                    <div>
-                      <p class="client_reviews">
-                        “Harry & Liu Co. Ltd was able to support us end to end
-                        from articulating functional specifications and
-                        technical design through application delivery. We value
-                        the strong and positive relationship we have built with
-                        the Harry & Liu Co. Ltd team.”
-                      </p>
-                    </div>
-                    <div class="client_names">
-                      <p class="author">Navin</p>
-                      <p class="position_client">Director | B Lab</p>
-                    </div>
+                  <div class="col-md-12">
+                    <p>
+                      Our team comprises seasoned software engineers with
+                      extensive experience across a wide range of technologies
+                      and industries. We stay ahead of the curve with the
+                      latest advancements in software development to deliver
+                      cutting-edge solutions.
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
-            <!-- Add Navigation Arrows -->
-            <div class="swiper-button-prev-testimonial swiper-button-prev">
-              <img
-                id="arroww"
-                style="margin-left: 35px"
-                src="./img/Left.svg"
-                alt
-              />
-            </div>
-            <div class="swiper-button-next-testimonial swiper-button-next">
-              <img
-                id="arroww"
-                style="margin-right: 35px"
-                src="./img/Right.svg"
-                alt
-              />
+          </div>
+          <div class="col-md-6">
+            <div class="card fade_right">
+              <div class="card-body">
+                <div class="row" id="row-cust-row-1">
+                  <div class="col-md-12 d-flex align-items-center">
+                    <div class="col-md-4 card_img_div">
+                      <img src="./img/group3.svg" style="width: 100%" alt="Image 1" />
+                    </div>
+                    <div class="col-md-8" style="margin-left: 15px">
+                      <h3>Collaborative Approach</h3>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <p>
+                      We believe in close collaboration with our clients
+                      throughout the development process. From initial concept
+                      to final delivery, we prioritize communication and
+                      transparency to ensure your vision is realized.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </section>
+        <div class="row" id="row-cust-row-1">
+          <div class="col-md-6">
+            <div class="card fade_left">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-md-12 d-flex align-items-center">
+                    <div class="col-md-4 card_img_div">
+                      <img src="./img/Group2.svg" style="width: 100%" alt="Image 1" />
+                    </div>
+                    <div class="col-md-8" style="margin-left: 15px">
+                      <h3>Custom Solutions</h3>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <p>
+                      Every project is different, which is why we offer
+                      customized software development solutions to meet your
+                      specific requirements. Whether you need a web
+                      application, enterprise software, or cloud-based
+                      solution, we have the expertise to bring your vision to
+                      fruition.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-      <!-- partners section -->
-      <div
-        class="section section-margin-bottom cust_partner_sec partners_mob"
-        style="height: 366px; position: relative"
-      >
-        <h2 class="partner_title">STRATEGIC PARTNER'S</h2>
-        <div
-          class="cust-partner-cont"
-          style="
+    <!-- our process section starts  -->
+
+    <div class="section section-margin-bottom process_sec" style="height: 420px; position: relative">
+      <h2 class="partner_title">OUR PROCESS</h2>
+      <div class="cust-process-cont" style="
             background-color: 5b7c9903;
             position: absolute;
             top: 166px;
             width: 100%;
-          "
-        >
-          <div class="row">
-            <div class="col-lg-12" data-aos="fade-up" data-aos-duration="1100">
-              <div class="container swiper-container partner-slider">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide partner-slide">
-                    <a class="brand-item" href="#/">
-                      <img src="img/image-1.png" alt="Brand Image" />
-                    </a>
+          ">
+        <div class="row">
+          <div class="col-lg-12" data-aos="fade-up" data-aos-duration="1100">
+            <div class="container swiper-container process-slider" id="process-slider">
+              <div class="swiper-wrapper process-wrapper">
+                <div class="swiper-slide process-slide">
+                  <div class="nums">
+                    <h5>01</h5>
                   </div>
-                  <div class="swiper-slide partner-slide">
-                    <a class="brand-item" href="#/">
-                      <img src="img/image-2.png" alt="Brand Image" />
-                    </a>
+                  <div class="descrip">
+                    <h4>Discovery</h4>
+                    <p>
+                      We start by understanding your business objectives,
+                      target audience, and technical requirements through
+                      comprehensive discovery sessions and stakeholder
+                      interviews.
+                    </p>
                   </div>
-                  <div class="swiper-slide partner-slide">
-                    <a class="brand-item" href="#/">
-                      <img src="img/image-3.png" alt="Brand Image" />
-                    </a>
+                </div>
+
+                <div class="swiper-slide process-slide">
+                  <div class="nums">
+                    <h5>02</h5>
                   </div>
-                  <div class="swiper-slide partner-slide">
-                    <a class="brand-item" href="#/">
-                      <img src="img/image-4.png" alt="Brand Image" />
-                    </a>
+                  <div class="descrip">
+                    <h4>Planning</h4>
+                    <p>
+                      Based on the insights gathered, we create a detailed
+                      project plan outlining milestones, timelines, and
+                      deliverables to ensure alignment with your goals and
+                      expectations.
+                    </p>
                   </div>
-                  <div class="swiper-slide partner-slide">
-                    <a class="brand-item" href="#/">
-                      <img src="img/image-5.png" alt="Brand Image" />
-                    </a>
+                </div>
+
+                <div class="swiper-slide process-slide">
+                  <div class="nums">
+                    <h5>03</h5>
                   </div>
-                  <div class="swiper-slide partner-slide">
-                    <a class="brand-item" href="#/">
-                      <img src="img/image-6.png" alt="Brand Image" />
-                    </a>
+                  <div class="descrip">
+                    <h4>Development</h4>
+                    <p>
+                      Our team of developers utilizes the latest technologies
+                      and best practices to build robust, scalable, and secure
+                      software solutions that meet your business needs.
+                    </p>
                   </div>
-                  <div class="swiper-slide partner-slide">
-                    <a class="brand-item" href="#/">
-                      <img src="img/image-7.png" alt="Brand Image" />
-                    </a>
+                </div>
+
+                <div class="swiper-slide process-slide">
+                  <div class="nums">
+                    <h5>04</h5>
                   </div>
+                  <div class="descrip">
+                    <h4>Testing</h4>
+                    <p>
+                      We conduct rigorous testing throughout the development
+                      process to identify and resolve any bugs or issues,
+                      ensuring the final product meets the highest quality
+                      standards.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="swiper-slide process-slide" style="border-right: none">
+                  <div class="nums">
+                    <h5>05</h5>
+                  </div>
+                  <div class="descrip">
+                    <h4>Deployment</h4>
+                    <p>
+                      Once the software is developed and tested, we assist
+                      with deployment and provide ongoing support to ensure a
+                      smooth transition and optimal performance.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-button-prev-process swiper-button-prev">
+                <img id="arroww" style="margin-left: 35px" src="./img/process-left.svg" alt />
+              </div>
+              <div class="swiper-button-next-process swiper-button-next">
+                <img id="arroww" style="margin-right: 35px" src="./img/process-right.svg" alt />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- our process section ends  -->
+
+    <!-- our service section -->
+    <div class="container section section-margin-bottom our_service_sec" style="height: 800px; position: relative">
+      <h2 class="our_service_title">OUR SERVICES</h2>
+      <div class="our-service-cont" style="position: absolute; top: 210px; width: 100%">
+        <div class="row">
+          <div class="col-lg-12" data-aos="fade-up" data-aos-duration="1100">
+            <div class="container swiper-container service-slider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide service-slide">
+                  <div>
+                    <img src="./img/sdgroup1.svg" />
+                  </div>
+                  <p>Web Application Development</p>
+                </div>
+                <div class="swiper-slide service-slide">
+                  <div>
+                    <img src="./img/sdgroup2.svg" />
+                  </div>
+                  <p>Enterprise Software Solutions</p>
+                </div>
+                <div class="swiper-slide service-slide">
+                  <div>
+                    <img src="./img/sdgroup3.svg" />
+                  </div>
+                  <p>Custom Software Development</p>
+                </div>
+                <div class="swiper-slide service-slide">
+                  <div>
+                    <img src="./img/sdgroup4.svg" />
+                  </div>
+                  <p>
+                    Cloud-Based <br />
+                    Solutions
+                  </p>
+                </div>
+                <div class="swiper-slide service-slide">
+                  <div>
+                    <img src="./img/sdgroup5.svg" />
+                  </div>
+                  <p>
+                    Quality Assurance <br />
+                    and Testing
+                  </p>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <!-- partners End Here -->
 
-      <!-- footer section  starts-->
+      <div class="os_description_cta">
+        <p>
+          We empower your business with compelling software solutions,
+          communicating your brand story through innovative digital assets and
+          seamless user experiences
+        </p>
+        <a href="./contact.html"> Let's work together</a>
+      </div>
+    </div>
+    <!-- our services Here -->
 
-      <footer>
-        <div class="cust-footer-card" style="
+    <!-- testimonials section starts  -->
+
+    <section class="testimonial-section kb_testimonial">
+      <div class="container">
+        <h4>TESTIMONIALS</h4>
+
+        <h2>What our clients have to say !</h2>
+        <div class="swiper-container testimonial-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="testimonial-card d-flex justify-content-center">
+                <div>
+                  <img src="./img/Shape.svg" />
+                </div>
+                <div style="margin-left: 20px">
+                  <div>
+                    <p class="client_reviews">
+                      “Harry & Liu Co. Ltd blend this great vision they have
+                      for creating an extraordinary company by instilling a
+                      deep sense of practicality and methodology to deliver
+                      applications and mobile apps on time and on budget.”
+                    </p>
+                  </div>
+                  <div class="client_names">
+                    <p class="author">Jugal Shah</p>
+                    <p class="position_client">CEO | Leo9 Studio</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-card d-flex justify-content-center">
+                <div>
+                  <img src="./img/Shape.svg" />
+                </div>
+                <div style="margin-left: 20px">
+                  <div>
+                    <p class="client_reviews">
+                      “Harry & Liu Co. Ltd does the exact same thing with
+                      technologies. It knows how to gather the customer
+                      requirements and carve the imagination in a valuable
+                      product or a service. Their customised software helped
+                      us in our marketing campaigns to communicate the right
+                      message to our consumers.”
+                    </p>
+                  </div>
+                  <div class="client_names">
+                    <p class="author">Milind Trivedi</p>
+                    <p class="position_client">
+                      Creative & Production Head | Grace Communication
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-card d-flex justify-content-center">
+                <div>
+                  <img src="./img/Shape.svg" />
+                </div>
+                <div style="margin-left: 20px">
+                  <div>
+                    <p class="client_reviews">
+                      “Managing the cricket tournament wouldn't be possible if
+                      we had not used Procric8 designed and developed by Harry
+                      & Liu Co. Ltd. I'm very excited to say that all 200+
+                      Players were happy with LIVE SCORE updates on the ground
+                      as well as on App during matches. Their teams were
+                      remarkable on understanding requirements, and will
+                      recommend them in my contact sphere!”
+                    </p>
+                  </div>
+                  <div class="client_names">
+                    <p class="author">Jiten Oza</p>
+                    <p class="position_client">
+                      Proprietor | Compact Business Machines
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-card d-flex justify-content-center">
+                <div>
+                  <img src="./img/Shape.svg" />
+                </div>
+                <div style="margin-left: 20px">
+                  <div>
+                    <p class="client_reviews">
+                      “Harry & Liu Co. Ltd have blown me away when it comes to
+                      application development and deployment, providing
+                      unbelievable account management, great agility and
+                      serious innovation.”
+                    </p>
+                  </div>
+                  <div class="client_names">
+                    <p class="author">Nalin Shah</p>
+                    <p class="position_client">Director | India Latina PCI</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-card d-flex justify-content-center">
+                <div>
+                  <img src="./img/Shape.svg" />
+                </div>
+                <div style="margin-left: 20px">
+                  <div>
+                    <p class="client_reviews">
+                      “Harry & Liu Co. Ltd executes the design of a product
+                      exactly the way it is provided, or suggest ways to
+                      improve navigation, usability and scalability ; to make
+                      our lives easier. It is a pleasure to work with and I
+                      highly recommend the company to those who want a job
+                      done the way they envision it.”
+                    </p>
+                  </div>
+                  <div class="client_names">
+                    <p class="author">Jay Majithia</p>
+                    <p class="position_client">
+                      Proprietor | Niramay Briodant
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-card d-flex justify-content-center">
+                <div>
+                  <img src="./img/Shape.svg" />
+                </div>
+                <div style="margin-left: 20px">
+                  <div>
+                    <p class="client_reviews">
+                      “One word “Kaizen”. A popular concept of the Japanese
+                      “Kaizen” which means continuous self improvement. Can be
+                      seen here in Harry & Liu Co. Ltd ideas, solutions,
+                      methodologies, and practices followed by them. I extend
+                      my gratitude to Harry & Liu Co. Ltd team for their
+                      support.”
+                    </p>
+                  </div>
+                  <div class="client_names">
+                    <p class="author">Krishna Majithia</p>
+                    <p class="position_client">
+                      Managing Director | City Group
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-card d-flex justify-content-center">
+                <div>
+                  <img src="./img/Shape.svg" />
+                </div>
+                <div style="margin-left: 20px">
+                  <div>
+                    <p class="client_reviews">
+                      “Our project was executed elegantly with a high degree
+                      of professionalism and technical expertise. We would be
+                      happy to work with Harry & Liu Co. Ltd again and we hope
+                      the opportunity presents itself.”
+                    </p>
+                  </div>
+                  <div class="client_names">
+                    <p class="author">Arun Kochhar</p>
+                    <p class="position_client">
+                      Director | A K Kocchar & Associates
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-card d-flex justify-content-center">
+                <div>
+                  <img src="./img/Shape.svg" />
+                </div>
+                <div style="margin-left: 20px">
+                  <div>
+                    <p class="client_reviews">
+                      “Harry & Liu Co. Ltd was able to support us end to end
+                      from articulating functional specifications and
+                      technical design through application delivery. We value
+                      the strong and positive relationship we have built with
+                      the Harry & Liu Co. Ltd team.”
+                    </p>
+                  </div>
+                  <div class="client_names">
+                    <p class="author">Navin</p>
+                    <p class="position_client">Director | B Lab</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Add Navigation Arrows -->
+          <div class="swiper-button-prev-testimonial swiper-button-prev">
+            <img id="arroww" style="margin-left: 35px" src="./img/Left.svg" alt />
+          </div>
+          <div class="swiper-button-next-testimonial swiper-button-next">
+            <img id="arroww" style="margin-right: 35px" src="./img/Right.svg" alt />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- partners section -->
+    <div class="section section-margin-bottom cust_partner_sec partners_mob" style="height: 366px; position: relative">
+      <h2 class="partner_title">STRATEGIC PARTNER'S</h2>
+      <div class="cust-partner-cont" style="
+            background-color: 5b7c9903;
+            position: absolute;
+            top: 166px;
+            width: 100%;
+          ">
+        <div class="row">
+          <div class="col-lg-12" data-aos="fade-up" data-aos-duration="1100">
+            <div class="container swiper-container partner-slider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide partner-slide">
+                  <a class="brand-item" href="#/">
+                    <img src="img/image-1.png" alt="Brand Image" />
+                  </a>
+                </div>
+                <div class="swiper-slide partner-slide">
+                  <a class="brand-item" href="#/">
+                    <img src="img/image-2.png" alt="Brand Image" />
+                  </a>
+                </div>
+                <div class="swiper-slide partner-slide">
+                  <a class="brand-item" href="#/">
+                    <img src="img/image-3.png" alt="Brand Image" />
+                  </a>
+                </div>
+                <div class="swiper-slide partner-slide">
+                  <a class="brand-item" href="#/">
+                    <img src="img/image-4.png" alt="Brand Image" />
+                  </a>
+                </div>
+                <div class="swiper-slide partner-slide">
+                  <a class="brand-item" href="#/">
+                    <img src="img/image-5.png" alt="Brand Image" />
+                  </a>
+                </div>
+                <div class="swiper-slide partner-slide">
+                  <a class="brand-item" href="#/">
+                    <img src="img/image-6.png" alt="Brand Image" />
+                  </a>
+                </div>
+                <div class="swiper-slide partner-slide">
+                  <a class="brand-item" href="#/">
+                    <img src="img/image-7.png" alt="Brand Image" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- partners End Here -->
+
+    <!-- footer section  starts-->
+
+    <footer>
+      <div class="cust-footer-card" style="
               width: 100%;
               height: 390px;
               background-color: white;
               display: flex;
               align-items: flex-end;
             ">
-          <div class="container-fluid" style="background: var(--blue-color)">
-            <div class="container get_in_touch col-lg-10">
-              <div class="git_image_container fade_up">
-                <img src="./img/amico.svg" alt />
-              </div>
-              <h3>Your Partner in Progress, Fueling Business Solutions.</h3>
-              <div class="cust-txt-align">
-                <a href="./contact.html" class="btn explore_btn_service git_btn_cust fade_up">Get in touch</a>
-              </div>
+        <div class="container-fluid" style="background: var(--blue-color)">
+          <div class="container get_in_touch col-lg-10">
+            <div class="git_image_container fade_up">
+              <img src="./img/amico.svg" alt />
+            </div>
+            <h3>Your Partner in Progress, Fueling Business Solutions.</h3>
+            <div class="cust-txt-align">
+              <a href="./contact.html" class="btn explore_btn_service git_btn_cust fade_up">Get in touch</a>
             </div>
           </div>
         </div>
-        <div class="footer_navigation" style="
+      </div>
+      <div class="footer_navigation" style="
               width: 100%;
               height: 580px;
               background-color: #ffffff33;
               position: relative;
             ">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-12">
-                <!--== Start Footer Widget Area ==-->
-                <div class="footer-widget-area">
-                  <div class="row m-b-n40">
-                    <div class="col-sm-6 col-md-6 col-lg-3 m-b-40" data-aos="fade-up" data-aos-duration="1100">
-                      <div class="widget-item pb-sm-20">
-                        <h4 class="widget-title fade_up">Harry & Liu Co. Limited</h4>
-                        <div class="about-widget fade_up">
-                          <p>
-                            Tien Chu Commercial Building, 173 - 174 Gloucester
-                            Road, Wanchai <br />
-                            <br />
-                            Hong Kong
-                          </p>
-                          <div class="social-icons">
-                            <a href="#/" class="fade_up"><img src="./img/meta-dark.svg" alt="meta" /></a>
-                            <a href="#/" class="fade_up"><img src="./img/twitter-dark.svg" alt="twitter" /></a>
-                            <a href="#/" class="fade_up"><img src="./img/youtube-dark.svg" alt="youtube" /></a>
-                            <a href="#/" class="fade_up"><img src="./img/linkedin-dark.svg" alt="linkedin" /></a>
-                          </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <!--== Start Footer Widget Area ==-->
+              <div class="footer-widget-area">
+                <div class="row m-b-n40">
+                  <div class="col-sm-6 col-md-6 col-lg-3 m-b-40" data-aos="fade-up" data-aos-duration="1100">
+                    <div class="widget-item pb-sm-20">
+                      <h4 class="widget-title fade_up">Harry & Liu Co. Limited</h4>
+                      <div class="about-widget fade_up">
+                        <p>
+                          Tien Chu Commercial Building, 173 - 174 Gloucester
+                          Road, Wanchai <br />
+                          <br />
+                          Hong Kong
+                        </p>
+                        <div class="social-icons">
+                          <a href="#/" class="fade_up"><img src="./img/meta-dark.svg" alt="meta" /></a>
+                          <a href="#/" class="fade_up"><img src="./img/twitter-dark.svg" alt="twitter" /></a>
+                          <a href="#/" class="fade_up"><img src="./img/youtube-dark.svg" alt="youtube" /></a>
+                          <a href="#/" class="fade_up"><img src="./img/linkedin-dark.svg" alt="linkedin" /></a>
                         </div>
                       </div>
                     </div>
-                    <div class="col-sm-6 col-md-6 col-lg-3 d-flex justify-content-start justify-content-lg-center m-b-40"
-                      data-aos="fade-up" data-aos-duration="1500">
-                      <!-- <div class="widget-item widget-item-1">
+                  </div>
+                  <div class="col-sm-6 col-md-6 col-lg-3 d-flex justify-content-start justify-content-lg-center m-b-40"
+                    data-aos="fade-up" data-aos-duration="1500">
+                    <!-- <div class="widget-item widget-item-1">
                           <h4 class="widget-title">NAVIGATION</h4>
                           <ul class="widget-list" style="padding-left: 0">
                             <li><a href="#">What we do</a></li>
@@ -1430,121 +1178,121 @@
                             <li><a href="./whoweare.html">Who we are</a></li>
                           </ul>
                         </div> -->
+                  </div>
+                  <div class="col-sm-6 col-md-6 col-lg-3 m-b-40" data-aos="fade-up" data-aos-duration="2000">
+                    <div class="widget-item widget-item-3">
+                      <h4 class="widget-title">QUICK LINKS</h4>
+                      <ul class="widget-post" style="padding-left: 0">
+                        <li><a class="fade_up" href="./uiux.html">Services</a></li>
+                        <li><a class="fade_up" href="./aiml.html">Solutions</a></li>
+                        <li><a class="fade_up" href="./ourwork.html">Our Work</a></li>
+                        <li><a class="fade_up" href="./contact.html">Contact Us</a></li>
+                      </ul>
                     </div>
-                    <div class="col-sm-6 col-md-6 col-lg-3 m-b-40" data-aos="fade-up" data-aos-duration="2000">
-                      <div class="widget-item widget-item-3">
-                        <h4 class="widget-title">QUICK LINKS</h4>
-                        <ul class="widget-post" style="padding-left: 0">
-                          <li><a class="fade_up" href="./uiux.html">Services</a></li>
-                          <li><a class="fade_up" href="./aiml.html">Solutions</a></li>
-                          <li><a class="fade_up" href="./ourwork.html">Our Work</a></li>
-                          <li><a class="fade_up" href="./contact.html">Contact Us</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="col-sm-6 col-md-6 col-lg-3 m-b-40" data-aos="fade-up" data-aos-duration="2500">
-                      <div class="widget-item widget-item-2">
-                        <h4 class="widget-title">CONTACT US</h4>
-  
-                        <ul class="widget-post" style="padding-left: 0">
-                          <li>
-                            <a href="#" class="d-flex fade_up">
-                              <div>
-                                <img src="./img/phone-dark.svg" alt="Image-HasTech" />
-                              </div>
-                              <div style="margin-left: 20px">
-                                +86 15618878897
-                              </div>
-                            </a>
-                          </li>
-                          <li>
-                            <a href="#" class="d-flex fade_up">
-                              <div>
-                                <img src="./img/mail-dark.svg" alt="Image-HasTech" />
-                              </div>
-                              <div style="margin-left: 20px">
-                                info@harryandliu.com
-                              </div>
-                            </a>
-                          </li>
-                          <li class="ho_1">
-                            <a href="#" class="d-flex fade_up">
-                              <div>
-                                <img src="./img/location-dark.svg" alt="Image-HasTech" />
-                              </div>
-                              <div style="margin-left: 20px; width: 238px">
-                                <span style="font-size: 16px; font-weight: 500">Head Office</span><br />
-                                <span style="font-size: 12px; font-weight: 400">
-                                  Chu Commercial Building, 173 - 174 Gloucester
-                                  Road, Wanchai, Hong Kong.
-                                </span>
-                              </div>
-                            </a>
-                          </li>
-  
-                          <li class="ho_1">
-                            <a href="#" class="d-flex fade_up">
-                              <div>
-                                <img src="./img/location-dark.svg" alt="Image-HasTech" />
-                              </div>
-                              <div style="margin-left: 20px; width: 238px">
-                                <span style="font-size: 16px; font-weight: 500">Mainland China Office</span><br />
-                                <span style="font-size: 12px; font-weight: 400">913, Jinqi Wisdom Valley 1, Tangling Road,
-                                  Liuxian Blvd, Nanshan, Shenzhen.
-                                </span>
-                              </div>
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
+                  </div>
+                  <div class="col-sm-6 col-md-6 col-lg-3 m-b-40" data-aos="fade-up" data-aos-duration="2500">
+                    <div class="widget-item widget-item-2">
+                      <h4 class="widget-title">CONTACT US</h4>
+
+                      <ul class="widget-post" style="padding-left: 0">
+                        <li>
+                          <a href="#" class="d-flex fade_up">
+                            <div>
+                              <img src="./img/phone-dark.svg" alt="Image-HasTech" />
+                            </div>
+                            <div style="margin-left: 20px">
+                              +86 15618878897
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="d-flex fade_up">
+                            <div>
+                              <img src="./img/mail-dark.svg" alt="Image-HasTech" />
+                            </div>
+                            <div style="margin-left: 20px">
+                              info@harryandliu.com
+                            </div>
+                          </a>
+                        </li>
+                        <li class="ho_1">
+                          <a href="#" class="d-flex fade_up">
+                            <div>
+                              <img src="./img/location-dark.svg" alt="Image-HasTech" />
+                            </div>
+                            <div style="margin-left: 20px; width: 238px">
+                              <span style="font-size: 16px; font-weight: 500">Head Office</span><br />
+                              <span style="font-size: 12px; font-weight: 400">
+                                Chu Commercial Building, 173 - 174 Gloucester
+                                Road, Wanchai, Hong Kong.
+                              </span>
+                            </div>
+                          </a>
+                        </li>
+
+                        <li class="ho_1">
+                          <a href="#" class="d-flex fade_up">
+                            <div>
+                              <img src="./img/location-dark.svg" alt="Image-HasTech" />
+                            </div>
+                            <div style="margin-left: 20px; width: 238px">
+                              <span style="font-size: 16px; font-weight: 500">Mainland China Office</span><br />
+                              <span style="font-size: 12px; font-weight: 400">913, Jinqi Wisdom Valley 1, Tangling Road,
+                                Liuxian Blvd, Nanshan, Shenzhen.
+                              </span>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
                     </div>
                   </div>
                 </div>
-                <!--== End Footer Widget Area ==-->
               </div>
-            </div>
-          </div>
-  
-          <div class="footer-bottom">
-            <div class="container d-flex justify-content-between cust-margin-0"
-              style="margin: 0px auto; padding-top: 30px; color: black">
-              <div class="rights-reserved fade_up">
-                <p style="font-size: 15px; font-weight: 700">
-                  2024 All RIGHTS RESERVED - H&L
-                </p>
-              </div>
-              <div class="d-flex justify-content-around footer-policy fade_up"
-                style="width: 380px; font-size: 15px; font-weight: 600">
-                <a href="./privacy-policy.html" style="text-decoration: none; color: #000">
-                  <p>PRIVACY POLICY</p>
-                </a>
-                <p>TERMS & CONDITION</p>
-              </div>
+              <!--== End Footer Widget Area ==-->
             </div>
           </div>
         </div>
-      </footer>
-    </div>
 
-    <!-- jQuery js -->
-    <script src="js/plugins/jquery.min.js"></script>
-    <!-- swiper js -->
-    <script src="js/plugins/swiper.min.js"></script>
-    <!-- <script src="js/plugins/swiper-bundle.min.js"></script> -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
-    <!-- itsulu js -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script type="text/javascript">
-      /*--
-    Client's Activation
+        <div class="footer-bottom">
+          <div class="container d-flex justify-content-between cust-margin-0"
+            style="margin: 0px auto; padding-top: 30px; color: black">
+            <div class="rights-reserved">
+              <p style="font-size: 15px; font-weight: 700">
+                2024 All RIGHTS RESERVED - H&L
+              </p>
+            </div>
+            <div class="d-flex justify-content-around footer-policy"
+              style="width: 380px; font-size: 15px; font-weight: 600">
+              <a href="./privacy-policy.html" style="text-decoration: none; color: #000">
+                <p>PRIVACY POLICY</p>
+              </a>
+              <p>TERMS & CONDITION</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- jQuery js -->
+  <script src="js/plugins/jquery.min.js"></script>
+  <!-- swiper js -->
+  <script src="js/plugins/swiper.min.js"></script>
+  <!-- <script src="js/plugins/swiper-bundle.min.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+  <!-- itsulu js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript">
+    /*--
+  Client's Activation
 -----------------------------------*/
-      document.addEventListener("DOMContentLoaded", function () {
-         const options = {
+    document.addEventListener("DOMContentLoaded", function () {
+      const options = {
         threshold: 0.5 // Trigger when 20% of the element is visible
       };
 
-     const onloadObserver = new IntersectionObserver((entries, observer) => {
+      const onloadObserver = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
           entry.target.classList.remove("hidden");
           entry.target.classList.add('animate__animated', 'animate__fadeInDown');
@@ -1558,301 +1306,315 @@
         onloadObserver.observe(target);
       });
 
-        // Observer for left animation
-        const leftObserver = new IntersectionObserver((entries, observer) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              entry.target.classList.remove("hidden");
-              entry.target.classList.add(
-                "animate__animated",
-                "animate__fadeInLeft"
-              );
-              observer.unobserve(entry.target);
-            }
-          });
-        }, options);
-
-        // Observer for right animation
-        const rightObserver = new IntersectionObserver((entries, observer) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              entry.target.classList.remove("hidden");
-              entry.target.classList.add(
-                "animate__animated",
-                "animate__fadeInRight"
-              );
-              observer.unobserve(entry.target);
-            }
-          });
-        }, options);
-
-        // Observer for fade-up animation
-         const fadeUpObserver = new IntersectionObserver((entries, observer) => {
-                entries.forEach((entry) => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.remove("hidden");
-                        entry.target.classList.add(
-                            "animate__animated",
-                            "animate__fadeInUp"
-                        );
-                        observer.unobserve(entry.target);
-                    }
-                });
-            }, options);
-
-        const upTargets = document.querySelectorAll('.fade_up');
-        upTargets.forEach(card => card.classList.add("hidden"));
-        upTargets.forEach(target => {
-          fadeUpObserver.observe(target);
-        });
-
-        // Observer for fade-down animation
-         const fadeDownObserver = new IntersectionObserver(
-          (entries, observer) => {
-            entries.forEach((entry) => {
-              if (!entry.isIntersecting) {
-                entry.target.classList.remove("hidden");
-                entry.target.classList.add(
-                  "animate__animated",
-                  "animate__fadeOutDown"
-                );
-                observer.unobserve(entry.target);
-              }
-            });
-          },
-          options
-        );
-
-        const fadeUpTargets = document.querySelectorAll(".keybenefit_img");
-        fadeUpTargets.forEach(card => card.classList.add("hidden"));
-        fadeUpTargets.forEach((target) => {
-          fadeUpObserver.observe(target);
-        });
-
-        gsap.registerPlugin(ScrollTrigger);
-
-        if (
-          window.matchMedia("(min-width: 359px) and (max-width: 767px)").matches
-        ) {
-          gsap.to(".process-wrapper", {
-            xPercent: -160 * 2, // Adjust this value according to the number of slides
-            ease: "none",
-            scrollTrigger: {
-              trigger: "#process-slider",
-              // pin:".process_sec",
-              duration: 0.5,
-              start: "top 90%", // Adjusted start position
-              end: () =>
-                "+=700" +
-                (document.querySelector(".process-wrapper").offsetWidth -
-                  window.innerWidth), // Adjust this value to control the scroll distance
-              scrub: 0.5, // Initially set to true
-              onEnter: () => {
-                document.body.classList.add("no-scroll"); // Disable body scroll when entering the section
-              },
-              onLeaveBack: () => {
-                document.body.classList.remove("no-scroll"); // Re-enable body scroll when leaving the section
-              },
-              onUpdate: (self) => {
-                if (self.progress >= 1) {
-                  document.body.classList.remove("no-scroll"); // Re-enable body scroll when the last slide is visible
-                }
-              },
-            },
-          });
-        } else {
-          gsap.to(".process-wrapper", {
-            xPercent: -53.5 * 2, // Adjust this value according to the number of slides
-            ease: "none",
-            scrollTrigger: {
-              trigger: "#process-slider",
-              pin: ".process_sec",
-              start: "top 20%", // Trigger when the top of the section hits the bottom of the viewport
-              end: () =>
-                "+=200" +
-                (document.querySelector(".process-wrapper").offsetWidth -
-                  window.innerWidth), // Adjust this value to control the scroll distance
-              scrub: 1, // Initially set to true
-              onEnter: () => {
-                document.body.classList.add("no-scroll"); // Disable body scroll when entering the section
-              },
-              onLeaveBack: () => {
-                document.body.classList.remove("no-scroll"); // Re-enable body scroll when leaving the section
-              },
-              onUpdate: (self) => {
-                if (self.progress >= 1) {
-                  document.body.classList.remove("no-scroll"); // Re-enable body scroll when the last slide is visible
-                }
-              },
-            },
-          });
-        }
-
-        var dropdown = document.getElementById("what-we-do-dropdown");
-        var dropdownMenu = dropdown.querySelector(".dropdown-menu");
-
-        // Show dropdown menu on mouseover
-        dropdown.addEventListener("mouseover", function () {
-          dropdownMenu.classList.add("show");
-        });
-
-        // Hide dropdown menu on mouseout
-        dropdown.addEventListener("mouseout", function () {
-          dropdownMenu.classList.remove("show");
-        });
-
-        // Use jQuery to toggle the 'focus' class on submenu item click
-        $(".dropdown-menu .submenu-active").on("click", function () {
-          $(".dropdown-menu .submenu-active").removeClass("focus");
-          $(this).addClass("focus");
-        });
-
-        $(".dropdown-submenu a.test").on("click", function (e) {
-          // Hide all other dropdowns
-          $(".dropdown-submenu .dropdown-menu").not($(this).next("ul")).hide();
-          // Toggle the clicked dropdown
-          $(this).next("ul").toggle();
-          e.stopPropagation();
-          e.preventDefault();
-        });
-
-        var brands = new Swiper(".brand-slider", {
-          slidesPerView: 5,
-          loop: true,
-          autoplay: {
-            delay: 3000,
-            disableOnInteraction: false,
-          },
-          pagination: false,
-        });
-
-        var swiper = new Swiper(".cards-services", {
-          slidesPerView: 1,
-          spaceBetween: 30,
-          loop: true,
-        });
-
-        var swiper = new Swiper(".cards-project", {
-          slidesPerView: 1,
-          spaceBetween: 30,
-          autoplay: {
-            delay: 5000,
-            disableOnInteraction: false,
-          },
-          loop: true,
-        });
-
-        var servicesOur = new Swiper(".service-slider", {
-          slidesPerView: 5,
-          spaceBetween: 0,
-          loop: true,
-          autoplay: {
-            delay: 3000,
-            disableOnInteraction: false,
-          },
-          pagination: false,
-        });
-
-        var testimonialSlider = new Swiper(".testimonial-slider", {
-          loop: true,
-          spaceBetween: 30,
-          autoplay: {
-            delay: 5000,
-            disableOnInteraction: false,
-          },
-          navigation: {
-            nextEl: ".swiper-button-next-testimonial",
-            prevEl: ".swiper-button-prev-testimonial",
-          },
-        });
-
-        var processSlider = new Swiper(".process-slider", {
-          slidesPerView: 2.4,
-          spaceBetween: 0,
-          navigation: {
-            nextEl: ".swiper-button-next-process",
-            prevEl: ".swiper-button-prev-process",
-          },
-        });
-
-        var partners = new Swiper(".partner-slider", {
-          slidesPerView: 6,
-          spaceBetween: 0,
-          loop: true,
-          autoplay: {
-            delay: 3000,
-            disableOnInteraction: false,
-          },
-          pagination: false,
-        });
-
-        const mediaQuery = window.matchMedia(
-          "(min-width: 768px) and (max-width: 992px) "
-        );
-
-        const mediaQuery1 = window.matchMedia(
-          "(min-width: 359px) and (max-width: 767px) "
-        );
-
-        function updateSwiperConfig1() {
-          if (mediaQuery1.matches) {
-            partners.params.slidesPerView = 4;
-            processSlider.params.slidesPerView = 1.2;
-            servicesOur.params.slidesPerView = 1.5;
-          } else if (mediaQuery.matches) {
-            partners.params.slidesPerView = 4;
-            processSlider.params.slidesPerView = 1.2;
-            servicesOur.params.slidesPerView = 3;
-          } else {
-            processSlider.params.slidesPerView = 2.5;
-            servicesOur.params.slidesPerView = 3;
-            partners.params.slidesPerView = 6;
+      // Observer for left animation
+      const leftObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.remove("hidden");
+            entry.target.classList.add(
+              "animate__animated",
+              "animate__fadeInLeft"
+            );
+            observer.unobserve(entry.target);
           }
-          processSlider.update();
-          servicesOur.update();
-          partners.update();
-        }
-        updateSwiperConfig1();
-        mediaQuery1.addListener(updateSwiperConfig1);
-
-        var technology = new Swiper(".technology-slider", {
-          slidesPerView: 4,
-          spaceBetween: 20,
-          loop: true,
-          autoplay: {
-            delay: 3000,
-            disableOnInteraction: false,
-          },
-          pagination: false,
         });
+      }, options);
+
+      // Observer for right animation
+      const rightObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.remove("hidden");
+            entry.target.classList.add(
+              "animate__animated",
+              "animate__fadeInRight"
+            );
+            observer.unobserve(entry.target);
+          }
+        });
+      }, options);
+
+      // Observer for fade-up animation
+      const fadeUpObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.remove("hidden");
+            entry.target.classList.add(
+              "animate__animated",
+              "animate__fadeInUp"
+            );
+            observer.unobserve(entry.target);
+          }
+        });
+      }, options);
+
+      const upTargets = document.querySelectorAll('.fade_up');
+      upTargets.forEach(card => card.classList.add("hidden"));
+      upTargets.forEach(target => {
+        fadeUpObserver.observe(target);
       });
 
-      (() => {
-        const counter = document.querySelectorAll(".counter");
-        // convert to array
-        const array = Array.from(counter);
-        // select array element
-        array.map((item) => {
-          // data layer
-          let counterInnerText = parseInt(item.textContent); // Convert text to integer
-
-          let count = 1;
-          let speed = item.dataset.speed / counterInnerText;
-          speed = speed * 3;
-
-          function counterUp() {
-            item.textContent = count + "+";
-            count++;
-            if (counterInnerText < count) {
-              clearInterval(stop);
+      // Observer for fade-down animation
+      const fadeDownObserver = new IntersectionObserver(
+        (entries, observer) => {
+          entries.forEach((entry) => {
+            if (!entry.isIntersecting) {
+              entry.target.classList.remove("hidden");
+              entry.target.classList.add(
+                "animate__animated",
+                "animate__fadeOutDown"
+              );
+              observer.unobserve(entry.target);
             }
-          }
+          });
+        },
+        options
+      );
 
-          const stop = setInterval(() => {
-            counterUp();
-          }, speed);
+      const fadeUpTargets = document.querySelectorAll(".keybenefit_img");
+      fadeUpTargets.forEach(card => card.classList.add("hidden"));
+      fadeUpTargets.forEach((target) => {
+        fadeUpObserver.observe(target);
+      });
+
+      // Target for right animation
+      const rightTarget = document.querySelectorAll('.fade_right');
+      rightTarget.forEach(card => card.classList.add("hidden"));
+      rightTarget.forEach(target => {
+        rightObserver.observe(target);
+      });
+
+      const leftTargets = document.querySelectorAll('.fade_left');
+      leftTargets.forEach(card => card.classList.add("hidden"));
+      leftTargets.forEach(target => {
+        leftObserver.observe(target);
+      });
+
+      gsap.registerPlugin(ScrollTrigger);
+
+      if (
+        window.matchMedia("(min-width: 359px) and (max-width: 767px)").matches
+      ) {
+        gsap.to(".process-wrapper", {
+          xPercent: -160 * 2, // Adjust this value according to the number of slides
+          ease: "none",
+          scrollTrigger: {
+            trigger: "#process-slider",
+            // pin:".process_sec",
+            duration: 0.5,
+            start: "top 90%", // Adjusted start position
+            end: () =>
+              "+=700" +
+              (document.querySelector(".process-wrapper").offsetWidth -
+                window.innerWidth), // Adjust this value to control the scroll distance
+            scrub: 0.5, // Initially set to true
+            onEnter: () => {
+              document.body.classList.add("no-scroll"); // Disable body scroll when entering the section
+            },
+            onLeaveBack: () => {
+              document.body.classList.remove("no-scroll"); // Re-enable body scroll when leaving the section
+            },
+            onUpdate: (self) => {
+              if (self.progress >= 1) {
+                document.body.classList.remove("no-scroll"); // Re-enable body scroll when the last slide is visible
+              }
+            },
+          },
         });
-      })();
-    </script>
-  </body>
+      } else {
+        gsap.to(".process-wrapper", {
+          xPercent: -53.5 * 2, // Adjust this value according to the number of slides
+          ease: "none",
+          scrollTrigger: {
+            trigger: "#process-slider",
+            pin: ".process_sec",
+            start: "top 20%", // Trigger when the top of the section hits the bottom of the viewport
+            end: () =>
+              "+=200" +
+              (document.querySelector(".process-wrapper").offsetWidth -
+                window.innerWidth), // Adjust this value to control the scroll distance
+            scrub: 1, // Initially set to true
+            onEnter: () => {
+              document.body.classList.add("no-scroll"); // Disable body scroll when entering the section
+            },
+            onLeaveBack: () => {
+              document.body.classList.remove("no-scroll"); // Re-enable body scroll when leaving the section
+            },
+            onUpdate: (self) => {
+              if (self.progress >= 1) {
+                document.body.classList.remove("no-scroll"); // Re-enable body scroll when the last slide is visible
+              }
+            },
+          },
+        });
+      }
+
+      var dropdown = document.getElementById("what-we-do-dropdown");
+      var dropdownMenu = dropdown.querySelector(".dropdown-menu");
+
+      // Show dropdown menu on mouseover
+      dropdown.addEventListener("mouseover", function () {
+        dropdownMenu.classList.add("show");
+      });
+
+      // Hide dropdown menu on mouseout
+      dropdown.addEventListener("mouseout", function () {
+        dropdownMenu.classList.remove("show");
+      });
+
+      // Use jQuery to toggle the 'focus' class on submenu item click
+      $(".dropdown-menu .submenu-active").on("click", function () {
+        $(".dropdown-menu .submenu-active").removeClass("focus");
+        $(this).addClass("focus");
+      });
+
+      $(".dropdown-submenu a.test").on("click", function (e) {
+        // Hide all other dropdowns
+        $(".dropdown-submenu .dropdown-menu").not($(this).next("ul")).hide();
+        // Toggle the clicked dropdown
+        $(this).next("ul").toggle();
+        e.stopPropagation();
+        e.preventDefault();
+      });
+
+      var brands = new Swiper(".brand-slider", {
+        slidesPerView: 5,
+        loop: true,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+        pagination: false,
+      });
+
+      var swiper = new Swiper(".cards-services", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+      });
+
+      var swiper = new Swiper(".cards-project", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false,
+        },
+        loop: true,
+      });
+
+      var servicesOur = new Swiper(".service-slider", {
+        slidesPerView: 5,
+        spaceBetween: 0,
+        loop: true,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+        pagination: false,
+      });
+
+      var testimonialSlider = new Swiper(".testimonial-slider", {
+        loop: true,
+        spaceBetween: 30,
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next-testimonial",
+          prevEl: ".swiper-button-prev-testimonial",
+        },
+      });
+
+      var processSlider = new Swiper(".process-slider", {
+        slidesPerView: 2.4,
+        spaceBetween: 0,
+        navigation: {
+          nextEl: ".swiper-button-next-process",
+          prevEl: ".swiper-button-prev-process",
+        },
+      });
+
+      var partners = new Swiper(".partner-slider", {
+        slidesPerView: 6,
+        spaceBetween: 0,
+        loop: true,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+        pagination: false,
+      });
+
+      const mediaQuery = window.matchMedia(
+        "(min-width: 768px) and (max-width: 992px) "
+      );
+
+      const mediaQuery1 = window.matchMedia(
+        "(min-width: 359px) and (max-width: 767px) "
+      );
+
+      function updateSwiperConfig1() {
+        if (mediaQuery1.matches) {
+          partners.params.slidesPerView = 4;
+          processSlider.params.slidesPerView = 1.2;
+          servicesOur.params.slidesPerView = 1.5;
+        } else if (mediaQuery.matches) {
+          partners.params.slidesPerView = 4;
+          processSlider.params.slidesPerView = 1.2;
+          servicesOur.params.slidesPerView = 3;
+        } else {
+          processSlider.params.slidesPerView = 2.5;
+          servicesOur.params.slidesPerView = 3;
+          partners.params.slidesPerView = 6;
+        }
+        processSlider.update();
+        servicesOur.update();
+        partners.update();
+      }
+      updateSwiperConfig1();
+      mediaQuery1.addListener(updateSwiperConfig1);
+
+      var technology = new Swiper(".technology-slider", {
+        slidesPerView: 4,
+        spaceBetween: 20,
+        loop: true,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+        pagination: false,
+      });
+    });
+
+    (() => {
+      const counter = document.querySelectorAll(".counter");
+      // convert to array
+      const array = Array.from(counter);
+      // select array element
+      array.map((item) => {
+        // data layer
+        let counterInnerText = parseInt(item.textContent); // Convert text to integer
+
+        let count = 1;
+        let speed = item.dataset.speed / counterInnerText;
+        speed = speed * 3;
+
+        function counterUp() {
+          item.textContent = count + "+";
+          count++;
+          if (counterInnerText < count) {
+            clearInterval(stop);
+          }
+        }
+
+        const stop = setInterval(() => {
+          counterUp();
+        }, speed);
+      });
+    })();
+  </script>
+</body>
+
 </html>

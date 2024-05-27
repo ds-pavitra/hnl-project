@@ -79,8 +79,8 @@ body {
 .h_banner_text {
     color: black;
     font-weight: 600;
-    font-size: 36px;
-    line-height: 54px;
+    font-size: 32px;
+    line-height: 48px;
 }
 
 .navbar-nav .nav-link:hover,
@@ -536,7 +536,7 @@ body {
 }
 
 /* .section-heading h2 {
-    font-size: 36px;
+    font-size: 32px;
     margin-bottom: 10px;
 } */
 
@@ -1122,9 +1122,9 @@ uiux page css style
 }
 
 .key_benefit_container h3 {
-    font-size: 36px;
+    font-size: 32px;
     font-weight: 600;
-    line-height: 54px;
+    line-height: 48px;
     text-align: left;
 }
 
@@ -1188,9 +1188,9 @@ uiux page css style
 }
 
 .overview .service-content h2 {
-    font-size: 36px;
+    font-size: 32px;
     font-weight: 600;
-    line-height: 54px;
+    line-height: 48px;
     color: var(--blue-color);
     margin-bottom: 10px;
 }
@@ -1387,7 +1387,7 @@ uiux page css style
     width: 875px;
     color: black;
     font-weight: 600;
-    font-size: 36px;
+    font-size: 32px;
     line-height: 66px;
 }
 
@@ -1562,7 +1562,7 @@ uiux page css style
 .whoweserve_container .h_banner_text {
     color: black;
     font-weight: 600;
-    font-size: 36px;
+    font-size: 32px;
     line-height: 66px;
 }
 
@@ -1661,7 +1661,7 @@ uiux page css style
 }
 
 .ourwork_container .cust_positioning_banner p {
-    font-size: 36px;
+    font-size: 32px;
     font-weight: 500;
     line-height: 66px;
     text-align: center;
@@ -2040,9 +2040,9 @@ uiux page css style
 
 .journey_title h2 {
     text-align: center;
-    font-size: 36px;
+    font-size: 32px;
     font-weight: 600;
-    line-height: 54px;
+    line-height: 48px;
     color: var(--blue-color);
     padding: 0 0 16px 16px;
     text-transform: uppercase;
@@ -2516,9 +2516,9 @@ uiux page css style
 
 .process-slide h5,
 .process-slide h4 {
-    font-size: 36px;
+    font-size: 32px;
     font-weight: 300;
-    line-height: 54px;
+    line-height: 48px;
     text-align: left;
     color: #000;
 }
@@ -2750,7 +2750,7 @@ uiux page css style
 
 .c_pb_100 h2 {
     padding: 0 0 100px 0;
-    font-size: 36px;
+    font-size: 32px;
     font-weight: 600;
     line-height: 48px;
 }
@@ -3987,8 +3987,8 @@ uiux page css style
     }
 
     .process-slide h5 {
-        font-size: 36px;
-        line-height: 54px;
+        font-size: 32px;
+        line-height: 48px;
         font-weight: 300;
     }
 
@@ -5040,7 +5040,7 @@ uiux page css style
 
     .c_pb_100 {
         padding: 0 0 100px 0;
-        font-size: 36px;
+        font-size: 32px;
         font-weight: 600;
         line-height: 48px;
     }
@@ -6600,7 +6600,7 @@ uiux page css style
 
     .c_pb_100 h2 {
         padding: 0 0 100px 0 !important;
-        font-size: 36px;
+        font-size: 32px;
         font-weight: 600;
         line-height: 48px;
     }

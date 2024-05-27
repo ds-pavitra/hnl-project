@@ -316,7 +316,7 @@
         <h2>Why Choose Us</h2>
         <div class="row" id="row-cust-row-1">
           <div class="col-md-6">
-            <div class="card">
+            <div class="card fade_left">
               <div class="card-body">
                 <div class="row">
                   <div class="col-md-12 d-flex align-items-center">
@@ -340,7 +340,7 @@
             </div>
           </div>
           <div class="col-md-6">
-            <div class="card">
+            <div class="card fade_right">
               <div class="card-body">
                 <div class="row" id="row-cust-row-1">
                   <div class="col-md-12 d-flex align-items-center">
@@ -367,7 +367,7 @@
         </div>
         <div class="row" id="row-cust-row-1">
           <div class="col-md-6">
-            <div class="card">
+            <div class="card fade_left">
               <div class="card-body">
                 <div class="row">
                   <div class="col-md-12 d-flex align-items-center">
@@ -1028,12 +1028,12 @@
         <div class="footer-bottom">
           <div class="container d-flex justify-content-between cust-margin-0"
             style="margin: 0px auto; padding-top: 30px; color: black">
-            <div class="rights-reserved fade_up">
+            <div class="rights-reserved">
               <p style="font-size: 15px; font-weight: 700">
                 2024 All RIGHTS RESERVED - H&L
               </p>
             </div>
-            <div class="d-flex justify-content-around footer-policy fade_up"
+            <div class="d-flex justify-content-around footer-policy"
               style="width: 380px; font-size: 15px; font-weight: 600">
               <a href="./privacy-policy.html" style="text-decoration: none; color: #000">
                 <p>PRIVACY POLICY</p>
@@ -1145,6 +1145,19 @@
       fadeUpTargets.forEach(card => card.classList.add("hidden"));
       fadeUpTargets.forEach((target) => {
         fadeUpObserver.observe(target);
+      });
+
+       // Target for right animation
+       const rightTarget = document.querySelectorAll('.fade_right');
+      rightTarget.forEach(card => card.classList.add("hidden"));
+      rightTarget.forEach(target => {
+        rightObserver.observe(target);
+      });
+
+      const leftTargets = document.querySelectorAll('.fade_left');
+      leftTargets.forEach(card => card.classList.add("hidden"));
+      leftTargets.forEach(target => {
+        leftObserver.observe(target);
       });
 
       gsap.registerPlugin(ScrollTrigger);
