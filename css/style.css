@@ -2,9 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 :root {
-    --blue-color:  #004E9E; /*  #004E9E #526377 #deebfc Define a CSS variable for the color blue */
-  }
-  
+    --blue-color: #004E9E;
+    /*  #004E9E #526377 #deebfc Define a CSS variable for the color blue */
+}
+
 
 *,
 *:before,
@@ -39,7 +40,7 @@ body {
     opacity: 0;
 }
 
-.scrollbar-track-x{
+.scrollbar-track-x {
     display: none !important;
 }
 
@@ -720,7 +721,7 @@ body {
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
-    border: 1px solid  var(--blue-color);
+    border: 1px solid var(--blue-color);
     width: 920px;
     height: 325px;
     padding: 45px;
@@ -756,7 +757,7 @@ body {
 
 .partner-slide {
     text-align: center;
-    border: 1px solid  var(--blue-color)33;
+    border: 1px solid var(--blue-color)33;
     margin: 0 10px;
 }
 
@@ -865,7 +866,7 @@ body {
     bottom: 0;
     width: 100%;
     height: 83px;
-    border-top: 1px solid  var(--blue-color);
+    border-top: 1px solid var(--blue-color);
 }
 
 .footer-widget-area {
@@ -1490,7 +1491,7 @@ uiux page css style
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    border: 1px solid  var(--blue-color);
+    border: 1px solid var(--blue-color);
     border-radius: 20px;
     padding: 70px 37px 70px 70px;
 }
@@ -1691,7 +1692,7 @@ uiux page css style
     height: 511px;
     background: #FFFFFF;
     border: 1px solid #000000;
-    box-shadow: 10px 10px 0px 0px  var(--blue-color);
+    box-shadow: 10px 10px 0px 0px var(--blue-color);
     position: absolute;
     top: 60px;
     z-index: 1;
@@ -2171,7 +2172,7 @@ uiux page css style
 .contact-form {
     width: 500px;
     padding: 40px;
-    border: 1px solid  var(--blue-color);
+    border: 1px solid var(--blue-color);
     border-radius: 20px;
     /* margin: 10px 20px 0 0; */
 }
@@ -2229,7 +2230,7 @@ uiux page css style
     display: flex;
     width: 272px;
     height: 300px;
-    border: 1px solid  var(--blue-color);
+    border: 1px solid var(--blue-color);
     /* margin: 15px 15px 15px 15px; */
 }
 
@@ -2824,7 +2825,7 @@ uiux page css style
         top: 55px;
         right: 0px;
         background: #FFFFFF80;
-        border: 1px solid  var(--blue-color);
+        border: 1px solid var(--blue-color);
         padding: 30px;
         -webkit-backdrop-filter: blur(30px);
         backdrop-filter: blur(30px);
@@ -3270,6 +3271,12 @@ uiux page css style
         width: 245px;
     }
 
+    @supports (-webkit-touch-callout: none) {
+        .card h3 {
+            width: 245px !important
+        }
+    }
+
     .card p {
         margin: 16px 0;
         font-size: 12px;
@@ -3291,7 +3298,7 @@ uiux page css style
         width: 360px;
     }
 
-    .mrl_0{
+    .mrl_0 {
         margin-right: 0 !important;
         margin-left: 0 !important;
         padding-left: 0 !important;
@@ -3831,7 +3838,7 @@ uiux page css style
 
     .contact-form {
         padding: 10px;
-        border: 1px solid  var(--blue-color);
+        border: 1px solid var(--blue-color);
         border-radius: 5px;
         width: 350px;
         margin: 0 0 50px 0;
@@ -4030,7 +4037,7 @@ uiux page css style
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        border: 1px solid  var(--blue-color);
+        border: 1px solid var(--blue-color);
         border-radius: 20px;
         padding: 0 0 0 114px;
     }
@@ -4135,6 +4142,10 @@ uiux page css style
         text-align: left;
         font-size: 18px;
         line-height: 27px;
+    }
+
+    .mob_whoweare {
+        padding: 0 25px !important;
     }
 
     .cm_270 {
@@ -4330,7 +4341,7 @@ uiux page css style
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        border: 1px solid  var(--blue-color);
+        border: 1px solid var(--blue-color);
         border-radius: 20px;
         padding: 30px;
     }
@@ -4696,7 +4707,7 @@ uiux page css style
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        border: 1px solid  var(--blue-color);
+        border: 1px solid var(--blue-color);
         border-radius: 20px;
         padding: 20px 0 0 64px;
     }
@@ -4742,7 +4753,7 @@ uiux page css style
         margin: 0 auto 70px auto;
     }
 
-    .scroller{
+    .scroller {
         overflow-x: hidden;
     }
 
@@ -4804,7 +4815,7 @@ uiux page css style
         top: 96px;
         right: 18px;
         background: #FFFFFF80;
-        border: 1px solid  var(--blue-color);
+        border: 1px solid var(--blue-color);
         padding: 50px;
         backdrop-filter: blur(30px);
         z-index: 9;
@@ -5740,7 +5751,7 @@ uiux page css style
     .contact-form {
         width: 500px;
         padding: 40px;
-        border: 1px solid  var(--blue-color);
+        border: 1px solid var(--blue-color);
         border-radius: 20px;
         margin: 0 0 100px 0;
     }
@@ -5816,7 +5827,7 @@ uiux page css style
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        border: 1px solid  var(--blue-color);
+        border: 1px solid var(--blue-color);
         border-radius: 20px;
         padding: 0 0 0 114px;
     }
@@ -6115,7 +6126,7 @@ uiux page css style
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        border: 1px solid  var(--blue-color);
+        border: 1px solid var(--blue-color);
         border-radius: 20px;
         padding: 50px;
     }
@@ -6236,7 +6247,7 @@ uiux page css style
         height: 547px;
         background: #FFFFFF;
         border: 1px solid #000000;
-        box-shadow: 10px 10px 0px 0px  var(--blue-color);
+        box-shadow: 10px 10px 0px 0px var(--blue-color);
         position: absolute;
         top: 50px;
         z-index: 1;
@@ -7148,7 +7159,7 @@ uiux page css style
     .contact-form {
         width: 500px;
         padding: 40px;
-        border: 1px solid  var(--blue-color);
+        border: 1px solid var(--blue-color);
         border-radius: 20px;
         margin: 0 0 100px 0;
     }
@@ -7533,7 +7544,7 @@ uiux page css style
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        border: 1px solid  var(--blue-color);
+        border: 1px solid var(--blue-color);
         border-radius: 20px;
         padding: 50px;
     }
@@ -7654,7 +7665,7 @@ uiux page css style
         height: 547px;
         background: #FFFFFF;
         border: 1px solid #000000;
-        box-shadow: 10px 10px 0px 0px  var(--blue-color);
+        box-shadow: 10px 10px 0px 0px var(--blue-color);
         position: absolute;
         top: 50px;
         z-index: 1;
