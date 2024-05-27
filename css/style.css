@@ -3273,7 +3273,8 @@ uiux page css style
 
     @supports (-webkit-touch-callout: none) {
         .card h3 {
-            width: 245px !important
+            font-size: 14px;
+            line-height: 28px;
         }
     }
 
