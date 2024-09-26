@@ -1700,7 +1700,7 @@ uiux page css style
 }
 
 .ourwork_container .brand_card h4 {
-    width: 229px;
+    /* width: 229px; */
     height: 60px;
     color: #000000;
     font-size: 40px;
@@ -2779,6 +2779,10 @@ uiux page css style
     /* Adjust the duration and timing function as needed */
 }
 
+.brand_img img {
+    width: 100%;
+    height: 100%;
+}
 
 
 
