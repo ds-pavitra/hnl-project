@@ -93,16 +93,16 @@ body {
     padding: 5px 18px;
 }
 
-.custom_active {
-    color: var(--blue-color) !important;
-}
-
 .nav-link,
 .nav-item {
     font-size: 18px !important;
     font-weight: 600 !important;
     line-height: 27px !important;
     color: black !important;
+}
+
+.custom_active {
+    color: var(--blue-color) !important;
 }
 
 .cust_positioning_banner {
@@ -4762,6 +4762,10 @@ uiux page css style
         overflow-x: hidden;
     }
 
+    .custom_active {
+        color: var(--blue-color) !important;
+    }
+
     @keyframes fadeInDown {
         from {
             opacity: 0;
@@ -6333,6 +6337,10 @@ uiux page css style
         width: 700px !important;
     }
 
+    .custom_active {
+        color: var(--blue-color) !important;
+    }
+
     @keyframes fadeInDown {
         from {
             opacity: 0;
@@ -7844,6 +7852,10 @@ uiux page css style
 
     .c-mb-100 {
         margin-bottom: 60px !important;
+    }
+
+    .custom_active {
+        color: var(--blue-color) !important;
     }
 
     /* .section.section-demos .demo-item .item-img {

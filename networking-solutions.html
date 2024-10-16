@@ -52,7 +52,7 @@
                   style="font-size: 16px">Who we are</a>
               </li>
               <li class="nav-item dropdown" id="what-we-do-dropdown">
-                <a class="nav-link onload_animate dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                <a class="nav-link onload_animate dropdown-toggle custom_active" href="#" role="button" data-bs-toggle="dropdown"
                   aria-expanded="false" style="font-size: 16px">
                   What We Do
                 </a>
@@ -140,6 +140,7 @@
                         line-height: 32px;
                         color: var(--blue-color);
                         font-weight: 500;
+                        display: none;
                       ">
                     Menu
                   </p>
@@ -164,11 +165,11 @@
                 <a class="nav-link" aria-current="page" href="./whoweare.html" style="font-size: 16px">Who we are</a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                  aria-expanded="false" style="font-size: 16px">
+                <a class="nav-link dropdown-toggle show" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="true" style="font-size: 16px">
                   What We Do
                 </a>
-                <ul class="dropdown-menu dropdown-menu-end cust-dropdown-menu">
+                <ul class="dropdown-menu dropdown-menu-end cust-dropdown-menu show">
                   <li class="dropdown-submenu active dropend">
                     <a class="dropdown-item dropdown-toggle test submenu-active" tabindex="-1" href="#">Services</a>
                     <ul class="dropdown-menu dropdown-menu-services cust-dropdown-menu-services" style="display: none">
@@ -190,8 +191,8 @@
                     </ul>
                   </li>
                   <li class="dropdown-submenu dropend">
-                    <a class="dropdown-item dropdown-toggle test submenu-active" href="#">Solutions</a>
-                    <ul class="dropdown-menu dropdown-menu-solutions cust-dropdown-menu-solutions">
+                    <a class="dropdown-item dropdown-toggle test submenu-active focus" href="#">Solutions</a>
+                    <ul class="dropdown-menu dropdown-menu-solutions cust-dropdown-menu-solutions show">
                       <li>
                         <a class="dropdown-item dropdown-item-custom" href="./aiml.html">AI/ML Solution</a>
                       </li>
@@ -204,7 +205,7 @@
                           Solution</a>
                       </li>
                       <li>
-                        <a class="dropdown-item dropdown-item-custom" href="./networking-solutions.html">Networking
+                        <a class="dropdown-item dropdown-item-custom custom_active" href="./networking-solutions.html">Networking
                           Solution</a>
                       </li>
                     </ul>
